@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Matrix Games</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s16-07-peak-load-pricing.html"><img src="shared/images/batch-left.png"></a> <a href="s16-07-peak-load-pricing.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s17-02-nash-equilibrium.html">Next Section</a> <a href="s17-02-nash-equilibrium.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch16_s01" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">16.1</span> Matrix Games</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch16_s01_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="mcafee-ch16_s01_l01">
+            <li>How are games modeled?</li>
+            <li>What is optimal play?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s01_p01">The simplest game is called a matrix payoff game with two players. In a <span class="margin_term"><a class="glossterm">matrix payoff game</a><span class="glossdef">Game in which all actions are chosen simultaneously.</span></span>, all actions are chosen simultaneously. It is conventional to describe a matrix payoff game as played by a row player and a column player. The row player chooses a row in a matrix; the column player simultaneously chooses a column. The outcome of the game is a pair of payoffs where the first entry is the payoff of the row player, and the second is the payoff of the column player. <a class="xref" href="#mcafee-ch16_s01_f01">Figure 16.1 "The prisoner’s dilemma"</a> provides an example of a “2 × 2” matrix payoff game—the most famous game of all—which is known as the <span class="margin_term"><a class="glossterm">prisoner’s dilemma</a><span class="glossdef">Game in which the strategies are to confess or not to confess; the first player to confess avoids jail.</span></span>. In the game, the strategies are to confess or not to confess.</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s01_f01">
+        <p class="title"><span class="title-prefix">Figure 16.1</span> The prisoner’s dilemma</p>
+        <img src="section_17/8c015a1d9042645b104806d273662597.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s01_p02">In the prisoner’s dilemma, two criminals named Row and Column have been apprehended by the police and are being questioned separately. They are jointly guilty of the crime. Each player can choose either to confess or not. If Row confesses, we are in the top row of the matrix (corresponding to the row labeled “Confess”). Similarly, if Column confesses, the payoff will be in the relevant column. In this case, if only one player confesses, that player goes free and the other serves 20 years in jail. (The entries correspond to the number of years lost to prison. The first entry is always Row’s payoff; the second entry is Column’s payoff.) Thus, for example, if Column confesses and Row does not, the relevant payoff is the first column and the second row.</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s01_f02">
+        <p class="title"><span class="title-prefix">Figure 16.2</span> Solving the prisoner’s dilemma</p>
+        <img src="section_17/a4af212a2efe266a76b55892e992f4a1.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s01_p03">If Column confesses and Row does not, Row loses 20 years, and Column loses no years; that is, it goes free. This is the payoff (–20, 0) in reverse color in <a class="xref" href="#mcafee-ch16_s01_f02">Figure 16.2 "Solving the prisoner’s dilemma"</a>. If both confess, they are both convicted and neither goes free, but they only serve 10 years each. Finally, if neither confesses, there is a 10% chance that they are convicted anyway (using evidence other than the confession), in which case they each average a year lost.</p>
+    <p class="para editable block" id="mcafee-ch16_s01_p04">The prisoner’s dilemma is famous partly because it is readily solvable. First, Row has a strict advantage to confessing, no matter what Column is going to do. If Column confesses, Row gets –10 for confessing, –20 for not confessing, and thus is better off confessing. Similarly, if Column doesn’t confess, Row gets 0 for confessing (namely, goes free), –1 for not confessing, and is better off confessing. Either way, no matter what Column does, Row should choose to confess.<span class="footnote" id="fwk-mcafee-fn16_002">If Row and Column are friends and care about each other, that should be included as part of the payoffs. Here, there is no honor or friendship among thieves, and Row and Column only care about what they themselves will get.</span> This is called a <span class="margin_term"><a class="glossterm">dominant strategy</a><span class="glossdef">A strategy that is optimal no matter what the other players do.</span></span>, a strategy that is optimal no matter what the other players do.</p>
+    <p class="para editable block" id="mcafee-ch16_s01_p05">The logic is exactly similar for Column: No matter what Row does, Column should choose to confess. That is, Column also has a dominant strategy to confess. To establish this, first consider what Column’s best action is, when Column thinks Row will confess. Then consider Column’s best action when Column thinks Row won’t confess. Either way, Column gets a higher payoff (lower number of years lost to prison) by confessing.</p>
+    <p class="para editable block" id="mcafee-ch16_s01_p06">The presence of a dominant strategy makes the prisoner’s dilemma particularly easy to solve. Both players should confess. Note that this gets them 10 years each in prison, and thus isn’t a very good outcome from their perspective; but there is nothing they can do about it in the context of the game, because for each the alternative to serving 10 years is to serve 20 years. This outcome is referred to as (Confess, Confess), where the first entry is the row player’s choice, and the second entry is the column player’s choice.</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s01_f03">
+        <p class="title"><span class="title-prefix">Figure 16.3</span> An entry game</p>
+        <img src="section_17/f184a9df2552c6d373e31d2a22dab0f6.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s01_p07">Consider an entry game played by Microsoft (the row player) and Piuny (the column player), a small start-up company. Both Microsoft and Piuny are thinking about entering a new market for an online service. <a class="xref" href="#mcafee-ch16_s01_f03">Figure 16.3 "An entry game"</a> provides the payoff structure.</p>
+    <p class="para editable block" id="mcafee-ch16_s01_p08">In this case, if both companies enter, Microsoft ultimately wins the market, earning 2 and Piuny loses 2. If either firm has the market to itself, it gets 5 and the other firm gets zero. If neither enters, they both get zero. Microsoft has a dominant strategy to enter: It gets 2 when Piuny enters, 5 when Piuny doesn’t, and in both cases it does better than when it doesn’t enter. In contrast, Piuny does not have a dominant strategy: Piuny wants to enter when Microsoft doesn’t, and vice versa. That is, Piuny’s optimal strategy depends upon Microsoft’s action; or, more accurately, Piuny’s optimal strategy depends upon what Piuny believes Microsoft will do.</p>
+    <p class="para editable block" id="mcafee-ch16_s01_p09">Piuny can understand Microsoft’s dominant strategy if it knows the payoffs of Microsoft.<span class="footnote" id="fwk-mcafee-fn16_003">It isn’t so obvious that one player will know the payoffs of another player, which often causes players to try to signal that they are going to play a certain way—that is, to demonstrate commitment to a particular advantageous strategy. Such topics are taken up in business strategy and managerial economics.</span> Thus, Piuny can conclude that Microsoft is going to enter, and this means that Piuny should not enter. Thus, the equilibrium of the game is for Microsoft to enter and Piuny not to enter. This equilibrium is arrived at by the <span class="margin_term"><a class="glossterm">iterated elimination of dominated strategies</a><span class="glossdef">Eliminating strategies by sequentially removing strategies that are dominated for a player.</span></span>, eliminating strategies by sequentially removing strategies that are dominated for a player. First, we eliminated Microsoft’s dominated strategy in favor of its dominant strategy. Microsoft had a dominant strategy to enter, which means that the strategy of not entering was dominated by the strategy of entering, so we eliminated the dominated strategy. That leaves a simplified game in which Microsoft enters, as shown in <a class="xref" href="#mcafee-ch16_s01_f04">Figure 16.4 "Eliminating a dominated strategy"</a>.</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s01_f04">
+        <p class="title"><span class="title-prefix">Figure 16.4</span> Eliminating a dominated strategy</p>
+        <img src="section_17/1756bbe7244ea21e117e38b2b924dfd9.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s01_p10">In this simplified game, after the elimination of Microsoft’s dominated strategy, Piuny also has a dominant strategy: not to enter. Thus, we iterate and eliminate dominated strategies again—this time eliminating Piuny’s dominated strategies—and wind up with a single outcome: Microsoft enters, and Piuny doesn’t. The iterated elimination of dominated strategies solves the game.<span class="footnote" id="fwk-mcafee-fn16_004">A strategy may be dominated not by any particular alternate strategy but by a randomization over other strategies, which is an advanced topic not considered here.</span></p>
+    <p class="para editable block" id="mcafee-ch16_s01_p11"><a class="xref" href="#mcafee-ch16_s01_f05">Figure 16.5 "A 3 x 3 game"</a> shows another game, with three strategies for each player.</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s01_f05">
+        <p class="title"><span class="title-prefix">Figure 16.5</span> A 3 x 3 game</p>
+        <img src="section_17/a055f1e5367df046b0383704a099ce95.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s01_p12">The process of iterated elimination of dominated strategies is illustrated in <a class="xref" href="#mcafee-ch16_s01_f06">Figure 16.6 "Eliminating a dominated strategy"</a> by actually eliminating the rows and columns, as follows. A reverse color (white text on black background) indicates a dominated strategy.</p>
+    <p class="para editable block" id="mcafee-ch16_s01_p13">Middle dominates Bottom for Row, yielding:</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s01_f06">
+        <p class="title"><span class="title-prefix">Figure 16.6</span> Eliminating a dominated strategy</p>
+        <img src="section_17/7320f1dffef7f76214c22e6620a46c16.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s01_p14">With Bottom eliminated, Left is now dominated for Column by either Center or Right, which eliminates the Left Column. This is shown in <a class="xref" href="#mcafee-ch16_s01_f07">Figure 16.7 "Eliminating another dominated strategy"</a>.</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s01_f07">
+        <p class="title"><span class="title-prefix">Figure 16.7</span> Eliminating another dominated strategy</p>
+        <img src="section_17/24d81cd9383769daa8511beb3e4c4708.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s01_p15">With Left and Bottom eliminated, Top now dominates Middle for Row, as shown in <a class="xref" href="#mcafee-ch16_s01_f08">Figure 16.8 "Eliminating a third dominated strategy"</a>.</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s01_f08">
+        <p class="title"><span class="title-prefix">Figure 16.8</span> Eliminating a third dominated strategy</p>
+        <img src="section_17/aaf3bdef080fd6507cc221ea0510ef04.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s01_p16">Finally, as shown in <a class="xref" href="#mcafee-ch16_s01_f09">Figure 16.9 "Game solved"</a>, Column chooses Right over Center, yielding a unique outcome after the iterated elimination of dominated strategies, which is (Top, Right).</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s01_f09">
+        <p class="title"><span class="title-prefix">Figure 16.9</span> Game solved</p>
+        <img src="section_17/e122591f947e4a83bad29bb92d74ea82.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s01_p17">The iterated elimination of dominated strategies is a useful concept, and when it applies, the predicted outcome is usually quite reasonable. Certainly it has the property that no player has an incentive to change his or her behavior given the behavior of others. However, there are games where it doesn’t apply, and these games require the machinery of a Nash equilibrium, named for Nobel laureate John Nash (1928–).</p>
+    <div class="key_takeaways editable block" id="mcafee-ch16_s01_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch16_s01_l02">
+            <li>Strategic behavior arises where there are few enough market participants that their actions individually matter, and where the behavior of any one participant influences choices of the other participants.</li>
+            <li>Game theory is the study of how people play games. A game consists of the players, their information and available actions, and payoffs.</li>
+            <li>In a matrix payoff game, all actions are chosen simultaneously. The row player chooses a row in a matrix; the column player simultaneously chooses a column. The outcome of the game is a pair of payoffs where the first entry is the payoff of the row player, and the second is the payoff of the column player.</li>
+            <li>In the prisoner’s dilemma, two criminals named Row and Column have been apprehended by the police and are being questioned separately. They are jointly guilty of the crime. Each player can choose either to confess or not. Each player individually benefits from confessing, but together they are harmed.</li>
+            <li>A dominant strategy is a strategy that is best for a player no matter what others choose.</li>
+            <li>Iterated elimination of dominated strategies first removes strategies dominated by others, then checks if any new strategies are dominated and removes them, and so on. In many cases, iterated elimination of dominated strategies solves a game.</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s16-07-peak-load-pricing.html"><img src="shared/images/batch-left.png"></a> <a href="s16-07-peak-load-pricing.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s17-02-nash-equilibrium.html">Next Section</a> <a href="s17-02-nash-equilibrium.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

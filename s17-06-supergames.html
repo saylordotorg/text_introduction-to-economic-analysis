@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Supergames</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s17-05-subgame-perfection.html"><img src="shared/images/batch-left.png"></a> <a href="s17-05-subgame-perfection.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s18-01-cournot-oligopoly.html">Next Section</a> <a href="s18-01-cournot-oligopoly.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch16_s06" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">16.6</span> Supergames</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch16_s06_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="mcafee-ch16_s06_l01">
+            <li>What can happen in games that are repeated over and over?</li>
+            <li>What role does the threat of retaliation play?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s06_p01">Some situations, like the price-cutting game or the apartment cleaning game, are played over and over. Such situations are best modeled as a <span class="margin_term"><a class="glossterm">supergame</a><span class="glossdef">A game that is repeated an infinite number of times.</span></span>.<span class="footnote" id="fwk-mcafee-fn16_008">The supergame was invented by Robert Aumann (1930–) in 1959.</span> A supergame is a game that is played an infinite number of times, where the players discount the future. The game played each time is known as a <span class="margin_term"><a class="glossterm">stage game</a><span class="glossdef">The game that is repeated in a supergame.</span></span>. Generally supergames are played in times 1, 2, 3, ….</p>
+    <p class="para editable block" id="mcafee-ch16_s06_p02">Cooperation may be possible in supergames, if the future is important enough. Consider the price-cutting game introduced previously and illustrated again in <a class="xref" href="#mcafee-ch16_s06_f01">Figure 16.33 "Price cutting game revisited"</a>.</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s06_f01">
+        <p class="title"><span class="title-prefix">Figure 16.33</span> Price cutting game revisited</p>
+        <img src="section_17/340dfcdf0000738c4f84702819dac295.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s06_p03">The dominant strategy equilibrium to this game is (Low, Low). It is clearly a subgame perfect equilibrium for the players to just play (Low, Low) over and over again because, if that is what Firm 1 thinks that Firm 2 is doing, Firm 1 does best by pricing Low, and vice versa. But that is not the only equilibrium to the supergame.</p>
+    <p class="para editable block" id="mcafee-ch16_s06_p04">Consider the following strategy, called a <span class="margin_term"><a class="glossterm">grim trigger strategy</a><span class="glossdef">Strategy that involves being nice initially but not nice forever when someone else isn’t cooperative.</span></span>, which involves being nice initially but not nice forever when someone else isn’t cooperative. Price High, until you see your rival price Low. After your rival has priced Low, price Low forever. This is called a trigger strategy because an action of the other player (pricing Low) triggers a change in behavior. It is a grim strategy because it punishes forever.</p>
+    <p class="para editable block" id="mcafee-ch16_s06_p05">If your rival uses a grim trigger strategy, what should you do? Basically, your only choice is when to price Low because, once you price Low, your rival will price Low, and then your best choice is also to price Low from then on. Thus, your strategy is to price High up until some point <em class="emphasis">t</em> – 1, and then price Low from time <em class="emphasis">t</em> on. Your rival will price High through <em class="emphasis">t</em>, and price Low from <em class="emphasis">t</em> + 1 on. This gives a payoff to you of 15 from period 1 through <em class="emphasis">t</em> – 1, 25 in period <em class="emphasis">t</em>, and then 5 in period <em class="emphasis">t</em> + 1 on. We can compute the payoff for a discount factor <em class="emphasis">δ</em>:</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch16_s06_m001" display="block">
+	<mrow>
+	<msub>
+	<mi>V</mi>
+	<mi>t</mi>
+	</msub>
+	<mo>=</mo><mn>15</mn><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>δ</mi><mo>+</mo><msup>
+	<mi>δ</mi>
+	<mn>2</mn>
+	</msup>
+	<mo>+</mo><mn>…</mn><mo>+</mo><msup>
+	<mi>δ</mi>
+	<mrow>
+	<mi>t</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	<mo stretchy="false">)</mo><mo>+</mo><mn>25</mn><msup>
+	<mi>δ</mi>
+	<mi>t</mi>
+	</msup>
+	<mo>+</mo><mn>5</mn><mo stretchy="false">(</mo><msup>
+	<mi>δ</mi>
+	<mrow>
+	<mi>t</mi><mo>+</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	<mo>+</mo><msup>
+	<mi>δ</mi>
+	<mrow>
+	<mi>t</mi><mo>+</mo><mn>2</mn>
+	</mrow>
+	</msup>
+	<mo>+</mo><mn>…</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</math>
+</span>
+    <span class="informalequation block"><math xml:id="mcafee_ch16_s06_m002" display="block">
+	<mrow>
+	<mo>=</mo><mn>15</mn><mfrac>
+	<mrow>
+	<mn>1</mn><mo>−</mo><msup>
+	<mi>δ</mi>
+	<mi>t</mi>
+	</msup>
+	</mrow>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>δ</mi>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mn>25</mn><msup>
+	<mi>δ</mi>
+	<mi>t</mi>
+	</msup>
+	<mo>+</mo><mn>5</mn><mfrac>
+	<mrow>
+	<msup>
+	<mi>δ</mi>
+	<mi>t</mi>
+	</msup>
+	</mrow>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>δ</mi>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mn>15</mn>
+	</mrow>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>δ</mi>
+	</mrow>
+	</mfrac>
+	<mo>−</mo><mfrac>
+	<mrow>
+	<msup>
+	<mi>δ</mi>
+	<mi>t</mi>
+	</msup>
+	</mrow>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>δ</mi>
+	</mrow>
+	</mfrac>
+	<mo stretchy="false">(</mo><mn>15</mn><mo>−</mo><mn>25</mn><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>δ</mi><mo stretchy="false">)</mo><mo>−</mo><mn>5</mn><mi>δ</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+	<mrow>
+	<mn>15</mn>
+	</mrow>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>δ</mi>
+	</mrow>
+	</mfrac>
+	<mo>−</mo><mfrac>
+	<mrow>
+	<msup>
+	<mi>δ</mi>
+	<mi>t</mi>
+	</msup>
+	</mrow>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>δ</mi>
+	</mrow>
+	</mfrac>
+	<mo stretchy="false">(</mo><mo>−</mo><mn>10</mn><mo>+</mo><mn>20</mn><mi>δ</mi><mo stretchy="false">)</mo><mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch16_s06_p06">If –10 + 20<em class="emphasis">δ</em> &lt; 0, it pays to price Low immediately, at <em class="emphasis">t</em> = 0, because it pays to price Low; and the earlier that one prices Low, the higher the present value. If –10 + 20<em class="emphasis">δ</em> &gt; 0, it pays to wait forever to price Low; that is, <em class="emphasis">t</em> = ∞. Thus, in particular, the grim trigger strategy is an optimal strategy for a player when the rival is playing the grim trigger strategy if <em class="emphasis">δ</em> ≥ ½. In other words, cooperation in pricing is a subgame perfect equilibrium if the future is important enough; that is, the discount factor <em class="emphasis">δ</em> is high enough.</p>
+    <p class="para editable block" id="mcafee-ch16_s06_p07">The logic of this example is that the promise of future cooperation is valuable when the future itself is valuable, and that promise of future cooperation can be used to induce cooperation today. Thus, Firm 1 doesn’t want to cut price today because that would lead Firm 2 to cut price for the indefinite future. The grim trigger strategy punishes price cutting today with future Low profits.</p>
+    <p class="para editable block" id="mcafee-ch16_s06_p08">Supergames offer more scope for cooperation than is illustrated in the price-cutting game. First, more complex behavior is possible. For example, consider the game shown in <a class="xref" href="#mcafee-ch16_s06_f02">Figure 16.34 "A variation of the price-cutting game"</a>:</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s06_f02">
+        <p class="title"><span class="title-prefix">Figure 16.34</span> A variation of the price-cutting game</p>
+        <img src="section_17/a9c13f8945acd8f91e3ad862902b4c51.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s06_p09">Here, again, the unique equilibrium in the stage game is (Low, Low). But the difference between this game and the previous game is that the total profits of Firms 1 and 2 are higher in either (High, Low) or (Low, High) than in (High, High). One solution is to alternate between (High, Low) and (Low, High). Such alternation can also be supported as an equilibrium, using the grim trigger strategy—that is, if a firm does anything other than what it is supposed to do in the alternating solution, the firms instead play (Low, Low) forever.</p>
+    <p class="para editable block" id="mcafee-ch16_s06_p10">The <span class="margin_term"><a class="glossterm">folk theorem</a><span class="glossdef">A theorem stating that if the value of the future is high enough, any outcome that is individually rational can be supported as an equilibrium to the supergame.</span></span> says that if the value of the future is high enough, any outcome that is individually rational can be supported as an equilibrium to the supergame. <span class="margin_term"><a class="glossterm">Individual rationality</a><span class="glossdef">Situation in which the outcome offers a present value of profits at least as high as that offered in the worst equilibrium in the stage game from that player’s perspective.</span></span> for a player in this context means that the outcome offers a present value of profits at least as high as that offered in the worst equilibrium in the stage game from that player’s perspective. Thus, in the price-cutting game, the worst equilibrium of the stage game offered each player 5, so an outcome can be supported if it offers each player at least a running average of 5.</p>
+    <p class="para editable block" id="mcafee-ch16_s06_p11">The simple logic of the folk theorem is this. First, any infinite repetition of an equilibrium of the stage game is itself a subgame perfect equilibrium. If everyone expects this repetition of the stage game equilibrium, no one can do better than to play his or her role in the stage game equilibrium every period. Second, any other plan of action can be turned into a subgame perfect equilibrium merely by threatening any agent who deviates from that plan with an infinite repetition of the worst stage game equilibrium from that agent’s perspective. That threat is credible because the repetition of the stage game equilibrium is itself a subgame perfect equilibrium. Given such a grim trigger–type threat, no one wants to deviate from the intended plan.</p>
+    <p class="para editable block" id="mcafee-ch16_s06_p12">The folk theorem is a powerful result and shows that there are equilibria to supergames that achieve very good outcomes. The kinds of coordination failures that we saw in the battle of the sexes, and the failure to cooperate in the prisoner’s dilemma, need not arise; and cooperative solutions are possible if the future is sufficiently valuable.</p>
+    <p class="para editable block" id="mcafee-ch16_s06_p13">However, it is worth noting some assumptions that have been made in our descriptions of these games—assumptions that matter but are unlikely to be true in practice. First, the players know their own payoffs. Second, they know their rival’s payoffs. They possess a complete description of the available strategies and can calculate the consequences of these strategies—not just for themselves but also for their rivals. Third, each player maximizes his or her expected payoff; they know that their rivals do the same; they know that their rivals know that everyone maximizes; and so on. The economic language for this is the structure of the game, and the players’ preferences are common knowledge. Few real-world games will satisfy these assumptions exactly. Since the success of the grim trigger strategy (and other strategies we haven’t discussed) generally depends upon such knowledge, informational considerations may cause cooperation to break down. Finally, the folk theorem shows us that there are lots of equilibria to supergames but provides no guidance on which ones will be played. These assumptions can be relaxed, although they may lead to wars on the equilibrium path “by accident”—and a need to recover from such wars—so that the grim trigger strategy becomes suboptimal.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch16_s06_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch16_s06_l02">
+            <li>A supergame is a game that is played over and over again without end, where the players discount the future. The game played each time is known as a stage game.</li>
+            <li>Playing a “one-shot” Nash equilibrium to the stage game forever is a subgame perfect equilibrium to the supergame.</li>
+            <li>A grim trigger strategy involves starting play by using one behavior and, if another player ever does something else, switching to one-shot Nash behavior forever.</li>
+            <li>The folk theorem says that if the value of the future is high enough, any outcome that is individually rational can be supported as an equilibrium to the supergame. Individual rationality for a player means that the outcome offers a present value of profits at least as high as that offered in the worst equilibrium in the stage game from that player’s perspective.</li>
+            <li>If players are patient, full cooperation is obtainable as one of many subgame perfect equilibria to supergames.</li>
+        </ul>
+    </div>
+    <div class="exercises block" id="mcafee-ch16_s06_n03">
+        <h3 class="title">Exercise</h3>
+        <ol class="orderedlist" id="mcafee-ch16_s06_l03">
+            <li>Consider the game in <a class="xref" href="#mcafee-ch16_s06_f02">Figure 16.34 "A variation of the price-cutting game"</a>, and consider a strategy in which Firm 1 prices High in odd-numbered periods and Low in even-numbered periods, while Firm 2 prices High in even-numbered periods and Low in odd-numbered periods. If either deviates from these strategies, both firms price Low from then on. Let <em class="emphasis">δ</em> be the discount factor. Show that these firms have a payoff of <span class="inlineequation"><math xml:id="mcafee_ch16_s06_m003" display="inline">
+			<mrow>
+			<mfrac>
+			<mrow>
+			<mn>25</mn>
+			</mrow>
+			<mrow>
+			<mn>1</mn><mo>−</mo><msup>
+			<mi>δ</mi>
+			<mn>2</mn>
+			</msup>
+			</mrow>
+			</mfrac>
+			</mrow>
+			</math>
+</span> or <span class="inlineequation"><math xml:id="mcafee_ch16_s06_m004" display="inline">
+			<mrow>
+			<mfrac>
+			<mrow>
+			<mn>25</mn><mi>δ</mi>
+			</mrow>
+			<mrow>
+			<mn>1</mn><mo>−</mo><msup>
+			<mi>δ</mi>
+			<mn>2</mn>
+			</msup>
+			</mrow>
+			</mfrac><mtext>,</mtext>
+			</mrow>
+			</math>
+</span> depending upon which period it is. Then show that the alternating strategy is sustainable if <span class="inlineequation"><math xml:id="mcafee_ch16_s06_m005" display="inline">
+			<mrow>
+			<mn>10</mn><mo>+</mo><mfrac>
+			<mrow>
+			<mn>5</mn><mi>δ</mi>
+			</mrow>
+			<mrow>
+			<mn>1</mn><mo>−</mo><mi>δ</mi>
+			</mrow>
+			</mfrac>
+			<mo>≤</mo><mfrac>
+			<mrow>
+			<mn>25</mn><mi>δ</mi>
+			</mrow>
+			<mrow>
+			<mn>1</mn><mo>−</mo><msup>
+			<mi>δ</mi>
+			<mn>2</mn>
+			</msup>
+			</mrow>
+			</mfrac>
+			<mo>.</mo>
+			</mrow>
+			</math>
+</span> This, in turn, is equivalent to <span class="inlineequation"><math xml:id="mcafee_ch16_s06_m006" display="inline">
+			<mrow>
+			<mi>δ</mi><mo>≥</mo><msqrt>
+			<mn>6</mn>
+			</msqrt>
+			<mo>−</mo><mn>2.</mn>
+			</mrow>
+			</math>
+</span>
+</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s17-05-subgame-perfection.html"><img src="shared/images/batch-left.png"></a> <a href="s17-05-subgame-perfection.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s18-01-cournot-oligopoly.html">Next Section</a> <a href="s18-01-cournot-oligopoly.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

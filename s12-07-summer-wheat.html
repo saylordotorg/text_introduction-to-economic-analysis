@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Summer Wheat</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s12-06-collectibles.html"><img src="shared/images/batch-left.png"></a> <a href="s12-06-collectibles.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s13-01-utility-maximization.html">Next Section</a> <a href="s13-01-utility-maximization.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch11_s07" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">11.7</span> Summer Wheat</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch11_s07_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch11_s07_l01">
+            <li>How are the prices of storable goods—apples, potatoes, or wheat—determined?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch11_s07_p01">Typically, wheat harvested in the fall has to last until the following harvest. How should prices evolve over the season? If I know that I need wheat in January, should I buy it at harvest time and store it myself, or wait and buy it in January? We can use a theory analogous to the theory of collectibles developed in <a class="xref" href="mcafee-ch11_s06#mcafee-ch11_s06">Section 11.6 "Collectibles"</a> to determine the evolution of prices for commodities like wheat, corn, orange juice, and canola oil.</p>
+    <p class="para editable block" id="mcafee-ch11_s07_p02">Unlike collectibles, buyers need not hold commodities for their personal use, since there is no value in admiring the wheat in your home. Let <em class="emphasis">p</em>(<em class="emphasis">t</em>) be the price at time <em class="emphasis">t</em>, and suppose that the year has length <em class="emphasis">T</em>. Generally there is a substantial amount of uncertainty regarding the size of wheat harvests, and most countries maintain an excess inventory as a precaution. However, if the harvest were not uncertain, there would be no need for a precautionary holding. Instead, we would consume the entire harvest over the course of a year, at which point the new harvest would come in. It is this such model that is investigated in this section.</p>
+    <p class="para block" id="mcafee-ch11_s07_p03">Let <em class="emphasis">δ</em> represent the depreciation rate (which, for wheat, includes the quantity eaten by rodents), and let <em class="emphasis">s</em> be the storage cost. Buying at time <em class="emphasis">t</em> and reselling at <em class="emphasis">t</em> + Δ should be a break-even proposition. If one purchases at time <em class="emphasis">t</em>, it costs <em class="emphasis">p</em>(<em class="emphasis">t</em>) to buy the good. Reselling at <em class="emphasis">t</em> + Δ, the storage cost is about <em class="emphasis">s</em>Δ. (This is not the precisely relevant cost; but rather it is the present value of the storage cost, and hence the restriction to small values of Δ.) The good depreciates to only have <span class="inlineequation"><math xml:id="mcafee_ch11_s07_m001" display="inline">
+	<mrow>
+	<msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mi>δ</mi><mi>Δ</mi>
+	</mrow>
+	</msup>
+	</mrow>
+	</math>
+</span> left to sell, and discounting reduces the value of that amount by the factor <span class="inlineequation"><math xml:id="mcafee_ch11_s07_m002" display="inline">
+	<mrow>
+	<msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mi>r</mi><mi>Δ</mi>
+	</mrow>
+	</msup><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> For this to be a break-even proposition, for small Δ,</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s07_m003" display="block">
+	<mrow>
+	<mn>0</mn><mo>=</mo><msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mi>r</mi><mi>Δ</mi>
+	</mrow>
+	</msup>
+	<msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mi>δ</mi><mi>Δ</mi>
+	</mrow>
+	</msup>
+	<mi>p</mi><mo stretchy="false">(</mo><mi>t</mi><mo>+</mo><mi>Δ</mi><mo stretchy="false">)</mo><mo>−</mo><mi>s</mi><mi>Δ</mi><mo>−</mo><mi>p</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch11_s07_p04">or</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s07_m004" display="block">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>p</mi><mo stretchy="false">(</mo><mi>t</mi><mo>+</mo><mi>Δ</mi><mo stretchy="false">)</mo><mo>−</mo><mi>p</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mi>Δ</mi>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mn>1</mn><mo>−</mo><msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mo stretchy="false">(</mo><mi>r</mi><mo>+</mo><mi>δ</mi><mo stretchy="false">)</mo><mi>Δ</mi>
+	</mrow>
+	</msup>
+	</mrow>
+	<mi>Δ</mi>
+	</mfrac>
+	<mi>p</mi><mo stretchy="false">(</mo><mi>t</mi><mo>+</mo><mi>Δ</mi><mo stretchy="false">)</mo><mo>+</mo><mi>s</mi>
+	</mrow>
+	</math>
+</span>
+    <p class="para block" id="mcafee-ch11_s07_p05">taking the limit as Δ → 0,
+	<span class="inlineequation"><math xml:id="mcafee_ch11_s07_m005" display="inline">
+	<mrow>
+	<msup>
+	<mi>p</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>r</mi><mo>+</mo><mi>δ</mi><mo stretchy="false">)</mo><mi>p</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>+</mo><mi>s</mi><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch11_s07_p06">This arbitrage condition ensures that it is a break-even proposition to invest in the good; the profits from the price appreciation are exactly balanced by depreciation, interest, and storage costs. We can solve the differential equation to obtain</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s07_m006" display="block">
+	<mrow>
+	<mi>p</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+	<mi>e</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mi>r</mi><mo>+</mo><mi>δ</mi><mo stretchy="false">)</mo><mi>t</mi>
+	</mrow>
+	</msup>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mi>p</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>+</mo><mfrac>
+	<mrow>
+	<mn>1</mn><mo>−</mo><msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mo stretchy="false">(</mo><mi>r</mi><mo>+</mo><mi>δ</mi><mo stretchy="false">)</mo><mi>t</mi>
+	</mrow>
+	</msup>
+	</mrow>
+	<mrow>
+	<mi>r</mi><mo>+</mo><mi>δ</mi>
+	</mrow>
+	</mfrac>
+	<mi>s</mi>
+	</mrow>
+	<mo>)</mo></mrow><mo>=</mo><msup>
+	<mi>e</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mi>r</mi><mo>+</mo><mi>δ</mi><mo stretchy="false">)</mo><mi>t</mi>
+	</mrow>
+	</msup>
+	<mi>p</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>+</mo><mfrac>
+	<mrow>
+	<msup>
+	<mi>e</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mi>r</mi><mo>+</mo><mi>δ</mi><mo stretchy="false">)</mo><mi>t</mi>
+	</mrow>
+	</msup>
+	<mo>−</mo><mn>1</mn>
+	</mrow>
+	<mrow>
+	<mi>r</mi><mo>+</mo><mi>δ</mi>
+	</mrow>
+	</mfrac>
+	<mi>s</mi><mo>.</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch11_s07_p07">The unknown is <em class="emphasis">p</em>(0). The constraint on <em class="emphasis">p</em>(0), however, is like the resource extraction problem—<em class="emphasis">p</em>(0) is determined by the need to use up the harvest over the course of the year.</p>
+    <p class="para block" id="mcafee-ch11_s07_p08">Suppose demand has constant elasticity <em class="emphasis">ε</em>. Then the quantity used comes in the form <span class="inlineequation"><math xml:id="mcafee_ch11_s07_m007" display="inline">
+	<mrow>
+	<mi>x</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><mi>p</mi><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mo>−</mo><mi>ε</mi>
+	</mrow>
+	</msup><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> Let <em class="emphasis">z</em>(<em class="emphasis">t</em>) represent the stock at time <em class="emphasis">t</em>. Then the equation for the evolution of the stock is <span class="inlineequation"><math xml:id="mcafee_ch11_s07_m008" display="inline">
+	<mrow>
+	<msup>
+	<mi>z</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mi>x</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>−</mo><mi>δ</mi><mi>z</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>.</mo>
+	</mrow>
+	</math>
+</span> This equation is obtained by noting that the flow out of stock is composed of two elements: depreciation, <em class="emphasis">δz</em>, and consumption, <em class="emphasis">x</em>. The stock evolution equation solves for</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s07_m009" display="block">
+	<mrow>
+	<mi>z</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mi>δ</mi><mi>t</mi>
+	</mrow>
+	</msup>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mi>q</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>−</mo><mstyle displaystyle="true">
+	<mrow><munderover>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mi>t</mi>
+	</munderover>
+	<mrow>
+	<msup>
+	<mi>e</mi>
+	<mrow>
+	<mi>δ</mi><mi>u</mi>
+	</mrow>
+	</msup>
+	<mi>x</mi><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo><mi>d</mi><mi>u</mi>
+	</mrow>
+	</mrow>
+	</mstyle>
+	</mrow>
+	<mo>)</mo></mrow>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch11_s07_p09">Thus, the quantity of wheat is consumed exactly if</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s07_m010" display="block">
+	<mrow>
+	<mstyle displaystyle="true">
+	<mrow><munderover>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mi>T</mi>
+	</munderover>
+	<mrow>
+	<msup>
+	<mi>e</mi>
+	<mrow>
+	<mi>δ</mi><mi>u</mi>
+	</mrow>
+	</msup>
+	<mi>x</mi><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo><mi>d</mi><mi>u</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mo>=</mo><mi>q</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch11_s07_p10">But this equation determines the initial price through</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s07_m011" display="block">
+	<mrow>
+	<mi>q</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>=</mo><mstyle displaystyle="true">
+	<mrow><munderover>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mi>T</mi>
+	</munderover>
+	<mrow>
+	<msup>
+	<mi>e</mi>
+	<mrow>
+	<mi>δ</mi><mi>u</mi>
+	</mrow>
+	</msup>
+	<mi>x</mi><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo><mi>d</mi><mi>u</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mo>=</mo><mstyle displaystyle="true">
+	<mrow><munderover>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mi>T</mi>
+	</munderover>
+	<mrow>
+	<msup>
+	<mi>e</mi>
+	<mrow>
+	<mi>δ</mi><mi>u</mi>
+	</mrow>
+	</msup>
+	<mi>a</mi><mi>p</mi><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mo>−</mo><mi>ε</mi>
+	</mrow>
+	</msup>
+	<mi>d</mi><mi>u</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mo>=</mo><mstyle displaystyle="true">
+	<mrow><munderover>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mi>T</mi>
+	</munderover>
+	<mrow>
+	<msup>
+	<mi>e</mi>
+	<mrow>
+	<mi>δ</mi><mi>u</mi>
+	</mrow>
+	</msup>
+	<mi>a</mi><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<msup>
+	<mi>e</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mi>r</mi><mo>+</mo><mi>δ</mi><mo stretchy="false">)</mo><mi>u</mi>
+	</mrow>
+	</msup>
+	<mi>p</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>+</mo><mfrac>
+	<mrow>
+	<msup>
+	 <mi>e</mi>
+	 <mrow>
+	  <mo stretchy="false">(</mo><mi>r</mi><mo>+</mo><mi>δ</mi><mo stretchy="false">)</mo><mi>u</mi>
+	 </mrow>
+	</msup>
+	<mo>−</mo><mn>1</mn>
+	</mrow>
+	<mrow>
+	<mi>r</mi><mo>+</mo><mi>δ</mi>
+	</mrow>
+	</mfrac>
+	<mi>s</mi>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mo>−</mo><mi>ε</mi>
+	</mrow>
+	</msup>
+	<mi>d</mi><mi>u</mi>
+	</mrow>
+	</mrow>
+	</mstyle>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch11_s07_p11">This equation doesn’t lead to a closed form for <em class="emphasis">p</em>(0) but is readily estimated, which provides a practical means of computing expected prices for commodities in temporarily fixed supply.</p>
+    <div class="figure medium editable block" id="mcafee-ch11_s07_f01">
+        <p class="title"><span class="title-prefix">Figure 11.7</span> Prices over a cycle for seasonal commodities</p>
+        <img src="section_12/54cfc4449b929b65e8bd5d8e608385e2.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch11_s07_p12">Generally, the price equation produces a “sawtooth” pattern, which is illustrated in <a class="xref" href="#mcafee-ch11_s07_f01">Figure 11.7 "Prices over a cycle for seasonal commodities"</a>. The increasing portion is actually an exponential, but of such a small degree that it looks linear. When the new harvest comes in, prices drop abruptly as the inventory grows dramatically, and the same pattern is repeated.</p>
+    <div class="figure medium editable block" id="mcafee-ch11_s07_f02">
+        <p class="title"><span class="title-prefix">Figure 11.8</span> Log of price of gold over time</p>
+        <img src="section_12/170b5762acd9b6dfceb37e9e28e6cb03.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch11_s07_p13">How well does the theory work? <a class="xref" href="#mcafee-ch11_s07_f02">Figure 11.8 "Log of price of gold over time"</a> shows the log of the future price of gold over time. The relevant data come from a futures market that establishes, at one moment in time, the price of gold for future delivery, and thus represents today’s estimate of the future price of gold. These data, then, represent the expected future price at a particular moment in time (the afternoon of October 11, 2005), and thus correspond to the prices in the theory, since perceived risks are fixed. (Usually, in the real world, risk plays a salient role.) We can observe that prices are approximately an exponential, because the log of prices is approximately linear. However, the estimate of <em class="emphasis">r</em> + <em class="emphasis">δ</em> is surprisingly low, at an annual level of less than 0.03, or 3% for both discounting and depreciation. Depreciation of gold is low, but this still represents a very low interest rate.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch11_s07_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch11_s07_l02">
+            <li>There is a seasonal pattern to goods that are produced periodically. The price equation produces a “sawtooth” pattern. The increasing portion is an exponential.</li>
+            <li>Gold prices show evidence of exponential growth predicted by the theory.</li>
+        </ul>
+    </div>
+    <div class="exercises editable block" id="mcafee-ch11_s07_n03">
+        <h3 class="title">Exercise</h3>
+        <ol class="orderedlist" id="mcafee-ch11_s07_l03">
+            <li>Consider a market for a commodity that can be stored with zero cost from winter to summer, but cannot be stored from summer to winter. The winter demand and supply are <em class="emphasis">Qwd</em> = 50 – 2<em class="emphasis">Pw</em> and <em class="emphasis">Qws</em> = 3<em class="emphasis">Pw</em>, and the summer demand and supply are <em class="emphasis">Qsd</em> = 100 – 3<em class="emphasis">Ps</em> and <em class="emphasis">Qss</em> = <em class="emphasis">Ps</em>. Compute <em class="emphasis">Pw</em>, <em class="emphasis">Ps</em>, <em class="emphasis">Qw</em>, and <em class="emphasis">Qs</em>, and the amount of hoarding from winter to summer. (Set discounting to zero.)</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s12-06-collectibles.html"><img src="shared/images/batch-left.png"></a> <a href="s12-06-collectibles.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s13-01-utility-maximization.html">Next Section</a> <a href="s13-01-utility-maximization.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

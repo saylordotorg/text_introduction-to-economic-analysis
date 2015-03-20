@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Fishing and Extinction</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s08-05-coasian-bargaining.html"><img src="shared/images/batch-left.png"></a> <a href="s08-05-coasian-bargaining.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s09-01-free-riders.html">Next Section</a> <a href="s09-01-free-riders.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch07_s06" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">7.6</span> Fishing and Extinction</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch07_s06_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="mcafee-ch07_s06_l01">
+            <li>Is extinction really an economic phenomenon?</li>
+            <li>Why do we overfish?</li>
+        </ol>
+    </div>
+    <p class="para block" id="mcafee-ch07_s06_p01">Consider an unregulated fishing market like the lobster market considered previously, and let <em class="emphasis">S</em> be the stock of fish. The purpose of this example is illustrative of the logic, rather than an exact accounting of the biology of fish populations, but is not unreasonable. Let <em class="emphasis">S</em> be the stock of a particular species of fish. Our starting point is an environment without fishing: How does the fish population change over time? Denote the change over time in the fish population by <span class="inlineequation"><math xml:id="mcafee_ch07_s06_m001" display="inline">
+	<mover accent="true">
+	<mi>S</mi>
+	<mo>˙</mo>
+	</mover>
+	</math>
+</span> (<span class="inlineequation"><math xml:id="mcafee_ch07_s06_m002" display="inline">
+	<mover accent="true">
+	<mi>S</mi>
+	<mo>˙</mo>
+	</mover>
+	</math>
+</span> is notation for the derivative with respect to time, notation that dates back to Sir Isaac Newton). We assume that population growth follows the logistic equation <span class="inlineequation"><math xml:id="mcafee_ch07_s06_m003" display="inline">
+	<mrow>
+	<mover accent="true">
+	<mi>S</mi>
+	<mo>˙</mo>
+	</mover>
+	<mo>=</mo><mi>r</mi><mi>S</mi><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>S</mi><mo stretchy="false">)</mo><mo>.</mo>
+	</mrow>
+	</math>
+</span> This equation reflects two underlying assumptions. First, mating and reproduction are proportional to the stock of fish <em class="emphasis">S</em>. Second, survival is proportional to the amount of available resources 1 – <em class="emphasis">S</em>, where 1 is set to be the maximum sustainable population. (Set the units of the number of fish so that 1 is the full population.)</p>
+    <p class="para block" id="mcafee-ch07_s06_p02">The dynamics of the number of fish are illustrated in <a class="xref" href="#mcafee-ch07_s06_f01">Figure 7.5 "Fish population dynamics"</a>. On the horizontal axis is the number of fish, and on the vertical axis is the change in <em class="emphasis">S</em>. When <span class="inlineequation"><math xml:id="mcafee_ch07_s06_m004" display="inline">
+	<mover accent="true">
+	<mi>S</mi>
+	<mo>˙</mo>
+	</mover>
+	</math>
+</span>&gt; 0, <em class="emphasis">S</em> is increasing over time, and the arrows on the horizontal axis reflect this. Similarly, if <span class="inlineequation"><math xml:id="mcafee_ch07_s06_m005" display="inline">
+	<mover accent="true">
+	<mi>S</mi>
+	<mo>˙</mo>
+	</mover>
+	</math>
+</span>&lt; 0, <em class="emphasis">S</em> is decreasing.</p>
+    <p class="para block" id="mcafee-ch07_s06_p03">Absent fishing, the value 1 is a stable <span class="margin_term"><a class="glossterm">steady state</a><span class="glossdef">Condition in which the variables stay constant and forces are balanced.</span></span> of the fish population, in which the variables stay constant and forces are balanced. It is a steady state because, if <em class="emphasis">S</em> = 1, <span class="inlineequation"><math xml:id="mcafee_ch07_s06_m006" display="inline">
+	<mover accent="true">
+	<mi>S</mi>
+	<mo>˙</mo>
+	</mover>
+	</math>
+</span>= 0; that is, there is no change in the fish population. It is stable because the effect of a small perturbation—<em class="emphasis">S</em> near but not exactly equal to 1—is to return to 1. (In fact, the fish population is very nearly globally stable. Start with any population other than zero and the population returns to 1.)<span class="footnote" id="fwk-mcafee-fn07_003">It turns out that there is a closed form solution for the fish population: <span class="inlineequation"><math xml:id="mcafee_ch07_s06_m007" display="inline">
+	<mrow>
+	<mi>S</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+	<mrow>
+	<mi>S</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>S</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>S</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mi>r</mi><mi>t</mi>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></span></p>
+    <div class="figure medium editable block" id="mcafee-ch07_s06_f01">
+        <p class="title"><span class="title-prefix">Figure 7.5</span> Fish population dynamics</p>
+        <img src="section_08/f9eb81cc6d2c9dfc33f61dc0855a36d7.jpg">
+    </div>
+    <p class="para block" id="mcafee-ch07_s06_p04">Now we introduce a human population and turn to the economics of fishing. Suppose that a boat costs <em class="emphasis">b</em> to launch and operate and that it captures a fixed fraction <em class="emphasis">a</em> of the total stock of fish <em class="emphasis">S</em>; that is, each boat catches <em class="emphasis">aS</em>. Fish sell for a price <span class="inlineequation"><math xml:id="mcafee_ch07_s06_m008" display="inline">
+	<mrow>
+	<mi>p</mi><mo>=</mo><msup>
+	<mi>Q</mi>
+	<mrow>
+	<mfrac bevelled="true">
+	<mrow>
+	<mo>−</mo><mn>1</mn>
+	</mrow>
+	<mi>ε</mi>
+	</mfrac>
+	</mrow>
+	</msup><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> where the price arises from the demand curve, which in this case has constant elasticity <em class="emphasis">ε</em>, and <em class="emphasis">Q</em> is the quantity of fish offered for sale. Suppose there are <em class="emphasis">n</em> boats launched; then the quantity of fish caught is <em class="emphasis">Q</em> = <em class="emphasis">naS</em>. Fishers enter the market as long as profits are positive, which leads to zero profits for fishers; that is, <span class="inlineequation"><math xml:id="mcafee_ch07_s06_m009" display="inline">
+	<mrow>
+	<mi>b</mi><mo>=</mo><mrow><mo>(</mo>
+	<mrow>
+	<mfrac bevelled="true">
+	<mi>Q</mi>
+	<mi>n</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><mi>p</mi><mo stretchy="false">(</mo><mi>Q</mi><mo stretchy="false">)</mo><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> This equation makes a company just indifferent to launching an additional boat because the costs and revenues are balanced. These two equations yield two equations in the two unknowns <em class="emphasis">n</em> and <em class="emphasis">Q</em>:
+	<span class="inlineequation"><math xml:id="mcafee_ch07_s06_m010" display="inline">
+	<mrow>
+	<mi>n</mi><mo>=</mo><mfrac>
+	<mrow>
+	<mi>Q</mi><mi>p</mi><mo stretchy="false">(</mo><mi>Q</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mi>b</mi>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mi>b</mi>
+	</mfrac>
+	<msup>
+	<mi>Q</mi>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>ε</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	<mi>ε</mi>
+	</mfrac>
+	</mrow>
+	</msup><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> and <em class="emphasis">Q</em> = <em class="emphasis">naS</em>. These two equations solve for the number of fish caught,
+	<span class="inlineequation"><math xml:id="mcafee_ch07_s06_m011" display="inline">,
+	<mrow>
+	<mi>Q</mi><mo>=</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>a</mi><mi>S</mi>
+	</mrow>
+	<mi>b</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mi>ε</mi>
+	</msup>
+	</mrow>
+	</math>
+</span> and the number of boats, <span class="inlineequation"><math xml:id="mcafee_ch07_s06_m012" display="inline">
+	<mrow>
+	<mi>n</mi><mo>=</mo><mfrac>
+	<mrow>
+	<msup>
+	<mi>a</mi>
+	<mrow>
+	<mi>ε</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	<mrow>
+	<msup>
+	<mi>b</mi>
+	<mi>ε</mi>
+	</msup>
+	</mrow>
+	</mfrac>
+	<msup>
+	<mi>S</mi>
+	<mrow>
+	<mi>ε</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch07_s06_p05">Subtracting the capture by humans from the growth in the fish population yields</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch07_s06_m013" display="block">
+	<mrow>
+	<mover accent="true">
+	<mi>S</mi>
+	<mo>˙</mo>
+	</mover>
+	<mo>=</mo><mi>r</mi><mi>S</mi><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>S</mi><mo stretchy="false">)</mo><mo>−</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>a</mi><mi>S</mi>
+	</mrow>
+	<mi>b</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mi>ε</mi>
+	</msup>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para block" id="mcafee-ch07_s06_p06">Thus, a steady state satisfies <span class="inlineequation"><math xml:id="mcafee_ch07_s06_m014" display="inline">
+	<mrow>
+	<mn>0</mn><mo>=</mo><mover accent="true">
+	<mi>S</mi>
+	<mo>˙</mo>
+	</mover>
+	<mo>=</mo><mi>r</mi><mi>S</mi><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>S</mi><mo stretchy="false">)</mo><mo>−</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>a</mi><mi>S</mi>
+	</mrow>
+	<mi>b</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mi>ε</mi>
+	</msup>
+	<mo>.</mo>
+	</mrow>
+	</math>
+</span></p>
+    <div class="figure medium editable block" id="mcafee-ch07_s06_f02">
+        <p class="title"><span class="title-prefix">Figure 7.6</span> Fish population dynamics with fishing</p>
+        <img src="section_08/291801b3a72e9c850c1b6895b9ac927c.jpg">
+    </div>
+    <p class="para block" id="mcafee-ch07_s06_p07">Will human fishing drive the fish to extinction? Extinction must occur when the only stable solution to the stock of fish is zero. Consider first the case when demand is elastic (<em class="emphasis">ε</em> &gt; 1). Then, for <em class="emphasis">S</em> near zero but positive, <span class="inlineequation"><math xml:id="mcafee_ch07_s06_m015" display="inline">
+	<mrow>
+	<mover accent="true">
+	<mi>S</mi>
+	<mo>˙</mo>
+	</mover>
+	<mo>≈</mo><mi>r</mi><mi>S</mi><mo>&gt;</mo><mn>0</mn><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> because the other terms are small relative to the linear term. Thus, with elastic demand, there is always a steady state without extinction. (Extinction is also an equilibrium, too, but overfishing won’t get the system there.) This equilibrium is illustrated in <a class="xref" href="#mcafee-ch07_s06_f02">Figure 7.6 "Fish population dynamics with fishing"</a>.</p>
+    <p class="para block" id="mcafee-ch07_s06_p08">The dark curve represents <span class="inlineequation"><math xml:id="mcafee_ch07_s06_m016" display="inline">
+	<mover accent="true">
+	<mi>S</mi>
+	<mo>˙</mo>
+	</mover>
+	</math>
+</span>, and thus for <em class="emphasis">S</em> between 0 and the point labeled <em class="emphasis">S*</em>, <span class="inlineequation"><math xml:id="mcafee_ch07_s06_m017" display="inline">
+	<mover accent="true">
+	<mi>S</mi>
+	<mo>˙</mo>
+	</mover>
+	</math>
+</span> is positive and so <em class="emphasis">S</em> is increasing over time. Similarly, to the right of <em class="emphasis">S*</em>, <em class="emphasis">S</em> is decreasing. Thus, <em class="emphasis">S</em>* is stable under small perturbations in the stock of fish and is an equilibrium.</p>
+    <p class="para editable block" id="mcafee-ch07_s06_p09">We see that if demand for fish is elastic, fishing will not drive the fish to extinction. Even so, fishing will reduce the stock of fish below the efficient level because individual fishers don’t take account of the externality they impose—their fishing reduces the stock for future generations. The level of fish in the sea converges to <em class="emphasis">S*</em> satisfying</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch07_s06_m018" display="block">
+	<mrow>
+	<mn>0</mn><mo>=</mo><mi>r</mi><mi>S</mi><mo>*</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>S</mi><mo>*</mo><mo stretchy="false">)</mo><mo>−</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>a</mi><mi>S</mi><mo>*</mo>
+	</mrow>
+	<mi>b</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mi>ε</mi>
+	</msup>
+	<mo>.</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch07_s06_p10">In contrast, if demand is inelastic, fishing may drive the fish to extinction. For example, if <em class="emphasis">r</em> = 2 and <em class="emphasis">a = b = 1</em>, and <em class="emphasis">ε</em> = 0.7, extinction is necessary, as is illustrated in <a class="xref" href="#mcafee-ch07_s06_f03">Figure 7.7 "Fish population dynamics: extinction"</a>.</p>
+    <div class="figure medium editable block" id="mcafee-ch07_s06_f03">
+        <p class="title"><span class="title-prefix">Figure 7.7</span> Fish population dynamics: extinction</p>
+        <img src="section_08/d318ec0658b0d5ef6014c9884a2edd7b.jpg">
+    </div>
+    <p class="para block" id="mcafee-ch07_s06_p11"><a class="xref" href="#mcafee-ch07_s06_f03">Figure 7.7 "Fish population dynamics: extinction"</a> shows that, for the given parameters, the net growth of the fish population is negative for every value of the stock <em class="emphasis">S</em>. Thus, the population of fish consistently dwindles. This is a case when the fishing externality (overfishing today reduces the stock of fish tomorrow) has particularly dire consequences. The reason why the elasticity of demand matters is that, with inelastic demand, the fall in the stock of fish increases the price by a large amount (enough so that total revenue rises). This, in turn, increases the number of fishing boats, in spite of the fall in the catch. In contrast, with elastic demand, the number of fishing boats falls as the stock falls, reducing the proportion of fish caught, and thus preventing extinction. We see this for the equation for the number of fishing boats,
+	<span class="inlineequation"><math xml:id="mcafee_ch07_s06_m019" display="inline">
+	<mrow>
+	<mi>n</mi><mo>=</mo><mfrac>
+	<mrow>
+	<msup>
+	<mi>a</mi>
+	<mrow>
+	<mi>ε</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	<mrow>
+	<msup>
+	<mi>b</mi>
+	<mi>ε</mi>
+	</msup>
+	</mrow>
+	</mfrac>
+	<msup>
+	<mi>S</mi>
+	<mrow>
+	<mi>ε</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	</math>
+</span> , which reflects the fact that fishing effort rises as the stock falls if and only if demand is inelastic.</p>
+    <p class="para editable block" id="mcafee-ch07_s06_p12">It is possible, even with inelastic demand, for there to be a stable fish population. Not all parameter values lead to extinction. Using the same parameters as before, but with <em class="emphasis">ε</em> = 0.9, we obtain a stable outcome as illustrated in <a class="xref" href="#mcafee-ch07_s06_f04">Figure 7.8 "Possibility of multiple equilibria"</a>.</p>
+    <div class="figure medium editable block" id="mcafee-ch07_s06_f04">
+        <p class="title"><span class="title-prefix">Figure 7.8</span> Possibility of multiple equilibria</p>
+        <img src="section_08/77a7a32b4f8f7de9d898c898209c7fb0.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch07_s06_p13">In addition to the stable equilibrium outcome, there is an unstable steady state, which may converge either upward or downward. A feature of fishing with inelastic demand is that there exists a region where extinction is inevitable because, when the stock is near zero, the high demand price induced by inelasticity forces sufficient fishing to ensure extinction.</p>
+    <p class="para editable block" id="mcafee-ch07_s06_p14">As a consequence of the fishing externality, nations attempt to regulate fishing, both by extending their own reach 200 miles into the sea and by treaties limiting fishing in the open sea. These regulatory attempts have met with only modest success at preventing overfishing.</p>
+    <p class="para block" id="mcafee-ch07_s06_p15">What is the efficient stock of fish? This is a challenging mathematical problem, but some insight can be gleaned via a steady-state analysis. A steady state arises when <span class="inlineequation"><math xml:id="mcafee_ch07_s06_m020" display="inline">
+	<mrow>
+	<mover accent="true">
+	<mi>S</mi>
+	<mo>˙</mo>
+	</mover>
+	<mo>=</mo><mn>0</mn>
+	</mrow><mtext>.</mtext>
+	</math>
+</span> If a constant amount <em class="emphasis">Q</em> is removed, a steady state in the stock must occur at <span class="inlineequation"><math xml:id="mcafee_ch07_s06_m021" display="inline">
+	<mrow>
+	<mn>0</mn><mo>=</mo><mover accent="true">
+	<mi>S</mi>
+	<mo>˙</mo>
+	</mover>
+	<mo>=</mo><mi>r</mi><mi>S</mi><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>S</mi><mo stretchy="false">)</mo><mo>−</mo><mi>Q</mi>
+	</mrow><mtext>.</mtext>
+	</math>
+</span> This maximum catch then occurs at <em class="emphasis">S</em> = ½ and <em class="emphasis">Q</em> = ¼ <em class="emphasis">r</em>. This is not the efficient level, for it neglects the cost of boats, and the efficient stock will actually be larger. More generally, it is never efficient to send the population below the maximum point on the survival curve plotted in <a class="xref" href="#mcafee-ch07_s06_f01">Figure 7.5 "Fish population dynamics"</a>.</p>
+    <p class="para editable block" id="mcafee-ch07_s06_p16">Conceptually, fishing is an example of the tragedy of the commons externality already discussed. However, the threat of a permanent extinction and alluring possibility of solving dynamic models make it a particularly dramatic example.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch07_s06_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch07_s06_l02">
+            <li>Extinction arises from the interaction of two systems: one biological and one economic.</li>
+            <li>When demand is elastic, extinction should not arise.</li>
+            <li>When demand is inelastic, population decreases reduce the quantity, which increase total revenue, which leads to more investment in fishing. When demand is sufficiently inelastic, the heightened investment leads to proportionally more fish caught and the fish go extinct.</li>
+            <li>Fishing is an example of the tragedy of the commons externality.</li>
+        </ul>
+    </div>
+    <div class="exercises editable block" id="mcafee-ch07_s06_n03">
+        <h3 class="title">Exercise</h3>
+        <ol class="orderedlist" id="mcafee-ch07_s06_l03">
+            <li>Suppose <em class="emphasis">ε</em> = 1. For what parameter values are fish necessarily driven to extinction? Can you interpret this condition to say that the demand for caught fish exceeds the production via reproduction?</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s08-05-coasian-bargaining.html"><img src="shared/images/batch-left.png"></a> <a href="s08-05-coasian-bargaining.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s09-01-free-riders.html">Next Section</a> <a href="s09-01-free-riders.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

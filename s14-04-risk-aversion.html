@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Risk Aversion</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s14-03-dynamic-choice.html"><img src="shared/images/batch-left.png"></a> <a href="s14-03-dynamic-choice.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s14-05-search.html">Next Section</a> <a href="s14-05-search.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch13_s04" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">13.4</span> Risk Aversion</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch13_s04_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="mcafee-ch13_s04_l01">
+            <li>How should you evaluate gambles?</li>
+            <li>How is risk priced?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch13_s04_p01">There are many risks in life, even if one doesn’t add to these risks by intentionally buying lottery tickets. Gasoline prices go up and down, the demand for people trained in your major fluctuates, and house prices change. How do people value gambles? The starting point for the investigation is the von Neumann-Morgenstern<span class="footnote" id="fwk-mcafee-fn13_005">John von Neumann (1903–1957) and Oskar Morgenstern (1902–1977) are the authors of <em class="emphasis">Theory of Games and Economic Behavior</em> (Princeton, NJ: Princeton University Press, 1944).</span> utility function. The idea of a <span class="margin_term"><a class="glossterm">von Neumann-Morgenstern utility function</a><span class="glossdef">The value of each outcome, constructed in such a way that a consumer values gambles as if they were the expected utility.</span></span> for a given person is that, for each possible outcome <em class="emphasis">x</em>, there is a value <em class="emphasis">v</em>(<em class="emphasis">x</em>) assigned by the person, and the average value of <em class="emphasis">v</em> is the value the person assigns to the risky outcome. In other words, the von Neumann-Morgenstern utility function is constructed in such a way that a consumer values gambles as if they were the expected utility</p>
+    <p class="para editable block" id="mcafee-ch13_s04_p02">This is a “state-of-the-world” approach, in the sense that each of the outcomes is associated with a state of the world, and the person maximizes the expected value of the various possible states of the world. Value here doesn’t mean a money value, but a psychic value or utility.</p>
+    <p class="para editable block" id="mcafee-ch13_s04_p03">To illustrate the assumption, consider equal probabilities of winning $100 and winning $200. The expected outcome of this gamble is $150—the average of $100 and $200. However, the actual value of the outcome could be anything between the value of $100 and the value of $200. The von Neumann-Morgenstern utility is ½<em class="emphasis">v</em>($100) + ½<em class="emphasis">v</em>($200).</p>
+    <p class="para editable block" id="mcafee-ch13_s04_p04">The von Neumann-Morgenstern formulation has certain advantages, including the logic that what matters is the average value of the outcome. On the other hand, in many tests, people behave in ways not consistent with the theory.<span class="footnote" id="fwk-mcafee-fn13_006">For example, people tend to react more strongly to very unlikely events than is consistent with the theory.</span> Nevertheless, the von Neumann approach is the prevailing model of behavior under risk.</p>
+    <p class="para editable block" id="mcafee-ch13_s04_p05">To introduce the theory, we will consider only money outcomes, and mostly the case of two money outcomes. The person has a von Neumann-Morgenstern utility function <em class="emphasis">v</em> of these outcomes. If the possible outcomes are <em class="emphasis">x</em><sub class="subscript">1</sub>, <em class="emphasis">x</em><sub class="subscript">2</sub>, … , <em class="emphasis">xn</em> and these occur with probability <em class="emphasis">π</em><sub class="subscript">1</sub>, <em class="emphasis">π</em><sub class="subscript">2</sub>, … , <em class="emphasis">πn</em> respectively, the consumer’s utility is</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s04_m001" display="block">
+	<mrow>
+	<mi>u</mi><mo>=</mo><msub>
+	<mi>π</mi>
+	<mn>1</mn>
+	</msub>
+	<mi>v</mi><mo stretchy="false">(</mo><msub>
+	<mi>x</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo>+</mo><msub>
+	<mi>π</mi>
+	<mn>2</mn>
+	</msub>
+	<mi>v</mi><mo stretchy="false">(</mo><msub>
+	<mi>x</mi>
+	<mn>2</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo>+</mo><mn>…</mn><mo>+</mo><msub>
+	<mi>π</mi>
+	<mi>n</mi>
+	</msub>
+	<mi>v</mi><mo stretchy="false">(</mo><msub>
+	<mi>x</mi>
+	<mi>n</mi>
+	</msub>
+	<mo stretchy="false">)</mo><mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>i</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>π</mi>
+	<mi>i</mi>
+	</msub>
+	<mi>v</mi><mo stretchy="false">(</mo><msub>
+	<mi>x</mi>
+	<mi>i</mi>
+	</msub>
+	<mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch13_s04_p06">This is the meaning of “having a von Neumann-Morgenstern utility function”—that utility can be written in this weighted sum form.</p>
+    <p class="para block" id="mcafee-ch13_s04_p07">The first insight that flows from this definition is that an individual dislikes risk if <em class="emphasis">v</em> is concave. To see this, note that the definition of concavity posits that <em class="emphasis">v</em> is concave if, for all <em class="emphasis">π</em> in [0, 1] and all values <em class="emphasis">x</em><sub class="subscript">1</sub> and <em class="emphasis">x</em><sub class="subscript">2</sub>,
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s04_m002" display="inline">
+	<mrow>
+	<mi>v</mi><mo stretchy="false">(</mo><mi>π</mi><msub>
+	<mi>x</mi>
+	<mn>1</mn>
+	</msub>
+	<mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>π</mi><mo stretchy="false">)</mo><msub>
+	<mi>x</mi>
+	<mn>2</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo>≥</mo><mi>π</mi><mi>v</mi><mo stretchy="false">(</mo><msub>
+	<mi>x</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>π</mi><mo stretchy="false">)</mo><mi>v</mi><mo stretchy="false">(</mo><msub>
+	<mi>x</mi>
+	<mn>2</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch13_s04_p08">For smoothly differentiable functions, concavity is equivalent to a second derivative that is not positive. Using induction, the definition of concavity can be generalized to show
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s04_m003" display="inline">
+	<mrow>
+	<mi>v</mi><mo stretchy="false">(</mo><msub>
+	<mi>π</mi>
+	<mn>1</mn>
+	</msub>
+	<msub>
+	<mi>x</mi>
+	<mn>1</mn>
+	</msub>
+	<mo>+</mo><msub>
+	<mi>π</mi>
+	<mn>2</mn>
+	</msub>
+	<msub>
+	<mi>x</mi>
+	<mn>2</mn>
+	</msub>
+	<mo>+</mo><mn>…</mn><mo>+</mo><msub>
+	<mi>π</mi>
+	<mi>n</mi>
+	</msub>
+	<msub>
+	<mi>x</mi>
+	<mi>n</mi>
+	</msub>
+	<mo stretchy="false">)</mo><mo>≥</mo><msub>
+	<mi>π</mi>
+	<mn>1</mn>
+	</msub>
+	<mi>v</mi><mo stretchy="false">(</mo><msub>
+	<mi>x</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo>+</mo><msub>
+	<mi>π</mi>
+	<mn>2</mn>
+	</msub>
+	<mi>v</mi><mo stretchy="false">(</mo><msub>
+	<mi>x</mi>
+	<mn>2</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo>+</mo><mn>…</mn><mo>+</mo><msub>
+	<mi>π</mi>
+	<mi>n</mi>
+	</msub>
+	<mi>v</mi><mo stretchy="false">(</mo><msub>
+	<mi>x</mi>
+	<mi>n</mi>
+	</msub>
+	<mo stretchy="false">)</mo><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <div class="figure medium editable block" id="mcafee-ch13_s04_f01">
+        <p class="title"><span class="title-prefix">Figure 13.8</span> Expected utility and certainty equivalents</p>
+        <img src="section_14/6f0b4de6b8428c0b30c9e8aaa9e0b37e.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch13_s04_p09">That is, a consumer with concave value function prefers the average outcome to the random outcome. This is illustrated in <a class="xref" href="#mcafee-ch13_s04_f01">Figure 13.8 "Expected utility and certainty equivalents"</a>. There are two possible outcomes: <em class="emphasis">x</em><sub class="subscript">1</sub> and <em class="emphasis">x</em><sub class="subscript">2</sub>. The value <em class="emphasis">x</em><sub class="subscript">1</sub> occurs with probability <em class="emphasis">π</em>, and <em class="emphasis">x</em><sub class="subscript">2</sub> with probability 1 – <em class="emphasis">π</em>. This means that the average or expected outcome is <em class="emphasis">πx</em><sub class="subscript">1</sub> + (1 – <em class="emphasis">π</em>)<em class="emphasis">x</em><sub class="subscript">2</sub>. The value <em class="emphasis">v</em>(π<em class="emphasis">x</em><sub class="subscript">1</sub> + (1 – <em class="emphasis">π</em>)<em class="emphasis">x</em><sub class="subscript">2</sub>) is the value at the expected outcome <em class="emphasis">πx</em>1 + (1 – <em class="emphasis">π</em>)<em class="emphasis">x</em>2, while <em class="emphasis">πv</em>(<em class="emphasis">x</em>1) + (1 – <em class="emphasis">π</em>)<em class="emphasis">v</em>(<em class="emphasis">x</em>2) is the average of the value of the outcome. As is plainly visible in the figure, concavity makes the average outcome preferable to the random outcome. People with concave von Neumann-Morgenstern utility functions are known as <span class="margin_term"><a class="glossterm">risk-averse</a><span class="glossdef">Preferring the expected value of a gamble to the gamble.</span></span> people—they prefer the expected value of a gamble to the gamble itself.</p>
+    <p class="para editable block" id="mcafee-ch13_s04_p10">A useful concept is the certainty equivalent of a gamble. The <span class="margin_term"><a class="glossterm">certainty equivalent</a><span class="glossdef">The amount of money that provides equal utility to the random payoff of the gamble.</span></span> is an amount of money that provides equal utility to the random payoff of the gamble. The certainty equivalent is labeled <em class="emphasis">CE</em> in the figure. Note that <em class="emphasis">CE</em> is less than the expected outcome, if the person is risk averse. This is because risk-averse individuals prefer the expected outcome to the risky outcome.</p>
+    <p class="para block" id="mcafee-ch13_s04_p11">The <span class="margin_term"><a class="glossterm">risk premium</a><span class="glossdef">The difference between the expected payoff and the certainty equivalent.</span></span> is defined to be the difference between the expected payoff (this is expressed as <em class="emphasis">πx</em>1 + (1 – <em class="emphasis">π</em>)<em class="emphasis">x</em>2 in the figure) and the certainty equivalent. This is the cost of risk—it is the amount of money an individual would be willing to pay to avoid risk. This means as well that the risk premium is the value of insurance. How does the risk premium of a given gamble change when the base wealth is increased? It can be shown that the risk premium falls as wealth increases for any gamble, if and only if
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s04_m004" display="inline">
+	<mrow>
+	<mo>−</mo><mfrac>
+	<mrow>
+	<msup>
+	<mi>v</mi>
+	<mo>″</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<msup>
+	<mi>v</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</math>
+</span> is decreasing.</p>
+    <p class="para block" id="mcafee-ch13_s04_p12">The measure <span class="inlineequation"><math xml:id="mcafee_ch13_s04_m005" display="inline">
+	<mrow>
+	<mi>ρ</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mfrac>
+	<mrow>
+	<msup>
+	<mi>v</mi>
+	<mo>″</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<msup>
+	<mi>v</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</math>
+</span> is known as the <span class="margin_term"><a class="glossterm">Arrow-Pratt measure of risk aversion</a><span class="glossdef">A measure of risk aversion computed as the negative of the ratio of the second derivative of utility divided by the first derivative of utility.</span></span><span class="footnote" id="fwk-mcafee-fn13_007">The measure was named after its discoverers, Nobel laureate Kenneth Arrow and John Pratt.</span>, and also as the measure of absolute risk aversion. It is a measure of risk aversion computed as the negative of the ratio of the second derivative of utility divided by the first derivative of utility. To get an idea about why this measure matters, consider a quadratic approximation to <em class="emphasis">v</em>. Let <em class="emphasis">μ</em> be the expected value, and let <em class="emphasis">δ</em><sup class="superscript">2</sup> be the expected value of (<em class="emphasis">x</em> – <em class="emphasis">μ</em>)<sup class="superscript">2</sup>. Then we can approximate <em class="emphasis">v</em>(<em class="emphasis">CE</em>) two different ways.</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s04_m006" display="block">
+	<mrow>
+	<mi>v</mi><mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><mo>+</mo><msup>
+	<mi>v</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>C</mi><mi>E</mi><mo>−</mo><mi>μ</mi><mo stretchy="false">)</mo><mo>≈</mo><mi>v</mi><mo stretchy="false">(</mo><mi>C</mi><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mi>E</mi><mo>{</mo><mi>v</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>}</mo><mo>≈</mo><mi>E</mi><mo>{</mo><mi>v</mi><mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><mo>+</mo><msup>
+	<mi>v</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>μ</mi><mo stretchy="false">)</mo><mo>+</mo><mtext>½</mtext><msup>
+	<mi>v</mi>
+	<mo>″</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>μ</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	<mo>}</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch13_s04_p13">Thus,</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s04_m007" display="block">
+	<mrow>
+	<mi>v</mi><mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><mo>+</mo><msup>
+	<mi>v</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>C</mi><mi>E</mi><mo>−</mo><mi>μ</mi><mo stretchy="false">)</mo><mo>≈</mo><mi>E</mi><mo>{</mo><mi>v</mi><mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><mo>+</mo><msup>
+	<mi>v</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>μ</mi><mo stretchy="false">)</mo><mo>+</mo><mtext>½</mtext><msup>
+	<mi>v</mi>
+	<mo>″</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>μ</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	<mo>}</mo>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para block" id="mcafee-ch13_s04_p14">Canceling <em class="emphasis">v</em>(<em class="emphasis">μ</em>) from both sides and noting that the average value of <em class="emphasis">x</em> is <em class="emphasis">μ</em>, so <em class="emphasis">E</em>(<em class="emphasis">x</em> – <em class="emphasis">μ</em>) = 0, we have
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s04_m008" display="inline">
+	<mrow>
+	<msup>
+	<mi>v</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>C</mi><mi>E</mi><mo>−</mo><mi>μ</mi><mo stretchy="false">)</mo><mo>≈</mo><mtext>½</mtext><msup>
+	<mi>v</mi>
+	<mo>″</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><msup>
+	<mi>σ</mi>
+	<mn>2</mn>
+	</msup><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch13_s04_p15">Then, dividing by <span class="inlineequation"><math xml:id="mcafee_ch13_s04_m009" display="inline">
+	<mrow>
+	<msup>
+	<mi>v</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mtext>,</mtext>
+	</mrow>
+	</math>
+</span>
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s04_m010" display="inline">
+	<mrow>
+	<mi>μ</mi><mo>−</mo><mi>C</mi><mi>E</mi><mo>≈</mo><mstyle scriptlevel="+1">
+	<mfrac bevelled="true">
+	<mn>1</mn>
+	<mn>2</mn>
+	</mfrac>
+	</mstyle>
+	<mfrac>
+	<mrow>
+	<mi>v</mi><mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>v</mi><mo>'</mo><mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<msup>
+	<mi>σ</mi>
+	<mn>2</mn>
+	</msup>
+	<mo>=</mo><mstyle scriptlevel="+1">
+	<mfrac bevelled="true">
+	<mn>1</mn>
+	<mn>2</mn>
+	</mfrac>
+	</mstyle>
+	<mi>ρ</mi><mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><msup>
+	<mi>σ</mi>
+	<mn>2</mn>
+	</msup><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch13_s04_p16">That is, the risk premium—the difference between the average outcome and the certainty equivalent—is approximately equal to the Arrow-Pratt measure times half the variance, at least when the variance is small.</p>
+    <p class="para block" id="mcafee-ch13_s04_p17">The translation of risk into dollars, by way of a risk premium, can be assessed even for large gambles if we are willing to make some technical assumptions. If a utility has <span class="margin_term"><a class="glossterm">constant absolute risk aversion (CARA)</a><span class="glossdef">Situation in which the measure of risk aversion doesn’t change with wealth.</span></span>, the measure of risk aversion doesn’t change with wealth; that is <span class="inlineequation"><math xml:id="mcafee_ch13_s04_m011" display="inline">
+	<mrow>
+	<mi>ρ</mi><mo>=</mo><mo>−</mo><mfrac>
+	<mrow>
+	<msup>
+	<mi>v</mi>
+	<mo>″</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<msup>
+	<mi>v</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</math>
+</span> is a constant. This turns out to imply, after setting the utility of zero to zero, that
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s04_m012" display="inline">
+	<mrow>
+	<mi>v</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mi>ρ</mi>
+	</mfrac>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mi>ρ</mi><mi>x</mi>
+	</mrow>
+	</msup>
+	<mo stretchy="false">)</mo><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> (This formulation is derived by setting <em class="emphasis">v</em>(0) = 0, handling the case of <em class="emphasis">ρ</em> = 0 with appropriate limits.) Now also assume that the gamble <em class="emphasis">x</em> is normally distributed with mean <em class="emphasis">μ</em> and variance <em class="emphasis">δ</em><sup class="superscript">2</sup>. Then the expected value of <em class="emphasis">v</em>(<em class="emphasis">x</em>) is
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s04_m013" display="inline">
+	<mrow>
+	<mi>E</mi><mi>v</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mi>ρ</mi>
+	</mfrac>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>−</mo><msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mi>ρ</mi><mrow><mo>(</mo>
+	<mrow>
+	<mi>μ</mi><mo>−</mo><mfrac>
+	 <mi>ρ</mi>
+	 <mn>2</mn>
+	</mfrac>
+	<msup>
+	 <mi>σ</mi>
+	 <mn>2</mn>
+	</msup>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	</msup>
+	</mrow>
+	<mo>)</mo></mrow><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch13_s04_p19">It is an immediate result from this formula that the certainty equivalent, with CARA preferences and normal risks, is <span class="inlineequation"><math xml:id="mcafee_ch13_s04_m014" display="inline">
+	<mrow>
+	<mi>μ</mi><mo>−</mo><mfrac>
+	<mi>ρ</mi>
+	<mn>2</mn>
+	</mfrac>
+	<msup>
+	<mi>σ</mi>
+	<mn>2</mn>
+	</msup><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> Hence, the risk premium of a normal distribution for a CARA individual is <span class="inlineequation"><math xml:id="mcafee_ch13_s04_m015" display="inline">
+	<mrow>
+	<mfrac>
+	<mi>ρ</mi>
+	<mn>2</mn>
+	</mfrac>
+	<msup>
+	<mi>σ</mi>
+	<mn>2</mn>
+	</msup><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> This formulation will appear when we consider agency theory and the challenges of motivating a risk averse employee when outcomes have a substantial random component.</p>
+    <p class="para block" id="mcafee-ch13_s04_p20">An important aspect of CARA with normally distributed risks is that the preferences of the consumer are linear in the mean of the gamble and the variance. In fact, given a choice of gambles, the consumer selects the one with the highest value of <span class="inlineequation"><math xml:id="mcafee_ch13_s04_m016" display="inline">
+	<mrow>
+	<mi>μ</mi><mo>−</mo><mfrac>
+	<mi>ρ</mi>
+	<mn>2</mn>
+	</mfrac>
+	<msup>
+	<mi>σ</mi>
+	<mn>2</mn>
+	</msup><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> Such preferences are often called <span class="margin_term"><a class="glossterm">mean variance preferences</a><span class="glossdef">Preference that describe people who value risk linearly with the expected return.</span></span>, and they describe people who value risk linearly with the expected return. Such preferences comprise the foundation of modern finance theory.</p>
+    <div class="key_takeaways block" id="mcafee-ch13_s04_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch13_s04_l02">
+            <li>The von Neumann-Morgenstern utility function for a given person is a value <em class="emphasis">v</em>(<em class="emphasis">x</em>) for each possible outcome <em class="emphasis">x</em>, and the average value of <em class="emphasis">v</em> is the value the person assigns to the risky outcome. Under this theory, people value risk at the expected utility of the risk.</li>
+            <li>The von Neumann approach is the prevailing model of behavior under risk, although there are numerous experiment-based criticisms of the theory.</li>
+            <li>An individual dislikes risk if <em class="emphasis">v</em> is concave.</li>
+            <li>For smoothly differentiable functions, concavity is equivalent to a second derivative that is not positive.</li>
+            <li>People with concave von Neumann-Morgenstern utility functions are known as risk-averse people.</li>
+            <li>The certainty equivalent of a gamble is an amount of money that provides equal utility to the random payoff of the gamble. The certainty equivalent is less than the expected outcome if the person is risk averse.</li>
+            <li>The risk premium is defined to be the difference between the expected payoff and the certainty equivalent.</li>
+            <li>The risk premium falls as wealth increases for any gamble, if and only if <span class="inlineequation"><math xml:id="mcafee_ch13_s04_m017" display="inline">
+		<mrow>
+		<mo>−</mo><mfrac>
+		<mrow>
+		<msup>
+		<mi>v</mi>
+		<mo>″</mo>
+		</msup>
+		<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+		</mrow>
+		<mrow>
+		<msup>
+		<mi>v</mi>
+		<mo>′</mo>
+		</msup>
+		<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+		</mrow>
+		</mfrac>
+		</mrow>
+		</math>
+</span> is decreasing.</li>
+            <li>The measure <span class="inlineequation"><math xml:id="mcafee_ch13_s04_m018" display="inline">
+		<mrow>
+		<mi>ρ</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mfrac>
+		<mrow>
+		<msup>
+		<mi>v</mi>
+		<mo>″</mo>
+		</msup>
+		<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+		</mrow>
+		<mrow>
+		<msup>
+		<mi>v</mi>
+		<mo>′</mo>
+		</msup>
+		<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+		</mrow>
+		</mfrac>
+		</mrow>
+		</math>
+</span> is known as the Arrow-Pratt measure of risk aversion, and also as the measure of absolute risk aversion.</li>
+            <li>The risk premium is approximately equal to the Arrow-Pratt measure times half the variance when the variance is small.</li>
+            <li>Constant absolute risk aversion provides a basis for “mean variance preferences,” the foundation of modern finance theory.</li>
+        </ul>
+    </div>
+    <div class="exercises block" id="mcafee-ch13_s04_n03">
+        <h3 class="title">Exercises</h3>
+        <ol class="orderedlist" id="mcafee-ch13_s04_l03">
+            <li>Use a quadratic approximation on both sides of the equation to sharpen the estimate of the risk premium. First, note that
+		<span class="inlineequation"><math xml:id="mcafee_ch13_s04_m019" display="inline">
+		<mrow>
+		<mi>v</mi><mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><mo>+</mo><msup>
+		<mi>v</mi>
+		<mo>′</mo>
+		</msup>
+		<mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>C</mi><mi>E</mi><mo>−</mo><mi>μ</mi><mo stretchy="false">)</mo><mo>+</mo><mtext>½</mtext><msup>
+		<mi>v</mi>
+		<mo>″</mo>
+		</msup>
+		<mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><msup>
+		<mrow>
+		<mo stretchy="false">(</mo><mi>C</mi><mi>E</mi><mo>−</mo><mi>μ</mi><mo stretchy="false">)</mo>
+		</mrow>
+		<mn>2</mn>
+		</msup>
+		<mo>≈</mo><mi>v</mi><mo stretchy="false">(</mo><mi>C</mi><mi>E</mi><mo stretchy="false">)</mo>
+		</mrow>
+		</math>
+</span> <span class="inlineequation"><math xml:id="mcafee_ch13_s04_m020" display="inline">
+		<mrow>
+		<mo>=</mo><mi>E</mi><mo>{</mo><mi>v</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>}</mo><mo>≈</mo><mi>E</mi><mo>{</mo><mi>v</mi><mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><mo>+</mo><msup>
+		<mi>v</mi>
+		<mo>′</mo>
+		</msup>
+		<mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>μ</mi><mo stretchy="false">)</mo><mo>+</mo><mtext>½</mtext><msup>
+		<mi>v</mi>
+		<mo>″</mo>
+		</msup>
+		<mo stretchy="false">(</mo><mi>μ</mi><mo stretchy="false">)</mo><msup>
+		<mrow>
+		<mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>μ</mi><mo stretchy="false">)</mo>
+		</mrow>
+		<mn>2</mn>
+		</msup>
+		<mo>}</mo><mtext>.</mtext>
+		</mrow>
+		</math>
+</span>
+</li>
+            <li>Conclude that <span class="inlineequation"><math xml:id="mcafee_ch13_s04_m021" display="inline">
+		<mrow>
+		<mi>μ</mi><mo>−</mo><mi>C</mi><mi>E</mi><mo>≈</mo><mfrac>
+		<mn>1</mn>
+		<mi>ρ</mi>
+		</mfrac>
+		<mrow><mo>(</mo>
+		<mrow>
+		<msqrt>
+		<mrow>
+		<mn>1</mn><mo>+</mo><msup>
+		<mi>ρ</mi>
+		<mn>2</mn>
+		</msup>
+		<msup>
+		<mi>σ</mi>
+		<mn>2</mn>
+		</msup>
+		</mrow>
+		</msqrt>
+		<mo>−</mo><mn>1</mn>
+		</mrow>
+		<mo>)</mo></mrow><mtext>.</mtext>
+		</mrow>
+		</math>
+</span> This approximation is exact to the second order.</li>
+            <li>Suppose that <em class="emphasis">u</em>(<em class="emphasis">x</em>) = <em class="emphasis">x</em><sup class="superscript">0.95</sup> for a consumer with a wealth level of $50,000. Consider a gamble, with equal probability of winning $100 and losing $100, and compute the risk premium associated with the gamble.</li>
+            <li>Suppose that <em class="emphasis">u</em>(<em class="emphasis">x</em>) = <em class="emphasis">x</em><sup class="superscript">0.99</sup> for a consumer with a wealth level of $100,000. A lottery ticket costs $1 and pays $5,000,000 with the probability <span class="inlineequation"><math xml:id="mcafee_ch13_s04_m022" display="inline">
+		<mrow>
+		<mfrac>
+		<mn>1</mn>
+		<mrow>
+		<mn>10</mn><mo>,</mo><mn>000</mn><mo>,</mo><mn>000</mn>
+		</mrow>
+		</mfrac><mtext>.</mtext>
+		</mrow>
+		</math>
+</span> Compute the certainty equivalent of the lottery ticket.</li>
+            <li>The return on U.S. government treasury investments is approximately 3%. Thus, a $1 investment returns $1.03 after one year. Treat this return as risk-free. The stock market (S&amp;P 500) returns 7% on average and has a variance that is around 16% (the variance of return on a $1 investment is $0.16). Compute the value of <em class="emphasis">ρ</em> for a CARA individual. What is the risk premium associated with equal probabilities of a $100 gain or loss given the value of <em class="emphasis">ρ</em>?</li>
+            <li>
+                <p class="para">A consumer has utility <em class="emphasis">u</em>(<em class="emphasis">x</em>) = <em class="emphasis">x</em><sup class="superscript">7/8</sup> and a base wealth of $100,000. She is about to take part in a gamble that will give her $10,000 (bringing her to $110,000) if a fair die rolls less than 3 (probability 1/3), but will cost her $5,000 (leaving her with $95,000) otherwise.</p>
+                <ol class="orderedlist" id="mcafee-ch13_s04_l04" numeration="loweralpha">
+                    <li>What is the certainty equivalent of participating in this gamble?</li>
+                    <li>How much would she be willing to pay in order to avoid this gamble?</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s14-03-dynamic-choice.html"><img src="shared/images/batch-left.png"></a> <a href="s14-03-dynamic-choice.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s14-05-search.html">Next Section</a> <a href="s14-05-search.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

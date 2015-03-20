@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>General Equilibrium</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s15-02-equilibrium-with-price-system.html"><img src="shared/images/batch-left.png"></a> <a href="s15-02-equilibrium-with-price-system.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s16-01-sources-of-monopoly.html">Next Section</a> <a href="s16-01-sources-of-monopoly.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch14_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">14.3</span> General Equilibrium</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch14_s03_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="mcafee-ch14_s03_l01">
+            <li>What happens in a general equilibrium when there are more than two people buying more than two goods?</li>
+            <li>Does the Cobb-Douglas case provide insight?</li>
+        </ol>
+    </div>
+    <p class="para block" id="mcafee-ch14_s03_p01">We will illustrate general equilibrium for the case when all consumers have Cobb-Douglas utility in an <span class="margin_term"><a class="glossterm">exchange economy</a><span class="glossdef">An economy where the supply of each good is just the total endowment of that good, and there is no production.</span></span>. An exchange economy is an economy where the supply of each good is just the total endowment of that good, and there is no production. Suppose that there are <em class="emphasis">N</em> people, indexed by <em class="emphasis">n</em> = 1, 2, … , <em class="emphasis">N</em>. There are <em class="emphasis">G</em> goods, indexed by <em class="emphasis">g</em> = 1, 2, … , <em class="emphasis">G</em>. Person <em class="emphasis">n</em> has Cobb-Douglas utility, which we can represent using exponents <em class="emphasis">α</em>(<em class="emphasis">n, g</em>), so that the utility of person <em class="emphasis">n</em> can be represented as <span class="inlineequation"><math xml:id="mcafee_ch14_s03_m001" display="inline">
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∏</mo>
+	<mrow>
+	<mi>g</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>G</mi>
+	</munderover>
+	<mrow>
+	<mi>x</mi><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</msup>
+	</mrow>
+	</mstyle><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> where <em class="emphasis">x</em>(<em class="emphasis">n, g</em>) is person <em class="emphasis">n</em>’s consumption of good <em class="emphasis">g</em>. Assume that <em class="emphasis">α</em>(<em class="emphasis">n, g</em>) ≥ 0 for all <em class="emphasis">n</em> and <em class="emphasis">g</em>, which amounts to assuming that the products are, in fact, goods. Without any loss of generality, we can require
+	<span class="inlineequation"><math xml:id="mcafee_ch14_s03_m002" display="inline">
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>g</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>G</mi>
+	</munderover>
+	<mrow>
+	<mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle><mo>=</mo><mn>1</mn>
+	</mrow>
+	</math>
+</span> for each <em class="emphasis">n</em>. (To see this, note that maximizing the function <em class="emphasis">U</em> is equivalent to maximizing the function <em class="emphasis">U<sup class="superscript">β</sup></em> for any positive <em class="emphasis">β</em>.)</p>
+    <p class="para block" id="mcafee-ch14_s03_p02">Let <em class="emphasis">y</em>(<em class="emphasis">n, g</em>) be person <em class="emphasis">n</em>’s endowment of good <em class="emphasis">g</em>. The goal of general equilibrium is to find prices <em class="emphasis">p</em><sub class="subscript">1</sub>, <em class="emphasis">p</em><sub class="subscript">2</sub>, … , <em class="emphasis">p<sub class="subscript">G</sub></em> for the goods in such a way that demand for each good exactly equals supply of the good. The supply of good <em class="emphasis">g</em> is just the sum of the endowments of that good. The prices yield a wealth for person <em class="emphasis">n</em> equal to
+	<span class="inlineequation"><math xml:id="mcafee_ch14_s03_m003" display="inline">
+	<mrow>
+	<msub>
+	<mi>W</mi>
+	<mi>n</mi>
+	</msub>
+	<mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>g</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>G</mi>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>g</mi>
+	</msub>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch14_s03_p03">We will assume that <span class="inlineequation"><math xml:id="mcafee_ch14_s03_m004" display="inline">
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo><mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>i</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle><mo>&gt;</mo><mn>0</mn>
+	</mrow>
+	</math>
+</span> for every pair of goods <em class="emphasis">g</em> and <em class="emphasis">i</em>. This assumption states that for any pair of goods, there is at least one agent that values good <em class="emphasis">g</em> and has an endowment of good <em class="emphasis">i</em>. The assumption ensures that there is always someone who is willing and able to trade if the price is sufficiently attractive. The assumption is much stronger than necessary but useful for exposition. The assumption also ensures that the endowment of each good is positive.</p>
+    <p class="para block" id="mcafee-ch14_s03_p04">The Cobb-Douglas utility simplifies the analysis because of a feature that we already encountered in the case of two goods, which holds, in general, that the share of wealth for a consumer <em class="emphasis">n</em> on good <em class="emphasis">g</em> equals the exponent <em class="emphasis">α</em>(<em class="emphasis">n, g</em>). Thus, the total demand for good <em class="emphasis">g</em> is
+	<span class="inlineequation"><math xml:id="mcafee_ch14_s03_m005" display="inline">
+	<mrow>
+	<msub>
+	<mi>X</mi>
+	<mi>g</mi>
+	</msub>
+	<mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo><msub>
+	<mi>W</mi>
+	<mi>n</mi>
+	</msub>
+	</mrow>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>g</mi>
+	</msub>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</mstyle>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch14_s03_p05">The equilibrium conditions, then, can be expressed by saying that supply (sum of the endowments) equals demand; or, for each good <em class="emphasis">g</em>,
+	<span class="inlineequation"><math xml:id="mcafee_ch14_s03_m006" display="inline">
+	<mrow>
+	<msub>
+	<mi>X</mi>
+	<mi>g</mi>
+	</msub>
+	<mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo><msub>
+	<mi>W</mi>
+	<mi>n</mi>
+	</msub>
+	</mrow>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>g</mi>
+	</msub>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</mstyle><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch14_s03_p06">We can rewrite this expression, provided that <em class="emphasis">p<sub class="subscript">g</sub></em> &gt; 0 (and it must be, for otherwise demand is infinite), to be
+	<span class="inlineequation"><math xml:id="mcafee_ch14_s03_m007" display="inline">
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>g</mi>
+	</msub>
+	<mo>−</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>i</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>G</mi>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>i</mi>
+	</msub>
+	</mrow>
+	</mstyle><mfrac>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>i</mi><mo stretchy="false">)</mo><mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mn>0</mn><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch14_s03_p07">Let <strong class="emphasis bold">B</strong> be the <em class="emphasis">G</em> × <em class="emphasis">G</em> matrix whose (<em class="emphasis">g, i</em>) term is
+	<span class="inlineequation"><math xml:id="mcafee_ch14_s03_m008" display="inline">
+	<mrow>
+	<msub>
+	<mi>b</mi>
+	<mrow>
+	<mi>g</mi><mi>i</mi>
+	</mrow>
+	</msub>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>i</mi><mo stretchy="false">)</mo><mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	</mfrac><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch14_s03_p08">Let <strong class="emphasis bold">p</strong> be the vector of prices. Then we can write the equilibrium conditions as <span class="inlineequation">(<strong class="emphasis bold">I</strong> – <strong class="emphasis bold">B) p</strong> = <strong class="emphasis bold">0</strong>,</span> where <strong class="emphasis bold">0</strong> is the zero vector. Thus, for an equilibrium (other than <strong class="emphasis bold">p</strong> = <strong class="emphasis bold">0</strong>) to exist, <strong class="emphasis bold">B</strong> must have an eigenvalue equal to 1 and a corresponding eigenvector <strong class="emphasis bold">p</strong> that is positive in each component. Moreover, if such an eigenvector–eigenvalue pair exists, it is an equilibrium, because demand is equal to supply for each good.</p>
+    <p class="para editable block" id="mcafee-ch14_s03_p09">The actual price vector is not completely identified because if <strong class="emphasis bold">p</strong> is an equilibrium price vector, then so is any positive scalar times <strong class="emphasis bold">p</strong>. Scaling prices doesn’t change the equilibrium because both prices and wealth (which is based on endowments) rise by the scalar factor. Usually economists assign one good to be a numeraire, which means that all other goods are indexed in terms of that good; and the numeraire’s price is artificially set to be 1. We will treat any scaling of a price vector as the same vector.</p>
+    <p class="para editable block" id="mcafee-ch14_s03_p10">The relevant theorem is the <span class="margin_term"><a class="glossterm">Perron-Frobenius theorem</a><span class="glossdef">Theorem that states that if <strong class="emphasis bold">B</strong> is a positive matrix (each component positive), then there is an eigenvalue <em class="emphasis">λ</em> &gt; 0 and an associated positive eigenvector <strong class="emphasis bold">p</strong>; and, moreover, <em class="emphasis">λ</em> is the largest (in absolute value) eigenvector of <strong class="emphasis bold">B</strong>.</span></span>.<span class="footnote" id="fwk-mcafee-fn14_003">Oskar Perron (1880–1975) and Georg Frobenius (1849–1917).</span> It states that if <strong class="emphasis bold">B</strong> is a positive matrix (each component positive), then there is an eigenvalue <em class="emphasis">λ</em> &gt; 0 and an associated positive eigenvector <strong class="emphasis bold">p</strong>; and, moreover, <em class="emphasis">λ</em> is the largest (in absolute value) eigenvector of <strong class="emphasis bold">B</strong>.<span class="footnote" id="fwk-mcafee-fn14_004">The Perron-Frobenius theorem, as usually stated, only assumes that <strong class="emphasis bold">B</strong> is nonnegative and that <strong class="emphasis bold">B</strong> is irreducible. It turns out that a strictly positive matrix is irreducible, so this condition is sufficient to invoke the theorem. In addition, we can still apply the theorem even when <strong class="emphasis bold">B</strong> has some zeros in it, provided that it is irreducible. Irreducibility means that the economy can’t be divided into two economies, where the people in one economy can’t buy from the people in the second economy because they aren’t endowed with anything that the people in the first economy value. If <strong class="emphasis bold">B</strong> is not irreducible, then some people may wind up consuming zero of things they value.</span> This conclusion does most of the work of demonstrating the existence of an equilibrium. The only remaining condition to check is that the eigenvalue is in fact 1, so that (<strong class="emphasis bold">I</strong> – <strong class="emphasis bold">B) p</strong> = <strong class="emphasis bold">0</strong>.</p>
+    <p class="para editable block" id="mcafee-ch14_s03_p11">Suppose that the eigenvalue is <em class="emphasis">λ</em>. Then <em class="emphasis">λ</em><strong class="emphasis bold">p</strong> = <strong class="emphasis bold">Bp</strong>. Thus for each <em class="emphasis">g</em>,</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch14_s03_m009" display="block">
+	<mrow>
+	<mi>λ</mi><msub>
+	<mi>p</mi>
+	<mi>g</mi>
+	</msub>
+	<mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>i</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>G</mi>
+	</munderover>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	 <mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo><mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>i</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	 <mi>m</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	</mfrac>
+	<msub>
+	<mi>p</mi>
+	<mi>i</mi>
+	</msub>
+	</mrow>
+	</mstyle>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch14_s03_p12">or</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch14_s03_m010" display="block">
+	<mrow>
+	<mi>λ</mi><msub>
+	<mi>p</mi>
+	<mi>g</mi>
+	</msub>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>m</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle><mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>i</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>G</mi>
+	</munderover>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo><mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>i</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle><msub>
+	<mi>p</mi>
+	<mi>i</mi>
+	</msub>
+	</mrow>
+	</mstyle>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch14_s03_p13">Summing both sides over <em class="emphasis">g</em>,</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch14_s03_m011" display="block">
+	<mrow>
+	<mi>λ</mi><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>g</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>G</mi>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>g</mi>
+	</msub>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>m</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>m</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	</mstyle><mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>g</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>G</mi>
+	</munderover>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>i</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>G</mi>
+	</munderover>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	 <mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo><mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>i</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle><msub>
+	<mi>p</mi>
+	<mi>i</mi>
+	</msub>
+	</mrow>
+	</mstyle>
+	</mrow>
+	</mstyle>
+	</mrow>
+	</math>
+</span>
+    <span class="informalequation block"><math xml:id="mcafee_ch14_s03_m012" display="block">
+	<mrow>
+	<mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>i</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>G</mi>
+	</munderover>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	 <mi>g</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>G</mi>
+	</munderover>
+	<mrow>
+	<mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle><mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>i</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle><msub>
+	<mi>p</mi>
+	<mi>i</mi>
+	</msub>
+	</mrow>
+	</mstyle><mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>i</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>G</mi>
+	</munderover>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>i</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle><msub>
+	<mi>p</mi>
+	<mi>i</mi>
+	</msub>
+	</mrow>
+	</mstyle>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch14_s03_p22">Thus, <em class="emphasis">λ</em> = 1 as desired.</p>
+    <p class="para block" id="mcafee-ch14_s03_p14">The Perron-Frobenius theorem actually provides two more useful conclusions. First, the equilibrium is unique. This is a feature of the Cobb-Douglas utility and does not necessarily occur for other utility functions. Moreover, the equilibrium is readily approximated. Denote by <strong class="emphasis bold">B</strong><em class="emphasis"><sup class="superscript">t</sup></em> the product of <strong class="emphasis bold">B</strong> with itself <em class="emphasis">t</em> times. Then for any positive vector <strong class="emphasis bold">v</strong>, <span class="inlineequation"><math xml:id="mcafee_ch14_s03_m013" display="inline">
+	<mrow>
+		<munder>
+			<mrow>
+				<mi>lim</mi>
+			</mrow>
+			<mrow>
+				<mi>t</mi><mo>→</mo><mi>∞</mi>
+			</mrow>
+		</munder>
+		<msup>
+			<mstyle mathvariant="bold" mathsize="normal"><mi>B</mi></mstyle>
+			<mi>t</mi>
+		</msup>
+		<mstyle mathvariant="bold" mathsize="normal"><mi>v</mi></mstyle>
+		<mo>=</mo>
+		<mstyle mathvariant="bold" mathsize="normal"><mi>p</mi></mstyle>
+		<mtext>.</mtext>
+		</mrow>
+	</math>
+</span> While approximations are very useful for large systems (large numbers of goods), the system can readily be computed exactly with small numbers of goods, even with a large number of individuals. Moreover, the approximation can be interpreted in a potentially useful manner. Let <strong class="emphasis bold">v</strong> be a candidate for an equilibrium price vector. Use <strong class="emphasis bold">v</strong> to permit people to calculate their wealth, which for person <em class="emphasis">n</em> is <span class="inlineequation"><math xml:id="mcafee_ch14_s03_m014" display="inline">
+	<mrow>
+	<msub>
+	<mi>W</mi>
+	<mi>n</mi>
+	</msub>
+	<mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>i</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>G</mi>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>v</mi>
+	<mi>i</mi>
+	</msub>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>i</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> Given the wealth levels, what prices clear the market? Demand for good <em class="emphasis">g</em> is
+	<span class="inlineequation"><math xml:id="mcafee_ch14_s03_m015" display="inline">
+	<mrow>
+	<msub>
+	<mi>x</mi>
+	<mi>g</mi>
+	</msub>
+	<mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo><mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo><msub>
+	<mi>W</mi>
+	<mi>n</mi>
+	</msub>
+	</mrow>
+	</mstyle><mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>i</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>G</mi>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>v</mi>
+	<mi>i</mi>
+	</msub>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo><mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>i</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	</mstyle><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> and the market clears, given the wealth levels, if <span class="inlineequation"><math xml:id="mcafee_ch14_s03_m016" display="inline">
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>g</mi>
+	</msub>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>i</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>G</mi>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>v</mi>
+	<mi>i</mi>
+	</msub>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	 <mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo><mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>i</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	</mstyle>
+	</mrow>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	</mfrac><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> which is equivalent to <strong class="emphasis bold">p</strong> = <strong class="emphasis bold">Bv</strong>. This defines an iterative process. Start with an arbitrary price vector, compute wealth levels, and then compute the price vector that clears the market for the given wealth levels. Use this price to recalculate the wealth levels, and then compute a new market-clearing price vector for the new wealth levels. This process can be iterated and, in fact, converges to the equilibrium price vector from any starting point.</p>
+    <p class="para block" id="mcafee-ch14_s03_p15">We finish this section by considering three special cases. If there are two goods, we can let <em class="emphasis">α<sub class="subscript">n</sub></em> = <em class="emphasis">α</em>α(<em class="emphasis">n</em>, 1), and then conclude that <em class="emphasis">α</em>(<em class="emphasis">n</em>, 2) = 1 – <em class="emphasis">an</em>. Then let
+	<span class="inlineequation"><math xml:id="mcafee_ch14_s03_m017" display="inline">
+	<mrow>
+	<msub>
+	<mi>Y</mi>
+	<mi>g</mi>
+	</msub>
+	<mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	</math>
+</span> be the endowment of good <em class="emphasis">g</em>. Then the matrix <strong class="emphasis bold">B</strong> is
+	<span class="informalequation"><math xml:id="mcafee_ch14_s03_m018" display="block">
+	<mrow>
+	<mstyle mathvariant="bold" mathsize="normal"><mi>B</mi></mstyle><mo>=</mo><mrow><mo>(</mo>
+	<mrow>
+	<mtable>
+	<mtr>
+	<mtd>
+	<mrow>
+	<mfrac>
+	 <mn>1</mn>
+	 <mrow>
+	  <msub>
+	   <mi>Y</mi>
+	   <mn>1</mn>
+	  </msub>
+	 </mrow>
+	</mfrac>
+	<mstyle displaystyle="true">
+	 <munderover>
+	  <mo>∑</mo>
+	  <mrow>
+	   <mi>n</mi><mo>=</mo><mn>1</mn>
+	  </mrow>
+	  <mi>N</mi>
+	 </munderover>
+	 <mrow>
+	  <mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo><msub>
+	   <mi>a</mi>
+	   <mi>n</mi>
+	  </msub>
+	 </mrow>
+	</mstyle>
+	</mrow>
+	</mtd>
+	<mtd>
+	<mrow>
+	<mfrac>
+	 <mn>1</mn>
+	 <mrow>
+	  <msub>
+	   <mi>Y</mi>
+	   <mn>1</mn>
+	  </msub>
+	 </mrow>
+	</mfrac>
+	<mstyle displaystyle="true">
+	 <munderover>
+	  <mo>∑</mo>
+	  <mrow>
+	   <mi>n</mi><mo>=</mo><mn>1</mn>
+	  </mrow>
+	  <mi>N</mi>
+	 </munderover>
+	 <mrow>
+	  <mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo><msub>
+	   <mi>a</mi>
+	   <mi>n</mi>
+	  </msub>
+	 </mrow>
+	</mstyle>
+	</mrow>
+	</mtd>
+	</mtr>
+	<mtr>
+	<mtd>
+	<mrow>
+	<mfrac>
+	 <mn>1</mn>
+	 <mrow>
+	  <msub>
+	   <mi>Y</mi>
+	   <mn>2</mn>
+	  </msub>
+	 </mrow>
+	</mfrac>
+	<mstyle displaystyle="true">
+	 <munderover>
+	  <mo>∑</mo>
+	  <mrow>
+	   <mi>n</mi><mo>=</mo><mn>1</mn>
+	  </mrow>
+	  <mi>N</mi>
+	 </munderover>
+	 <mrow>
+	  <mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><msub>
+	   <mi>a</mi>
+	   <mi>n</mi>
+	  </msub>
+	  <mo stretchy="false">)</mo>
+	 </mrow>
+	</mstyle>
+	</mrow>
+	</mtd>
+	<mtd>
+	<mrow>
+	<mfrac>
+	 <mn>1</mn>
+	 <mrow>
+	  <msub>
+	   <mi>Y</mi>
+	   <mn>2</mn>
+	  </msub>
+	 </mrow>
+	</mfrac>
+	<mstyle displaystyle="true">
+	 <munderover>
+	  <mo>∑</mo>
+	  <mrow>
+	   <mi>n</mi><mo>=</mo><mn>1</mn>
+	  </mrow>
+	  <mi>N</mi>
+	 </munderover>
+	 <mrow>
+	  <mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><msub>
+	   <mi>a</mi>
+	   <mi>n</mi>
+	  </msub>
+	  <mo stretchy="false">)</mo>
+	 </mrow>
+	</mstyle>
+	</mrow>
+	</mtd>
+	</mtr>
+	</mtable>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	</math>
+</span>
+	<span class="informalequation"><math xml:id="mcafee_ch14_s03_m019" display="block">
+	<mrow>
+	<mo>=</mo><mrow><mo>(</mo>
+	<mrow>
+	<mtable>
+	<mtr>
+	<mtd>
+	<mrow>
+	<mfrac>
+	 <mn>1</mn>
+	 <mrow>
+	  <msub>
+	   <mi>Y</mi>
+	   <mn>1</mn>
+	  </msub>
+	 </mrow>
+	</mfrac>
+	<mstyle displaystyle="true">
+	 <munderover>
+	  <mo>∑</mo>
+	  <mrow>
+	   <mi>n</mi><mo>=</mo><mn>1</mn>
+	  </mrow>
+	  <mi>N</mi>
+	 </munderover>
+	 <mrow>
+	  <mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo><msub>
+	   <mi>a</mi>
+	   <mi>n</mi>
+	  </msub>
+	 </mrow>
+	</mstyle>
+	</mrow>
+	</mtd>
+	<mtd>
+	<mrow>
+	<mfrac>
+	 <mn>1</mn>
+	 <mrow>
+	  <msub>
+	   <mi>Y</mi>
+	   <mn>1</mn>
+	  </msub>
+	 </mrow>
+	</mfrac>
+	<mstyle displaystyle="true">
+	 <munderover>
+	  <mo>∑</mo>
+	  <mrow>
+	   <mi>n</mi><mo>=</mo><mn>1</mn>
+	  </mrow>
+	  <mi>N</mi>
+	 </munderover>
+	 <mrow>
+	  <mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo><msub>
+	   <mi>a</mi>
+	   <mi>n</mi>
+	  </msub>
+	 </mrow>
+	</mstyle>
+	</mrow>
+	</mtd>
+	</mtr>
+	<mtr>
+	<mtd>
+	<mrow>
+	<mfrac>
+	 <mn>1</mn>
+	 <mrow>
+	  <msub>
+	   <mi>Y</mi>
+	   <mn>2</mn>
+	  </msub>
+	 </mrow>
+	</mfrac>
+	<mrow><mo>(</mo>
+	 <mrow>
+	  <msub>
+	   <mi>Y</mi>
+	   <mn>1</mn>
+	  </msub>
+	  <mo>−</mo><mstyle displaystyle="true">
+	   <munderover>
+	    <mo>∑</mo>
+	    <mrow>
+	     <mi>n</mi><mo>=</mo><mn>1</mn>
+	    </mrow>
+	    <mi>N</mi>
+	   </munderover>
+	   <mrow>
+	    <mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo><msub>
+	     <mi>a</mi>
+	     <mi>n</mi>
+	    </msub>
+	   </mrow>
+	  </mstyle>
+	 </mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	</mtd>
+	<mtd>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mfrac>
+	 <mn>1</mn>
+	 <mrow>
+	  <msub>
+	   <mi>Y</mi>
+	   <mn>2</mn>
+	  </msub>
+	 </mrow>
+	</mfrac>
+	<mstyle displaystyle="true">
+	 <munderover>
+	  <mo>∑</mo>
+	  <mrow>
+	   <mi>n</mi><mo>=</mo><mn>1</mn>
+	  </mrow>
+	  <mi>N</mi>
+	 </munderover>
+	 <mrow>
+	  <mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo><msub>
+	   <mi>a</mi>
+	   <mi>n</mi>
+	  </msub>
+	 </mrow>
+	</mstyle>
+	</mrow>
+	</mtd>
+	</mtr>
+	</mtable>
+	</mrow>
+	<mo>)</mo></mrow><mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+	The relevant eigenvector of <strong class="emphasis bold">B</strong> is
+	<span class="informalequation"><math xml:id="mcafee_ch14_s03_m020" display="block">
+	<mrow>
+	<mstyle mathvariant="bold" mathsize="normal"><mi>p</mi></mstyle><mo>=</mo><mrow><mo>(</mo>
+	<mrow>
+	<mtable>
+	<mtr>
+	<mtd>
+	<mrow>
+	<mstyle displaystyle="true">
+	 <munderover>
+	  <mo>∑</mo>
+	  <mrow>
+	   <mi>n</mi><mo>=</mo><mn>1</mn>
+	  </mrow>
+	  <mi>N</mi>
+	 </munderover>
+	 <mrow>
+	  <mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo><msub>
+	   <mi>a</mi>
+	   <mi>n</mi>
+	  </msub>
+	 </mrow>
+	</mstyle>
+	</mrow>
+	</mtd>
+	</mtr>
+	<mtr>
+	<mtd>
+	<mrow>
+	<mstyle displaystyle="true">
+	 <munderover>
+	  <mo>∑</mo>
+	  <mrow>
+	   <mi>n</mi><mo>=</mo><mn>1</mn>
+	  </mrow>
+	  <mi>N</mi>
+	 </munderover>
+	 <mrow>
+	  <mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><msub>
+	   <mi>a</mi>
+	   <mi>n</mi>
+	  </msub>
+	  <mo stretchy="false">)</mo>
+	 </mrow>
+	</mstyle>
+	</mrow>
+	</mtd>
+	</mtr>
+	</mtable>
+	</mrow>
+	<mo>)</mo></mrow>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch14_s03_p16">The overall level of prices is not pinned down—any scalar multiple of <strong class="emphasis bold">p</strong> is also an equilibrium price—so the relevant term is the price ratio, which is the price of Good 1 in terms of Good 2, or</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch14_s03_m021" display="block">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mn>1</mn>
+	</msub>
+	</mrow>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mn>2</mn>
+	</msub>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo><msub>
+	<mi>a</mi>
+	<mi>n</mi>
+	</msub>
+	</mrow>
+	</mstyle>
+	</mrow>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><msub>
+	<mi>a</mi>
+	<mi>n</mi>
+	</msub>
+	<mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	</mfrac>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch14_s03_p17">We can readily see that an increase in the supply of Good 1, or a decrease in the supply of Good 2, decreases the price ratio. An increase in the preference for Good 1 increases the price of Good 1. When people who value Good 1 relatively highly are endowed with a lot of Good 2, the correlation between preference for Good 1, <em class="emphasis">an</em>, and endowment of Good 2 is higher. The higher the correlation, the higher is the price ratio. Intuitively, if the people who have a lot of Good 2 want a lot of Good 1, the price of Good 1 is going to be higher. Similarly, if the people who have a lot of Good 1 want a lot of Good 2, the price of Good 1 is going to be lower. Thus, the correlation between endowments and preferences also matters to the price ratio.</p>
+    <p class="para block" id="mcafee-ch14_s03_p18">In our second special case, we consider people with the same preferences but who start with different endowments. Hypothesizing identical preferences sets aside the correlation between endowments and preferences found in the two-good case. Since people are the same, <em class="emphasis">α</em>(<em class="emphasis">n, g</em>) = <em class="emphasis">Ag</em> for all <em class="emphasis">n</em>. In this case,
+	<span class="inlineequation"><math xml:id="mcafee_ch14_s03_m022" display="inline">
+	<mrow>
+	<msub>
+	<mi>b</mi>
+	<mrow>
+	<mi>g</mi><mi>i</mi>
+	</mrow>
+	</msub>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>i</mi><mo stretchy="false">)</mo><mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><msub>
+	<mi>A</mi>
+	<mi>g</mi>
+	</msub>
+	<mfrac>
+	<mrow>
+	<msub>
+	<mi>Y</mi>
+	<mi>i</mi>
+	</msub>
+	</mrow>
+	<mrow>
+	<msub>
+	<mi>Y</mi>
+	<mi>g</mi>
+	</msub>
+	</mrow>
+	</mfrac>
+	<mtext>,</mtext>
+	</mrow>
+	</math>
+</span> whereas before <span class="inlineequation"><math xml:id="mcafee_ch14_s03_m023" display="inline">
+	<mrow>
+	<msub>
+	<mi>Y</mi>
+	<mi>g</mi>
+	</msub>
+	<mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	</math>
+</span> is the total endowment of good <em class="emphasis">g</em>. The matrix <strong class="emphasis bold">B</strong> has a special structure, and in this case,
+	<span class="inlineequation"><math xml:id="mcafee_ch14_s03_m024" display="inline">
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>g</mi>
+	</msub>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<msub>
+	<mi>A</mi>
+	<mi>g</mi>
+	</msub>
+	</mrow>
+	<mrow>
+	<msub>
+	<mi>Y</mi>
+	<mi>g</mi>
+	</msub>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</math>
+</span> is the equilibrium price vector. Prices are proportional to the preference for the good divided by the total endowment for that good.</p>
+    <p class="para block" id="mcafee-ch14_s03_p19">Now consider a third special case, where no common structure is imposed on preferences, but endowments are proportional to each other; that is, the endowment of person <em class="emphasis">n</em> is a fraction <em class="emphasis">wn</em> of the total endowment. This implies that we can write <em class="emphasis">y</em>(<em class="emphasis">n, g</em>) = <em class="emphasis">w<sub class="subscript">n</sub></em> <em class="emphasis">Y<sub class="subscript">g</sub></em>, an equation assumed to hold for all people <em class="emphasis">n</em> and goods <em class="emphasis">g</em>. Note that by construction, <span class="inlineequation"><math xml:id="mcafee_ch14_s03_m025" display="inline">
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>w</mi>
+	<mi>n</mi>
+	</msub>
+	</mrow>
+	</mstyle><mo>=</mo><mn>1</mn><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> since the value <em class="emphasis">wn</em> represents <em class="emphasis">n</em>’s share of the total endowment. In this case, we have</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch14_s03_m026" display="block">
+	<mrow>
+	<msub>
+	<mi>b</mi>
+	<mrow>
+	<mi>g</mi><mi>i</mi>
+	</mrow>
+	</msub>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>i</mi><mo stretchy="false">)</mo><mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<msub>
+	<mi>Y</mi>
+	<mi>i</mi>
+	</msub>
+	</mrow>
+	<mrow>
+	<msub>
+	<mi>Y</mi>
+	<mi>g</mi>
+	</msub>
+	</mrow>
+	</mfrac>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>w</mi>
+	<mi>n</mi>
+	</msub>
+	<mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para block" id="mcafee-ch14_s03_p20">These matrices also have a special structure, and it is readily verified that the equilibrium price vector satisfies
+	<span class="inlineequation"><math xml:id="mcafee_ch14_s03_m027" display="inline">
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>g</mi>
+	</msub>
+	<mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msub>
+	<mi>Y</mi>
+	<mi>g</mi>
+	</msub>
+	</mrow>
+	</mfrac>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>n</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>N</mi>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>w</mi>
+	<mi>n</mi>
+	</msub>
+	<mi>α</mi><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>g</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mstyle><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch14_s03_p21">This formula receives a similar interpretation—the price of good <em class="emphasis">g</em> is the strength of preference for good <em class="emphasis">g</em>, where strength of preference is a wealth-weighted average of the individual preference, divided by the endowment of the good. Such an interpretation is guaranteed by the assumption of Cobb-Douglas preferences, since these imply that individuals spend a constant proportion of their wealth on each good. It also generalizes the conclusion found in the two-good case to more goods, but with the restriction that the correlation is now between wealth and preferences. The special case has the virtue that individual wealth, which is endogenous because it depends on prices, can be readily determined.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch14_s03_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch14_s03_l02">
+            <li>General equilibrium puts together consumer choice and producer theory to find sets of prices that clear many markets.</li>
+            <li>For the case of an arbitrary number of goods and an arbitrary number of consumers—each with Cobb-Douglas utility—there is a closed form for the demand curves, and the price vector can be found by locating an eigenvector of a particular matrix. The equilibrium is unique (true for Cobb-Douglas but not true more generally).</li>
+            <li>The actual price vector is not completely identified because if <strong class="emphasis bold">p</strong> is an equilibrium price vector, then so is any positive scalar times <strong class="emphasis bold">p</strong>. Scaling prices doesn’t change the equilibrium because both prices and wealth (which is based on endowments) rise by the scalar factor.</li>
+            <li>The intuition arising from one-good models may fail because of interactions with other markets—increasing preferences for a good (shifting out demand) changes the values of endowments in ways that then reverberate through the system.</li>
+        </ul>
+    </div>
+    <div class="exercises block" id="mcafee-ch14_s03_n03">
+        <h3 class="title">Exercise</h3>
+        <ol class="orderedlist" id="mcafee-ch14_s03_l03">
+            <li>Consider a consumer with Cobb-Douglas utility
+			<span class="informalequation"><math xml:id="mcafee_ch14_s03_m028" display="block">
+			<mrow>
+			<mi>U</mi><mo>=</mo><mstyle displaystyle="true">
+			<munderover>
+			<mo>∏</mo>
+			<mrow>
+			<mi>i</mi><mo>=</mo><mn>1</mn>
+			</mrow>
+			<mi>G</mi>
+			</munderover>
+			<mrow>
+			<msubsup>
+			<mi>x</mi>
+			<mi>i</mi>
+			<mrow>
+			<msub>
+			<mi>a</mi>
+			<mi>i</mi>
+			</msub>
+			</mrow>
+			</msubsup>
+			</mrow>
+			</mstyle><mtext>,</mtext>
+			</mrow>
+			</math>
+</span>
+			where
+			<span class="informalequation"><math xml:id="mcafee_ch14_s03_m029" display="block">
+			<mrow>
+			<mstyle displaystyle="true">
+			<munderover>
+			<mo>∑</mo>
+			<mrow>
+			<mi>i</mi><mo>=</mo><mn>1</mn>
+			</mrow>
+			<mi>G</mi>
+			</munderover>
+			<mrow>
+			<msub>
+			<mi>a</mi>
+			<mi>i</mi>
+			</msub>
+			</mrow>
+			</mstyle><mo>=</mo><mn>1</mn>
+			</mrow>
+			</math>
+</span> and facing the budget constraint <span class="informalequation"><math xml:id="mcafee_ch14_s03_m030" display="block">
+			<mrow>
+			<mi>W</mi><mo>=</mo><mstyle displaystyle="true">
+			<munderover>
+			<mo>∑</mo>
+			<mrow>
+			<mi>i</mi><mo>=</mo><mn>1</mn>
+			</mrow>
+			<mi>G</mi>
+			</munderover>
+			<mrow>
+			<msub>
+			<mi>p</mi>
+			<mi>i</mi>
+			</msub>
+			<msub>
+			<mi>x</mi>
+			<mi>i</mi>
+			</msub>
+			</mrow>
+			</mstyle><mtext>.</mtext>
+			</mrow>
+			</math>
+</span>
+			Show that the consumer maximizes utility by choosing
+			<span class="informalequation"><math xml:id="mcafee_ch14_s03_m031" display="block">
+			<mrow>
+			<msub>
+			<mi>x</mi>
+			<mi>i</mi>
+			</msub>
+			<mo>=</mo><mfrac>
+			<mrow>
+			<msub>
+			<mi>a</mi>
+			<mi>i</mi>
+			</msub>
+			<mi>W</mi>
+			</mrow>
+			<mrow>
+			<msub>
+			<mi>p</mi>
+			<mi>i</mi>
+			</msub>
+			</mrow>
+			</mfrac>
+			</mrow>
+			</math>
+</span>
+			for each good <em class="emphasis">i</em>. (Hint: Express the budget constraint as
+			<span class="informalequation"><math xml:id="mcafee_ch14_s03_m032" display="block">
+			<mrow>
+				<msub>
+				<mi>x</mi>
+				<mi>G</mi>
+				</msub>
+				<mo>=</mo><mfrac>
+				<mn>1</mn>
+				<mrow>
+				<msub>
+				<mi>p</mi>
+				<mi>G</mi>
+				</msub>
+				</mrow>
+				</mfrac>
+				<mrow><mo>(</mo>
+				<mrow>
+				<mi>W</mi><mo>−</mo><mstyle displaystyle="true">
+				<munderover>
+				<mo>∑</mo>
+				<mrow>
+				<mi>i</mi><mo>=</mo><mn>1</mn>
+				</mrow>
+				<mrow>
+				<mi>G</mi><mo>−</mo><mn>1</mn>
+				</mrow>
+				</munderover>
+				<mrow>
+				<msub>
+				<mi>p</mi>
+				<mi>i</mi>
+				</msub>
+				<msub>
+				<mi>x</mi>
+				<mi>i</mi>
+				</msub>
+				</mrow>
+				</mstyle>
+				</mrow>
+				<mo>)</mo></mrow>
+				<mtext>,</mtext>
+				</mrow>
+			</math>
+</span>
+			and thus utility as
+			<span class="informalequation"><math xml:id="mcafee_ch14_s03_m033" display="block">
+			<mrow>
+			<mi>U</mi><mo>=</mo><mrow><mo>(</mo>
+			<mrow>
+			<mstyle displaystyle="true">
+			<munderover>
+			<mo>∏</mo>
+			<mrow>
+			<mi>i</mi><mo>=</mo><mn>1</mn>
+			</mrow>
+			<mrow>
+			<mi>G</mi><mo>−</mo><mn>1</mn>
+			</mrow>
+			</munderover>
+			<mrow>
+			<msubsup>
+			<mi>x</mi>
+			<mi>i</mi>
+			<mrow>
+			<msub>
+			 <mi>a</mi>
+			 <mi>i</mi>
+			</msub>
+			</mrow>
+			</msubsup>
+			</mrow>
+			</mstyle>
+			</mrow>
+			<mo>)</mo></mrow><msup>
+			<mrow>
+			<mrow><mo>(</mo>
+			<mrow>
+			<mfrac>
+			<mn>1</mn>
+			<mrow>
+			<msub>
+			 <mi>p</mi>
+			 <mi>G</mi>
+			</msub>
+			</mrow>
+			</mfrac>
+			<mrow><mo>(</mo>
+			<mrow>
+			<mi>W</mi><mo>−</mo><mstyle displaystyle="true">
+			 <munderover>
+			  <mo>∑</mo>
+			  <mrow>
+			   <mi>i</mi><mo>=</mo><mn>1</mn>
+			  </mrow>
+			  <mrow>
+			   <mi>G</mi><mo>−</mo><mn>1</mn>
+			  </mrow>
+			 </munderover>
+			 <mrow>
+			  <msub>
+			   <mi>p</mi>
+			   <mi>i</mi>
+			  </msub>
+			  <msub>
+			   <mi>x</mi>
+			   <mi>i</mi>
+			  </msub>
+			 </mrow>
+			</mstyle>
+			</mrow>
+			<mo>)</mo></mrow>
+			</mrow>
+			<mo>)</mo></mrow>
+			</mrow>
+			<mrow>
+			<msub>
+			<mi>a</mi>
+			<mi>G</mi>
+			</msub>
+			</mrow>
+			</msup>
+			</mrow>
+			</math>
+</span>.) This function can now be maximized in an unconstrained fashion. Verify that the result of the maximization can be expressed as
+			<span class="informalequation"><math xml:id="mcafee_ch14_s03_m034" display="inline">
+				<mrow>
+				<msub>
+				<mi>p</mi>
+				<mi>i</mi>
+				</msub>
+				<msub>
+				<mi>x</mi>
+				<mi>i</mi>
+				</msub>
+				<mo>=</mo><mfrac>
+				<mrow>
+				<msub>
+				<mi>a</mi>
+				<mi>i</mi>
+				</msub>
+				</mrow>
+				<mrow>
+				<msub>
+				<mi>a</mi>
+				<mi>G</mi>
+				</msub>
+				</mrow>
+				</mfrac>
+				<msub>
+				<mi>p</mi>
+				<mi>G</mi>
+				</msub>
+				<msub>
+				<mi>x</mi>
+				<mi>G</mi>
+				</msub><mtext>,</mtext>
+				</mrow>
+				</math>
+</span>
+			and thus
+			<span class="informalequation"><math xml:id="mcafee_ch14_s03_m035" display="inline">
+			<mrow>
+			<mi>W</mi><mo>=</mo><mstyle displaystyle="true">
+			<munderover>
+			<mo>∑</mo>
+			<mrow>
+			<mi>i</mi><mo>=</mo><mn>1</mn>
+			</mrow>
+			<mi>G</mi>
+			</munderover>
+			<mrow>
+			<msub>
+			<mi>p</mi>
+			<mi>i</mi>
+			</msub>
+			<msub>
+			<mi>x</mi>
+			<mi>i</mi>
+			</msub>
+			</mrow>
+			</mstyle><mo>=</mo><mstyle displaystyle="true">
+			<munderover>
+			<mo>∑</mo>
+			<mrow>
+			<mi>i</mi><mo>=</mo><mn>1</mn>
+			</mrow>
+			<mi>G</mi>
+			</munderover>
+			<mrow>
+			<mfrac>
+			<mrow>
+			<msub>
+			<mi>a</mi>
+			<mi>i</mi>
+			</msub>
+			</mrow>
+			<mrow>
+			<msub>
+			<mi>a</mi>
+			<mi>G</mi>
+			</msub>
+			</mrow>
+			</mfrac>
+			<msub>
+			<mi>p</mi>
+			<mi>G</mi>
+			</msub>
+			<msub>
+			<mi>x</mi>
+			<mi>G</mi>
+			</msub>
+			</mrow>
+			</mstyle><mo>=</mo><mfrac>
+			<mrow>
+			<msub>
+			<mi>p</mi>
+			<mi>G</mi>
+			</msub>
+			<msub>
+			<mi>x</mi>
+			<mi>G</mi>
+			</msub>
+			</mrow>
+			<mrow>
+			<msub>
+			<mi>a</mi>
+			<mi>G</mi>
+			</msub>
+			</mrow>
+			</mfrac><mtext>,</mtext>
+			</mrow>
+			</math>
+</span>
+			which yields
+			<span class="informalequation"><math xml:id="mcafee_ch14_s03_m036" display="inline">
+			<mrow>
+			<msub>
+			<mi>p</mi>
+			<mi>i</mi>
+			</msub>
+			<msub>
+			<mi>x</mi>
+			<mi>i</mi>
+			</msub>
+			<mo>=</mo><msub>
+			<mi>a</mi>
+			<mi>i</mi>
+			</msub>
+			<mi>W</mi>
+			<mtext>.</mtext>
+			</mrow>
+			</math>
+</span>
+			</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s15-02-equilibrium-with-price-system.html"><img src="shared/images/batch-left.png"></a> <a href="s15-02-equilibrium-with-price-system.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s16-01-sources-of-monopoly.html">Next Section</a> <a href="s16-01-sources-of-monopoly.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

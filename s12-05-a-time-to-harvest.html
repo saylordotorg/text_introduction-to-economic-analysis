@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>A Time to Harvest</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s12-04-resource-extraction.html"><img src="shared/images/batch-left.png"></a> <a href="s12-04-resource-extraction.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s12-06-collectibles.html">Next Section</a> <a href="s12-06-collectibles.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch11_s05" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">11.5</span> A Time to Harvest</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch11_s05_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="mcafee-ch11_s05_l01">
+            <li>How are the prices of renewable resources determined?</li>
+            <li>When should trees be harvested?</li>
+        </ol>
+    </div>
+    <p class="para block" id="mcafee-ch11_s05_p01">A tree grows slowly but is renewable, so the analysis of <a class="xref" href="mcafee-ch11_s04#mcafee-ch11_s04">Section 11.4 "Resource Extraction"</a> doesn’t help us to understand when it is most profitable to cut down the tree. Consider harvesting for pulp and paper use. In this case, the amount of wood chips is what matters to the profitability of cutting down the tree, and the biomass of the tree provides a direct indication of this. Suppose the biomass sells for a net price <em class="emphasis">p</em>, which has the costs of harvesting and replanting deducted from it, and the biomass of the tree is <em class="emphasis">b</em>(<em class="emphasis">t</em>) when the tree is <em class="emphasis">t</em> years old. It simplifies the analysis slightly to use continuous time discounting
+	<span class="inlineequation"><math xml:id="mcafee_ch11_s05_m001" display="inline">
+	<mrow>
+	<msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mi>ρ</mi><mi>t</mi>
+	</mrow>
+	</msup>
+	<mo>=</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mi>r</mi>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mi>t</mi>
+	</msup><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> where<span class="inlineequation"><math xml:id="mcafee_ch11_s05_m002" display="inline">
+	<mrow>
+	<mi>ρ</mi><mo>=</mo><mi>log</mi><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch11_s05_p02">Consider the policy of cutting down trees when they are <em class="emphasis">T</em> years old. This induces a cutting cycle of length <em class="emphasis">T</em>. A brand new tree will produce a present value of profits of</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s05_m003" display="block">
+	<mrow>
+	<msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mi>ρ</mi><mi>T</mi>
+	</mrow>
+	</msup>
+	<mi>p</mi><mi>b</mi><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo><mo>+</mo><msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mn>2</mn><mi>ρ</mi><mi>T</mi>
+	</mrow>
+	</msup>
+	<mi>p</mi><mi>b</mi><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo><mo>+</mo><msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mn>3</mn><mi>ρ</mi><mi>T</mi>
+	</mrow>
+	</msup>
+	<mi>p</mi><mi>b</mi><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo><mo>+</mo><mo>…</mo><mo>=</mo><mfrac>
+	<mrow>
+	<msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mi>ρ</mi><mi>T</mi>
+	</mrow>
+	</msup>
+	<mi>p</mi><mi>b</mi><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mn>1</mn><mo>−</mo><msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mi>ρ</mi><mi>T</mi>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mi>p</mi><mi>b</mi><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<msup>
+	<mi>e</mi>
+	<mrow>
+	<mi>ρ</mi><mi>T</mi>
+	</mrow>
+	</msup>
+	<mo>−</mo><mn>1</mn>
+	</mrow>
+	</mfrac>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch11_s05_p03">This profit arises because the first cut occurs at time <em class="emphasis">T</em>, with discounting <em class="emphasis">e</em><sup class="superscript">-</sup><em class="emphasis"><sup class="superscript">ρT</sup></em>, and produces a net gain of <em class="emphasis">pb</em>(<em class="emphasis">T</em>). The process then starts over, with a second tree cut down at time 2<em class="emphasis">T</em>, and so on.</p>
+    <p class="para editable block" id="mcafee-ch11_s05_p04">Profit maximization gives a first-order condition on the optimal cycle length <em class="emphasis">T</em> of</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s05_m004" display="block">
+	<mrow>
+	<mn>0</mn><mo>=</mo><mfrac>
+	<mi>d</mi>
+	<mrow>
+	<mi>d</mi><mi>T</mi>
+	</mrow>
+	</mfrac>
+	<mfrac>
+	<mrow>
+	<mi>p</mi><mi>b</mi><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<msup>
+	<mi>e</mi>
+	<mrow>
+	<mi>ρ</mi><mi>T</mi>
+	</mrow>
+	</msup>
+	<mo>−</mo><mn>1</mn>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mi>p</mi><msup>
+	<mi>b</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<msup>
+	<mi>e</mi>
+	<mrow>
+	<mi>ρ</mi><mi>T</mi>
+	</mrow>
+	</msup>
+	<mo>−</mo><mn>1</mn>
+	</mrow>
+	</mfrac>
+	<mo>−</mo><mfrac>
+	<mrow>
+	<mi>p</mi><mi>b</mi><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo><mi>ρ</mi><msup>
+	<mi>e</mi>
+	<mrow>
+	<mi>ρ</mi><mi>T</mi>
+	</mrow>
+	</msup>
+	</mrow>
+	<mrow>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<msup>
+	 <mi>e</mi>
+	 <mrow>
+	  <mi>ρ</mi><mi>T</mi>
+	 </mrow>
+	</msup>
+	<mo>−</mo><mn>1</mn>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch11_s05_p05">This can be rearranged to yield</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s05_m005" display="block">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<msup>
+	<mi>b</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>b</mi><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mi>ρ</mi>
+	<mrow>
+	<mn>1</mn><mo>−</mo><msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mi>ρ</mi><mi>T</mi>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mtext>.</mtext>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch11_s05_p06">The left-hand side of this equation is the growth rate of the tree. The right-hand side is approximately the continuous-time discount factor, at least when <em class="emphasis">T</em> is large, as it tends to be for trees, which are usually on a 20- to 80-year cycle, depending on the species. This is the basis for a conclusion: Cut down the tree slightly before it is growing at the interest rate. The higher that interest rates are, the shorter the cycle for which the trees should be cut down.</p>
+    <p class="para editable block" id="mcafee-ch11_s05_p07">The pulp and paper use of trees is special, because the tree is going to be ground up into wood chips. What happens when the object is to get boards from the tree, and larger boards sell for more? In particular, it is more profitable to get a 4 × 4 than two 2 × 4s. Doubling the diameter of the tree, which approximately raises the biomass by a factor of six to eight, more than increases the value of the timber by the increase in the biomass.</p>
+    <p class="para editable block" id="mcafee-ch11_s05_p08">It turns out that our theory is already capable of handling this case. The only adaptation is a change in the interpretation of the function <em class="emphasis">b</em>. Now, rather than representing the biomass, <em class="emphasis">b</em>(<em class="emphasis">t</em>) must represent the value in boards of a tree that is <em class="emphasis">t</em> years old. (The parameter <em class="emphasis">p</em> may be set to one.) The only amendment to the rule for cutting down trees is as follows: The most profitable point in time to cut down the tree occurs slightly before the time when the value (in boards) of the tree is growing at the interest rate.</p>
+    <p class="para editable block" id="mcafee-ch11_s05_p09">For example, lobsters become more valuable as they grow. The profit-maximizing time to harvest lobsters is governed by the same equation, where <em class="emphasis">b</em>(<em class="emphasis">T</em>) is the value of a lobster at age <em class="emphasis">T</em>. Prohibiting the harvest of lobsters under age <em class="emphasis">T</em> is a means of insuring the profit-maximizing capture of lobsters and preventing overfishing.</p>
+    <p class="para block" id="mcafee-ch11_s05_p10">The implementation of the formula is illustrated in <a class="xref" href="#mcafee-ch11_s05_f01">Figure 11.3 "Optimal solution for T"</a>. The dashed line represents the growth rate <span class="inlineequation"><math xml:id="mcafee_ch11_s05_m006" display="inline">
+	<mrow>
+	<mfrac bevelled="true">
+	<mrow>
+	<msup>
+	<mi>b</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>b</mi><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> while the solid line represents the discount rate, which was set at 5%. Note that the best time to cut down the trees is when they are approximately 28.7 years old and, at that time, they are growing at 6.5%. <a class="xref" href="#mcafee-ch11_s05_f01">Figure 11.3 "Optimal solution for T"</a> also illustrates another feature of the optimization—there may be multiple solutions to the optimization problem, and the profit-maximizing solution involves <span class="inlineequation"><math xml:id="mcafee_ch11_s05_m007" display="inline">
+	<mrow>
+	<mfrac bevelled="true">
+	<mrow>
+	<msup>
+	<mi>b</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>b</mi><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</math>
+</span> cutting <span class="inlineequation"><math xml:id="mcafee_ch11_s05_m008" display="inline">
+	<mrow>
+	<mfrac>
+	<mi>ρ</mi>
+	<mrow>
+	<mn>1</mn><mo>−</mo><msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mi>ρ</mi><mi>T</mi>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</math>
+</span> from above.</p>
+    <div class="figure medium editable block" id="mcafee-ch11_s05_f01">
+        <p class="title"><span class="title-prefix">Figure 11.3</span> Optimal solution for T</p>
+        <img src="section_12/26dbba02b850a72537f46abf1b90c910.jpg">
+    </div>
+    <p class="para block" id="mcafee-ch11_s05_p11">The U.S. Department of the Interior is in charge of selling timber rights on federal lands. The department uses the policy of <span class="margin_term"><a class="glossterm">maximum sustainable yield</a><span class="glossdef">Policy that maximizes the long-run average value of a sustainable resource.</span></span> to determine the specific time that the tree is cut down. Maximum sustainable yield maximizes the long-run average value of the trees cut down; that is, it maximizes
+	<span class="inlineequation"><math xml:id="mcafee_ch11_s05_m009" display="inline">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>b</mi><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mi>T</mi>
+	</mfrac><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch11_s05_p12">Maximum sustainable yield is actually a special case of the policies considered here, and arises for a discount factor of 0. It turns out (thanks to a formula known variously as l’Hôpital’s or l’Hospital’s Rule) that the
+	<span class="inlineequation"><math xml:id="mcafee_ch11_s05_m010" display="inline">
+	<mrow>
+	<munder>
+	<mrow>
+	<mi>lim</mi>
+	</mrow>
+	<mrow>
+	<mi>ρ</mi><mo>→</mo><mn>0</mn>
+	</mrow>
+	</munder>
+	<mfrac>
+	<mi>ρ</mi>
+	<mrow>
+	<mn>1</mn><mo>−</mo><msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mi>ρ</mi><mi>T</mi>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mi>T</mi>
+	</mfrac><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch11_s05_p13">Thus, the rule <span class="inlineequation"><math xml:id="mcafee_ch11_s05_m011" display="inline">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<msup>
+	<mi>b</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>b</mi><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mi>ρ</mi>
+	<mrow>
+	<mn>1</mn><mo>−</mo><msup>
+	<mi>e</mi>
+	<mrow>
+	<mo>−</mo><mi>ρ</mi><mi>T</mi>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>→</mo><mfrac>
+	<mn>1</mn>
+	<mi>T</mi>
+	</mfrac>
+	</mrow>
+	</math>
+</span> as <em class="emphasis">ρ</em> → 0, and this is precisely the same rule that arises under maximum sustainable yield.</p>
+    <p class="para editable block" id="mcafee-ch11_s05_p14">Thus, the Department of the Interior acts as if the interest rate is zero when it is not. The justification given is that the department is valuing future generations at the same level as current generations—that is, increasing the supply for future generations while slightly harming the current generation of buyers. The major consequence of the department’s policy of maximum sustainable yield is to force cutting of timber even when prices are low during recessions.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch11_s05_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch11_s05_l02">
+            <li>Renewable resources are harvested slightly earlier than the point at which they grow at the interest rate, because earlier planting of the next generation has value.</li>
+            <li>Maximum sustainable yield maximizes the long-run average value of the trees cut down, which is the optimal policy only when the interest rate is zero.</li>
+        </ul>
+    </div>
+    <div class="exercises block" id="mcafee-ch11_s05_n03">
+        <h3 class="title">Exercises</h3>
+        <ol class="orderedlist" id="mcafee-ch11_s05_l03">
+            <li>Show that maximum sustainable yield results in cutting down a tree when it is <em class="emphasis">T</em> years old, where <em class="emphasis">T</em> satisfies
+		<span class="inlineequation"><math xml:id="mcafee_ch11_s05_m012" display="inline">
+		<mrow>
+		<mfrac>
+		<mrow>
+		<msup>
+		<mi>b</mi>
+		<mo>′</mo>
+		</msup>
+		<mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+		</mrow>
+		<mrow>
+		<mi>b</mi><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+		</mrow>
+		</mfrac>
+		<mo>=</mo><mfrac>
+		<mn>1</mn>
+		<mi>T</mi>
+		</mfrac><mtext>.</mtext>
+		</mrow>
+		</math>
+</span>
+</li>
+            <li>Suppose that the growth rate of trees satisfies <span class="inlineequation"><math xml:id="mcafee_ch11_s05_m013" display="inline">
+		<mrow>
+		<mfrac>
+		<mrow>
+		<msup>
+		<mi>b</mi>
+		<mo>′</mo>
+		</msup>
+		<mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+		</mrow>
+		<mrow>
+		<mi>b</mi><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo>
+		</mrow>
+		</mfrac>
+		<mo>=</mo><mi>t</mi><msup>
+		<mi>e</mi>
+		<mrow>
+		<mo>−</mo><mi>t</mi>
+		</mrow>
+		</msup><mtext>.</mtext>
+		</mrow>
+		</math>
+</span> Numerically approximate the efficient time to cut down a tree if <em class="emphasis">ρ</em> = 0.1. How does this compare to the solution of maximum sustainable yield?</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s12-04-resource-extraction.html"><img src="shared/images/batch-left.png"></a> <a href="s12-04-resource-extraction.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s12-06-collectibles.html">Next Section</a> <a href="s12-06-collectibles.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

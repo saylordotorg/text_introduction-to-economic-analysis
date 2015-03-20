@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Subgame Perfection</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s17-04-examples.html"><img src="shared/images/batch-left.png"></a> <a href="s17-04-examples.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s17-06-supergames.html">Next Section</a> <a href="s17-06-supergames.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch16_s05" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">16.5</span> Subgame Perfection</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch16_s05_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch16_s05_l01">
+            <li>How do dynamic games play out?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s05_p01">So far, we have considered only games that are played simultaneously. Several of these games—notably the price cutting and apartment cleaning games—are actually played over and over again. Other games, like the bank location game, may only be played once, but nevertheless are played over time. Recall the bank location game, as illustrated once again in <a class="xref" href="#mcafee-ch16_s05_f01">Figure 16.27 "Bank location game revisited"</a>.</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s05_f01">
+        <p class="title"><span class="title-prefix">Figure 16.27</span> Bank location game revisited</p>
+        <img src="section_17/1a30cf8ae7fda4b892ffce019daf6153.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s05_p02">If neither city offered a Rebate, then Los Angeles won the bidding. So suppose that, instead of the simultaneous move game, first New York City decided whether to offer a Rebate, and then Los Angeles could decide to offer a Rebate. This sequential structure leads to a game that looks like <a class="xref" href="#mcafee-ch16_s05_f02">Figure 16.28 "Sequential bank location (NYC payoff listed first)"</a>.</p>
+    <p class="para editable block" id="mcafee-ch16_s05_p03">In this game, NYC makes the first move and chooses Rebate (to the left) or No Rebate (to the right). If NYC chooses Rebate, LA can then choose Rebate or None. Similarly, if NYC chooses No Rebate, LA can choose Rebate or None. The payoffs [using the standard of (LA, NYC) ordering] are written below the choices.</p>
+    <div class="figure large medium-height editable block" id="mcafee-ch16_s05_f02">
+        <p class="title"><span class="title-prefix">Figure 16.28</span> Sequential bank location (NYC payoff listed first)</p>
+        <img src="section_17/f1800da1e1ae9e3bcc02a951f2210c9c.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s05_p04">What NYC would like to do depends upon what NYC believes LA will do. What should NYC believe about LA? (Boy, does that rhetorical question suggest a lot of facetious answers.) The natural belief is that LA will do what is in LA’s best interest. This idea—that each stage of a dynamic game is played in an optimal way—is called <span class="margin_term"><a class="glossterm">subgame perfection</a><span class="glossdef">The idea that every stage of a dynamic game is played in an optimal way.</span></span>.</p>
+    <p class="para editable block" id="mcafee-ch16_s05_p05">Subgame perfection requires each player to act in its own best interest, independent of the history of the game.<span class="footnote" id="fwk-mcafee-fn16_007">Subgame perfection was introduced by Nobel laureate Reinhard Selten (1930–).</span> This seems very sensible and, in most contexts, it is sensible. In some settings, it may be implausible. Even if I see a player make a particular mistake three times in a row, subgame perfection requires that I must continue to believe that that player will not make the mistake again. Subgame perfection may be implausible in some circumstances, especially when it pays to be considered somewhat crazy.</p>
+    <p class="para editable block" id="mcafee-ch16_s05_p06">In the example, subgame perfection requires LA to offer a Rebate when NYC does (since LA gets 20 by rebating vs. 10), and to not offer a Rebate when NYC doesn’t. This is illustrated in the game, as shown in <a class="xref" href="#mcafee-ch16_s05_f03">Figure 16.29 "Subgame perfection"</a>, using arrows to indicate LA’s choices. In addition, the actions that LA won’t choose have been recolored in a light gray.</p>
+    <p class="para editable block" id="mcafee-ch16_s05_p07">Once LA’s subgame perfection choices are taken into account, NYC is presented with the choice of offering a Rebate, in which case it gets 0, or not offering a Rebate, in which case it gets 10. Clearly the optimal choice for NYC is to offer No Rebate, in which case LA doesn’t either; and the result is 30 for LA, and 10 for NYC.</p>
+    <p class="para editable block" id="mcafee-ch16_s05_p08">Dynamic games are generally “solved backward” in this way. That is, first establish what the last player does, then figure out—based upon the last player’s expected behavior—what the penultimate player does, and so on.</p>
+    <div class="figure large medium-height editable block" id="mcafee-ch16_s05_f03">
+        <p class="title"><span class="title-prefix">Figure 16.29</span> Subgame perfection</p>
+        <img src="section_17/0556aad5d84e465a44c6ec4db6770752.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s05_p09">We’ll consider one more application of subgame perfection. Suppose, in the game “avoiding Rocky,” that Rocky is actually stalking you and can condition his choice on your choice. Then you might as well go to the party you like best, because Rocky is going to follow you wherever you go. This is represented in <a class="xref" href="#mcafee-ch16_s05_f04">Figure 16.30 "Can’t avoid Rocky"</a>.</p>
+    <div class="figure large medium-height editable block" id="mcafee-ch16_s05_f04">
+        <p class="title"><span class="title-prefix">Figure 16.30</span> Can’t avoid Rocky</p>
+        <img src="section_17/96126d799015807b42f257e023d063b6.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s05_p10">Since Rocky’s optimal choice eliminates your best outcomes, you make the best of a bad situation by choosing Party 1. Here, Rocky has a <span class="margin_term"><a class="glossterm">second mover advantage</a><span class="glossdef">Situation in which choosing second is better than choosing simultaneously.</span></span>: Rocky’s ability to condition on your choice means that by choosing second he does better than he would do in a simultaneous game. In contrast, a <span class="margin_term"><a class="glossterm">first mover advantage</a><span class="glossdef">Situation in which choosing first is better than choosing simultaneously.</span></span> is a situation where choosing first is better than choosing simultaneously. First mover advantages arise when going first influences the second mover advantageously.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch16_s05_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch16_s05_l02">
+            <li>To decide what one should do in a sequential game, one figures out what will happen in the future, and then works backward to decide what to do in the present.</li>
+            <li>Subgame perfection requires each player to act in his or her own best interest, independent of the history of the game.</li>
+            <li>A first mover advantage is a situation where choosing first is better than choosing simultaneously. First mover advantages arise when going first influences the second mover advantageously.</li>
+            <li>A second mover advantage is a situation where choosing second is better than choosing simultaneously. Second mover advantages arise when going second permits exploiting choices made by others.</li>
+        </ul>
+    </div>
+    <div class="exercises block" id="mcafee-ch16_s05_n03">
+        <h3 class="title">Exercises</h3>
+        <ol class="orderedlist" id="mcafee-ch16_s05_l03">
+            <li>Formulate the battle of the sexes as a sequential game, letting the woman choose first. (This situation could arise if the woman were able to leave a message for the man about where she has gone.) Show that there is only one subgame perfect equilibrium, that the woman enjoys a first mover advantage over the man, and that she gets her most preferred outcome.</li>
+            <li>
+                <p class="para">What payoffs would players receive if they played this two-player sequential game below? Payoffs are listed in parentheses, with Player 1’s payoffs always listed first. (Note that choosing “in” allows the other player to make a decision, while choosing “out” ends the game.)</p>
+                <div class="figure medium" id="mcafee-ch16_s05_f05">
+                <p class="title"><span class="title-prefix">Figure 16.31</span> </p>
+                    <img src="section_17/647af059cd58d3ab779f7c4bd5f251b8.jpg">
+                </div>
+            </li>
+            <li>
+                <p class="para">Consider the following game:</p>
+                <div class="figure medium" id="mcafee-ch16_s05_f06">
+                <p class="title"><span class="title-prefix">Figure 16.32</span> </p>
+                    <img src="section_17/ce4a1b0f0b96ed94bd66c25ae976b03a.jpg">
+                </div>
+                <ol class="orderedlist" id="mcafee-ch16_s05_l04" numeration="loweralpha">
+                    <li>Find all equilibria of the above game.</li>
+                    <li>What is the subgame perfect equilibrium if you turn this into a sequential game, with Column going first? With Row going first?</li>
+                    <li>In which game does Column get the highest payoff—the simultaneous game, the sequential game when Column goes first, or the sequential game when Column goes second?</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s17-04-examples.html"><img src="shared/images/batch-left.png"></a> <a href="s17-04-examples.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s17-06-supergames.html">Next Section</a> <a href="s17-06-supergames.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

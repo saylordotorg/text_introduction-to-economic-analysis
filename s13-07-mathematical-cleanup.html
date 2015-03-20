@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Mathematical Cleanup</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s13-06-income-effects.html"><img src="shared/images/batch-left.png"></a> <a href="s13-06-income-effects.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s14-01-labor-supply.html">Next Section</a> <a href="s14-01-labor-supply.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch12_s07" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">12.7</span> Mathematical Cleanup</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch12_s07_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="mcafee-ch12_s07_l01">
+            <li>Are there important details that haven’t been addressed in the presentation of utility maximization?</li>
+            <li>What happens when consumers buy none of a good?</li>
+        </ol>
+    </div>
+    <p class="para block" id="mcafee-ch12_s07_p01">Let us revisit the maximization problem considered in this chapter to provide conditions under which local maximization is global. The consumer can spend <em class="emphasis">M</em> on either or both of two goods. This yields a payoff of <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m001" display="inline">
+	<mrow>
+	<mi>h</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>u</mi><mrow><mo>(</mo>
+	<mrow>
+	<mi>x</mi><mo>,</mo><mfrac>
+	<mrow>
+	<mi>M</mi><mo>−</mo><msub>
+	<mi>p</mi>
+	<mi>X</mi>
+	</msub>
+	<mi>x</mi>
+	</mrow>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>Y</mi>
+	</msub>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><mo>.</mo>
+	</mrow>
+	</math>
+</span> When is this problem well behaved? First, if <em class="emphasis">h</em> is a concave function of <em class="emphasis">x</em>, which implies <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m002" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>″</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>≤</mo><mn>0</mn><mtext>,</mtext>
+	</mrow>
+	</math>
+</span><span class="footnote" id="fwk-mcafee-fn12_007">The definition of concavity is such that <em class="emphasis">h</em> is concave if 0 &lt; <em class="emphasis">a</em> &lt; 1 and for all <em class="emphasis">x, y</em>, <em class="emphasis">h</em>(<em class="emphasis">ax</em> + (1 – <em class="emphasis">a</em>)<em class="emphasis">y</em>) ≥ <em class="emphasis">ah</em>(<em class="emphasis">x</em>) + (1 – <em class="emphasis">a</em>)<em class="emphasis">h</em>(<em class="emphasis">y</em>). It is reasonably straightforward to show that this implies the second derivative of <em class="emphasis">h</em> is negative; and if <em class="emphasis">h</em> is twice differentiable, the converse is true as well.</span> then any solution to the first-order condition is, in fact, a maximum. To see this, note that <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m003" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>″</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>≤</mo><mn>0</mn>
+	</mrow>
+	</math>
+</span> entails <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m004" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</math>
+</span> is decreasing. Moreover, if the point <em class="emphasis">x*</em> satisfies <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m005" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo>*</mo><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> then for <em class="emphasis">x</em> ≤ <em class="emphasis">x*</em>, <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m006" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>≥</mo><mn>0</mn><mtext>;</mtext>
+	</mrow>
+	</math>
+</span> and for <em class="emphasis">x</em> ≥ <em class="emphasis">x*</em>, <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m007" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>≤</mo><mn>0</mn><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> because <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m008" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</math>
+</span> gets smaller as <em class="emphasis">x</em> gets larger, and <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m009" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo>*</mo><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> Now consider <em class="emphasis">x</em> ≤ <em class="emphasis">x*</em>. Since <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m010" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>≥</mo><mn>0</mn><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> <em class="emphasis">h</em> is increasing as <em class="emphasis">x</em> gets larger. Similarly, for <em class="emphasis">x</em> ≥ <em class="emphasis">x*</em>, <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m011" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>≤</mo><mn>0</mn><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> which means that <em class="emphasis">h</em> gets smaller as <em class="emphasis">x</em> gets larger. Thus, <em class="emphasis">h</em> is concave and <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m012" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo>*</mo><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn>
+	</mrow>
+	</math>
+</span> means that <em class="emphasis">h</em> is maximized at <em class="emphasis">x*</em>.</p>
+    <p class="para block" id="mcafee-ch12_s07_p02">Thus, a sufficient condition for the first-order condition to characterize the maximum of utility is that <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m013" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>″</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>≤</mo><mn>0</mn>
+	</mrow>
+	</math>
+</span> for all <em class="emphasis">x</em>, <em class="emphasis">p<sub class="subscript">X</sub></em>, <em class="emphasis">p<sub class="subscript">Y</sub></em>, and <em class="emphasis">M</em>. Letting <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m014" display="inline">
+	<mrow>
+	<mi>z</mi><mo>=</mo><mfrac>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>X</mi>
+	</msub>
+	</mrow>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>Y</mi>
+	</msub>
+	</mrow>
+	</mfrac><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> this is equivalent to
+	<span class="inlineequation"><math xml:id="mcafee_ch12_s07_m015" display="inline">
+	<mrow>
+	<msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>11</mn>
+	</mrow>
+	</msub>
+	<mo>−</mo><mn>2</mn><mi>z</mi><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>12</mn>
+	</mrow>
+	</msub>
+	<mo>+</mo><msup>
+	<mi>z</mi>
+	<mn>2</mn>
+	</msup>
+	<msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>22</mn>
+	</mrow>
+	</msub>
+	<mo>≤</mo><mn>0</mn>
+	</mrow>
+	</math>
+</span> for all <em class="emphasis">z</em> &gt; 0.</p>
+    <p class="para block" id="mcafee-ch12_s07_p03">In turn, we can see that this requires (i) <em class="emphasis">u</em><sub class="subscript">11</sub> ≤ 0 (<em class="emphasis">z</em> = 0), (ii) <em class="emphasis">u</em><sub class="subscript">22</sub> ≤ 0 (<em class="emphasis">z</em>→∞), and (iii) <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m016" display="inline">
+	<mrow>
+	<msqrt>
+	<mrow>
+	<msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>11</mn>
+	</mrow>
+	</msub>
+	<msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>22</mn>
+	</mrow>
+	</msub>
+	</mrow>
+	</msqrt>
+	<mo>−</mo><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>12</mn>
+	</mrow>
+	</msub>
+	<mo>≥</mo><mn>0</mn>
+	</mrow>
+	</math>
+</span> <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m017" display="inline">
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mi>z</mi><mo>=</mo><msqrt>
+	<mrow>
+	<mfrac bevelled="true">
+	<mrow>
+	<msub>
+	 <mi>u</mi>
+	 <mrow>
+	  <mn>11</mn>
+	 </mrow>
+	</msub>
+	</mrow>
+	<mrow>
+	<msub>
+	 <mi>u</mi>
+	 <mrow>
+	  <mn>22</mn>
+	 </mrow>
+	</msub>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</msqrt>
+	</mrow>
+	<mo>)</mo></mrow><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> In addition, since</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch12_s07_m018" display="block">
+	<mrow>
+	<mo>−</mo><mrow><mo>(</mo>
+	<mrow>
+	<msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>11</mn>
+	</mrow>
+	</msub>
+	<mo>+</mo><mn>2</mn><mi>z</mi><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>12</mn>
+	</mrow>
+	</msub>
+	<mo>+</mo><msup>
+	<mi>z</mi>
+	<mn>2</mn>
+	</msup>
+	<msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>22</mn>
+	</mrow>
+	</msub>
+	</mrow>
+	<mo>)</mo></mrow><mo>=</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<msqrt>
+	<mrow>
+	<mo>−</mo><msub>
+	 <mi>u</mi>
+	 <mrow>
+	  <mn>11</mn>
+	 </mrow>
+	</msub>
+	</mrow>
+	</msqrt>
+	<mo>−</mo><mi>z</mi><msqrt>
+	<mrow>
+	<mo>−</mo><msub>
+	 <mi>u</mi>
+	 <mrow>
+	  <mn>22</mn>
+	 </mrow>
+	</msub>
+	</mrow>
+	</msqrt>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	<mo>+</mo><mn>2</mn><mi>z</mi><mrow><mo>(</mo>
+	<mrow>
+	<msqrt>
+	<mrow>
+	<msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>11</mn>
+	</mrow>
+	</msub>
+	<msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>22</mn>
+	</mrow>
+	</msub>
+	</mrow>
+	</msqrt>
+	<mo>−</mo><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>12</mn>
+	</mrow>
+	</msub>
+	</mrow>
+	<mo>)</mo></mrow>
+	<mtext>,</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para block" id="mcafee-ch12_s07_p04">(i), (ii), and (iii) are sufficient for <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m019" display="inline">
+	<mrow>
+	<msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>11</mn>
+	</mrow>
+	</msub>
+	<mo>+</mo><mn>2</mn><mi>z</mi><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>12</mn>
+	</mrow>
+	</msub>
+	<mo>+</mo><msup>
+	<mi>z</mi>
+	<mn>2</mn>
+	</msup>
+	<msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>22</mn>
+	</mrow>
+	</msub>
+	<mo>≤</mo><mn>0</mn><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch12_s07_p05">Therefore, if (i) <em class="emphasis">u</em><sub class="subscript">11</sub> ≤  0, (ii) <em class="emphasis">u</em><sub class="subscript">22</sub> ≤  0, and (iii) <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m020" display="inline">
+	<mrow>
+	<msqrt>
+	<mrow>
+	<msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>11</mn>
+	</mrow>
+	</msub>
+	<msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>22</mn>
+	</mrow>
+	</msub>
+	</mrow>
+	</msqrt>
+	<mo>−</mo><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>12</mn>
+	</mrow>
+	</msub>
+	<mo>≥</mo><mn>0</mn><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> a solution to the first-order conditions characterizes utility maximization for the consumer.</p>
+    <p class="para block" id="mcafee-ch12_s07_p06">When will a consumer specialize and consume zero of a good? A necessary condition for the choice of <em class="emphasis">x</em> to be zero is that the consumer doesn’t benefit from consuming a very small <em class="emphasis">x</em>; that is, <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m021" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>≤</mo><mn>0</mn><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> This means that</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch12_s07_m022" display="block">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>=</mo><msub>
+	<mi>u</mi>
+	<mn>1</mn>
+	</msub>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>0</mn><mo>,</mo><mfrac bevelled="true">
+	<mi>M</mi>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>Y</mi>
+	</msub>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><mo>−</mo><msub>
+	<mi>u</mi>
+	<mn>2</mn>
+	</msub>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>0</mn><mo>,</mo><mfrac bevelled="true">
+	<mi>M</mi>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>Y</mi>
+	</msub>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><mfrac bevelled="true">
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>X</mi>
+	</msub>
+	</mrow>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>Y</mi>
+	</msub>
+	</mrow>
+	</mfrac>
+	<mo>≤</mo><mn>0</mn>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch12_s07_p07">or</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch12_s07_m023" display="block">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<msub>
+	<mi>u</mi>
+	<mn>1</mn>
+	</msub>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>0</mn><mo>,</mo><mfrac bevelled="true">
+	<mi>M</mi>
+	<mrow>
+	<msub>
+	 <mi>p</mi>
+	 <mi>Y</mi>
+	</msub>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<msub>
+	<mi>u</mi>
+	<mn>2</mn>
+	</msub>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>0</mn><mo>,</mo><mfrac bevelled="true">
+	<mi>M</mi>
+	<mrow>
+	<msub>
+	 <mi>p</mi>
+	 <mi>Y</mi>
+	</msub>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	</mfrac>
+	<mo>≤</mo><mfrac bevelled="true">
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>X</mi>
+	</msub>
+	</mrow>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>Y</mi>
+	</msub>
+	</mrow>
+	</mfrac>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para block" id="mcafee-ch12_s07_p08">Moreover, if the concavity of <em class="emphasis">h</em> is met, as assumed above, then this condition is sufficient to guarantee that the solution is zero. To see this, note that concavity of <em class="emphasis">h</em> implies <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m024" display="inline">
+	<msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	</math>
+</span> is decreasing. Combined with <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m025" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>≤</mo><mn>0</mn><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> this entails that <em class="emphasis">h</em> is maximized at 0. An important class of examples of this behavior is quasilinear utility. Quasilinear utility comes in the form <em class="emphasis">u</em>(<em class="emphasis">x, y</em>) = <em class="emphasis">y</em> + <em class="emphasis">v</em>(<em class="emphasis">x</em>), where <em class="emphasis">v</em> is a concave function (<span class="inlineequation"><math xml:id="mcafee_ch12_s07_m026" display="inline">
+	<mrow>
+	<msup>
+	<mi>v</mi>
+	<mo>″</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>≤</mo><mn>0</mn>
+	</mrow>
+	</math>
+</span> for all <em class="emphasis">x</em>). That is, <span class="margin_term"><a class="glossterm">quasilinear utility</a><span class="glossdef">Utility that is additively separable.</span></span> is utility that is additively separable.</p>
+    <div class="figure medium editable block" id="mcafee-ch12_s07_f01">
+        <p class="title"><span class="title-prefix">Figure 12.14</span> Quasilinear isoquants</p>
+        <img src="section_13/fc3a8e40859c3c4e60d438e6f290347e.jpg">
+    </div>
+    <p class="para block" id="mcafee-ch12_s07_p09">The procedure for dealing with corners is generally this. First, check concavity of the <em class="emphasis">h</em> function. If <em class="emphasis">h</em> is concave, we have a procedure to solve the problem; when <em class="emphasis">h</em> is not concave, an alternative strategy must be devised. There are known strategies for some cases that are beyond the scope of this text. Given <em class="emphasis">h</em> concave, the next step is to check the endpoints and verify that <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m027" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>&gt;</mo><mn>0</mn>
+	</mrow>
+	</math>
+</span> (for otherwise <em class="emphasis">x</em> = 0 maximizes the consumer’s utility) and <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m028" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac bevelled="true">
+	<mi>M</mi>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>X</mi>
+	</msub>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><mo>&lt;</mo><mn>0</mn>
+	</mrow>
+	</math>
+</span> (for otherwise <em class="emphasis">y</em> = 0 maximizes the consumer’s utility). Finally, at this point we seek the interior solution <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m029" display="inline">
+	<mrow>
+	<msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> With this procedure, we can ensure that we find the actual maximum for the consumer rather than a solution to the first-order conditions that don’t maximize the consumer’s utility.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch12_s07_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch12_s07_l02">
+            <li>Conditions are available that ensure that the first-order conditions produce a utility maximum.</li>
+            <li>With convex preferences, zero consumption of one good arises when utility is decreasing in the consumption of one good, spending the rest of income on the other good.</li>
+        </ul>
+    </div>
+    <div class="exercises block" id="mcafee-ch12_s07_n03">
+        <h3 class="title">Exercise</h3>
+        <ol class="orderedlist" id="mcafee-ch12_s07_l03">
+            <li>Demonstrate that the quasilinear consumer will consume zero <em class="emphasis">X</em> if and only if <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m030" display="inline">
+			<mrow>
+			<msup>
+			<mi>v</mi>
+			<mo>′</mo>
+			</msup>
+			<mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>≤</mo><mfrac>
+			<mrow>
+			<msub>
+			<mi>p</mi>
+			<mi>x</mi>
+			</msub>
+			</mrow>
+			<mrow>
+			<msub>
+			<mi>p</mi>
+			<mi>y</mi>
+			</msub>
+			</mrow>
+			</mfrac><mtext>,</mtext>
+			</mrow>
+			</math>
+</span> and that the consumer instead consumes zero <em class="emphasis">Y</em> if <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m031" display="inline">
+			<mrow>
+			<msup>
+			<mi>v</mi>
+			<mo>′</mo>
+			</msup>
+			<mrow><mo>(</mo>
+			<mrow>
+			<mfrac bevelled="true">
+			<mi>M</mi>
+			<mrow>
+			<msub>
+			<mi>p</mi>
+			<mi>X</mi>
+			</msub>
+			</mrow>
+			</mfrac>
+			</mrow>
+			<mo>)</mo></mrow><mo>≥</mo><mfrac>
+			<mrow>
+			<msub>
+			<mi>p</mi>
+			<mi>x</mi>
+			</msub>
+			</mrow>
+			<mrow>
+			<msub>
+			<mi>p</mi>
+			<mi>y</mi>
+			</msub>
+			</mrow>
+			</mfrac>
+			<mo>.</mo>
+			</mrow>
+			</math>
+</span> The quasilinear utility isoquants, for <span class="inlineequation"><math xml:id="mcafee_ch12_s07_m032" display="inline">
+			<mrow>
+			<mi>v</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+			<mrow>
+			<mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>0.03</mn><mo stretchy="false">)</mo>
+			</mrow>
+			<mrow>
+			<mn>0.3</mn>
+			</mrow>
+			</msup><mtext>,</mtext>
+			</mrow>
+			</math>
+</span> are illustrated in <a class="xref" href="#mcafee-ch12_s07_f01">Figure 12.14 "Quasilinear isoquants"</a>. Note that, even though the isoquants curve, they are nonetheless parallel to each other.</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s13-06-income-effects.html"><img src="shared/images/batch-left.png"></a> <a href="s13-06-income-effects.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s14-01-labor-supply.html">Next Section</a> <a href="s14-01-labor-supply.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

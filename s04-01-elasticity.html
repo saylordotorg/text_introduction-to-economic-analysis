@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Elasticity</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s03-05-changes-in-demand-and-supply.html"><img src="shared/images/batch-left.png"></a> <a href="s03-05-changes-in-demand-and-supply.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s04-02-supply-and-demand-changes.html">Next Section</a> <a href="s04-02-supply-and-demand-changes.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch03_s01" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">3.1</span> Elasticity</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch03_s01_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="mcafee-ch03_s01_l01">
+            <li>What is the best way of measuring the responsiveness of demand?</li>
+            <li>What is the best way of measuring the responsiveness of supply?</li>
+        </ol>
+    </div>
+    <p class="para block" id="mcafee-ch03_s01_p01">Let <em class="emphasis">x</em>(<em class="emphasis">p</em>) represent the quantity purchased when the price is <em class="emphasis">p</em>, so that the function <em class="emphasis">x</em> represents demand. How responsive is demand to price changes? One might be tempted to use the derivative, <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="mcafee_ch03_s01_m001" display="inline">
+	<msup>
+	<mi>x</mi>
+	<mo>′</mo>
+	</msup>
+	</math>
+</span>, to measure the responsiveness of demand, since it measures how much the quantity demanded changes in response to a small change in price. However, this measure has two problems. First, it is sensitive to a change in units. If I measure the quantity of candy in kilograms rather than in pounds, the derivative of demand for candy with respect to price changes even if the demand itself is unchanged. Second, if I change price units, converting from one currency to another, again the derivative of demand will change. So the derivative is unsatisfactory as a measure of responsiveness because it depends on units of measure. A common way of establishing a unit-free measure is to use percentages, and that suggests considering the responsiveness of demand to a small percentage change in price in percentage terms. This is the notion of <span class="margin_term"><a class="glossterm">elasticity of demand</a><span class="glossdef">The percentage change in one variable for a small percentage change in another.</span></span>.<span class="footnote" id="fwk-mcafee-fn03_001">The concept of elasticity was invented by Alfred Marshall (1842–1924) in 1881 while sitting on his roof.</span> The elasticity of demand is the percentage decrease in quantity that results from a small percentage increase in price. Formally, the elasticity of demand, which is generally denoted with the Greek letter epsilon, <em class="emphasis">ε</em>, (chosen mnemonically to indicate elasticity) is</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="mcafee_ch03_s01_m002" display="block">
+	<mrow>
+	<mi>ε</mi><mo>=</mo><mo>−</mo><mfrac>
+	<mrow>
+	<mfrac bevelled="true">
+	<mrow>
+	<mi>d</mi><mi>x</mi>
+	</mrow>
+	<mi>x</mi>
+	</mfrac>
+	</mrow>
+	<mrow>
+	<mfrac bevelled="true">
+	<mrow>
+	<mi>d</mi><mi>p</mi>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mo>−</mo><mfrac>
+	<mi>p</mi>
+	<mi>x</mi>
+	</mfrac>
+	<mfrac>
+	<mrow>
+	<mi>d</mi><mi>x</mi>
+	</mrow>
+	<mrow>
+	<mi>d</mi><mi>p</mi>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mo>−</mo><mfrac>
+	<mrow>
+	<mi>p</mi><msup>
+	<mi>x</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>x</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mo>.</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch03_s01_p02">The minus sign is included in the expression to make the elasticity a positive number, since demand is decreasing. First, let’s verify that the elasticity is, in fact, unit free. A change in the measurement of <em class="emphasis">x</em> doesn’t affect elasticity because the proportionality factor appears in both the numerator and denominator. Similarly, a change in the measure of price so that <em class="emphasis">p</em> is replaced by <em class="emphasis">r</em> = <em class="emphasis">ap</em>, does not change the elasticity, since as demonstrated below,</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="mcafee_ch03_s01_m003" display="block">
+	<mrow>
+	<mi>ε</mi><mo>=</mo><mo>−</mo><mfrac>
+	<mrow>
+	<mi>r</mi><mfrac>
+	<mi>d</mi>
+	<mrow>
+	<mi>d</mi><mi>r</mi>
+	</mrow>
+	</mfrac>
+	<mi>x</mi><mo stretchy="false">(</mo><mi>r</mi><mo>/</mo><mi>a</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>x</mi><mo stretchy="false">(</mo><mi>r</mi><mo>/</mo><mi>a</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mo>−</mo><mfrac>
+	<mrow>
+	<mi>r</mi><msup>
+	<mi>x</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>r</mi><mo>/</mo><mi>a</mi><mo stretchy="false">)</mo><mfrac>
+	<mn>1</mn>
+	<mi>a</mi>
+	</mfrac>
+	</mrow>
+	<mrow>
+	<mi>x</mi><mo stretchy="false">(</mo><mi>r</mi><mo>/</mo><mi>a</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mo>−</mo><mfrac>
+	<mrow>
+	<mi>p</mi><msup>
+	<mi>x</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>x</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mo>,</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch03_s01_p03">the measure of elasticity is independent of <em class="emphasis">a</em>, and therefore not affected by the change in units.</p>
+    <p class="para editable block" id="mcafee-ch03_s01_p04">How does a consumer’s expenditure, also known as (individual) total revenue, react to a change in price? The consumer buys <em class="emphasis">x</em>(<em class="emphasis">p</em>) at a price of <em class="emphasis">p</em>, and thus <span class="margin_term"><a class="glossterm">total expenditure</a><span class="glossdef">Price times the quantity purchased.</span></span>, or <em class="emphasis">total revenue</em>, is <em class="emphasis">TR</em> = <em class="emphasis">px</em>(<em class="emphasis">p</em>). Thus,</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="mcafee_ch03_s01_m004" display="block">
+	<mrow>
+	<mfrac>
+	<mi>d</mi>
+	<mrow>
+	<mi>d</mi><mi>p</mi>
+	</mrow>
+	</mfrac>
+	<mi>p</mi><mi>x</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mo>=</mo><mi>x</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mo>+</mo><mi>p</mi><msup>
+	<mi>x</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mo>=</mo><mi>x</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mfrac>
+	<mrow>
+	<mi>p</mi><msup>
+	<mi>x</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>x</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><mo>=</mo><mi>x</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>ε</mi>
+	</mrow>
+	<mo>)</mo></mrow><mo>.</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch03_s01_p05">Therefore,</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="mcafee_ch03_s01_m005" display="block">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mfrac>
+	<mi>d</mi>
+	<mrow>
+	<mi>d</mi><mi>p</mi>
+	</mrow>
+	</mfrac>
+	<mi>T</mi><mi>R</mi>
+	</mrow>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mi>p</mi>
+	</mfrac>
+	<mi>T</mi><mi>R</mi>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mn>1</mn><mo>−</mo><mi>ε</mi><mo>.</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch03_s01_p06">In other words, the percentage change of total revenue resulting from a 1% change in price is one minus the elasticity of demand. Thus, a 1% increase in price will increase total revenue when the elasticity of demand is less than one, which is defined as an <span class="margin_term"><a class="glossterm">inelastic demand</a><span class="glossdef">When the elasticity of demand is less than one.</span></span>. A price increase will decrease total revenue when the elasticity of demand is greater than one, which is defined as an <span class="margin_term"><a class="glossterm">elastic demand</a><span class="glossdef">When the elasticity of demand is less than one.</span></span>. The case of elasticity equal to one is called <span class="margin_term"><a class="glossterm">unitary elasticity</a><span class="glossdef">When elasticity is equal to one.</span></span>, and total revenue is unchanged by a small price change. Moreover, that percentage increase in price will increase revenue by approximately 1 – <em class="emphasis">ε</em> percent. Because it is often possible to estimate the elasticity of demand, the formulae can be readily used in practice.</p>
+    <p class="para editable block" id="mcafee-ch03_s01_p07"><a class="xref" href="#mcafee-ch03_s01_t01">Table 3.1 "Various Demand Elasticities"</a> provides estimates on demand elasticities for a variety of products.</p>
+    <div class="table block" id="mcafee-ch03_s01_t01" frame="all">
+        <p class="title"><span class="title-prefix">Table 3.1</span> Various Demand Elasticities</p>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th><em class="emphasis">ε</em></th>
+                    <th>Product</th>
+                    <th><em class="emphasis">ε</em></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Salt</td>
+                    <td>0.1</td>
+                    <td>Movies</td>
+                    <td>0.9</td>
+                </tr>
+                <tr>
+                    <td>Matches</td>
+                    <td>0.1</td>
+                    <td>Shellfish, consumed at home</td>
+                    <td>0.9</td>
+                </tr>
+                <tr>
+                    <td>Toothpicks</td>
+                    <td>0.1</td>
+                    <td>Tires, short-run</td>
+                    <td>0.9</td>
+                </tr>
+                <tr>
+                    <td>Airline travel, short-run</td>
+                    <td>0.1</td>
+                    <td>Oysters, consumed at home</td>
+                    <td>1.1</td>
+                </tr>
+                <tr>
+                    <td>Residential natural gas, short-run</td>
+                    <td>0.1</td>
+                    <td>Private education</td>
+                    <td>1.1</td>
+                </tr>
+                <tr>
+                    <td>Gasoline, short-run</td>
+                    <td>0.2</td>
+                    <td>Housing, owner occupied, long-run</td>
+                    <td>1.2</td>
+                </tr>
+                <tr>
+                    <td>Automobiles, long-run</td>
+                    <td>0.2</td>
+                    <td>Tires, long-run</td>
+                    <td>1.2</td>
+                </tr>
+                <tr>
+                    <td>Coffee</td>
+                    <td>0.25</td>
+                    <td>Radio and television receivers</td>
+                    <td>1.2</td>
+                </tr>
+                <tr>
+                    <td>Legal services, short-run</td>
+                    <td>0.4</td>
+                    <td>Automobiles, short-run</td>
+                    <td>1.2-1.5</td>
+                </tr>
+                <tr>
+                    <td>Tobacco products, short-run</td>
+                    <td>0.45</td>
+                    <td>Restaurant meals</td>
+                    <td>2.3</td>
+                </tr>
+                <tr>
+                    <td>Residential natural gas, long-run</td>
+                    <td>0.5</td>
+                    <td>Airline travel, long-run</td>
+                    <td>2.4</td>
+                </tr>
+                <tr>
+                    <td>Fish (cod) consumed at home</td>
+                    <td>0.5</td>
+                    <td>Fresh green peas</td>
+                    <td>2.8</td>
+                </tr>
+                <tr>
+                    <td>Physician services</td>
+                    <td>0.6</td>
+                    <td>Foreign travel, long-run</td>
+                    <td>4.0</td>
+                </tr>
+                <tr>
+                    <td>Taxi, short-run</td>
+                    <td>0.6</td>
+                    <td>Chevrolet automobiles</td>
+                    <td>4.0</td>
+                </tr>
+                <tr>
+                    <td>Gasoline, long-run</td>
+                    <td>0.7</td>
+                    <td>Fresh tomatoes</td>
+                    <td>4.6</td>
+                </tr>
+            </tbody>
+        </table>
+            <div class="copyright">
+            <p class="para">From <a class="link" href="http://www.mackinac.org/archives/1997/s1997-04.pdf">http://www.mackinac.org/archives/1997/s1997-04.pdf</a>; cited sources: <em class="emphasis">James D. Gwartney and Richard L. Stroup,</em>, Economics: Private and Public Choice, <em class="emphasis">7th ed., 1995; 8th ed., 1997;</em> Hendrick S. Houthakker and Lester D. Taylor, Consumer Demand in the United States, 1929–1970 (1966; Cambridge: Harvard University Press, 1970); Douglas R. Bohi, Analyzing Demand Behavior (Baltimore: Johns Hopkins University Press, 1981); Hsaing-tai Cheng and Oral Capps, Jr., "Demand for Fish," American Journal of Agricultural Economics, August 1988; and U.S. Department of Agriculture.</p>
+        </div>
+    </div>
+    <p class="para editable block" id="mcafee-ch03_s01_p08">When demand is linear, <em class="emphasis">x</em>(<em class="emphasis">p</em>) = <em class="emphasis">a</em> – <em class="emphasis">bp</em>, the elasticity of demand has the form</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="mcafee_ch03_s01_m006" display="block">
+	<mrow>
+	<mi>ε</mi><mo>=</mo><mfrac>
+	<mrow>
+	<mi>b</mi><mi>p</mi>
+	</mrow>
+	<mrow>
+	<mi>a</mi><mo>−</mo><mi>b</mi><mi>p</mi>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mi>p</mi>
+	<mrow>
+	<mfrac bevelled="true">
+	<mi>a</mi>
+	<mi>b</mi>
+	</mfrac>
+	<mo>−</mo><mi>p</mi>
+	</mrow>
+	</mfrac>
+	<mo>.</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch03_s01_p09">This case is illustrated in <a class="xref" href="#mcafee-ch03_s01_f01">Figure 3.1 "Elasticities for linear demand"</a>.</p>
+    <div class="figure medium editable block" id="mcafee-ch03_s01_f01">
+        <p class="title"><span class="title-prefix">Figure 3.1</span> Elasticities for linear demand</p>
+        <img src="section_04/023cab61140832c66e44ece7514a482a.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch03_s01_p10">If demand takes the form <em class="emphasis">x</em>(<em class="emphasis">p</em>) = <em class="emphasis">a * p<sup class="superscript">−ε</sup></em>, then demand has <span class="margin_term"><a class="glossterm">constant elasticity</a><span class="glossdef">Condition in which the elasticity remains at the same level while the underlying variables change.</span></span>, and the elasticity is equal to <em class="emphasis">ε</em>. In other words, the elasticity remains at the same level while the underlying variables (such as price and quantity) change.</p>
+    <p class="para editable block" id="mcafee-ch03_s01_p11">The <span class="margin_term"><a class="glossterm">elasticity of supply</a><span class="glossdef">The percentage increase in quantity supplied resulting from a small percentage increase in price.</span></span> is analogous to the elasticity of demand in that it is a unit-free measure of the responsiveness of supply to a price change, and is defined as the percentage increase in quantity supplied resulting from a small percentage increase in price. Formally, if <em class="emphasis">s</em>(<em class="emphasis">p</em>) gives the quantity supplied for each price <em class="emphasis">p</em>, the elasticity of supply, denoted by <em class="emphasis">η</em> (the Greek letter “eta,” chosen because epsilon was already taken) is</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="mcafee_ch03_s01_m007" display="block">
+	<mrow>
+	<mi>η</mi><mo>=</mo><mfrac>
+	<mrow>
+	<mfrac bevelled="true">
+	<mrow>
+	<mi>d</mi><mi>s</mi>
+	</mrow>
+	<mi>s</mi>
+	</mfrac>
+	</mrow>
+	<mrow>
+	<mfrac bevelled="true">
+	<mrow>
+	<mi>d</mi><mi>p</mi>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mi>p</mi>
+	<mi>s</mi>
+	</mfrac>
+	<mfrac>
+	<mrow>
+	<mi>d</mi><mi>s</mi>
+	</mrow>
+	<mrow>
+	<mi>d</mi><mi>p</mi>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mi>p</mi><msup>
+	<mi>s</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>s</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mo>.</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch03_s01_p12">Again, similar to demand, if supply takes the form <em class="emphasis">s</em>(<em class="emphasis">p</em>) = <em class="emphasis">a * p<sup class="superscript">η</sup></em>, then supply has constant elasticity, and the elasticity is equal to <em class="emphasis">η</em>. A special case of this form is linear supply, which occurs when the elasticity equals one.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch03_s01_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch03_s01_l02">
+            <li>The elasticity of demand is the percentage decrease in quantity that results from a small percentage increase in price, which is generally denoted with the Greek letter epsilon, <em class="emphasis">ε</em>.</li>
+            <li>The percentage change of total revenue resulting from a 1% change in price is one minus the elasticity of demand.</li>
+            <li>An elasticity of demand that is less than one is defined as an inelastic demand. In this case, increasing price increases total revenue.</li>
+            <li>A price increase will decrease total revenue when the elasticity of demand is greater than one, which is defined as an elastic demand.</li>
+            <li>The case of elasticity equal to one is called unitary elasticity, and total revenue is unchanged by a small price change.</li>
+            <li>If demand takes the form <em class="emphasis">x</em>(<em class="emphasis">p</em>) = <em class="emphasis">a * p<sup class="superscript">−ε</sup></em>, then demand has constant elasticity, and the elasticity is equal to <em class="emphasis">ε</em>.</li>
+            <li>The elasticity of supply is defined as the percentage increase in quantity supplied resulting from a small percentage increase in price.</li>
+            <li>If supply takes the form <em class="emphasis">s</em>(<em class="emphasis">p</em>) = <em class="emphasis">a * p<sup class="superscript">η</sup></em>, then supply has constant elasticity, and the elasticity is equal to <em class="emphasis">η</em>.</li>
+        </ul>
+    </div>
+    <div class="exercises editable block" id="mcafee-ch03_s01_n03">
+        <h3 class="title">Exercises</h3>
+        <ol class="orderedlist" id="mcafee-ch03_s01_l03">
+            <li>Suppose a consumer has a constant elasticity of demand <em class="emphasis">ε</em>, and demand is elastic (<em class="emphasis">ε</em> &gt; 1). Show that expenditure increases as price decreases.</li>
+            <li>Suppose a consumer has a constant elasticity of demand <em class="emphasis">ε</em>, and demand is inelastic (<em class="emphasis">ε</em> &lt; 1). What price makes expenditure the greatest?</li>
+            <li>For a consumer with constant elasticity of demand <em class="emphasis">ε</em> &gt; 1, compute the consumer surplus.</li>
+            <li>For a producer with constant elasticity of supply, compute the producer profits.</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s03-05-changes-in-demand-and-supply.html"><img src="shared/images/batch-left.png"></a> <a href="s03-05-changes-in-demand-and-supply.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s04-02-supply-and-demand-changes.html">Next Section</a> <a href="s04-02-supply-and-demand-changes.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Labor Supply</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s13-07-mathematical-cleanup.html"><img src="shared/images/batch-left.png"></a> <a href="s13-07-mathematical-cleanup.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s14-02-urban-real-estate-prices.html">Next Section</a> <a href="s14-02-urban-real-estate-prices.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch13_s01" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">13.1</span> Labor Supply</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch13_s01_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch13_s01_l01">
+            <li>If we want people to work more, should we pay them more or will that cause them to work less?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch13_s01_p01">Consider a taxi driver who owns a car, a convenience store owner, or anyone else who can set his or her own hours. Working has two effects on this consumer: more goods consumption but less leisure consumption. To model this, we let <em class="emphasis">x</em> be the goods consumption, <em class="emphasis">L</em> the amount of nonwork time or leisure, and working time <em class="emphasis">T</em> – <em class="emphasis">L</em>, where <em class="emphasis">T</em> is the amount of time available for activities of all kinds. The variable <em class="emphasis">L</em> includes a lot of activities that aren’t necessarily fun—like trips to the dentist, haircuts, and sleeping—but for which the consumer isn’t paid and which represent choices. One could argue that sleeping isn’t really a choice, in the sense that one can’t choose zero sleep; but this can be handled by adjusting <em class="emphasis">T</em> to represent “time available for chosen behavior” so that <em class="emphasis">T</em> – <em class="emphasis">L</em> is work time and <em class="emphasis">L</em> is chosen nonwork activities. We set <em class="emphasis">L</em> to be leisure rather than labor supply because it is leisure that is the good thing, whereas most of us view working as something that we are willing to do provided we’re paid for it.</p>
+    <p class="para block" id="mcafee-ch13_s01_p02">Labor supply is different from other consumption because the wage enters the budget constraint twice: first as the price of leisure, and second as income from working. One way of expressing this is to write the consumer’s budget constraint as
+	<span class="inlineequation"><em class="emphasis">px</em> + <em class="emphasis">wL</em> = <em class="emphasis">M</em> + <em class="emphasis">wT</em>.</span></p>
+    <p class="para block" id="mcafee-ch13_s01_p03">Here, <em class="emphasis">M</em> represents nonwork income, such as gifts, government transfers, and interest income. We drop the subscript on the price of <em class="emphasis">X</em> and use <em class="emphasis">w</em> as the wage. Finally, we use a capital <em class="emphasis">L</em> for leisure because a lowercase L looks like the number one. The somewhat Dickensian idea is that the consumer’s maximal budget entails working the total available hours <em class="emphasis">T</em>, and any nonworked hours are purchased at the wage rate <em class="emphasis">w</em>. Alternatively, one could express the budget constraint so as to reflect that expenditures on goods <em class="emphasis">px</em> equal the total money, which is the sum of nonwork income <em class="emphasis">M</em> and work income <em class="emphasis">w</em>(<em class="emphasis">T</em> – <em class="emphasis">L</em>), or
+	<span class="inlineequation"><em class="emphasis">px</em> = <em class="emphasis">M</em> + <em class="emphasis">w</em>(<em class="emphasis">T</em> – <em class="emphasis">L</em>).</span></p>
+    <p class="para editable block" id="mcafee-ch13_s01_p04">These two formulations of the budget constraint are mathematically equivalent.</p>
+    <p class="para block" id="mcafee-ch13_s01_p05">The strategy for solving the problem is also equivalent to the standard formulation, although there is some expositional clarity used by employing the budget constraint to eliminate <em class="emphasis">x</em>. That is, we write the utility <em class="emphasis">u</em>(<em class="emphasis">x</em>, <em class="emphasis">L</em>) as
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s01_m001" display="inline">
+	<mrow>
+	<mi>h</mi><mo stretchy="false">(</mo><mi>L</mi><mo stretchy="false">)</mo><mo>=</mo><mi>u</mi><mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>M</mi><mo>+</mo><mi>w</mi><mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>L</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	<mi>L</mi>
+	</mrow>
+	<mo>)</mo></mrow><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch13_s01_p06">As before, we obtain the first-order condition
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s01_m002" display="inline">
+	<mrow>
+	<mn>0</mn><mo>=</mo><msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>L</mi><mo>*</mo><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><msub>
+	<mi>u</mi>
+	<mn>1</mn>
+	</msub>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac bevelled="true">
+	<mi>w</mi>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><mo>+</mo><msub>
+	<mi>u</mi>
+	<mn>2</mn>
+	</msub>
+	<mtext>,</mtext>
+	</mrow>
+	</math>
+</span> where the partial derivatives <em class="emphasis">u</em><sub class="subscript">1</sub> and <em class="emphasis">u</em><sub class="subscript">2</sub> are evaluated at <span class="inlineequation"><math xml:id="mcafee_ch13_s01_m003" display="inline">
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>M</mi><mo>+</mo><mi>w</mi><mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>L</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	<mo>,</mo><mi>L</mi><mo>*</mo>
+	</mrow>
+	<mo>)</mo></mrow><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> Note that the first-order condition is the same as the standard two-good theory developed already. This is because the effect, so far, is merely to require two components to income: <em class="emphasis">M</em> and <em class="emphasis">wT</em>, both of which are constant. It is only when we evaluate the effect of a wage increase that we see a difference.</p>
+    <p class="para editable block" id="mcafee-ch13_s01_p07">To evaluate the effect of a wage increase, differentiate the first-order condition to obtain</p>
+    <span class="inlineequation block">
+<math xml:id="mcafee_ch13_s01_m004" display="inline">
+	<mrow>
+	<mn>0</mn><mo>=</mo><mrow><mo>(</mo>
+	<mrow>
+	<msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>11</mn>
+	</mrow>
+	</msub>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac bevelled="true">
+	 <mi>w</mi>
+	 <mi>p</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	<mo>−</mo><mn>2</mn><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>12</mn>
+	</mrow>
+	</msub>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac bevelled="true">
+	<mi>w</mi>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><mo>+</mo><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>22</mn>
+	</mrow>
+	</msub>
+	</mrow>
+	<mo>)</mo></mrow><mfrac>
+	<mrow>
+	<mi>d</mi><mi>L</mi>
+	</mrow>
+	<mrow>
+	<mi>d</mi><mi>w</mi>
+	</mrow>
+	</mfrac>
+	<mo>−</mo><mfrac>
+	<mrow>
+	<msub>
+	<mi>u</mi>
+	<mn>1</mn>
+	</msub>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	<mo>−</mo><mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mi>w</mi>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>11</mn>
+	</mrow>
+	</msub>
+	<mfrac>
+	<mrow>
+	<mi>T</mi><mo>−</mo><mi>L</mi>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	<mo>+</mo><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>12</mn>
+	</mrow>
+	</msub>
+	<mfrac>
+	<mrow>
+	<mi>T</mi><mo>−</mo><mi>L</mi>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+    </span>
+    <p class="para block" id="mcafee-ch13_s01_p08">Since <span class="inlineequation"><math xml:id="mcafee_ch13_s01_m005" display="inline">
+	<mrow>
+	<msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>11</mn>
+	</mrow>
+	</msub>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac bevelled="true">
+	<mi>w</mi>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	<mo>−</mo><mn>2</mn><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>12</mn>
+	</mrow>
+	</msub>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac bevelled="true">
+	<mi>w</mi>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><mo>+</mo><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>22</mn>
+	</mrow>
+	</msub>
+	<mo>&lt;</mo><mn>0</mn>
+	</mrow>
+	</math>
+</span> by the standard second-order condition, 
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s01_m006" display="inline">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>d</mi><mi>L</mi>
+	</mrow>
+	<mrow>
+	<mi>d</mi><mi>w</mi>
+	</mrow>
+	</mfrac>
+	<mo>&gt;</mo><mn>0</mn>
+	</mrow>
+	</math>
+</span> if and only if <span class="inlineequation"><math xml:id="mcafee_ch13_s01_m007" display="inline">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<msub>
+	<mi>u</mi>
+	<mn>1</mn>
+	</msub>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	<mo>+</mo><mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mi>w</mi>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>11</mn>
+	</mrow>
+	</msub>
+	<mfrac>
+	<mrow>
+	<mi>T</mi><mo>−</mo><mi>L</mi>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	<mo>−</mo><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>12</mn>
+	</mrow>
+	</msub>
+	<mfrac>
+	<mrow>
+	<mi>T</mi><mo>−</mo><mi>L</mi>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	<mo>&lt;</mo><mn>0</mn><mtext>;</mtext>
+	</mrow>
+	</math>
+</span> that is, these expressions are equivalent to one another. Simplifying the latter, we obtain
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s01_m008" display="inline">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mo>−</mo><mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mi>w</mi>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>11</mn>
+	</mrow>
+	</msub>
+	<mfrac>
+	<mrow>
+	<mi>T</mi><mo>−</mo><mi>L</mi>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	<mo>+</mo><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>12</mn>
+	</mrow>
+	</msub>
+	<mfrac>
+	<mrow>
+	<mi>T</mi><mo>−</mo><mi>L</mi>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<msub>
+	<mi>u</mi>
+	<mn>1</mn>
+	</msub>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	</mfrac>
+	<mo>&gt;</mo><mn>1</mn><mtext>, or</mtext>
+	</mrow>
+	</math>
+</span>
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s01_m009" display="inline">
+	<mrow>
+	<mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>L</mi><mo stretchy="false">)</mo><mfrac>
+	<mrow>
+	<mo>−</mo><mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mi>w</mi>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>11</mn>
+	</mrow>
+	</msub>
+	<mo>+</mo><msub>
+	<mi>u</mi>
+	<mrow>
+	<mn>12</mn>
+	</mrow>
+	</msub>
+	</mrow>
+	<mrow>
+	<msub>
+	<mi>u</mi>
+	<mn>1</mn>
+	</msub>
+	</mrow>
+	</mfrac>
+	<mo>&gt;</mo><mn>1</mn><mtext>, or</mtext>
+	</mrow>
+	</math>
+</span>
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s01_m010" display="inline">
+	<mrow>
+	<mfrac>
+	<mo>∂</mo>
+	<mrow>
+	<mo>∂</mo><mi>L</mi>
+	</mrow>
+	</mfrac>
+	<mi>L</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><msub>
+	<mi>u</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo>&gt;</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mi>T</mi><mo>−</mo><mi>L</mi>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mo>−</mo><mfrac>
+	<mo>∂</mo>
+	<mrow>
+	<mo>∂</mo><mi>L</mi>
+	</mrow>
+	</mfrac>
+	<mi>L</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>L</mi><mo stretchy="false">)</mo><mtext>, or</mtext>
+	</mrow>
+	</math>
+</span>
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s01_m011" display="inline">
+	<mrow>
+	<mfrac>
+	<mo>∂</mo>
+	<mrow>
+	<mo>∂</mo><mi>L</mi>
+	</mrow>
+	</mfrac>
+	<mi>L</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><msub>
+	<mi>u</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo>+</mo><mfrac>
+	<mo>∂</mo>
+	<mrow>
+	<mo>∂</mo><mi>L</mi>
+	</mrow>
+	</mfrac>
+	<mi>L</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>L</mi><mo stretchy="false">)</mo><mo>&gt;</mo><mn>0</mn><mtext>, or</mtext>
+	</mrow>
+	</math>
+</span>
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s01_m012" display="inline">
+	<mrow>
+	<mfrac>
+	<mo>∂</mo>
+	<mrow>
+	<mo>∂</mo><mi>L</mi>
+	</mrow>
+	</mfrac>
+	<mi>L</mi><mi>o</mi><mi>g</mi><mrow><mo>(</mo>
+	<mrow>
+	<msub>
+	<mi>u</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>L</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mo>)</mo></mrow><mo>&gt;</mo><mn>0.</mn>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch13_s01_p09">Since the logarithm is increasing, this is equivalent to <span class="inlineequation"><math xml:id="mcafee_ch13_s01_m013" display="inline">
+	<mrow>
+	<msub>
+	<mi>u</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>L</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</math>
+</span> being an increasing function of <em class="emphasis">L</em>. That is, <em class="emphasis">L</em> rises with an increase in wages and a decrease in hours worked if the marginal utility of goods times the hours worked is an increasing function of <em class="emphasis">L</em>, holding constant everything else, but evaluated at the optimal values. The value <em class="emphasis">u</em><sub class="subscript">1</sub> is the marginal value of an additional good, while the value <em class="emphasis">T – L</em> represents the hours worked. Thus, in particular, if goods and leisure are substitutes, so that an increase in <em class="emphasis">L</em> decreases the marginal value of goods, then an increase in wages must decrease leisure, and labor supply increases in wages. The case where the goods are complements holds a hope for a decreasing labor supply, so we consider first the extreme case of complements.</p>
+    <span class="informalequation block">Example (Perfect complements): <em class="emphasis">u</em>(<em class="emphasis">x, L</em>) = min {<em class="emphasis">x</em>, <em class="emphasis">L</em>}.</span>
+    <p class="para block" id="mcafee-ch13_s01_p10">In this case, the consumer will make consumption and leisure equal to maximize the utility, so
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s01_m014" display="inline">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>M</mi><mo>+</mo><mi>w</mi><mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>L</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	<mo>=</mo><mi>L</mi><mo>*</mo>
+	</mrow>
+	</math>
+</span> or <span class="inlineequation"><math xml:id="mcafee_ch13_s01_m015" display="inline">
+	<mrow>
+	<mi>L</mi><mo>*</mo><mo>=</mo><mfrac>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>M</mi><mo>+</mo><mi>w</mi><mi>T</mi>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mfrac>
+	<mi>w</mi>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mi>M</mi><mo>+</mo><mi>w</mi><mi>T</mi>
+	</mrow>
+	<mrow>
+	<mi>p</mi><mo>+</mo><mi>w</mi>
+	</mrow>
+	</mfrac>
+	<mo>.</mo>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch13_s01_p11">Thus, <em class="emphasis">L</em> is increasing in the wages if <em class="emphasis">pT</em> &gt; <em class="emphasis">M</em>; that is, if <em class="emphasis">M</em> is sufficiently small so that one can’t buy all of one’s needs and not work at all. (This is the only reasonable case for this utility function.) With strong complements between goods and leisure, an increase in wages induces fewer hours worked.</p>
+    <p class="para block" id="mcafee-ch13_s01_p12">Example (Cobb-Douglas): <span class="inlineequation"><math xml:id="mcafee_ch13_s01_m016" display="inline">
+	<mrow>
+	<mi>h</mi><mo stretchy="false">(</mo><mi>L</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>M</mi><mo>+</mo><mi>w</mi><mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>L</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mi>α</mi>
+	</msup>
+	<msup>
+	<mi>L</mi>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>α</mi>
+	</mrow>
+	</msup>
+	<mo>.</mo>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch13_s01_p13">The first-order condition gives
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s01_m017" display="inline">
+	<mrow>
+	<mn>0</mn><mo>=</mo><msup>
+	<mi>h</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>L</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mi>α</mi><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>M</mi><mo>+</mo><mi>w</mi><mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>L</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mi>α</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	<msup>
+	<mi>L</mi>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>α</mi>
+	</mrow>
+	</msup>
+	<mfrac>
+	<mi>w</mi>
+	<mi>p</mi>
+	</mfrac>
+	<mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>M</mi><mo>+</mo><mi>w</mi><mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>L</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mi>α</mi>
+	</msup>
+	<msup>
+	<mi>L</mi>
+	<mrow>
+	<mo>−</mo><mi>α</mi>
+	</mrow>
+	</msup>
+	</mrow>
+	</math>
+</span> or <span class="inlineequation"><math xml:id="mcafee_ch13_s01_m018" display="inline">
+	<mrow>
+	<mi>α</mi><mi>L</mi><mfrac>
+	<mi>w</mi>
+	<mi>p</mi>
+	</mfrac>
+	<mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><mfrac>
+	<mrow>
+	<mi>M</mi><mo>+</mo><mi>w</mi><mo stretchy="false">(</mo><mi>T</mi><mo>−</mo><mi>L</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mi>p</mi>
+	</mfrac><mtext>,</mtext>
+	</mrow>
+	</math>
+</span>
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s01_m019" display="inline">
+	<mrow>
+	<mfrac>
+	<mi>w</mi>
+	<mi>p</mi>
+	</mfrac>
+	<mi>L</mi><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><mfrac>
+	<mrow>
+	<mi>M</mi><mo>+</mo><mi>w</mi><mi>T</mi>
+	</mrow>
+	<mi>p</mi>
+	</mfrac>
+	</mrow>
+	</math>
+</span>
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s01_m020" display="inline">
+	<mrow>
+	<mtext>or </mtext><mi>L</mi><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mi>M</mi>
+	<mi>w</mi>
+	</mfrac>
+	<mo>+</mo><mi>T</mi>
+	</mrow>
+	<mo>)</mo></mrow><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch13_s01_p14">If <em class="emphasis">M</em> is high enough, the consumer doesn’t work but takes <em class="emphasis">L</em> = <em class="emphasis">T</em>; otherwise, the equation gives the leisure, and labor supply is given by
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s01_m021" display="inline">
+	<mrow>
+	<mi>T</mi><mo>−</mo><mi>L</mi><mo>=</mo><mi>M</mi><mi>a</mi><mi>x</mi><mrow><mo>{</mo> <mrow>
+	<mn>0</mn><mo>,</mo><mi>α</mi><mi>T</mi><mo>−</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><mrow><mo>(</mo>
+	<mrow>
+	<mfrac bevelled="true">
+	<mi>M</mi>
+	<mi>w</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow> <mo>}</mo></mrow><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> </p>
+    <p class="para editable block" id="mcafee-ch13_s01_p15">Labor supply increases with the wage, no matter how high the wage goes.</p>
+    <p class="para editable block" id="mcafee-ch13_s01_p16">The wage affects not just the price of leisure but also the income level. This makes it possible for the income effect of a wage increase to dominate the substitution effect. Moreover, we saw that this is more likely when the consumption of goods takes time; that is, the goods and leisure are complements.</p>
+    <div class="figure large editable block" id="mcafee-ch13_s01_f01">
+        <p class="title"><span class="title-prefix">Figure 13.1</span> Hours per week</p>
+        <img src="section_14/acab4211d066f695a3d3d12fdb1c701b.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch13_s01_p17">As a practical matter, for most developed nations, increases in wages are associated with fewer hours worked. The average workweek prior to 1950 was 55 hours, which fell to 40 hours by the mid-1950s. The workweek has gradually declined since then, as <a class="xref" href="#mcafee-ch13_s01_f01">Figure 13.1 "Hours per week"</a> illustrates.</p>
+    <p class="para editable block" id="mcafee-ch13_s01_p18">A number of physicists have changed careers to become researchers in finance or financial economics. Research in finance pays substantially better than research in physics, and yet requires many of the same mathematical skills like stochastic calculus. Physicists who see their former colleagues driving Porsches and buying summerhouses are understandably annoyed that research in finance—which is intellectually no more difficult or challenging than physics—pays so much better. Indeed, some physicists are saying that other fields—such as finance, economics, and law—“shouldn’t” pay more than physics.</p>
+    <p class="para editable block" id="mcafee-ch13_s01_p19">The difference in income between physics’ researchers and finance researchers is an example of a <span class="margin_term"><a class="glossterm">compensating differential</a><span class="glossdef">Income or costs that equalize different choices.</span></span>. A compensating differential is income or costs that equalize different choices. There are individuals who could become either physicists or finance researchers. At equal income, too many choose physics and too few choose finance, in the sense that there is a surplus of physicists and a shortage of finance researchers. Finance salaries must exceed physics’ salaries in order to induce some of the researchers who are capable of doing either one to switch to finance, which compensates those individuals for doing the less desirable task.</p>
+    <p class="para editable block" id="mcafee-ch13_s01_p20">Jobs that are dangerous or unpleasant must pay more than jobs requiring similar skills but without the bad attributes. Thus, oil-field workers in Alaska’s North Slope, well above the Arctic Circle, earn a premium over workers in similar jobs in Houston, Texas. The premium—or differential pay—must be such that the marginal worker is indifferent between the two choices: The extra pay compensates the worker for the adverse working conditions. This is why it is known in economics’ jargon by the phrase of a compensating differential.</p>
+    <p class="para editable block" id="mcafee-ch13_s01_p21">The high salaries earned by professional basketball players are not compensating differentials. These salaries are not created because of a need to induce tall people to choose basketball over alternative jobs like painting ceilings, but instead are payments that reflect the rarity of the skills and abilities involved. Compensating differentials are determined by alternatives, not by direct scarcity. Professional basketball players are well paid for the same reason that Picasso’s paintings are expensive: There aren’t very many of them relative to demand.</p>
+    <p class="para editable block" id="mcafee-ch13_s01_p22">A compensating differential is a feature of other choices as well as career choices. For example, many people would like to live in California for its weather and scenic beauty. Given the desirability of California over, for example, Lincoln, Nebraska, or Rochester, New York, there must be a compensating differential for living in Rochester; and two significant ones are air quality and housing prices. Air quality worsens as populations rise, thus tending to create a compensating differential. In addition, the increase in housing prices also tends to compensate—housing is inexpensive in Rochester, at least compared with California.<span class="footnote" id="fwk-mcafee-fn13_001">There are other compensations, besides housing, for living in Rochester—cross-country skiing and proximity to mountains and lakes, for example. Generally, employment is only a temporary factor that might compensate, because employment tends to be mobile, too, and move to the location that the workers prefer, when possible. It is not possible on Alaska’s North Slope.</span></p>
+    <p class="para editable block" id="mcafee-ch13_s01_p23">Housing prices also compensate for location within a city. For most people, it is more convenient—both in commuting time and for services—to be located near the central business district than in the outlying suburbs. The main compensating differentials are school quality, crime rates, and housing prices. We illustrate the ideas with a simple model of a city in the next section.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch13_s01_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch13_s01_l02">
+            <li>Leisure—time spent not working—is a good like other goods, and the utility cost of working is less leisure.</li>
+            <li>Labor supply is different from other goods because the wage enters the budget constraint twice—first as the price of leisure, and second as income from working.</li>
+            <li>If goods and leisure are substitutes, so that an increase in <em class="emphasis">L</em> decreases the marginal value of goods, then an increase in wages must decrease leisure, and labor supply increases in wages.</li>
+            <li>With strong complements between goods and leisure, an increase in wages induces fewer hours worked.</li>
+            <li>Complementarity between goods and leisure is reasonable because it takes time to consume goods.</li>
+            <li>For most developed nations, increases in wages are associated with fewer hours worked.</li>
+            <li>A compensating differential is income or costs that equalize different choices.</li>
+            <li>Jobs that are dangerous or unpleasant must pay more than jobs requiring similar skills but without the bad attributes.</li>
+            <li>The premium—or differential pay—must be such that the marginal worker is indifferent between the two choices: The extra pay compensates the worker for the adverse working conditions.</li>
+            <li>City choice is also subject to compensating differentials, and significant differentials include air quality, crime rates, tax rates, and housing prices.</li>
+        </ul>
+    </div>
+    <div class="exercises editable block" id="mcafee-ch13_s01_n03">
+        <h3 class="title">Exercises</h3>
+        <ol class="orderedlist" id="mcafee-ch13_s01_l03">
+            <li>A thought question: Does a bequest motive—the desire to give money to others—change the likelihood that goods and leisure are complements?</li>
+            <li>Show that an increase in the wage increases the consumption of goods; that is, <em class="emphasis">x</em> increases when the wage increases.</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s13-07-mathematical-cleanup.html"><img src="shared/images/batch-left.png"></a> <a href="s13-07-mathematical-cleanup.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s14-02-urban-real-estate-prices.html">Next Section</a> <a href="s14-02-urban-real-estate-prices.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

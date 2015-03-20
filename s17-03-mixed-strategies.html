@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Mixed Strategies</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s17-02-nash-equilibrium.html"><img src="shared/images/batch-left.png"></a> <a href="s17-02-nash-equilibrium.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s17-04-examples.html">Next Section</a> <a href="s17-04-examples.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch16_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">16.3</span> Mixed Strategies</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch16_s03_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch16_s03_l01">
+            <li>What games require or admit randomization as part of their solution?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s03_p01">Let us consider the matching pennies game again, as illustrated in <a class="xref" href="#mcafee-ch16_s03_f01">Figure 16.13 "Matching pennies again"</a>.</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s03_f01">
+        <p class="title"><span class="title-prefix">Figure 16.13</span> Matching pennies again</p>
+        <img src="section_17/0a34a59d8cc8b9b8e9a7356de38b6f54.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s03_p02">Suppose that Row believes Column plays Heads with probability <em class="emphasis">p</em>. Then if Row plays Heads, Row gets 1 with probability <em class="emphasis">p</em> and –1 with probability (1 – <em class="emphasis">p</em>), for an expected value of 2<em class="emphasis">p</em> – 1. Similarly, if Row plays Tails, Row gets –1 with probability <em class="emphasis">p</em> (when Column plays Heads), and 1 with probability (1 – <em class="emphasis">p</em>), for an expected value of 1 – 2<em class="emphasis">p</em>. This is summarized in <a class="xref" href="#mcafee-ch16_s03_f02">Figure 16.14 "Mixed strategy in matching pennies"</a>.</p>
+    <p class="para editable block" id="mcafee-ch16_s03_p03">If 2<em class="emphasis">p</em> – 1 &gt; 1 – 2<em class="emphasis">p</em>, then Row is better off, on average, playing Heads than Tails. Similarly, if 2<em class="emphasis">p</em> – 1 &lt; 1 – 2<em class="emphasis">p</em>, then Row is better off playing Tails than Heads. If, on the other hand, 2<em class="emphasis">p</em> – 1 = 1 – 2<em class="emphasis">p</em>, then Row gets the same payoff no matter what Row does. In this case, Row could play Heads, could play Tails, or could flip a coin and randomize Row’s play.</p>
+    <p class="para editable block" id="mcafee-ch16_s03_p04">A <span class="margin_term"><a class="glossterm">mixed strategy Nash equilibrium</a><span class="glossdef">A Nash equilibrium in which at least one player plays a randomized strategy and no player is able to increase his or her expected payoff by playing an alternate strategy.</span></span> involves at least one player playing a randomized strategy and no player being able to increase his or her expected payoff by playing an alternate strategy. A Nash equilibrium in which no player randomizes is called a <span class="margin_term"><a class="glossterm">pure strategy Nash equilibrium</a><span class="glossdef">A Nash equilibrium in which no player randomizes.</span></span>.</p>
+    <div class="figure large medium-height editable block" id="mcafee-ch16_s03_f02">
+        <p class="title"><span class="title-prefix">Figure 16.14</span> Mixed strategy in matching pennies</p>
+        <img src="section_17/8b450e129bd9fcee63dbc68b6bf871a7.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s03_p05">Note that randomization requires equality of expected payoffs. If a player is supposed to randomize over strategy <em class="emphasis">A</em> or strategy <em class="emphasis">B</em>, then both of these strategies must produce the same expected payoff. Otherwise, the player would prefer one of them and wouldn’t play the other.</p>
+    <p class="para editable block" id="mcafee-ch16_s03_p06">Computing a mixed strategy has one element that often appears confusing. Suppose that Row is going to randomize. Then Row’s payoffs must be equal for all strategies that Row plays with positive probability. But that equality in Row’s payoffs doesn’t determine the probabilities with which Row plays the various rows. Instead, that equality in Row’s payoffs will determine the probabilities with which Column plays the various columns. The reason is that it is Column’s probabilities that determine the expected payoffs for Row; if Row is going to randomize, then Column’s probabilities must be such that Row is willing to randomize.</p>
+    <p class="para editable block" id="mcafee-ch16_s03_p07">Thus, for example, we computed the payoff to Row of playing Heads, which was 2<em class="emphasis">p</em> – 1, where <em class="emphasis">p</em> was the probability that Column played Heads. Similarly, the payoff to Row of playing Tails was 1 – 2<em class="emphasis">p</em>. Row is willing to randomize if these are equal, which solves for <em class="emphasis">p</em> = ½.</p>
+    <p class="para editable block" id="mcafee-ch16_s03_p08">Now let’s try a somewhat more challenging example and revisit the battle of the sexes. <a class="xref" href="#mcafee-ch16_s03_f03">Figure 16.15 "Mixed strategy in battle of the sexes"</a> illustrates the payoffs once again.</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s03_f03">
+        <p class="title"><span class="title-prefix">Figure 16.15</span> Mixed strategy in battle of the sexes</p>
+        <img src="section_17/720f2ae51aba4be854c7206bb231bd70.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s03_p09">This game has two pure strategy Nash equilibria: (Baseball, Baseball) and (Ballet, Ballet). Is there a mixed strategy? To compute a mixed strategy, let the Woman go to the Baseball game with probability <em class="emphasis">p</em>, and the Man go to the Baseball game with probability <em class="emphasis">q</em>. <a class="xref" href="#mcafee-ch16_s03_f04">Figure 16.16 "Full computation of the mixed strategy"</a> contains the computation of the mixed strategy payoffs for each player.</p>
+    <div class="figure large medium-height editable block" id="mcafee-ch16_s03_f04">
+        <p class="title"><span class="title-prefix">Figure 16.16</span> Full computation of the mixed strategy</p>
+        <img src="section_17/a6862af3fad8554c104e0ae38fd165e5.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s03_p10">For example, if the Man (row player) goes to the Baseball game, he gets 3 when the Woman goes to the Baseball game (probability <em class="emphasis">p</em>), and otherwise gets 1, for an expected payoff of 3<em class="emphasis">p</em> + 1(1 – <em class="emphasis">p</em>) = 1 + 2<em class="emphasis">p</em>. The other calculations are similar, but you should definitely run through the logic and verify each calculation.</p>
+    <p class="para editable block" id="mcafee-ch16_s03_p11">A mixed strategy in the battle of the sexes game requires both parties to randomize (since a pure strategy by either party prevents randomization by the other). The Man’s indifference between going to the Baseball game and to the Ballet requires 1 + 2<em class="emphasis">p</em> = 2 – 2<em class="emphasis">p</em>, which yields <em class="emphasis">p</em> = ¼. That is, the Man will be willing to randomize which event he attends if the Woman is going to the Ballet ¾ of the time, and otherwise to the Baseball game. This makes the Man indifferent between the two events because he prefers to be with the Woman, but he also likes to be at the Baseball game. To make up for the advantage that the game holds for him, the Woman has to be at the Ballet more often.</p>
+    <p class="para editable block" id="mcafee-ch16_s03_p12">Similarly, in order for the Woman to randomize, the Woman must get equal payoffs from going to the Baseball game and going to the Ballet, which requires 2<em class="emphasis">q</em> = 3 – 2<em class="emphasis">q</em>, or <em class="emphasis">q</em> = ¾. Thus, the probability that the Man goes to the Baseball game is ¾, and he goes to the Ballet ¼ of the time. These are independent probabilities, so to get the probability that both go to the Baseball game, we multiply the probabilities, which yields 3/16. <a class="xref" href="#mcafee-ch16_s03_f05">Figure 16.17 "Mixed strategy probabilities"</a> fills in the probabilities for all four possible outcomes.</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s03_f05">
+        <p class="title"><span class="title-prefix">Figure 16.17</span> Mixed strategy probabilities</p>
+        <img src="section_17/d973c6e828d82d71859a5e4190268217.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s03_p13">Note that more than half of the time (Baseball, Ballet) is the outcome of the mixed strategy and the two people are not together. This lack of coordination is generally a feature of mixed strategy equilibria. The expected payoffs for both players are readily computed as well. The Man’s payoff is 1 + 2<em class="emphasis">p</em> = 2 – 2<em class="emphasis">p</em>, and since <em class="emphasis">p</em> = ¼, the Man obtains 1½. A similar calculation shows that the Woman’s payoff is the same. Thus, both do worse than coordinating on their less preferred outcome. But this mixed strategy Nash equilibrium, undesirable as it may seem, is a Nash equilibrium in the sense that neither party can improve his or her own payoff, given the behavior of the other party.</p>
+    <p class="para editable block" id="mcafee-ch16_s03_p14">In the battle of the sexes, the mixed strategy Nash equilibrium may seem unlikely; and we might expect the couple to coordinate more effectively. Indeed, a simple call on the telephone should rule out the mixed strategy. So let’s consider another game related to the battle of the sexes, where a failure of coordination makes more sense. This is the game of “chicken.” In this game, two players drive toward one another, trying to convince the other to yield and ultimately swerve into a ditch. If both swerve into the ditch, we’ll call the outcome a draw and both get zero. If one swerves and the other doesn’t, the driver who swerves loses and the other driver wins, and we’ll give the winner one point.<span class="footnote" id="fwk-mcafee-fn16_005">Note that adding a constant to a player’s payoffs, or multiplying that player’s payoffs by a positive constant, doesn’t affect the Nash equilibria—pure or mixed. Therefore, we can always let one outcome for each player be zero, and another outcome be one.</span> The only remaining question is what happens when neither yield, in which case a crash results. In this version, the payoff has been set at four times the loss of swerving, as shown in <a class="xref" href="#mcafee-ch16_s03_f06">Figure 16.18 "Chicken"</a>, but you can change the game and see what happens.</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s03_f06">
+        <p class="title"><span class="title-prefix">Figure 16.18</span> Chicken</p>
+        <img src="section_17/3de35bba3533f78c4e688f1d03faf1fb.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s03_p15">This game has two pure strategy equilibria: (Swerve, Don’t) and (Don’t, Swerve). In addition, it has a mixed strategy. Suppose that Column swerves with probability <em class="emphasis">p</em>. Then Row gets 0<em class="emphasis">p</em> + –1(1 – <em class="emphasis">p</em>) from swerving, 1<em class="emphasis">p</em> + (–4)(1 – <em class="emphasis">p</em>) from not swerving, and Row will randomize if these are equal, which requires <em class="emphasis">p</em> = ¾. That is, the probability that Column swerves in a mixed strategy equilibrium is ¾. You can verify that the row player has the same probability by setting the probability that Row swerves equal to <em class="emphasis">q</em> and computing Column’s expected payoffs. Thus, the probability of a collision is 1/16 in the mixed strategy equilibrium.</p>
+    <p class="para editable block" id="mcafee-ch16_s03_p16">The mixed strategy equilibrium is more likely, in some sense, in this game: If the players already knew who was going to yield, they wouldn’t actually need to play the game. The whole point of the game is to find out who will yield, which means that it isn’t known in advance. This means that the mixed strategy equilibrium is, in some sense, the more reasonable equilibrium.</p>
+    <div class="figure large small-height editable block" id="mcafee-ch16_s03_f07">
+        <p class="title"><span class="title-prefix">Figure 16.19</span> Rock, paper, scissors</p>
+        <img src="section_17/6b643a881051d33c7f4f15411adfab8f.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch16_s03_p17">“Rock, paper, scissors” is a child’s game in which two children use their hands to simultaneously choose paper (hand held flat), scissors (hand with two fingers protruding to look like scissors), or rock (hand in a fist). The nature of the payoffs is that paper beats rock, rock beats scissors, and scissors beats paper. This game has the structure that is illustrated in <a class="xref" href="#mcafee-ch16_s03_f07">Figure 16.19 "Rock, paper, scissors"</a>.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch16_s03_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch16_s03_l02">
+            <li>A mixed strategy Nash equilibrium involves at least one player playing a randomized strategy and no player being able to increase his or her expected payoff by playing an alternate strategy.</li>
+            <li>A Nash equilibrium without randomization is called a pure strategy Nash equilibrium.</li>
+            <li>If a player is supposed to randomize over two strategies, then both must produce the same expected payoff.</li>
+            <li>The matching pennies game has a mixed strategy and no pure strategy.</li>
+            <li>The battle of the sexes game has a mixed strategy and two pure strategies.</li>
+            <li>The game of chicken is similar to the battle of the sexes and, like it, has two pure strategies and one mixed strategy.</li>
+        </ul>
+    </div>
+    <div class="exercises block" id="mcafee-ch16_s03_n03">
+        <h3 class="title">Exercises</h3>
+        <ol class="orderedlist" id="mcafee-ch16_s03_l03">
+            <li>Let <em class="emphasis">q</em> be the probability that Row plays Heads. Show that Column is willing to randomize, if and only if <em class="emphasis">q</em> = ½. (Hint: First compute Column’s expected payoff when Column plays Heads, and then compute Column’s expected payoff when Column plays Tails. These must be equal for Column to randomize.)</li>
+            <li>Show that in the rock, paper, scissors game there are no pure strategy equilibria. Show that playing all three actions with equal likelihood is a mixed strategy equilibrium.</li>
+            <li>
+                <p class="para">Find all equilibria of the following games:</p>
+                <div class="figure large" id="mcafee-ch16_s03_f08">
+                <p class="title"><span class="title-prefix">Figure 16.20</span> </p>
+                    <img src="section_17/102c80b47182a8ff0bb87261cd4776fa.jpg">
+                </div>
+            </li>
+            <li>If you multiply a player’s payoff by a positive constant, the equilibria of the game do not change. Is this true or false, and why?</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s17-02-nash-equilibrium.html"><img src="shared/images/batch-left.png"></a> <a href="s17-02-nash-equilibrium.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s17-04-examples.html">Next Section</a> <a href="s17-04-examples.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

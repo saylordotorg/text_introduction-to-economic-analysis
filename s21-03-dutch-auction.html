@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Dutch Auction</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s21-02-sealed-bid-auction.html"><img src="shared/images/batch-left.png"></a> <a href="s21-02-sealed-bid-auction.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s21-04-vickrey-auction.html">Next Section</a> <a href="s21-04-vickrey-auction.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch20_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">20.3</span> Dutch Auction</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch20_s03_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="mcafee-ch20_s03_l01">
+            <li>Don’t the Dutch use a different kind of auction to sell tulips?</li>
+            <li>How does the Dutch auction work?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch20_s03_p01">The <span class="margin_term"><a class="glossterm">Dutch auction</a><span class="glossdef">Auction where prices start high and decrease until a bidder signals willingness to pay, at which point the auction stops.</span></span> is like an English auction, except that prices start high and are successively dropped until a bidder accepts the going price, and the auction ends. The Dutch auction is so-named because it is used to sell cut flowers in Holland, in the enormous flower auctions.</p>
+    <p class="para editable block" id="mcafee-ch20_s03_p02">A strategy in a Dutch auction is a price at which the bidder bids. Each bidder watches the price decline, until it reaches such a point that either the bidder bids or a rival bids, and the auction ends. Note that a bidder could revise his bid in the course of the auction, but there isn’t any reason to do so. For example, suppose the price starts at $1,000, and a bidder decides to bid when the price reaches $400. Once the price gets to $450, the bidder could decide to revise and wait until $350. However, no new information has become available and there is no reason to revise. In order for the price to reach the original planned bid of $400, it had to reach $450, meaning that no one bid prior to a price of $450. In order for a bid of $400 to win, the price had to reach $450; if the price reaching $450 means that a bid of $350 is optimal, then the original bid of $400 could not have been optimal.<span class="footnote" id="fwk-mcafee-fn20_002">Of course, a bidder who thinks losing is likely may wait for a lower price to formulate the bid, a consideration ignored here. In addition, because the Dutch auction unfolds over time, bidders who discount the future will bid slightly higher in a Dutch auction as a way of speeding it along, another small effect that is ignored for simplicity.</span></p>
+    <p class="para editable block" id="mcafee-ch20_s03_p03">What is interesting about the Dutch auction is that it has exactly the same possible strategies and outcomes as the sealed-bid auction. In both cases, a strategy for a bidder is a bid, no bidder sees the others’ bids until after her own bid is formulated, and the winning bidder is the one with the highest bid. This is called <span class="margin_term"><a class="glossterm">strategic equivalence</a><span class="glossdef">Situation in which two games are strategically equivalent if they have the same strategies (after a renaming) and the strategies lead to the same outcomes.</span></span>. Both games—the Dutch auction and the sealed-bid auction—offer identical strategies to the bidders and, given the strategies chosen by all bidders, produce the same payoff. Such games should produce the same outcomes.</p>
+    <p class="para editable block" id="mcafee-ch20_s03_p04">The strategic equivalence of the Dutch auction and the sealed-bid auction is a very general result that doesn’t depend on the nature of the values of the bidders (private vs. common) or the distribution of information (independent vs. correlated). Indeed, the prediction that the two games should produce the same outcome doesn’t even depend on risk aversion, although that is more challenging to demonstrate.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch20_s03_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch20_s03_l02">
+            <li>The Dutch auction is like an English auction, except that prices start high and are successively dropped until a bidder accepts the going price, at which point the auction ends.</li>
+            <li>The Dutch auction is so-named because it is used to sell cut flowers in Holland.</li>
+            <li>The Dutch auction has exactly the same possible strategies and outcomes as the sealed-bid auction. This is called strategic equivalence. As a result, the Dutch and sealed-bid auctions have the same equilibria.</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s21-02-sealed-bid-auction.html"><img src="shared/images/batch-left.png"></a> <a href="s21-02-sealed-bid-auction.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s21-04-vickrey-auction.html">Next Section</a> <a href="s21-04-vickrey-auction.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>The Winner’s Curse and Linkage</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s21-04-vickrey-auction.html"><img src="shared/images/batch-left.png"></a> <a href="s21-04-vickrey-auction.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s21-06-auction-design.html">Next Section</a> <a href="s21-06-auction-design.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch20_s05" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">20.5</span> The Winner’s Curse and Linkage</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch20_s05_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch20_s05_l01">
+            <li>How do I interpret the bids of others when other bidders may have relevant information about the value of the good?</li>
+        </ol>
+    </div>
+    <div class="epigraph block" id="mcafee-ch20_s05_ep01">
+        <p class="para" id="mcafee-ch20_s05_p01">I paid too much for it, but it's worth it.</p>
+        <p class="attribution">Sam Goldwyn</p>
+    </div>
+    <p class="para editable block" id="mcafee-ch20_s05_p02">The analysis so far has been conducted under the restrictive assumption of private values. In most contexts, bidders are not sure of the actual value of the item being sold, and information held by others is relevant to the valuation of the item. If I estimate an antique to be worth $5,000, but no one else is willing to bid more than $1,000, I might revise my estimate of the value down. This revision leads bidders to learn from the auction itself what the item is worth.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p03">The early bidders in the sale of oil lease rights in the Gulf of Mexico (the outer continental shelf) were often observed to pay more than the rights were worth. This phenomenon came to be known as the <span class="margin_term"><a class="glossterm">winner’s curse</a><span class="glossdef">The bidder who most overestimates the value of the object wins the bidding.</span></span>. The winner’s curse is the fact that <em class="emphasis">the bidder who most overestimates the value of the object wins the bidding</em>.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p04">Naïve bidders who don’t adjust for the winner’s curse tend to lose money because they win the bidding only when they’ve bid too high.</p>
+    <div class="figure medium editable block" id="mcafee-ch20_s05_f01">
+        <p class="title"><span class="title-prefix">Figure 20.1</span> Normally Distributed Estimates</p>
+        <img src="section_21/81b8ca641a3d9573c83e464c1e350009.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch20_s05_p05">Auctions, by their nature, select optimistic bidders. Consider the case of an oil lease (right to drill for and pump oil) that has an unknown value <em class="emphasis">v</em>. Different bidders will obtain different estimates of the value, and we may view these estimates as draws from a normal distribution, like the one illustrated in <a class="xref" href="#mcafee-ch20_s05_f01">Figure 20.1 "Normally Distributed Estimates"</a>. The estimates are correct on average, which is represented by the fact that the distribution is centered on the true value <em class="emphasis">v</em>. Thus, a randomly chosen bidder will have an estimate that is too high as often as it is too low, and the average estimate of a randomly selected bidder will be correct. However, the winner of an auction will tend to be the bidder with the highest estimate, not a randomly chosen bidder. The highest of five bidders will have an estimate that is too large 97% of the time. The only way the highest estimate is not too large is if all the estimates are below the true value. With 10 bidders, the highest estimate is larger than the true value with probability 99.9% because the odds that all the estimates are less than the true value is (½)<sup class="superscript">10</sup> = 0.1%. This phenomenon—that auctions tend to select the bidder with the highest estimate, and the highest estimate is larger than the true value most of the time—is characteristic of the winner’s curse.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p06">A savvy bidder corrects for the winner’s curse. Such a correction is actually quite straightforward when a few facts are available, and here a simplified presentation is given. Suppose there are <em class="emphasis">n</em> bidders for a common value good, and the bidders receive normally distributed estimates that are correct on average. Let σ be the standard deviation of the estimates.<span class="footnote" id="fwk-mcafee-fn20_004">The standard deviation is a measure of the dispersion of the distribution and is the square root of the average of the square of the difference of the random value and its mean. The estimates are also assumed to be independently distributed around the true value. Note that estimating the mean adds an additional layer of complexity.</span> Finally, suppose that no prior information is given about the likely value of the good.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p07">In this case, it is a straightforward matter to compute a correction for the winner’s curse. Because the winning bidder will generally be the bidder with the highest estimate of value, the winner’s curse correction should be the expected amount by which the highest value exceeds the average value. This can be looked up in a table for the normal distribution. The values are given for selected numbers <em class="emphasis">n</em> in <a class="xref" href="#mcafee-ch20_s05_t01">Table 20.1 "Winner’s Curse Correction"</a>. This table shows, as a function of the number of bidders, how much each bidder should reduce his estimate of value to correct for the fact that auctions select optimistic bidders. The units are standard deviations.</p>
+    <div class="table block" id="mcafee-ch20_s05_t01" frame="all">
+        <p class="title"><span class="title-prefix">Table 20.1</span> Winner’s Curse Correction</p>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th><em class="emphasis">n</em></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>10</th>
+                    <th>15</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>WCC (σ)</td>
+                    <td>0</td>
+                    <td>.56</td>
+                    <td>.85</td>
+                    <td>1.03</td>
+                    <td>1.16</td>
+                    <td>1.54</td>
+                    <td>1.74</td>
+                </tr>
+                <tr>
+                    <td><em class="emphasis">n</em></td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>500</td>
+                    <td>1000</td>
+                    <td>10,000</td>
+                </tr>
+                <tr>
+                    <td>WCC (σ)</td>
+                    <td>1.87</td>
+                    <td>1.97</td>
+                    <td>2.25</td>
+                    <td>2.51</td>
+                    <td>3.04</td>
+                    <td>3.24</td>
+                    <td>3.85</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="mcafee-ch20_s05_p08">For example, with one bidder, there is no correction because it was supposed that the estimates are right on average. With two bidders, the winner’s curse correction is the amount that the higher of two will be above the mean, which turns out to be 0.56σ, a little more than half a standard deviation. This is the amount that should be subtracted from the estimate to ensure that, when the bidder wins, the estimated value is correct, on average. With four bidders, the highest is a bit over a whole standard deviation. As is apparent from the table, the winner’s curse correction increases relatively slowly after 10 or 15 bidders. With a million bidders, it is 4.86σ.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p09">The standard deviation σ measures how much randomness or noise there is in the estimates. It is a measure of the average difference between the true value and the estimated value, and thus the average level of error. Oil companies know from their history of estimation how much error arises in the company estimates. Thus, they can correct their estimates to account for the winner’s curse using their historical inaccuracies.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p10">Bidders who are imperfectly informed about the value of an item for sale are subject to losses arising from the way auctions select the winning bidder. The winning bidder is usually the bidder with the highest estimate, and that estimate is too high on average. The difference between the highest estimate and the average estimate is known as the winner’s curse correction. The size of the winner’s curse correction is larger the more bidders there are, but it tends to grow slowly beyond a dozen or so bidders.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p11">If the bidders have the same information on a common value item, they will generally not earn profits on it. Indeed, there is a general principle that it is the privacy of information, rather than the accuracy of information, that leads to profits. Bidders earn profits on the information that they hold that is not available to others. Information held by others will be built into the bid price and therefore not lead to profits.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p12">The U.S. Department of the Interior, when selling offshore oil leases, not only takes an up-front payment (the winning bid) but also takes one-sixth of the oil that is eventually pumped. Such a royalty scheme links the payment made to the outcome and, in a way, shares risk because the payment is higher when there is more oil. Similarly, a book contract provides an author with an upfront payment and a royalty. Many U.S. Department of Defense (DOD) purchases of major weapons systems involve cost-sharing, where the payments made pick up a portion of the cost. Purchases of ships, for example, generally involve 50%–70% cost sharing, which means the DOD pays a portion of cost overruns. The contract for U.S. television broadcast rights for the Summer Olympics in Seoul, South Korea, involved payments that depended on the size of the U.S. audience.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p13">Royalties, cost-sharing, and contingent payments generally link the actual payment to the actual value, which is unknown at the time of the auction. Linkage shares risk, but linkage does something else, too. Linkage reduces the importance of estimates in the auction, replacing the estimates with actual values. That is, the price a bidder pays for an object, when fully linked to the true value, is just the true value. Thus, linkage reduces the importance of estimation in the auction by taking the price out of the bidder’s hands, at least partially.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p14">The <span class="margin_term"><a class="glossterm">linkage principle</a><span class="glossdef">The expected price in an auction to sell rises the more the price is linked to the actual value.</span></span><span class="footnote" id="fwk-mcafee-fn20_005">The linkage principle, and much of modern auction theory, was developed by Paul Milgrom (1948–).</span> states that in auctions where bidders are buyers, the expected price rises the more the price is linked to the actual value. (In a parallel fashion, the expected price in an auction where bidders are selling falls.) Thus, linking price to value generally improves the performance of auctions. While this is a mathematically deep result, an extreme case is straightforward to understand. Suppose the government is purchasing by auction a contract for delivery of 10,000 gallons of gasoline each week for the next year. Suppliers face risk in the form of gasoline prices; if the government buys at a fixed price, the suppliers’ bids will build in a cushion to compensate for the risk and for the winner’s curse. In addition, because their estimates of future oil prices will generally vary, they will earn profits based on their private information about the value. In contrast, if the government buys only delivery and then pays for the cost of the gasoline, whatever it might be, any profits that the bidders earned based on their ability to estimate gasoline prices evaporate. The overall profit level of bidders falls, and the overall cost of the gasoline supply can fall. Of course, paying the cost of the gasoline reduces the incentive of the supplier to shop around for the best price, and that agency incentive effect must be balanced against the reduction in bidder profits from the auction to select a supplier.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch20_s05_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch20_s05_l02">
+            <li>Auctions, by their nature, select optimistic bidders. This phenomenon—that auctions tend to select the bidder with the highest estimate, and the highest estimate is larger than the true value most of the time—is known as the winner’s curse.</li>
+            <li>A savvy bidder corrects for the winner’s curse.</li>
+            <li>The size of the winner’s curse correction is larger the more bidders there are, but it tends to grow slowly beyond a dozen or so bidders.</li>
+            <li>There is a general principle that it is the privacy of information, rather than the accuracy of information, that leads to profits. Information held by others will be built into the bid price and therefore not lead to profits.</li>
+            <li>The linkage principle states that in auctions where bidders are buyers, the expected price rises the more the price is linked to the actual value. Examples of linkage include English and Vickrey auctions, which link the price to the second bidder’s information, and the use of royalties or cost shares.</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s21-04-vickrey-auction.html"><img src="shared/images/batch-left.png"></a> <a href="s21-04-vickrey-auction.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s21-06-auction-design.html">Next Section</a> <a href="s21-06-auction-design.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

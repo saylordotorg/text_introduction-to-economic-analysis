@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Peak-load Pricing</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s16-06-natural-monopoly.html"><img src="shared/images/batch-left.png"></a> <a href="s16-06-natural-monopoly.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s17-01-matrix-games.html">Next Section</a> <a href="s17-01-matrix-games.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch15_s07" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">15.7</span> Peak-load Pricing</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch15_s07_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch15_s07_l01">
+            <li>How do monopolies respond to predictable cost fluctuation as it arises in electricity and hotel markets?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch15_s07_p01">Fluctuations in demand often require holding capacity, which is used only a fraction of the time. Hotels have off-seasons when most rooms are empty. Electric power plants are designed to handle peak demand, usually on hot summer days, with some of the capacity standing idle on other days. Demand for transatlantic airline flights is much higher in the summer than during the rest of the year. All of these examples have the similarity that an amount of capacity—hotel space, airplane seats, electricity generation—will be used over and over, which means that it is used in both high demand and low demand states. How should prices be set when demand fluctuates? This question can be reformulated as to how to allocate the cost of capacity across several time periods when demand systematically fluctuates.</p>
+    <p class="para editable block" id="mcafee-ch15_s07_p02">Consider a firm that experiences two costs: a capacity cost and a marginal cost. How should capacity be priced? This issue applies to a wide variety of industries, including pipelines, airlines, telephone networks, construction, electricity, highways, and the Internet.</p>
+    <p class="para block" id="mcafee-ch15_s07_p03">The basic <span class="margin_term"><a class="glossterm">peak-load pricing</a><span class="glossdef">The pricing of a service when demand for it is at its highest.</span></span> problem, pioneered by Marcel Boiteux (1922– ), considers two periods. The firm’s profits are given by
+	<span class="inlineequation"><math xml:id="mcafee_ch15_s07_m001" display="inline">
+	<mrow>
+	<mi>π</mi><mo>=</mo><msub>
+	<mi>p</mi>
+	<mn>1</mn>
+	</msub>
+	<msub>
+	<mi>q</mi>
+	<mn>1</mn>
+	</msub>
+	<mo>+</mo><msub>
+	<mi>p</mi>
+	<mn>2</mn>
+	</msub>
+	<msub>
+	<mi>q</mi>
+	<mn>2</mn>
+	</msub>
+	<mo>−</mo><mi>β</mi><mtext> </mtext><mi>max</mi><mtext> </mtext><mo>{</mo><msub>
+	<mi>q</mi>
+	<mn>1</mn>
+	</msub>
+	<mo>,</mo><msub>
+	<mi>q</mi>
+	<mn>2</mn>
+	</msub>
+	<mo>}</mo><mo>−</mo><mi>m</mi><mi>c</mi><mo stretchy="false">(</mo><msub>
+	<mi>q</mi>
+	<mn>1</mn>
+	</msub>
+	<mo>+</mo><msub>
+	<mi>q</mi>
+	<mn>2</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch15_s07_p04">Setting price equal to marginal cost is not sustainable because a firm selling with price equal to marginal cost would not earn a return on the capacity, and thus would lose money and go out of business. Consequently, a capacity charge is necessary. The question of peak-load pricing is how the capacity charge should be allocated. This question is not trivial because some of the capacity is used in both periods.</p>
+    <p class="para editable block" id="mcafee-ch15_s07_p05">For the sake of simplicity, we will assume that demands are independent; that is, <em class="emphasis">q</em><sub class="subscript">1</sub> is independent of <em class="emphasis">p</em><sub class="subscript">2</sub>, and vice versa. This assumption is often unrealistic, and generalizing it actually doesn’t complicate the problem too much. The primary complication is in computing the social welfare when demands are functions of two prices. Independence is a convenient starting point.</p>
+    <p class="para block" id="mcafee-ch15_s07_p06">Social welfare is
+	<span class="informalequation"><math xml:id="mcafee_ch15_s07_m002" display="block">
+	<mrow>
+	<mi>W</mi><mo>=</mo><mstyle displaystyle="true">
+	<mrow><munderover>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mrow>
+	<msub>
+	<mi>q</mi>
+	<mn>1</mn>
+	</msub>
+	</mrow>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mi>d</mi><mi>x</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mo>+</mo><mstyle displaystyle="true">
+	<mrow><munderover>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mrow>
+	<msub>
+	<mi>q</mi>
+	<mn>2</mn>
+	</msub>
+	</mrow>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mn>2</mn>
+	</msub>
+	<mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mi>d</mi><mi>x</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mo>−</mo><mi>β</mi><mtext> </mtext><mi>max</mi><mtext> </mtext><mo>{</mo><msub>
+	<mi>q</mi>
+	<mn>1</mn>
+	</msub>
+	<mo>,</mo><msub>
+	<mi>q</mi>
+	<mn>2</mn>
+	</msub>
+	<mo>}</mo><mo>−</mo><mi>m</mi><mi>c</mi><mo stretchy="false">(</mo><msub>
+	<mi>q</mi>
+	<mn>1</mn>
+	</msub>
+	<mo>+</mo><msub>
+	<mi>q</mi>
+	<mn>2</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch15_s07_p07">The Ramsey problem is to maximize <em class="emphasis">W</em> subject to a minimum profit condition. A technique for accomplishing this maximization is to instead maximize
+	<span class="inlineequation"><em class="emphasis">L</em> = <em class="emphasis">W</em> + <em class="emphasis">λπ</em></span>.</p>
+    <p class="para editable block" id="mcafee-ch15_s07_p08">By varying <em class="emphasis">λ</em>, we vary the importance of profits to the maximization problem, which will increase the profit level in the solution as <em class="emphasis">λ</em> increases. Thus, the correct solution to the constrained maximization problem is the outcome of the maximization of <em class="emphasis">L</em>, for some value of <em class="emphasis">λ</em>.</p>
+    <p class="para block" id="mcafee-ch15_s07_p09">A useful notation is 1<em class="emphasis">A</em>, which is known as the indicator function of the set <em class="emphasis">A</em>. This is a function that is 1 when <em class="emphasis">A</em> is true, and zero otherwise. Using this notation, the first-order condition for the maximization of <em class="emphasis">L</em> is
+	<span class="inlineequation"><math xml:id="mcafee_ch15_s07_m003" display="inline">
+	<mrow>
+	<mn>0</mn><mo>=</mo><mfrac>
+	<mrow>
+	<mo>∂</mo><mi>L</mi>
+	</mrow>
+	<mrow>
+	<mo>∂</mo><msub>
+	<mi>q</mi>
+	<mn>1</mn>
+	</msub>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><msub>
+	<mi>p</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">(</mo><msub>
+	<mi>q</mi>
+	<mi>q</mi>
+	</msub>
+	<mo stretchy="false">)</mo><mo>−</mo><mi>β</mi><mtext> </mtext><msub>
+	<mn>1</mn>
+	<mrow>
+	<msub>
+	<mi>q</mi>
+	<mn>1</mn>
+	</msub>
+	<mo>≥</mo><msub>
+	<mi>q</mi>
+	<mn>2</mn>
+	</msub>
+	</mrow>
+	</msub>
+	<mo>−</mo><mi>m</mi><mi>c</mi><mo>+</mo><mi>λ</mi><mrow><mo>(</mo>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">(</mo><msub>
+	<mi>q</mi>
+	<mi>q</mi>
+	</msub>
+	<mo stretchy="false">)</mo><mo>+</mo><msub>
+	<mi>q</mi>
+	<mn>1</mn>
+	</msub>
+	<msub>
+	<mi>p</mi>
+	<mn>1</mn>
+	</msub>
+	<msup>
+	<mrow></mrow>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><msub>
+	<mi>q</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo>−</mo><mi>β</mi><mtext> </mtext><msub>
+	<mn>1</mn>
+	<mrow>
+	<msub>
+	<mi>q</mi>
+	<mn>1</mn>
+	</msub>
+	<mo>≥</mo><msub>
+	<mi>q</mi>
+	<mn>2</mn>
+	</msub>
+	</mrow>
+	</msub>
+	<mo>−</mo><mi>m</mi><mi>c</mi>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	</math>
+</span> or <span class="inlineequation"><math xml:id="mcafee_ch15_s07_m004" display="inline">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">(</mo><msub>
+	<mi>q</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo>−</mo><mi>β</mi><mtext> </mtext><msub>
+	<mn>1</mn>
+	<mrow>
+	<msub>
+	<mi>q</mi>
+	<mn>1</mn>
+	</msub>
+	<mo>≥</mo><msub>
+	<mi>q</mi>
+	<mn>2</mn>
+	</msub>
+	</mrow>
+	</msub>
+	<mo>−</mo><mi>m</mi><mi>c</mi>
+	</mrow>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mn>1</mn>
+	</msub>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mi>λ</mi>
+	<mrow>
+	<mi>λ</mi><mo>+</mo><mn>1</mn>
+	</mrow>
+	</mfrac>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msub>
+	<mi>ε</mi>
+	<mn>1</mn>
+	</msub>
+	</mrow>
+	</mfrac><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> where <span class="inlineequation"><math xml:id="mcafee_ch15_s07_m005" display="inline">
+	<mrow>
+	<msub>
+	<mn>1</mn>
+	<mrow>
+	<msub>
+	<mi>q</mi>
+	<mn>1</mn>
+	</msub>
+	<mo>≥</mo><msub>
+	<mi>q</mi>
+	<mn>2</mn>
+	</msub>
+	</mrow>
+	</msub>
+	</mrow>
+	</math>
+</span>is the characteristic function of the event <em class="emphasis">q</em><sub class="subscript">1</sub> ≥ <em class="emphasis">q</em><sub class="subscript">2</sub>. Similarly, <span class="inlineequation"><math xml:id="mcafee_ch15_s07_m006" display="inline">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mn>2</mn>
+	</msub>
+	<mo stretchy="false">(</mo><msub>
+	<mi>q</mi>
+	<mn>2</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo>−</mo><mi>β</mi><mtext> </mtext><msub>
+	<mn>1</mn>
+	<mrow>
+	<msub>
+	<mi>q</mi>
+	<mn>1</mn>
+	</msub>
+	<mo>≤</mo><msub>
+	<mi>q</mi>
+	<mn>2</mn>
+	</msub>
+	</mrow>
+	</msub>
+	<mo>−</mo><mi>m</mi><mi>c</mi>
+	</mrow>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mn>2</mn>
+	</msub>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mi>λ</mi>
+	<mrow>
+	<mi>λ</mi><mo>+</mo><mn>1</mn>
+	</mrow>
+	</mfrac>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msub>
+	<mi>ε</mi>
+	<mn>2</mn>
+	</msub>
+	</mrow>
+	</mfrac><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> Note as before that <em class="emphasis">λ</em> → ∞ yields the monopoly solution.</p>
+    <p class="para editable block" id="mcafee-ch15_s07_p10">There are two potential types of solutions. Let the demand for Good 1 exceed the demand for Good 2. Either <em class="emphasis">q</em><sub class="subscript">1</sub> &gt; <em class="emphasis">q</em><sub class="subscript">2</sub>, or the two are equal.</p>
+    <p class="para editable block" id="mcafee-ch15_s07_p11">Case 1 (<em class="emphasis">q</em><sub class="subscript">1</sub> &gt; <em class="emphasis">q</em><sub class="subscript">2</sub>):</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch15_s07_m007" display="block">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">(</mo><msub>
+	<mi>q</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo>−</mo><mi>β</mi><mtext> </mtext><mo>−</mo><mi>m</mi><mi>c</mi>
+	</mrow>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mn>1</mn>
+	</msub>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mi>λ</mi>
+	<mrow>
+	<mi>λ</mi><mo>+</mo><mn>1</mn>
+	</mrow>
+	</mfrac>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msub>
+	<mi>ε</mi>
+	<mn>1</mn>
+	</msub>
+	</mrow>
+	</mfrac>
+	<mtext> and </mtext><mfrac>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mn>2</mn>
+	</msub>
+	<mo stretchy="false">(</mo><msub>
+	<mi>q</mi>
+	<mn>2</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo>−</mo><mi>m</mi><mi>c</mi>
+	</mrow>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mn>2</mn>
+	</msub>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mi>λ</mi>
+	<mrow>
+	<mi>λ</mi><mo>+</mo><mn>1</mn>
+	</mrow>
+	</mfrac>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msub>
+	<mi>ε</mi>
+	<mn>2</mn>
+	</msub>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch15_s07_p12">In Case 1, with all of the capacity charge allocated to Good 1, quantity for Good 1 still exceeds quantity for Good 2. Thus, the peak period for Good 1 is an extreme peak. In contrast, Case 2 arises when assigning the capacity charge to Good 1 would reverse the peak—assigning all of the capacity charge to Good 1 would make Period 2 the peak.</p>
+    <p class="para editable block" id="mcafee-ch15_s07_p13">Case 2 (<em class="emphasis">q</em><sub class="subscript">1</sub> = <em class="emphasis">q</em><sub class="subscript">2</sub>):</p>
+    <p class="para editable block" id="mcafee-ch15_s07_p14">The profit equation can be written <em class="emphasis">p</em><sub class="subscript">1</sub>(<em class="emphasis">q</em>) – <em class="emphasis">mc</em> + <em class="emphasis">p</em><sub class="subscript">2</sub>(<em class="emphasis">q</em>) – <em class="emphasis">mc</em> = <em class="emphasis">β</em>. This equation determines <em class="emphasis">q</em>, and prices are determined from demand.</p>
+    <p class="para editable block" id="mcafee-ch15_s07_p16">The major conclusion from peak-load pricing is that either the entire cost of capacity is allocated to the peak period or there is no peak period, in the sense that the two periods have the same quantity demanded given the prices. That is, either the prices equalize the quantity demanded or the prices impose the entire cost of capacity only on one peak period.</p>
+    <p class="para editable block" id="mcafee-ch15_s07_p17">Moreover, the price (or, more properly, the markup over marginal cost) is proportional to the inverse of the elasticity, which is known as Ramsey pricing.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch15_s07_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch15_s07_l02">
+            <li>Fluctuations in demand often require holding capacity, which is used only a fraction of the time. Peak-load pricing allocates the cost of capacity across several time periods when demand systematically fluctuates.</li>
+            <li>Important industries with peak-load problems include pipelines, airlines, telephone networks, construction, electricity, highways, and the Internet.</li>
+            <li>Under efficient peak-load pricing, either the prices equalize the quantity demanded, or the prices impose the entire cost of capacity only on one peak period. Moreover, the markup over marginal cost is proportional to the inverse of the elasticity.</li>
+        </ul>
+    </div>
+    <div class="exercises editable block" id="mcafee-ch15_s07_n03">
+        <h3 class="title">Exercise</h3>
+        <ol class="orderedlist" id="mcafee-ch15_s07_l03">
+            <li>
+                <p class="para">For each of the following items, state whether you would expect peak-load pricing to equalize the quantity demanded across periods or impose the entire cost of capacity on the peak period. Explain why.</p>
+                <ol class="orderedlist" id="mcafee-ch15_s07_l04" numeration="loweralpha">
+                    <li>Hotels in Miami</li>
+                    <li>Electricity</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s16-06-natural-monopoly.html"><img src="shared/images/batch-left.png"></a> <a href="s16-06-natural-monopoly.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s17-01-matrix-games.html">Next Section</a> <a href="s17-01-matrix-games.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

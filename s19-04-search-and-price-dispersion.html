@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Search and Price Dispersion</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s19-03-signaling.html"><img src="shared/images/batch-left.png"></a> <a href="s19-03-signaling.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s20-01-principals-and-agents.html">Next Section</a> <a href="s20-01-principals-and-agents.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch18_s04" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">18.4</span> Search and Price Dispersion</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch18_s04_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="mcafee-ch18_s04_l01">
+            <li>Why do we see such random prices at the grocery store?</li>
+            <li>Why are prices unpredictable?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch18_s04_p01">Decades ago, economists used to make a big deal about the <span class="margin_term"><a class="glossterm">law of one price</a><span class="glossdef">Identical goods sell at the same price.</span></span>, which states that identical goods sell at the same price. The argument in favor of the law of one price is theoretical. Well-informed consumers will buy identical goods from the lowest-price seller. Consequently, the only seller to make any sales is the low-price seller. This kind of consumer behavior forces all sellers to sell at the same price.</p>
+    <p class="para editable block" id="mcafee-ch18_s04_p02">There are few markets where the law of one price is actually observed to hold. Organized exchanges, like stock, bond, and commodity markets, will satisfy the law of one price. In addition, gas stations across the street from each other will often offer identical prices, but <em class="emphasis">often</em> is not <em class="emphasis">always</em>.</p>
+    <p class="para editable block" id="mcafee-ch18_s04_p03">Many economists believed that the Internet would force prices of standardized goods—DVD players, digital cameras, MP3 players—to a uniform, and uniformly low, price. However, this has not occurred. Moreover, it probably can’t occur in the sense that pure price competition would put the firms out of business and hence can’t represent equilibrium behavior.</p>
+    <p class="para editable block" id="mcafee-ch18_s04_p04">There are many markets where prices appear unpredictable to consumers. The price of airline tickets is notorious for unpredictability. The price of milk, soft drinks, paper towels, and canned tuna varies 50% or more depending on whether or not the store has an advertised sale of the item. Prices of goods sold on the Internet vary substantially from day to day.<span class="footnote" id="fwk-mcafee-fn18_006">It is often very challenging to assess Internet prices because of variations in shipping charges.</span> Such variation of price across stores is known as <span class="margin_term"><a class="glossterm">price dispersion</a><span class="glossdef">Price variation across stores.</span></span> by economists. It is different from price discrimination because price dispersion entails a given store quoting the same price to all customers; the variation is across stores, while price discrimination varies across customers.</p>
+    <p class="para editable block" id="mcafee-ch18_s04_p05">Why are prices so unpredictable? We now develop a model that shows they have to be.</p>
+    <p class="para editable block" id="mcafee-ch18_s04_p06">To understand price dispersion, we divide consumers into two types: shoppers and loyal customers. Loyal customers won’t pay more than a price <em class="emphasis">pm</em> for the good, but they consult a particular store. If that store has the good for less than the price <em class="emphasis">pm</em>, the loyal customer buys; otherwise, he or she does not. In contrast, the shoppers buy only from the store offering the lowest price; shoppers are informed about the prices offered by all stores. We let the proportion of shoppers be <em class="emphasis">s</em>. The loyal customers are allocated to the other stores equally so that if there are <em class="emphasis">n</em> stores, each store gets a fraction (1 – <em class="emphasis">s</em>)/<em class="emphasis">n</em> of the customers. Let the marginal cost of the good be <em class="emphasis">c</em>, and assume that <em class="emphasis">c</em> &lt; <em class="emphasis">pm</em>. Both kinds of customers buy only one unit.</p>
+    <p class="para editable block" id="mcafee-ch18_s04_p07">For the purposes of this analysis, we will assume that prices can be chosen from the continuum. This makes the analysis more straightforward, but there is an alternate version of the analysis (not developed here) that makes the more reasonable assumption of prices that are an integer number of pennies.</p>
+    <p class="para editable block" id="mcafee-ch18_s04_p08">First note that there is no pure strategy equilibrium. To see this, consider the lowest price <em class="emphasis">p</em> charged by any firm. If that price is <em class="emphasis">c</em>, the firm makes no money, so it would do better by raising its price to <em class="emphasis">pm</em> and selling only to the loyal customers. Thus, the lowest price <em class="emphasis">p</em> exceeds <em class="emphasis">c</em>. If there is a tie at <em class="emphasis">p</em>, it pays to break the tie by charging a billionth of a cent less than <em class="emphasis">p</em>, and thereby capturing all the shoppers rather than sharing them with the other firm charging <em class="emphasis">p</em>. So there can’t be a tie.</p>
+    <p class="para editable block" id="mcafee-ch18_s04_p09">But no tie at <em class="emphasis">p</em> means the next-lowest firm is charging something strictly greater than <em class="emphasis">p</em>, which means the lowest-price firm can increase price somewhat and not suffer any loss of sales. This contradicts profit maximization for that firm. The conclusion is that firms must randomize and that no pure strategy equilibrium exists.</p>
+    <p class="para editable block" id="mcafee-ch18_s04_p10">But how do they randomize? We are going to look for a distribution of prices. Each firm will choose a price from the continuous distribution <em class="emphasis">F</em>, where <em class="emphasis">F</em>(<em class="emphasis">x</em>) is the probability the firm charges a price less than <em class="emphasis">x</em>. What must <em class="emphasis">F</em> look like? We use the logic of mixed strategies: the firm must get the same profits for all prices that might actually be charged under the mixed strategy; otherwise, it would not be willing to randomize.</p>
+    <p class="para block" id="mcafee-ch18_s04_p11">A firm that charges price <em class="emphasis">p</em> ≤ <em class="emphasis">pm</em> always sells to its captive customers. In addition, it sells to the shoppers if the other firms have higher prices, which occurs with probability <span class="inlineequation"><math xml:id="mcafee_ch18_s04_m001" display="inline">
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> Thus, the firm’s profits are
+	<span class="inlineequation"><math xml:id="mcafee_ch18_s04_m002" display="inline">
+	<mrow>
+	<mi>π</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>p</mi><mo>−</mo><mi>c</mi><mo stretchy="false">)</mo><mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>s</mi>
+	</mrow>
+	<mi>n</mi>
+	</mfrac>
+	<mo>+</mo><mi>s</mi><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	<mo>)</mo></mrow><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch18_s04_p12">On each sale, the firm earns <em class="emphasis">p</em> – <em class="emphasis">c</em>. The firm always sells to its loyal customers and in addition captures the shoppers if the other firms price higher. Because no firm will exceed <em class="emphasis">pm</em>, the profits must be the same as the level arising from charging <em class="emphasis">pm</em>, and this gives
+	<span class="inlineequation"><math xml:id="mcafee_ch18_s04_m003" display="inline">
+	<mrow>
+	<mi>π</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>p</mi><mo>−</mo><mi>c</mi><mo stretchy="false">)</mo><mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>s</mi>
+	</mrow>
+	<mi>n</mi>
+	</mfrac>
+	<mo>+</mo><mi>s</mi><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	<mo>)</mo></mrow><mo>=</mo><mo stretchy="false">(</mo><msub>
+	<mi>p</mi>
+	<mi>m</mi>
+	</msub>
+	<mo>−</mo><mi>c</mi><mo stretchy="false">)</mo><mfrac>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>s</mi>
+	</mrow>
+	<mi>n</mi>
+	</mfrac><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch18_s04_p13">This equation is readily solved for <em class="emphasis">F</em>:</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch18_s04_m004" display="block">
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mfrac>
+	<mrow>
+	<mo stretchy="false">(</mo><msub>
+	 <mi>p</mi>
+	 <mi>m</mi>
+	</msub>
+	<mo>−</mo><mi>p</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>s</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>s</mi><mo stretchy="false">(</mo><mi>p</mi><mo>−</mo><mi>c</mi><mo stretchy="false">)</mo><mi>n</mi>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</msup>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch18_s04_p14">The lower bound of prices arises at the point <em class="emphasis">L</em> where <em class="emphasis">F</em>(<em class="emphasis">L</em>) = 0, or</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch18_s04_m005" display="block">
+	<mrow>
+	<mi>L</mi><mo>=</mo><mi>c</mi><mo>+</mo><mfrac>
+	<mrow>
+	<mo stretchy="false">(</mo><msub>
+	<mi>p</mi>
+	<mi>m</mi>
+	</msub>
+	<mo>−</mo><mi>c</mi><mo stretchy="false">)</mo><mfrac>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>s</mi>
+	</mrow>
+	<mi>n</mi>
+	</mfrac>
+	</mrow>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>s</mi>
+	</mrow>
+	<mi>n</mi>
+	</mfrac>
+	<mo>+</mo><mi>s</mi>
+	</mrow>
+	</mfrac>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch18_s04_p15">These two equations provide a continuous distribution of prices charged by each firm, which is an equilibrium to the pricing game. That is, each firm randomizes over the interval [<em class="emphasis">L</em>, <em class="emphasis">pm</em>], according to the continuous distribution <em class="emphasis">F</em>. Any price in the interval [<em class="emphasis">L,pm</em>] produces the same profits for each firm, so the firms are willing to randomize over this interval.</p>
+    <p class="para editable block" id="mcafee-ch18_s04_p16">The loyal customers get a price chosen randomly from <em class="emphasis">F</em>, so we immediately see that the shoppers make life better for the loyal customers by pushing average price down. (An increase in <em class="emphasis">s</em> directly increases <em class="emphasis">F</em>, which means prices fall—recall that <em class="emphasis">F</em> gives the probability that prices are below a given level, so an increase in <em class="emphasis">F</em> is an increase in the probability of low prices.)</p>
+    <p class="para editable block" id="mcafee-ch18_s04_p17">Similarly loyal customers make life worse for shoppers, increasing prices on average to shoppers. The distribution of prices facing shoppers is actually the distribution of the minimum price. Because all firms charge a price exceeding <em class="emphasis">p</em> with probability (1 – <em class="emphasis">F</em>(<em class="emphasis">p</em>))<em class="emphasis">n</em>, at least one charges a price less than <em class="emphasis">p</em> with probability 1 – (1 – <em class="emphasis">F</em>(<em class="emphasis">p</em>))<em class="emphasis"><sup class="superscript">n</sup></em>, and this is the distribution of prices facing shoppers. That is, the distribution of prices charged to shoppers is</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch18_s04_m006" display="block">
+	<mrow>
+	<mn>1</mn><mo>−</mo><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo>
+	</mrow>
+	<mi>n</mi>
+	</msup>
+	<mo>=</mo><mn>1</mn><mo>−</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mo stretchy="false">(</mo><msub>
+	 <mi>p</mi>
+	 <mi>m</mi>
+	</msub>
+	<mo>−</mo><mi>p</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>s</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>s</mi><mo stretchy="false">(</mo><mi>p</mi><mo>−</mo><mi>c</mi><mo stretchy="false">)</mo><mi>n</mi>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mfrac>
+	<mi>n</mi>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</msup>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para block" id="mcafee-ch18_s04_p18">How does a price-dispersed industry perform? First, average industry profits are
+	<span class="inlineequation"><math xml:id="mcafee_ch18_s04_m007" display="inline">
+	<mrow>
+	<mi>n</mi><mi>π</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><msub>
+	<mi>p</mi>
+	<mi>m</mi>
+	</msub>
+	<mo>−</mo><mi>c</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>s</mi><mo stretchy="false">)</mo><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch18_s04_p19">An interesting aspect of this equation is that it doesn’t depend on the number of firms, only on the number of loyal customers. Essentially, the industry profits are the same that it would earn as if the shoppers paid marginal cost and the loyal customers paid the monopoly price, although that isn’t what happens in the industry, except in the limit as the number of firms goes to infinity. Note that this formula for industry profits does not work for a monopoly. To capture monopoly, one must set <em class="emphasis">s</em> = 0 because shoppers have no alternative under monopoly.</p>
+    <p class="para editable block" id="mcafee-ch18_s04_p20">As the number of firms gets large, the price charged by any one firm converges to the monopoly price <em class="emphasis">pm</em>. However, the lowest price offered by any firm actually converges to <em class="emphasis">c</em>, marginal cost. Thus, in the limit as the number of firms gets large, shoppers obtain price equal to marginal cost and loyal firms pay the monopoly price.</p>
+    <div class="figure medium editable block" id="mcafee-ch18_s04_f01">
+        <p class="title"><span class="title-prefix">Figure 18.1</span> Expected Prices in Search Equilibrium</p>
+        <img src="section_19/6d7d2dd9b903ccb141ec236129d3f4a1.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch18_s04_p21">The average price charged to shoppers and nonshoppers is a complicated object, so we consider the case where there are <em class="emphasis">n</em> firms, <em class="emphasis">s</em> = ½, <em class="emphasis">pm</em> = 1, and <em class="emphasis">c</em> = 0. Then the expected prices for shoppers and loyal customers are given in <a class="xref" href="#mcafee-ch18_s04_f01">Figure 18.1 "Expected Prices in Search Equilibrium"</a>, letting the number of firms vary. Thus, with many firms, most of the gains created by the shoppers flow to shoppers. In contrast, with few firms, a significant fraction of the gains created by shoppers goes instead to the loyal customers.</p>
+    <p class="para editable block" id="mcafee-ch18_s04_p22">Similarly, we can examine the average prices for loyal customers and shoppers when the proportion of shoppers varies. Increasing the proportion of shoppers has two effects. First, it makes low prices more attractive, thus encouraging price competition because capturing the shoppers is more valuable. Second, it lowers industry profits because the set of loyal customers is reduced. <a class="xref" href="#mcafee-ch18_s04_f02">Figure 18.2 "Expected Prices ("</a> plots the average price for loyal customers and shoppers, as the proportion of shoppers ranges from zero to one, when there are five firms, <em class="emphasis">pm</em> = 1 and <em class="emphasis">c</em> = 0.</p>
+    <p class="para editable block" id="mcafee-ch18_s04_p23">People who are price-sensitive and shop around convey a positive externality on other buyers by encouraging price competition. Similarly, people who are less price-sensitive and don’t shop around convey a negative externality on the other buyers. In markets with dispersed information about the best prices, where some buyers are informed and some are not, randomized prices are a natural outcome. That is, randomization of prices, and the failure of the law of one price, is just a reflection of the different willingness or ability to search on the part of consumers.</p>
+    <div class="figure medium editable block" id="mcafee-ch18_s04_f02">
+        <p class="title"><span class="title-prefix">Figure 18.2</span> Expected Prices (<em class="emphasis">s</em> = Proportion of Shoppers)</p>
+        <img src="section_19/7369d8aab9dc23d48faf949bffeedd66.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch18_s04_p24">This difference in the willingness to search could arise simply because search is itself costly. That is, the shoppers could be determined by their choice to shop in such a way that the cost of shopping just balances the expected gains from searching. The proportion of shoppers may adjust endogenously to ensure that the gains from searching exactly equal the costs of searching. In this way, a cost of shopping is translated into a randomized price equilibrium in which there is a benefit from shopping and all consumers get the same total cost of purchase on average.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch18_s04_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch18_s04_l02">
+            <li>The law of one price, which states that identical goods sell at the same price, is unfortunately empirically false.</li>
+            <li>There are many markets where prices appear unpredictable to consumers. Price variation over time or across stores is known as price dispersion.</li>
+            <li>The basic price-dispersion model involves firms setting prices simultaneously and selling to two types of customers: one loyal to a particular store, the other (“shoppers”) buying from the cheapest store.</li>
+            <li>There is no pure strategy equilibrium because firms either want to be just barely the cheapest or at the monopoly price. The only candidate for an equilibrium is a mixed strategy.</li>
+            <li>There is a mixed strategy involving randomizing over an interval of prices.</li>
+            <li>Industry profits in price dispersion arise from the number of loyal customers and are independent of the number of firms.</li>
+            <li>An increase in the number of firms is good for shoppers and bad for loyal customers. In the limit as the number of firms goes to infinity, the shoppers pay marginal cost and loyal customers pay the monopoly price.</li>
+            <li>Shoppers convey a positive externality on other buyers by encouraging price competition.</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s19-03-signaling.html"><img src="shared/images/batch-left.png"></a> <a href="s19-03-signaling.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s20-01-principals-and-agents.html">Next Section</a> <a href="s20-01-principals-and-agents.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

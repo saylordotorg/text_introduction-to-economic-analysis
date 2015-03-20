@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Multi-tasking</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s20-02-cost-of-providing-incentives.html"><img src="shared/images/batch-left.png"></a> <a href="s20-02-cost-of-providing-incentives.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s20-04-multi-tasking-without-homogene.html">Next Section</a> <a href="s20-04-multi-tasking-without-homogene.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch19_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">19.3</span> Multi-tasking</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch19_s03_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch19_s03_l01">
+            <li>How does an employer compensate an agent who performs several tasks of varying importance? What happens when the tasks conflict?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch19_s03_p01"><span class="margin_term"><a class="glossterm">Multi-tasking</a><span class="glossdef">Performing several activities simultaneously.</span></span> refers to performing several activities simultaneously. All of us multitask. We study while drinking a caffeinated beverage; we think about things in the shower; we talk all too much on cell phones and eat french fries while driving. In the context of employees, an individual employee is assigned a variety of tasks and responsibilities, and the employee must divide her time and efforts among the tasks. Incentives provided to the employee must direct not only the total efforts of the employee, but also the allocation of time and effort across activities. An important aspect of multitasking is the interaction of incentives provided to an employee, and the effects of changes in one incentive on the behavior of the employee over many different dimensions. In this section, we will establish conditions under which the problem of an employer disaggregates; that is, the incentives for performing each individual task can be set independently of the incentives applied to the others.</p>
+    <p class="para editable block" id="mcafee-ch19_s03_p02">This section is relatively challenging and involves a number of pieces. To simplify the presentation, some of the analyses are set aside as claims.</p>
+    <p class="para block" id="mcafee-ch19_s03_p03">To begin the analysis, we consider a person who has <em class="emphasis">n</em> tasks or jobs. For convenience, we will index these activities with the natural numbers 1, 2, …, <em class="emphasis">n</em>. The level of activity, which may also be thought of as an action, in task <em class="emphasis">i</em> will be denoted by <em class="emphasis">x</em><sub class="subscript">i</sub>. It will prove convenient to denote the vector of actions by <span class="inlineequation"><math xml:id="mcafee_ch19_s03_m001" display="inline">
+	<mrow>
+	<mtext> </mtext><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mtext> </mtext><mo>=</mo><mtext>(</mtext><msub>
+	<mi>x</mi>
+	<mtext>1</mtext>
+	</msub>
+	<mtext>, </mtext><mtext>. </mtext><mtext>. </mtext><mtext>. , </mtext><msub>
+	<mi>x</mi>
+	<mi>n</mi>
+	</msub>
+	<mtext>)</mtext><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> We suppose the agent bears a cost <em class="emphasis">c</em>(<strong class="emphasis bold">x</strong>) of undertaking the vector of actions <strong class="emphasis bold">x</strong>. We make four assumptions on <em class="emphasis">c</em>:</p>
+    <ol class="orderedlist editable block" id="mcafee-ch19_s03_l02">
+        <li>
+<em class="emphasis">c</em> is increasing in each <em class="emphasis">x</em><sub class="subscript">i</sub>.</li>
+        <li>
+<em class="emphasis">c</em> has a continuous second derivative.</li>
+        <li>
+<em class="emphasis">c</em> is strictly convex.</li>
+        <li>
+<em class="emphasis">c</em> is homogeneous<span class="footnote" id="fwk-mcafee-fn19_003">Homogeneous functions were defined in <a class="xref" href="mcafee-ch10#mcafee-ch10">Chapter 10 "Producer Theory: Dynamics"</a>.</span> of degree <em class="emphasis">r</em>.</li>
+    </ol>
+    <p class="para block" id="mcafee-ch19_s03_p04">For example, if there are two tasks (<em class="emphasis">n</em> = 2), then all four of these assumptions are met by the cost function <span class="inlineequation"><math xml:id="mcafee_ch19_s03_m002" display="inline">
+	<mrow>
+	<mi>c</mi><mo stretchy="false">(</mo><msub>
+	<mi>x</mi>
+	<mn>1</mn>
+	</msub>
+	<mo>,</mo><msub>
+	<mi>x</mi>
+	<mn>2</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo>=</mo><msubsup>
+	<mi>x</mi>
+	<mn>1</mn>
+	<mn>2</mn>
+	</msubsup>
+	<mo>+</mo><msubsup>
+	<mi>x</mi>
+	<mn>2</mn>
+	<mn>2</mn>
+	</msubsup>
+	<mo>+</mo><msub>
+	<mrow>
+	<mtext>½x</mtext>
+	</mrow>
+	<mtext>1</mtext>
+	</msub>
+	<msub>
+	<mi>x</mi>
+	<mn>2</mn>
+	</msub><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> This function is increasing in <em class="emphasis">x</em><sub class="subscript">1</sub> and <em class="emphasis">x</em><sub class="subscript">2</sub>, has continuous derivatives, is strictly convex (more about this below), and is homogeneous of degree 2.</p>
+    <p class="para block" id="mcafee-ch19_s03_p05">It is assumed that <em class="emphasis">c</em> is increasing to identify the activities as costly. Continuity of derivatives is used for convenience. Convexity of <em class="emphasis">c</em> will ensure that a solution to the first-order conditions is actually an optimum for the employee. Formally, a function is a <span class="margin_term"><a class="glossterm">convex function</a><span class="glossdef">The function that lies below the straight line segment connecting two points, for any two points in the interval.</span></span> such that, for any vectors <strong class="emphasis bold">x</strong> ≠ <strong class="emphasis bold">y</strong> and scalar α between zero and one (0 ≤ α ≤ 1),
+	<span class="inlineequation"><math xml:id="mcafee_ch19_s03_m003" display="inline">
+	<mrow>
+	<mi>α</mi><mi>c</mi><mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><mi>c</mi><mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>y</mi></mstyle><mo stretchy="false">)</mo><mo>≥</mo><mi>c</mi><mo stretchy="false">(</mo><mi>α</mi><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><mstyle mathvariant="bold" mathsize="normal"><mi>y</mi></mstyle><mo stretchy="false">)</mo><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch19_s03_p06">In other words, a convex function is any function that lies below the straight line segment connecting two points on the function, for any two points in the interval, when <strong class="emphasis bold">x</strong> is a scalor.</p>
+    <p class="para editable block" id="mcafee-ch19_s03_p07">One way of interpreting this requirement is that it is less costly to do the average of two things than the average of the costs of the things. Intuitively, convexity requires that doing a medium thing is less costly than the average of two extremes. This is plausible when extremes tend to be very costly. It also means the set of vectors that cost less than a fixed amount, {<strong class="emphasis bold">x</strong> | <em class="emphasis">c</em>(<strong class="emphasis bold">x</strong>) ≤ <em class="emphasis">b</em>}, is a convex set. Thus, if two points cost less than a given budget, the line segment connecting them does, too. Convexity of the cost function ensures that the agent’s optimization problem is concave and thus that the first-order conditions describe a maximum. When the inequality is strict for α satisfying 0 &lt; α &lt; 1, we refer to convexity as strict convexity.</p>
+    <p class="para block" id="mcafee-ch19_s03_p08">The assumption of homogeneity dictates that scale works in a particularly simple manner. Scaling up activities increases costs at a fixed rate <em class="emphasis">r</em>. Homogeneity has very strong implications that are probably unreasonable in many settings. Nevertheless, homogeneity leads to an elegant and useful theory, as we shall see. Recall the definition of a homogeneous function: <em class="emphasis">c</em> is homogeneous of degree <em class="emphasis">r</em> means that for any λ &gt; 0,
+	<span class="inlineequation"><math xml:id="mcafee_ch19_s03_m004" display="inline">
+	<mrow>
+	<mi>c</mi><mo stretchy="false">(</mo><mi>λ</mi><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mo>=</mo><msup>
+	<mi>λ</mi>
+	<mi>r</mi>
+	</msup>
+	<mi>c</mi><mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch19_s03_p09">Claim: Strict convexity implies that <em class="emphasis">r</em> &gt; 1.</p>
+    <p class="para block" id="mcafee-ch19_s03_p10">Proof of Claim: Fix any <strong class="emphasis bold">x</strong> and consider the two points <strong class="emphasis bold">x</strong> and λ <strong class="emphasis bold">x</strong>. By convexity, for 0 &lt; α &lt;1,
+	<span class="inlineequation"><math xml:id="mcafee_ch19_s03_m005" display="inline">
+	 <mrow>
+	  <mo stretchy="false">(</mo><mi>α</mi><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><msup>
+	   <mi>λ</mi>
+	   <mtext>r</mtext>
+	  </msup>
+	  <mo stretchy="false">)</mo><mi>c</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>α</mi><mi>c</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><mi>c</mi><mo stretchy="false">(</mo><mi>λ</mi><mi>x</mi><mo stretchy="false">)</mo><mtext> </mtext><mo>&gt;</mo><mtext> </mtext><mi>c</mi><mo stretchy="false">(</mo><mi>α</mi><mi>x</mi><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><mi>λ</mi><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>=</mo><msup>
+	   <mrow>
+	    <mo stretchy="false">(</mo><mi>α</mi><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><mi>λ</mi><mo stretchy="false">)</mo>
+	   </mrow>
+	   <mtext>r</mtext>
+	  </msup>
+	  <mi>c</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mtext>,</mtext>
+	 </mrow>
+	</math>
+</span> which implies <span class="inlineequation"><math xml:id="mcafee_ch19_s03_m006" display="inline">
+	 <mrow>
+	  <mo stretchy="false">(</mo><mi>α</mi><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><msup>
+	   <mi>λ</mi>
+	   <mtext>r</mtext>
+	  </msup>
+	  <mo stretchy="false">)</mo><mtext> </mtext><mo>&gt;</mo><mtext> </mtext><msup>
+	   <mrow>
+	    <mo stretchy="false">(</mo><mi>α</mi><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><mi>λ</mi><mo stretchy="false">)</mo>
+	   </mrow>
+	   <mtext>r</mtext>
+	  </msup><mtext>.</mtext>
+	 </mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch19_s03_p11">Define a function <em class="emphasis">k</em> that is the left-hand side minus the right-hand side:</p>
+    <p class="para block" id="mcafee-ch19_s03_p12"><span class="inlineequation"><math xml:id="mcafee_ch19_s03_m007" display="inline">
+	<mrow>
+	<mi>k</mi><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo><mo>=</mo><mi>α</mi><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><msup>
+	<mi>λ</mi>
+	<mtext>r</mtext>
+	</msup>
+	<mo>−</mo><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mi>α</mi><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><mi>λ</mi><mtext>)</mtext>
+	</mrow>
+	<mtext>r</mtext>
+	</msup><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> Note that <em class="emphasis">k</em>(0) = <em class="emphasis">k</em>(1) = 0. Moreover, <span class="inlineequation"><math xml:id="mcafee_ch19_s03_m008" display="inline">
+	<mrow>
+	<msup>
+	<mi>k</mi>
+	<mo>″</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mi>r</mi><mo stretchy="false">(</mo><mi>r</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mi>α</mi><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><mi>λ</mi><mtext>)</mtext>
+	</mrow>
+	<mrow>
+	<mtext>r-2</mtext>
+	</mrow>
+	</msup>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>λ</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> It is readily checked that if a convex function of one variable is twice differentiable, then the second derivative is greater than zero. If <em class="emphasis">r</em> ≤ 1, <span class="inlineequation"><math xml:id="mcafee_ch19_s03_m009" display="inline">
+	<mrow>
+	<msup>
+	<mi>k</mi>
+	<mo>″</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo><mo>≥</mo><mn>0</mn><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> implying that <em class="emphasis">k</em> is convex, and hence, if 0 &lt; α &lt; 1,
+	<span class="inlineequation"><math xml:id="mcafee_ch19_s03_m010" display="inline">
+	<mrow>
+	<mi>k</mi><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo><mo>=</mo><mi>k</mi><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><mn>0</mn><mo>+</mo><mi>α</mi><mn>1</mn><mo stretchy="false">)</mo><mo>≤</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo><mi>k</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>+</mo><mi>α</mi><mi>k</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>0.</mn>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch19_s03_p13">Similarly, if <em class="emphasis">r</em> &gt; 1, <em class="emphasis">k</em> is concave and <em class="emphasis">k</em>(α) &gt; 0. This completes the proof, showing that <em class="emphasis">r</em> ≤ 1 is not compatible with the strict convexity of <em class="emphasis">c</em>.</p>
+    <p class="para block" id="mcafee-ch19_s03_p14">How should our person behave? Consider linear incentives, which are also known as piece rates. With piece rates, the employee gets a payment <em class="emphasis">p</em><sub class="subscript">i</sub> for each unit of <em class="emphasis">x</em><sub class="subscript">i</sub> produced. The person then chooses <strong class="emphasis bold">x</strong> to maximize
+	<span class="inlineequation"><math xml:id="mcafee_ch19_s03_m011" display="inline">
+	<mrow>
+	<mi>u</mi><mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>i</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>i</mi>
+	</msub>
+	<msub>
+	<mi>x</mi>
+	<mi>i</mi>
+	</msub>
+	</mrow>
+	</mstyle><mo>−</mo><mi>c</mi><mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mo>=</mo><mstyle mathvariant="bold" mathsize="normal"><mi>p</mi></mstyle><mo>•</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo>−</mo><mi>c</mi><mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch19_s03_p15">Here • is the dot product, which is the sum of the products of the components.</p>
+    <p class="para block" id="mcafee-ch19_s03_p16">The agent chooses <strong class="emphasis bold">x</strong> to maximize <em class="emphasis">u</em>, resulting in <em class="emphasis">n</em> first-order conditions
+	<span class="inlineequation"><math xml:id="mcafee_ch19_s03_m012" display="inline">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mo>∂</mo><mi>u</mi>
+	</mrow>
+	<mrow>
+	<mo>∂</mo><msub>
+	<mi>x</mi>
+	<mi>i</mi>
+	</msub>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><msub>
+	<mi>p</mi>
+	<mi>i</mi>
+	</msub>
+	<mo>−</mo><mfrac>
+	<mrow>
+	<mo>∂</mo><mi>c</mi><mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mo>∂</mo><msub>
+	<mi>x</mi>
+	<mi>i</mi>
+	</msub>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><msub>
+	<mi>p</mi>
+	<mi>i</mi>
+	</msub>
+	<mo>−</mo><msub>
+	<mi>c</mi>
+	<mi>i</mi>
+	</msub>
+	<mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> where <em class="emphasis">c</em><sub class="subscript">i</sub> is the partial derivative of <em class="emphasis">c</em> with respect to the <em class="emphasis">i</em>th argument <em class="emphasis">x</em><sub class="subscript">i</sub>. This first-order condition can be expressed more compactly as
+	<span class="inlineequation"><math xml:id="mcafee_ch19_s03_m013" display="inline">
+	<mrow>
+	<mn>0</mn><mo>=</mo><mstyle mathvariant="bold" mathsize="normal"><mi>p</mi></mstyle><mo>−</mo><msup>
+	<mi>c</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo>
+	</mrow>
+	</math>
+</span> where <span class="inlineequation"><math xml:id="mcafee_ch19_s03_m014" display="inline">
+	<mrow>
+	<msup>
+	<mi>c</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo>
+	</mrow>
+	</math>
+</span> is the vector of partial derivatives of <em class="emphasis">c</em>. Convexity of <em class="emphasis">c</em> ensures that any solution to this problem is a global utility maximum because the function <em class="emphasis">u</em> is concave, and strict convexity ensures that there is at most one solution to the first-order conditions.<span class="footnote" id="fwk-mcafee-fn19_004">This description is slightly inadequate because we haven’t considered boundary conditions. Often a requirement like <em class="emphasis">x</em><sub class="subscript">i</sub> ≥ 0 is also needed. In this case, the first-order conditions may not hold with equality for those choices where <em class="emphasis">x</em><sub class="subscript">i</sub> = 0 is optimal.</span></p>
+    <p class="para editable block" id="mcafee-ch19_s03_p17">One very useful implication of homogeneity is that incentives scale. Homogeneity has the effect of turning a very complicated optimization problem into a problem that is readily solved, thanks to this very scaling.</p>
+    <p class="para block" id="mcafee-ch19_s03_p18">Claim: If all incentives rise by a scalar factor α, then <strong class="emphasis bold">x</strong> rises by <span class="inlineequation"><math xml:id="mcafee_ch19_s03_m015" display="inline">
+	<mrow>
+	<msup>
+	<mi>α</mi>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mi>r</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</msup><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch19_s03_p19">Proof of Claim: Note that differentiating <span class="inlineequation"><math xml:id="mcafee_ch19_s03_m016" display="inline">
+	<mrow>
+	<mi>c</mi><mo stretchy="false">(</mo><mi>λ</mi><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mo>=</mo><msup>
+	<mi>λ</mi>
+	<mi>r</mi>
+	</msup>
+	<mi>c</mi><mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo>
+	</mrow>
+	</math>
+</span> with respect to <em class="emphasis">x</em><sub class="subscript">i</sub> yields <span class="inlineequation"><math xml:id="mcafee_ch19_s03_m017" display="inline">
+	<mrow>
+	<mi>λ</mi><msub>
+	<mi>c</mi>
+	<mi>i</mi>
+	</msub>
+	<mo stretchy="false">(</mo><mi>λ</mi><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mo>=</mo><msup>
+	<mi>λ</mi>
+	<mi>r</mi>
+	</msup>
+	<msub>
+	<mi>c</mi>
+	<mi>i</mi>
+	</msub>
+	<mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> and thus <span class="inlineequation"><math xml:id="mcafee_ch19_s03_m018" display="inline">
+	<mrow>
+	<msup>
+	<mi>c</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>λ</mi><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mo>=</mo><msup>
+	<mi>λ</mi>
+	<mrow>
+	<mi>r</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	<msup>
+	<mi>c</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> That is, if <em class="emphasis">c</em> is homogeneous of degree <em class="emphasis">r</em>, <span class="inlineequation"><math xml:id="mcafee_ch19_s03_m019" display="inline">
+	<msup>
+	<mi>c</mi>
+	<mo>′</mo>
+	</msup>
+	</math>
+</span> is homogeneous of degree <em class="emphasis">r</em> – 1. Consequently, if <span class="inlineequation"><math xml:id="mcafee_ch19_s03_m020" display="inline">
+	<mrow>
+	<mn>0</mn><mo>=</mo><mstyle mathvariant="bold" mathsize="normal"><mi>p</mi></mstyle><mo>−</mo><msup>
+	<mi>c</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> <span class="inlineequation"><math xml:id="mcafee_ch19_s03_m021" display="inline">
+	<mrow>
+	<mn>0</mn><mo>=</mo><mi>α</mi><mstyle mathvariant="bold" mathsize="normal"><mi>p</mi></mstyle><mo>−</mo><msup>
+	<mi>c</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><msup>
+	<mi>α</mi>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mi>r</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</msup>
+	<mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> Thus, if the incentives are scaled up by α, the efforts rise by the scalar factor <span class="inlineequation"><math xml:id="mcafee_ch19_s03_m022" display="inline">
+	<mrow>
+	<msup>
+	<mi>α</mi>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mi>r</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</msup><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch19_s03_p20">Now consider an employer with an agent engaging in <em class="emphasis">n</em> activities. The employer values the <em class="emphasis">i</em>th activity at <em class="emphasis">v</em><sub class="subscript">i</sub> and thus wishes to maximize
+	<span class="inlineequation"><math xml:id="mcafee_ch19_s03_m023" display="inline">
+	<mrow>
+	<mi>π</mi><mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>i</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</munderover>
+	<mrow>
+	<mo stretchy="false">(</mo><msub>
+	<mi>v</mi>
+	<mi>i</mi>
+	</msub>
+	<mo>−</mo><msub>
+	<mi>p</mi>
+	<mi>i</mi>
+	</msub>
+	<mo stretchy="false">)</mo><msub>
+	<mi>x</mi>
+	<mi>i</mi>
+	</msub>
+	</mrow>
+	</mstyle><mo>=</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>i</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</munderover>
+	<mrow>
+	<mo stretchy="false">(</mo><msub>
+	<mi>v</mi>
+	<mi>i</mi>
+	</msub>
+	<mo>−</mo><msub>
+	<mi>c</mi>
+	<mi>i</mi>
+	</msub>
+	<mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mo stretchy="false">)</mo><msub>
+	<mi>x</mi>
+	<mi>i</mi>
+	</msub>
+	</mrow>
+	</mstyle><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch19_s03_p21">This equation embodies a standard trick in agency theory. Think of the principal (employer) not as choosing the incentives <strong class="emphasis bold">p</strong>, but instead as choosing the effort levels <strong class="emphasis bold">x</strong>, with the incentives as a constraint. That is, the principal can be thought of as choosing <strong class="emphasis bold">x</strong> and then choosing the <strong class="emphasis bold">p</strong> that implements this <strong class="emphasis bold">x</strong>. The principal’s expected profit is readily differentiated with respect to each <em class="emphasis">x</em><sub class="subscript">j</sub>, yielding
+	<span class="inlineequation"><math xml:id="mcafee_ch19_s03_m024" display="inline">
+	<mrow>
+	<mn>0</mn><mo>=</mo><msub>
+	<mi>v</mi>
+	<mi>j</mi>
+	</msub>
+	<mo>−</mo><msub>
+	<mi>c</mi>
+	<mi>j</mi>
+	</msub>
+	<mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mo>−</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>i</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>c</mi>
+	<mrow>
+	<mi>i</mi><mi>j</mi>
+	</mrow>
+	</msub>
+	<mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mo stretchy="false">)</mo><msub>
+	<mi>x</mi>
+	<mi>i</mi>
+	</msub>
+	</mrow>
+	</mstyle><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch19_s03_p22">However, because <em class="emphasis">c</em><sub class="subscript">j</sub>(<strong class="emphasis bold">x</strong>) is homogeneous of degree <em class="emphasis">r</em> – 1,</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch19_s03_m025" display="block">
+	<mrow>
+	<mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>i</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>c</mi>
+	<mrow>
+	<mi>i</mi><mi>j</mi>
+	</mrow>
+	</msub>
+	<mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mo stretchy="false">)</mo><msub>
+	<mi>x</mi>
+	<mi>i</mi>
+	</msub>
+	</mrow>
+	</mstyle><mo>=</mo><msub>
+	<mrow>
+	<mrow><mrow>
+	<mfrac>
+	<mi>d</mi>
+	<mrow>
+	<mi>d</mi><mi>λ</mi>
+	</mrow>
+	</mfrac>
+	<msub>
+	<mi>c</mi>
+	<mi>j</mi>
+	</msub>
+	<mo stretchy="false">(</mo><mi>λ</mi><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo>
+	</mrow><mo>|</mo></mrow>
+	</mrow>
+	<mrow>
+	<mi>λ</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	</msub>
+	<mo>=</mo><msub>
+	<mrow>
+	<mrow><mrow>
+	<mfrac>
+	<mi>d</mi>
+	<mrow>
+	<mi>d</mi><mi>λ</mi>
+	</mrow>
+	</mfrac>
+	<msup>
+	<mi>λ</mi>
+	<mrow>
+	<mi>r</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	<msub>
+	<mi>c</mi>
+	<mi>j</mi>
+	</msub>
+	<mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo>
+	</mrow><mo>|</mo></mrow>
+	</mrow>
+	<mrow>
+	<mi>λ</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	</msub>
+	<mo>=</mo><mo stretchy="false">(</mo><mi>r</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><msub>
+	<mi>c</mi>
+	<mi>j</mi>
+	</msub>
+	<mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mtext>,</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para block">and thus</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch19_s03_m026" display="block">
+	<mrow>
+	<mn>0</mn><mo>=</mo><msub>
+	<mi>v</mi>
+	<mi>j</mi>
+	</msub>
+	<mo>−</mo><msub>
+	<mi>c</mi>
+	<mi>j</mi>
+	</msub>
+	<mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mo>−</mo><mstyle displaystyle="true">
+	<munderover>
+	<mo>∑</mo>
+	<mrow>
+	<mi>i</mi><mo>=</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>c</mi>
+	<mrow>
+	<mi>i</mi><mi>j</mi>
+	</mrow>
+	</msub>
+	<mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo><mo stretchy="false">)</mo><msub>
+	<mi>x</mi>
+	<mi>i</mi>
+	</msub>
+	</mrow>
+	</mstyle><mo>=</mo><msub>
+	<mi>v</mi>
+	<mi>j</mi>
+	</msub>
+	<mo>−</mo><mi>r</mi><msub>
+	<mi>c</mi>
+	<mi>j</mi>
+	</msub>
+	<mo stretchy="false">(</mo><mstyle mathvariant="bold" mathsize="normal"><mi>x</mi></mstyle><mo stretchy="false">)</mo>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para block" id="mcafee-ch19_s03_p23">This expression proves the main result of this section. Under the maintained hypotheses (convexity and homogeneity), an employer of a multitasking agent uses incentives that are a constant proportion of value; that is,
+	<span class="inlineequation"><math xml:id="mcafee_ch19_s03_m027" display="inline">
+	<mrow>
+	<msub>
+	<mi>p</mi>
+	<mi>j</mi>
+	</msub>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<msub>
+	<mi>v</mi>
+	<mi>j</mi>
+	</msub>
+	</mrow>
+	<mi>r</mi>
+	</mfrac><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> where <em class="emphasis">r</em> is the degree of homogeneity of the agent’s costs. Recalling that <em class="emphasis">r</em> &gt; 1, the principal uses a <span class="margin_term"><a class="glossterm">sharing rule</a><span class="glossdef">In agency theory, sharing a fixed proportion of the output with the agent.</span></span>, sharing a fixed proportion of value with the agent.</p>
+    <p class="para editable block" id="mcafee-ch19_s03_p24">When agents have a homogeneous cost function, the principal has a very simple optimal incentive scheme, requiring quite limited knowledge of the agent’s cost function (just the degree of homogeneity). Moreover, the incentive scheme works through a somewhat surprising mechanism. Note that if the value of one activity, for example, Activity 1, rises, <em class="emphasis">p</em><sub class="subscript">1</sub> rises and all the other payment rates stay constant. The agent responds by increasing <em class="emphasis">x</em><sub class="subscript">1</sub>, but the other activities may rise or fall depending on how complementary they are to Activity 1. Overall, the agent’s substitution across activities given the new incentive level on Activity 1 implements the desired effort levels on other activities. The remarkable implication of homogeneity is that, although the principal desires different effort levels for all activities, only the incentive on Activity 1 must change.</p>
+    <div class="key_takeaways block" id="mcafee-ch19_s03_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch19_s03_l03">
+            <li>Multi-tasking refers to performing several activities simultaneously.</li>
+            <li>In the agency context, multitasking refers to the incentives of a principal to compensate different tasks.</li>
+            <li>A simple model of multitasking provides a convex cost of a set of tasks that is homogeneous of degree <em class="emphasis">r</em> in the tasks. This means that scaling up activities increases costs at a fixed rate <em class="emphasis">r</em>.</li>
+            <li>With piece rates, the employee gets a fixed payment for each unit produced.</li>
+            <li>One very useful implication of homogeneity is that incentives scale. If all incentives rise by a scalar factor α, then <strong class="emphasis bold">x</strong> rises by <span class="inlineequation"><math xml:id="mcafee_ch19_s03_m028" display="inline">
+		<mrow>
+		<msup>
+		<mi>α</mi>
+		<mrow>
+		<mfrac>
+		<mn>1</mn>
+		<mrow>
+		<mi>r</mi><mo>−</mo><mn>1</mn>
+		</mrow>
+		</mfrac>
+		</mrow>
+		</msup><mtext>,</mtext>
+		</mrow>
+		</math>
+</span> where <em class="emphasis">r</em> is the degree of homogeneity.</li>
+            <li>Given convexity and homogeneity, an employer of a multitasking agent uses incentives that are a constant proportion of value; that is, <span class="inlineequation"><math xml:id="mcafee_ch19_s03_m029" display="inline">
+		<mrow>
+		<msub>
+		<mi>p</mi>
+		<mi>j</mi>
+		</msub>
+		<mo>=</mo><mfrac>
+		<mrow>
+		<msub>
+		<mi>v</mi>
+		<mi>j</mi>
+		</msub>
+		</mrow>
+		<mi>r</mi>
+		</mfrac><mtext>.</mtext>
+		</mrow>
+		</math>
+</span>
+</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s20-02-cost-of-providing-incentives.html"><img src="shared/images/batch-left.png"></a> <a href="s20-02-cost-of-providing-incentives.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s20-04-multi-tasking-without-homogene.html">Next Section</a> <a href="s20-04-multi-tasking-without-homogene.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

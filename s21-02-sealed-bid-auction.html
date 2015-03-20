@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Sealed-bid Auction</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s21-01-english-auction.html"><img src="shared/images/batch-left.png"></a> <a href="s21-01-english-auction.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s21-03-dutch-auction.html">Next Section</a> <a href="s21-03-dutch-auction.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch20_s02" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">20.2</span> Sealed-bid Auction</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch20_s02_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch20_s02_l01">
+            <li>How should I bid if I don’t get to see the bids of others?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch20_s02_p01">In a <span class="margin_term"><a class="glossterm">sealed-bid auction</a><span class="glossdef">Auction where bidders simultaneously submit sealed bids, and the highest bidder wins and pays the highest bid.</span></span>, each bidder submits a bid in an envelope. These are opened simultaneously, and the highest bidder wins the item and pays his or her bid. Sealed-bid auctions are used to sell offshore oil leases, and they are used by governments to purchase a wide variety of items. In a purchase situation, known often as a tender, the lowest bidder wins the amount he bids.</p>
+    <p class="para editable block" id="mcafee-ch20_s02_p02">The analysis of the sealed-bid auction is more challenging because the bidders don’t have a dominant strategy. Indeed, the best bid depends on what the other bidders are bidding. The bidder with the highest value would like to bid a penny more than the next highest bidder’s bid, whatever that might be.</p>
+    <p class="para editable block" id="mcafee-ch20_s02_p03">To pursue an analysis of the sealed-bid auction, we are going to make a variety of simplifying assumptions. These assumptions aren’t necessary to the analysis, but we make them to simplify the mathematical presentation.</p>
+    <p class="para block" id="mcafee-ch20_s02_p04">We suppose there are <em class="emphasis">n</em> bidders, and we label the bidders 1, …, <em class="emphasis">n</em>. Bidder <em class="emphasis">i</em> has a private value <em class="emphasis">v</em><sub class="subscript">i</sub>, which is a draw from the uniform distribution on the interval [0,1]. That is, if <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m001" display="inline">
+	<mrow>
+	<mn>0</mn><mo>≤</mo><mi>a</mi><mo>≤</mo><mi>b</mi><mo>≤</mo><mn>1</mn><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> the probability that bidder <em class="emphasis">i</em>’s value is in the interval [<em class="emphasis">a, b</em>] is <em class="emphasis">b</em> – <em class="emphasis">a</em>. An important attribute of this assumption is symmetry—the bidders all have the same distribution. In addition, the formulation has assumed independence—the value one bidder places on the object for sale is statistically independent from the value placed by others. Each bidder knows his own value but he doesn’t know the other bidders’ values. Each bidder is assumed to bid in such a way as to maximize his expected profit (we will look for a Nash equilibrium of the bidding game). Bidders are permitted to submit any bid equal to or greater than zero.</p>
+    <p class="para editable block" id="mcafee-ch20_s02_p05">To find an equilibrium, it is helpful to restrict attention to linear strategies, in which a bidder bids a proportion of her value. Thus, we suppose that each bidder bids λ<em class="emphasis">v</em> when her value is <em class="emphasis">v</em> and λ is a positive constant, usually between zero and one. With this set up we shall examine under what conditions these strategies comprise a Nash equilibrium. An equilibrium exists when all other bidders bid λ<em class="emphasis">v</em> when their value is <em class="emphasis">v</em>, and the remaining bidders bid the same.</p>
+    <p class="para block" id="mcafee-ch20_s02_p06">So fix a bidder and suppose that bidder’s value is <em class="emphasis">v</em><sub class="subscript">i</sub>. What bid should the bidder choose? A bid of <em class="emphasis">b</em> wins the bidding if all other bidders bid less than <em class="emphasis">b</em>. Because the other bidders, by hypothesis, bid λ<em class="emphasis">v</em> when their value is <em class="emphasis">v</em>, our bidder wins when <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m002" display="inline">
+	<mrow>
+	<mi>b</mi><mo>≥</mo><mi>λ</mi><msub>
+	<mi>v</mi>
+	<mi>j</mi>
+	</msub>
+	</mrow>
+	</math>
+</span> for each other bidder <em class="emphasis">j</em>. This occurs when <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m003" display="inline">
+	<mrow>
+	<mfrac bevelled="true">
+	<mi>b</mi>
+	<mi>λ</mi>
+	</mfrac>
+	<mo>≥</mo><msub>
+	<mi>v</mi>
+	<mi>j</mi>
+	</msub>
+	</mrow>
+	</math>
+</span> for each other bidder <em class="emphasis">j</em>, and this in turn occurs with probability <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m004" display="inline">
+	<mrow>
+	<mfrac bevelled="true">
+	<mi>b</mi>
+	<mi>λ</mi>
+	</mfrac><mtext>.</mtext>
+	</mrow>
+	</math>
+</span><span class="footnote" id="fwk-mcafee-fn20_001">If <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m005" display="inline">
+	<mrow>
+	<mi>b</mi><mo>&gt;</mo><mi>λ</mi><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> then in fact the probability is 1. You can show that no bidder would ever bid more than λ.</span> Thus, our bidder with value <em class="emphasis">v</em><sub class="subscript">i</sub> who bids <em class="emphasis">b</em> wins with probability <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m006" display="inline">
+	<mrow>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac bevelled="true">
+	<mi>b</mi>
+	<mi>λ</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	</math>
+</span> because the bidder must beat all <em class="emphasis">n</em> −1 other bidders. That creates expected profits for the bidder of
+	<span class="inlineequation"><math xml:id="mcafee_ch20_s02_m007" display="inline">
+	<mrow>
+	<mi>π</mi><mo>=</mo><mo stretchy="false">(</mo><msub>
+	<mi>v</mi>
+	<mi>i</mi>
+	</msub>
+	<mo>−</mo><mi>b</mi><mo stretchy="false">)</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac bevelled="true">
+	<mi>b</mi>
+	<mi>λ</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch20_s02_p07">The bidder chooses <em class="emphasis">b</em> to maximize expected profits. The first-order condition requires
+	<span class="inlineequation"><math xml:id="mcafee_ch20_s02_m008" display="inline">
+	<mrow>
+	<mn>0</mn><mo>=</mo><mo>−</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mi>b</mi>
+	<mi>λ</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	<mo>+</mo><mo stretchy="false">(</mo><msub>
+	<mi>v</mi>
+	<mi>i</mi>
+	</msub>
+	<mo>−</mo><mi>b</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mfrac>
+	<mrow>
+	<msup>
+	<mi>b</mi>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>2</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	<mrow>
+	<msup>
+	<mi>λ</mi>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch20_s02_p08">The first-order condition solves for
+	<span class="inlineequation"><math xml:id="mcafee_ch20_s02_m009" display="inline">
+	<mrow>
+	<mi>b</mi><mo>=</mo><mfrac>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</mfrac>
+	<mi>v</mi><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch20_s02_p09">But this is a linear rule. Thus, if <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m010" display="inline">
+	<mrow>
+	<mi>λ</mi><mo>=</mo><mfrac>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</mfrac><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> we have a Nash equilibrium.</p>
+    <p class="para block" id="mcafee-ch20_s02_p10">The nature of this equilibrium is that each bidder bids a fraction <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m011" display="inline">
+	<mrow>
+	<mi>λ</mi><mo>=</mo><mfrac>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</mfrac>
+	</mrow>
+	</math>
+</span> of his value, and the highest-value bidder wins at a price equal to that fraction of her value.</p>
+    <p class="para block" id="mcafee-ch20_s02_p11">In some cases, the sealed-bid auction produces regret. Regret means that a bidder wishes she had bid differently. Recall our notation for values: <em class="emphasis">v</em><sub class="subscript">(1)</sub> is the highest value and <em class="emphasis">v</em><sub class="subscript">(2)</sub> is the second-highest value. Because the price in a sealed-bid auction is <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m012" display="inline">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</mfrac>
+	<msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> the second-highest bidder will regret her bid when <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m013" display="inline">
+	<mrow>
+	<msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub>
+	<mo>&gt;</mo><mfrac>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</mfrac>
+	<msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> In this case, the bidder with the second-highest value could have bid higher and won, if the bidder had known the winning bidder’s bid. In contrast, the English auction is regret-free: the price rises to the point that the bidder with the second-highest value won’t pay.</p>
+    <p class="para block" id="mcafee-ch20_s02_p12">How do the two auctions compare in prices? It turns out that statistical independence of private values implies <span class="margin_term"><a class="glossterm">revenue equivalence</a><span class="glossdef">Situation in which two auctions produce the same price on average.</span></span>, which means the two auctions produce the same prices on average. Given the highest value <em class="emphasis">v</em><sub class="subscript">(1)</sub>, the second-highest value has distribution <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m014" display="inline">
+	<mrow>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<msub>
+	 <mi>v</mi>
+	 <mrow>
+	  <mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+	 </mrow>
+	</msub>
+	</mrow>
+	<mrow>
+	<msub>
+	 <mi>v</mi>
+	 <mrow>
+	  <mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo>
+	 </mrow>
+	</msub>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	</math>
+</span> because this is the probability that all <em class="emphasis">n</em> − 1 other bidders have values less than <em class="emphasis">v</em><sub class="subscript">(2)</sub>. But this gives an expected value of <em class="emphasis">v</em><sub class="subscript">(2)</sub> of
+	<span class="inlineequation"><math xml:id="mcafee_ch20_s02_m015" display="inline">
+	<mrow>
+	<mi>E</mi><msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub>
+	<mo>=</mo><mstyle displaystyle="true">
+	<mrow><munderover>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mrow>
+	<msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub>
+	</mrow>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub>
+	<mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mfrac>
+	<mrow>
+	<msubsup>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>2</mn>
+	</mrow>
+	</msubsup>
+	</mrow>
+	<mrow>
+	<msubsup>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msubsup>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</mrow>
+	</mstyle><mi>d</mi><msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</mfrac>
+	<msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch20_s02_p13">Thus, the average price paid in the sealed-bid auction is the same as the average price in the English auction.</p>
+    <div class="key_takeaways block" id="mcafee-ch20_s02_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch20_s02_l02">
+            <li>In a sealed-bid auction, bids are opened simultaneously, and the highest bidder wins the item and pays his bid.</li>
+            <li>The analysis of the sealed-bid auction is more challenging because the bidders don’t have a dominant strategy.</li>
+            <li>When bidders have uniformly and independently distributed values, there is an equilibrium where they bid a constant fraction of value, <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m016" display="inline">
+			<mrow>
+			<mfrac>
+			<mrow>
+			<mi>n</mi><mo>−</mo><mn>1</mn>
+			</mrow>
+			<mi>n</mi>
+			</mfrac>
+			</mrow>
+			</math>
+</span> where <em class="emphasis">n</em> is the number of bidders.</li>
+            <li>Statistical independence of private values implies revenue equivalence, which means English and sealed-bid auctions produce the same prices on average.</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s21-01-english-auction.html"><img src="shared/images/batch-left.png"></a> <a href="s21-01-english-auction.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s21-03-dutch-auction.html">Next Section</a> <a href="s21-03-dutch-auction.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>English Auction</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s20-04-multi-tasking-without-homogene.html"><img src="shared/images/batch-left.png"></a> <a href="s20-04-multi-tasking-without-homogene.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s21-02-sealed-bid-auction.html">Next Section</a> <a href="s21-02-sealed-bid-auction.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch20_s01" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">20.1</span> English Auction</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch20_s01_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="mcafee-ch20_s01_l01">
+            <li>What is the most common auction form?</li>
+            <li>How should I bid in an auction if I know my own value?</li>
+            <li>When we share a value that none of us know, should I bid my estimate of value?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch20_s01_p01">An <span class="margin_term"><a class="glossterm">English auction</a><span class="glossdef">Auction where bids increase until no one is willing to top the current bid.</span></span> is the common auction form used for selling antiques, art, used cars, and cattle. The auctioneer starts low and calls out prices until no bidder is willing to bid higher than the current high price. The most common procedure is for a low price to be called out and a bidder to accept it. A higher price is called out, and a different bidder accepts it. When several accept simultaneously, the auctioneer accepts the first one spotted. This process continues until a price is called out that no one accepts. At that point, the auction ends, and the highest bidder wins.</p>
+    <p class="para editable block" id="mcafee-ch20_s01_p02">Information plays a significant role in bidding in auctions. The two major extremes in information, which lead to distinct theories, are <span class="margin_term"><a class="glossterm">private values</a><span class="glossdef">Situation in which bidders in an auction know their own value.</span></span>, which means bidders know their own value, and <span class="margin_term"><a class="glossterm">common values</a><span class="glossdef">Situation in which bidders in an auction have the same value, which is generally not known with certainty.</span></span>, in which bidders don’t know their own value but have some indication or signal about the value. In the private values situation, a bidder may be outbid by another bidder but doesn’t learn anything from another bidder’s willingness to pay. The case of private values arises when the good being sold has a quality apparent to all bidders, no hidden attributes, and no possibility of resale. In contrast, the case of common values arises when bidders don’t know the value of the item for sale, but that value is common to all. The quintessential example is an offshore oil lease. No one knows for sure how much oil can be extracted from an offshore lease, and companies have estimates of the amount of oil. The estimates are closely guarded because rivals could learn from them. Similarly, when antiques dealers bid on an antique, the value they place on it is primarily the resale value. Knowing rivals’ estimates of the resale value could influence the value each bidder placed on the item.</p>
+    <p class="para editable block" id="mcafee-ch20_s01_p03">The private values environment is unrealistic in most settings because items for sale usually have some element of common value. However, some situations approximate the private values environment and these are the most easy to understand.</p>
+    <p class="para editable block" id="mcafee-ch20_s01_p04">In a private values setting, a very simple bidding strategy is optimal for bidders: a bidder should keep bidding until the price exceeds the value a bidder places on it, at which point the bidder should stop. That is, bidders should drop out of the bidding when the price exceeds their value because at that point, winning the auction requires the bidder to take a loss. Every bidder should be willing to continue to bid to prevent someone else from winning the auction provided the price is less than the bidder’s value. If you have a value <em class="emphasis">v</em> and another bidder is about to win at a price <em class="emphasis">p</em><sub class="subscript">a</sub> &lt; <em class="emphasis">v</em>, you might as well accept a price <em class="emphasis">p</em><sub class="subscript">b</sub> between the two, <em class="emphasis">p</em><sub class="subscript">a</sub> &lt; <em class="emphasis">p</em><sub class="subscript">b</sub> &lt; <em class="emphasis">v</em> because a purchase at this price would provide you with a profit. This strategy is a dominant strategy for each private values bidder because no matter what strategy the other bidders adopt, bidding up to value is the strategy that maximizes the profit for each bidder.</p>
+    <p class="para editable block" id="mcafee-ch20_s01_p05">The presence of a dominant strategy makes it easy to bid in the private values environment. In addition, it simplifies the analysis of the English auction relatively simple.</p>
+    <p class="para block" id="mcafee-ch20_s01_p06">Most auctioneers use a flexible system of <span class="margin_term"><a class="glossterm">bid increments</a><span class="glossdef">The difference between successive price requests.</span></span>. A bid increment is the difference between successive price requests. The theory is simplest when the bid increment, denoted by δ, is very small. In this case, the bidder with the highest value wins, and the price is no more than the second-highest value, but it is at least the second-highest value minus δ, because a lower price would induce the bidder with the second-highest value to submit a slightly higher bid. If we denote the second-highest value with the somewhat obscure (but standard) notation <em class="emphasis">v</em><sub class="subscript">(2)</sub>, the final price <em class="emphasis">p</em> satisfies
+	<span class="inlineequation"><math xml:id="mcafee_ch20_s01_m001" display="inline">
+	<mrow>
+	<msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub>
+	<mo>−</mo><mi>Δ</mi><mo>≤</mo><mi>p</mi><mo>≤</mo><msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch20_s01_p07">As the bid increment gets small, the price is nailed down. The conclusion is that, when bid increments are small and bidders have private values, the bidder with the highest value wins the bidding at a price equal to the second-highest value. The notation for the highest value is <em class="emphasis">v</em><sub class="subscript">(1)</sub>, and thus the seller obtains <em class="emphasis">v</em><sub class="subscript">(2)</sub>, and the winning bidder obtains profits of <em class="emphasis">v</em><sub class="subscript">(1)</sub> – <em class="emphasis">v</em><sub class="subscript">(2)</sub>.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch20_s01_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch20_s01_l02">
+            <li>An auction is a trading mechanism where the highest bidder wins an object. Auctions are typically used when values are uncertain, and thus information is an important aspect of analyzing auctions.</li>
+            <li>Private values mean bidders know their own value.</li>
+            <li>Common values mean bidders share a common but unknown value, and they have some indication or signal about the value. With common values, willingness to pay by one bidder is informative for other bidders.</li>
+            <li>In an English auction, the auctioneer starts low and calls out prices until no bidder is willing to bid higher than the current high price. At that point the auction ends, and the highest bidder wins.</li>
+            <li>In a private values setting, the English auction has a dominant strategy: remain bidding until one’s value is reached.</li>
+            <li>When bid increments are small and bidders have private values, the bidder with the highest value wins the bidding at a price equal to the second-highest value.</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s20-04-multi-tasking-without-homogene.html"><img src="shared/images/batch-left.png"></a> <a href="s20-04-multi-tasking-without-homogene.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s21-02-sealed-bid-auction.html">Next Section</a> <a href="s21-02-sealed-bid-auction.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

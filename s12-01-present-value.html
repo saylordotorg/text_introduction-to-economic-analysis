@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Present Value</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s11-04-general-long-run-dynamics.html"><img src="shared/images/batch-left.png"></a> <a href="s11-04-general-long-run-dynamics.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s12-02-investment.html">Next Section</a> <a href="s12-02-investment.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch11_s01" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">11.1</span> Present Value</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch11_s01_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch11_s01_l01">
+            <li>How is a stream of payments or liabilities evaluated?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch11_s01_p01">The promise of $1 in the future is not worth $1 today. There are a variety of reasons why a promise of future payments is not worth the face value today, some of which involve risk that the money may not be paid. Let’s set aside such risk for the moment. Even when the future payment is perceived to occur with negligible risk, most people prefer $1 today to $1 payable a year hence. One way to express this is by the <span class="margin_term"><a class="glossterm">present value</a><span class="glossdef">Value in today’s dollars of a stream of future payments.</span></span>: The value today of a future payment of a dollar is less than a dollar. From a present value perspective, future payments are <span class="margin_term"><a class="glossterm">discounted</a><span class="glossdef">The practice of adjusting a sequence of payments to account for the interest these payments would earn in financial markets.</span></span>.</p>
+    <p class="para editable block" id="mcafee-ch11_s01_p02">From an individual perspective, one reason that one should value a future payment less than a current payment is due to <span class="margin_term"><a class="glossterm">arbitrage</a><span class="glossdef">Buying and reselling to make a profit.</span></span>.<span class="footnote" id="fwk-mcafee-fn11_001">Arbitrage is the process of buying and selling in such a way as to make a profit. For example, if wheat is selling for $3 per bushel in New York but $2.50 per bushel in Chicago, one can buy in Chicago and sell in New York, profiting by $0.50 per bushel minus any transaction and transportation costs. Such arbitrage tends to force prices to differ by no more than transaction costs. When these transaction costs are small, as with gold, prices will be about the same worldwide.</span> Suppose you are going to need $10,000 one year from now to put a down payment on a house. One way of producing $10,000 is to buy a government bond that pays $10,000 a year from now. What will that bond cost you? At current interest rates, a secure bond<span class="footnote" id="fwk-mcafee-fn11_002">Economists tend to consider U.S. federal government securities secure, because the probability of such a default is very, very low.</span> will cost around $9,700. This means that no one should be willing to pay $10,000 for a future payment of $10,000 because, instead, one can have the future $10,000 by buying the bond, and will have $300 left over to spend on cappuccinos or economics textbooks. In other words, if you will pay $10,000 for a secure promise to repay the $10,000 a year hence, then I can make a successful business by selling you the secure promise for $10,000 and pocketing $300.</p>
+    <p class="para editable block" id="mcafee-ch11_s01_p03">This arbitrage consideration also suggests how to value future payments: discount them by the relevant interest rate.</p>
+    <p class="para editable block" id="mcafee-ch11_s01_p04">Example (Auto loan): You are buying a $20,000 car, and you are offered the choice to pay it all today in cash, or to pay $21,000 in one year. Should you pay cash (assuming you have that much in cash) or take the loan? The loan is at a 5% annual interest rate because the repayment is 5% higher than the loan amount. This is a good deal for you if your alternative is to borrow money at a higher interest rate; for example, on (most) credit cards. It is also a good deal if you have savings that pay more than 5%—if buying the car with cash entails cashing in a certificate of deposit that pays more than 5%, then you would be losing the difference. If, on the other hand, you are currently saving money that pays less than 5% interest, paying off the car is a better deal.</p>
+    <p class="para editable block" id="mcafee-ch11_s01_p05">The formula for present value is to discount by the amount of interest. Let’s denote the interest rate for the next year as <em class="emphasis">r</em><sub class="subscript">1</sub>, the second year’s rate as <em class="emphasis">r</em><sub class="subscript">2</sub>, and so on. In this notation, $1 invested would pay $(1 + <em class="emphasis">r</em><sub class="subscript">1</sub>) next year, or $(1 + <em class="emphasis">r</em><sub class="subscript">1</sub>) × (1 + <em class="emphasis">r</em><sub class="subscript">2</sub>) after 2 years, or $(1 + <em class="emphasis">r</em><sub class="subscript">1</sub>) × (1 + <em class="emphasis">r</em><sub class="subscript">2</sub>) × (1 + <em class="emphasis">r</em><sub class="subscript">3</sub>) after 3 years. That is, <em class="emphasis">r<sub class="subscript">i</sub></em> is the interest rate that determines the value, at the end of year <em class="emphasis">i</em>, of $1 invested at the start of year <em class="emphasis">i</em>. Then if we obtain a stream of payments <em class="emphasis">A</em><sub class="subscript">0</sub> immediately, <em class="emphasis">A</em><sub class="subscript">1</sub> at the end of year one, <em class="emphasis">A</em><sub class="subscript">2</sub> at the end of year two, and so on, the present value of that stream is</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s01_m001" display="block">
+	<mrow>
+	<mi>P</mi><mi>V</mi><mo>=</mo><msub>
+	<mi>A</mi>
+	<mn>0</mn>
+	</msub>
+	<mo>+</mo><mfrac>
+	<mrow>
+	<msub>
+	<mi>A</mi>
+	<mn>1</mn>
+	</msub>    
+	</mrow>
+	<mrow>
+	<mn>1</mn><mo>+</mo><msub>
+	<mi>r</mi>
+	<mn>1</mn>
+	</msub>    
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mrow>
+	<msub>
+	<mi>A</mi>
+	<mn>2</mn>
+	</msub>    
+	</mrow>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msub>
+	<mi>r</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msub>
+	<mi>r</mi>
+	<mn>2</mn>
+	</msub>
+	<mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mrow>
+	<msub>
+	<mi>A</mi>
+	<mn>2</mn>
+	</msub>    
+	</mrow>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msub>
+	<mi>r</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msub>
+	<mi>r</mi>
+	<mn>2</mn>
+	</msub>
+	<mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msub>
+	<mi>r</mi>
+	<mn>3</mn>
+	</msub>
+	<mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mn>…</mn>
+	</mrow>
+	</math>
+</span>
+    <p class="para block" id="mcafee-ch11_s01_p06">Example (<span class="margin_term"><a class="glossterm">Consolidated annuities or consols</a><span class="glossdef">Bonds that pay a fixed amount in perpetuity (forever).</span></span>): What is the value of $1 paid at the end of each year forever, with a fixed interest rate <em class="emphasis">r</em>? Suppose the value is <em class="emphasis">v</em>. Then<span class="footnote" id="fwk-mcafee-fn11_003">This development uses the formula that, for -1 &lt; <em class="emphasis">a</em> &lt; 1, <span class="inlineequation"><math xml:id="mcafee_ch11_s01_m002" display="inline">
+	<mrow>
+		<mfrac>
+		<mrow>
+			<mn>1</mn>
+		</mrow>
+		<mrow>
+			<mn>1</mn><mo>−</mo><mi>a</mi>
+		</mrow>
+		</mfrac>
+	<mo>=</mo>
+	<mn>1</mn>
+	<mo>+</mo>
+	<mi>a</mi>
+	<mo>+</mo>
+	<msup>
+		<mi>a</mi>
+		<mn>2</mn>
+	</msup>
+	<mo>+</mo>
+	</mrow>
+	</math>
+</span> …, which is readily verified. Note that this formula involves an infinite series.</span></p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s01_m003" display="block">
+	<mrow>
+	<mi>v</mi><mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mi>r</mi>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>3</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mn>…</mn><mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mi>r</mi>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</mfrac>
+	<mo>−</mo><mn>1</mn><mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mi>r</mi>
+	</mfrac>
+	<mo>.</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch11_s01_p07">At a 5% interest rate, $1 million per year paid forever is worth $20 million today. Bonds that pay a fixed amount every year forever are known as consols; no current government issues consols.</p>
+    <p class="para editable block" id="mcafee-ch11_s01_p08">Example (Mortgages): Again, fix an interest rate <em class="emphasis">r</em>, but this time let <em class="emphasis">r</em> be the monthly interest rate. A mortgage implies a fixed payment per month for a large number of months (e.g., 360 for a 30-year mortgage). What is the present value of these payments over <em class="emphasis">n</em> months? A simple way to compute this is to use the consol value, because</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s01_m004" display="block">
+	<mrow>
+	<mi>M</mi><mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mi>r</mi>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>3</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mn>…</mn><mo>+</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mi>n</mi>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mi>r</mi>
+	</mfrac>
+	<mo>−</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>+</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>−</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>+</mo><mn>2</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>−</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>+</mo><mn>3</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>−</mo><mn>…</mn>
+	</mrow>
+	</math>
+</span>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s01_m005" display="block">
+	<mrow>
+	<mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mi>r</mi>
+	</mfrac>
+	<mo>−</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mi>n</mi>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>3</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mn>…</mn>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	</math>
+</span>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s01_m006" display="block">
+	<mrow>
+	<mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mi>r</mi>
+	</mfrac>
+	<mo>−</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mi>n</mi>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mfrac>
+	<mn>1</mn>
+	<mi>r</mi>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mi>r</mi>
+	</mfrac>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mi>n</mi>
+	</msup>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><mo>.</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para block" id="mcafee-ch11_s01_p09">Thus, at a monthly interest rate of 0.5%, paying $1 per month for 360 months produces a present value <em class="emphasis">M</em> of <span class="inlineequation"><math xml:id="mcafee_ch11_s01_m007" display="inline">
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mn>0.005</mn>
+	</mrow>
+	</mfrac>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1.005</mn><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mn>360</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><mo>=</mo><mi>$</mi><mn>166.79</mn>
+	</mrow>
+	</math>
+</span>. Therefore, to borrow $100,000, one would have to pay <span class="inlineequation"><math xml:id="mcafee_ch11_s01_m008" display="inline">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>$</mi><mn>100</mn><mo>,</mo><mn>000</mn>
+	</mrow>
+	<mrow>
+	<mi>$</mi><mn>166.79</mn>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mtext>$599</mtext><mtext>.55</mtext>
+	</mrow>
+	</math>
+</span> per month. It is important to remember that a different loan amount just changes the scale: Borrowing $150,000 requires a payment of <span class="inlineequation"><math xml:id="mcafee_ch11_s01_m009" display="inline">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>$</mi><mn>150</mn><mo>,</mo><mn>000</mn>
+	</mrow>
+	<mrow>
+	<mi>$</mi><mn>166.79</mn>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mtext>$899</mtext><mtext>.33</mtext>
+	</mrow>
+	</math>
+</span> per month, because $1 per month generates $166.79 in present value.</p>
+    <p class="para block" id="mcafee-ch11_s01_p10">Example (Simple and compound interest): In the days before calculators, it was a challenge to actually solve interest-rate formulas, so certain simplifications were made. One of these was <span class="margin_term"><a class="glossterm">simple interest</a><span class="glossdef">An approximate interest rate that is calculated by dividing the annual interest rate by the number of periods in one year.</span></span>, which meant that daily or monthly rates were translated into annual rates by incorrect formulas. For example, with an annual rate of 5%, the simple interest daily rate is <span class="inlineequation"><math xml:id="mcafee_ch11_s01_m010" display="inline">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mn>5</mn><mi>%</mi>
+	</mrow>
+	<mrow>
+	<mn>365</mn>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mn>0.07692</mn><mi>%</mi><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> The fact that this is incorrect can be seen from the calculation <span class="inlineequation"><math xml:id="mcafee_ch11_s01_m011" display="inline">
+	<mrow>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mfrac>
+	<mrow>
+	<mn>.05</mn>
+	</mrow>
+	<mrow>
+	<mn>365</mn>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mn>365</mn>
+	</mrow>
+	</msup>
+	<mo>=</mo><mn>1.051267</mn><mi>%</mi><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> which is the <span class="margin_term"><a class="glossterm">compound interest</a><span class="glossdef">The correct rate of interest that is calculated by adding together the cumulative interest payments earned during one year.</span></span> calculation. Simple interest increases the annual rate, so it benefits lenders and harms borrowers. (Consequently, banks advertise the accurate annual rate on savings accounts—when consumers like the number to be larger—but not on mortgages, although banks are required by law to disclose, but not to advertise widely, actual annual interest rates on mortgages.)</p>
+    <p class="para editable block" id="mcafee-ch11_s01_p11">Example (Obligatory lottery): You win the lottery, and the paper reports that you’ve won $20 million. You’re going to be paid $20 million, but is it worth $20 million? In fact, you get $1 million per year for 20 years. However, in contrast to our formula, you get the first million right off the bat, so the value is</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s01_m012" display="block">
+	<mrow>
+	<mi>P</mi><mi>V</mi><mo>=</mo><mn>1</mn><mo>+</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mi>r</mi>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>3</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mn>…</mn><mo>+</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mn>19</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mn>1</mn><mo>+</mo><mfrac>
+	<mn>1</mn>
+	<mi>r</mi>
+	</mfrac>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mn>19</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><mo>.</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch11_s01_p12"><a class="xref" href="#mcafee-ch11_s01_t01">Table 11.1 "Present value of $20 million"</a> computes the present value of our $20 million dollar lottery, listing the results in thousands of dollars, at various interest rates. At 10% interest, the value of the lottery is less than half the “number of dollars” paid; and even at 5%, the value of the stream of payments is 65% of the face value.</p>
+    <div class="table block" id="mcafee-ch11_s01_t01" frame="all">
+        <p class="title"><span class="title-prefix">Table 11.1</span> Present value of $20 million</p>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th><em class="emphasis">r</em></th>
+                    <th>3%</th>
+                    <th>4%</th>
+                    <th>5%</th>
+                    <th>6%</th>
+                    <th>7%</th>
+                    <th>10%</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+<em class="emphasis">PV</em> (000s)</td>
+                    <td>$15,324</td>
+                    <td>$14,134</td>
+                    <td>$13,085</td>
+                    <td>$12,158</td>
+                    <td>$11,336</td>
+                    <td>$9,365</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="mcafee-ch11_s01_p13">The lottery example shows that interest rates have a dramatic impact on the value of payments made in the distant future. Present value analysis is the number one tool used in MBA programs, where it is known as <span class="margin_term"><a class="glossterm">net present value, or NPV</a><span class="glossdef">The present value of a stream of net payments.</span></span>, analysis. It is accurate to say that the majority of corporate investment decisions are guided by an NPV analysis.</p>
+    <p class="para editable block" id="mcafee-ch11_s01_p14">Example (Bond prices): A standard <span class="margin_term"><a class="glossterm">Treasury bill</a><span class="glossdef">A bond that has a fixed redemption value.</span></span> has a fixed future value. For example, it may pay $10,000 in one year. It is sold at a discount off the face value, so that a one-year, $10,000 bond might sell for $9,615.39, producing a 4% interest rate. To compute the effective interest rate <em class="emphasis">r</em>, the formula relating the future value <em class="emphasis">FV</em>, the number of years <em class="emphasis">n</em>, and the price is</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s01_m013" display="block">
+	<mrow>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mi>r</mi>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mi>n</mi>
+	</msup>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mi>F</mi><mi>V</mi>
+	</mrow>
+	<mrow>
+	<mtext>Price</mtext>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch11_s01_p15">or</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s01_m014" display="block">
+	<mrow>
+	<mi>r</mi><mo>=</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>F</mi><mi>V</mi>
+	</mrow>
+	<mrow>
+	<mtext>Price</mtext>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mfrac bevelled="true">
+	<mn>1</mn>
+	<mi>n</mi>
+	</mfrac>
+	</mrow>
+	</msup>
+	<mo>−</mo><mn>1.</mn>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch11_s01_p16">We can see from either formula that Treasury bill prices move inversely to interest rates—an increase in interest rates reduces Treasury prices. Bonds are a bit more complicated. Bonds pay a fixed interest rate set at the time of issue during the life of the bond, generally collected semiannually, and the face value is paid at the end of the term. These bonds were often sold on long terms, as much as 30 years. Thus, a three-year, $10,000 bond at 5% with semiannual payments would pay $250 at the end of each half year for 3 years, and pay $10,000 at the end of the 3 years. The net present value, with an annual interest rate <em class="emphasis">r</em>, is</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s01_m015" display="block">
+	<mrow>
+	<mi>N</mi><mi>P</mi><mi>V</mi><mo>=</mo><mfrac>
+	<mrow>
+	<mi>$</mi><mn>250</mn>
+	</mrow>
+	<mrow>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mi>r</mi>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mfrac bevelled="true">
+	<mn>1</mn>
+	<mn>2</mn>
+	</mfrac>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mrow>
+	<mi>$</mi><mn>250</mn>
+	</mrow>
+	<mrow>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mi>r</mi>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mn>1</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mrow>
+	<mi>$</mi><mn>250</mn>
+	</mrow>
+	<mrow>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mi>r</mi>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mfrac bevelled="true">
+	<mn>3</mn>
+	<mn>2</mn>
+	</mfrac>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mrow>
+	<mi>$</mi><mn>250</mn>
+	</mrow>
+	<mrow>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mi>r</mi>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mrow>
+	<mi>$</mi><mn>250</mn>
+	</mrow>
+	<mrow>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mi>r</mi>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mfrac bevelled="true">
+	<mn>5</mn>
+	<mn>2</mn>
+	</mfrac>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mrow>
+	<mi>$</mi><mn>250</mn>
+	</mrow>
+	<mrow>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mi>r</mi>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mn>3</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mrow>
+	<mi>$</mi><mn>10000</mn>
+	</mrow>
+	<mrow>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mi>r</mi>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mn>3</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>.</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch11_s01_p17">The net present value will be the price of the bond. Initially, the price of the bond should be the face value, since the interest rate is set as a market rate. The U.S. Treasury quit issuing such bonds in 2001, replacing them with bonds in which the face value is paid and then interest is paid semiannually.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch11_s01_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch11_s01_l02">
+            <li>Capital goods change slowly, in part because they are durable.</li>
+            <li>The acquisition of goods that will be used over time, whether they be factories, homes, or televisions, is known as investment.</li>
+            <li>The promise of $1 in the future is not worth $1 today. The difference is a discount on future payments.</li>
+            <li>Arbitrage involves buying and selling such that a positive surplus is earned.</li>
+            <li>Arbitrage is possible unless future payments are discounted by the appropriate interest rate.</li>
+            <li>“Simple” interest means that daily, monthly, or annual rates are translated into daily, monthly, or annual rates by incorrect formulas. Accurate calculations are known as compound interest.</li>
+            <li>A standard Treasury bill has a fixed future value. Treasury bill prices move inversely to interest rates—an increase in interest rates reduces Treasury prices.</li>
+            <li>Bonds pay a fixed interest rate set at the time of issue during the life of the bond, generally collected semiannually, and the face value is paid at the end of the term.</li>
+        </ul>
+    </div>
+    <div class="exercises editable block" id="mcafee-ch11_s01_n03">
+        <h3 class="title">Exercises</h3>
+        <ol class="orderedlist" id="mcafee-ch11_s01_l03">
+            <li>At a 7% annual interest rate, what is the present value of $100 paid at the end of one year, and $200 paid at the end of the second year?</li>
+            <li>Compute the NPV of the 3-year, $10,000 bond with $250 semiannual payments semiannually, at an interest rate of 4%.</li>
+            <li>You can finance your $20,000 car with a straight 5% loan paid monthly over 5 years, or a loan with one year interest-free followed by 4 years of 7% interest. (Hint: In both cases, figure out the fixed monthly payments that produce an NPV equal to $20,000.)</li>
+            <li>You win the lottery. At what interest rate should you accept $7 million today over 20 annual payments of $500,000?</li>
+            <li>An investor discounts future profits at 5% per year. Suppose a stock pays $1 in dividends after one year, growing 1% each year thereafter. How much should the stock be worth today?</li>
+            <li>You are buying a $20,000 car. If you make monthly payments of $1,000, how long will it take you to pay off the debt if the interest rate is 1% per month? How does this change when the interest rate drops to 0.5%?</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s11-04-general-long-run-dynamics.html"><img src="shared/images/batch-left.png"></a> <a href="s11-04-general-long-run-dynamics.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s12-02-investment.html">Next Section</a> <a href="s12-02-investment.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

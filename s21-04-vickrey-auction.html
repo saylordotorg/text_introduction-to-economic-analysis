@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Vickrey Auction</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s21-03-dutch-auction.html"><img src="shared/images/batch-left.png"></a> <a href="s21-03-dutch-auction.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s21-05-the-winner-s-curse-and-linkage.html">Next Section</a> <a href="s21-05-the-winner-s-curse-and-linkage.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch20_s04" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">20.4</span> Vickrey Auction</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch20_s04_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch20_s04_l01">
+            <li>How should I bid in the auction used by eBay, assuming I don’t want to “buy it now.”</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch20_s04_p01">The strategic equivalence of the Dutch and sealed-bid auction suggests another fact: there may be more than one way of implementing a given kind of auction. Such logic led Nobel laureate William Vickrey (1914–1996) to design what has become known as the <span class="margin_term"><a class="glossterm">Vickrey auction</a><span class="glossdef">Auction where bidders bid simultaneously, and the highest bidder wins and pays the second-highest bid.</span></span>, which is a second-price, sealed-bid auction. This auction is most familiar because it is the foundation of eBay’s auction design. The Vickrey auction is a sealed-bid auction, but with a twist: the high bidder wins but pays the second-highest bid. This is why the Vickrey auction is called a second-price auction: the price is not the highest bid, but the second-highest bid.</p>
+    <p class="para editable block" id="mcafee-ch20_s04_p02">The Vickrey auction underlies the eBay outcome because when a bidder submits a bid in the eBay auction, the current “going” price is not the highest bid, but the second-highest bid plus a bid increment. Thus, up to the granularity of the bid increment, the basic eBay auction is a Vickrey auction run over time.</p>
+    <p class="para block" id="mcafee-ch20_s04_p03">As in the English auction, bidders with private values in a Vickrey auction have a dominant strategy. Fix a bidder, with value <em class="emphasis">v</em>, and let <em class="emphasis">p</em> be the highest bid of the other bidders. If the bidder bids <em class="emphasis">b</em>, the bidder earns profits of
+	<span class="inlineequation"><math xml:id="mcafee_ch20_s04_m001" display="inline">
+	<mrow>
+	<mrow>
+	<mo>{</mo>
+	<mrow>
+		<mtable>
+			<mtr>
+				<mtd>
+					<mrow>
+					<mn>0</mn>
+					</mrow>
+				</mtd>
+				<mtd>
+					<mrow>
+					<mtext>if</mtext>
+					</mrow>
+				</mtd>
+				<mtd>
+					<mrow>
+					<mi>b</mi><mo>&lt;</mo><mi>p</mi>
+					</mrow>
+				</mtd>
+			</mtr>
+			<mtr>
+				<mtd>
+					<mrow>
+					<mi>v</mi><mo>−</mo><mi>p</mi>
+					</mrow>
+				</mtd>
+				<mtd>
+					<mrow>
+					<mtext>if</mtext>
+					</mrow>
+				</mtd>
+				<mtd>
+					<mrow>
+					<mi>b</mi><mo>&gt;</mo><mi>p</mi>
+					</mrow>
+				</mtd>
+			</mtr>
+		</mtable>
+	</mrow>
+	<mspace width="thickmathspace"></mspace>
+	<mo>}</mo>
+	</mrow>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch20_s04_p04">It is profitable for the bidder to win if <em class="emphasis">v</em> &gt; <em class="emphasis">p</em> and to lose if <em class="emphasis">v</em> &lt; <em class="emphasis">p</em>. To win when <em class="emphasis">v</em> &gt; <em class="emphasis">p</em> and to lose if <em class="emphasis">v</em> &lt; <em class="emphasis">p</em> can be assured by bidding <em class="emphasis">v</em>. Essentially, there is no gain to bidding less than your value because your bid doesn’t affect the price, only the likelihood of winning. Bidding less than value causes the bidder to lose when the highest rival bid falls between the bid and the value, which is a circumstance that the bidder would like to win. Similarly, bidding more than value creates a chance of winning only when the price is higher than the bidder’s value, in which case the bidder would prefer to lose.</p>
+    <p class="para editable block" id="mcafee-ch20_s04_p05">Thus, bidders in a Vickrey auction have a dominant strategy to bid their value. This produces the same outcome as in the English auction, however, because the payment made is the second-highest value, which was the price in the English auction. Thus, the Vickrey auction is a sealed-bid implementation of the English auction when bidders have private values, producing the same outcome, which is that the highest-value bidder wins but pays the second-highest value.</p>
+    <p class="para editable block" id="mcafee-ch20_s04_p06">Because the Vickrey auction induces bidders to bid their value, it is said to be demand revealing. Unlike the English auction, in which the bidding stops when the price reaches the second-highest value and thus doesn’t reveal the highest value, the Vickrey auction reveals the highest value. In a controlled, laboratory setting, demand revelation is useful, especially when the goal is to identify buyer values. Despite its theoretical niceties, the Vickrey auction can be politically disastrous. Indeed, New Zealand sold radio spectrum with the Vickrey auction on the basis of advice by a naïve economist, and the Vickrey auction created a political nightmare when a nationwide cellular license received a high bid of $110 million and a second-highest bid of $11 million. The political problem was that the demand revelation showed that the government received only about 10% of the value of the license, making the public quite irate. The situation dominated news coverage at the time.<span class="footnote" id="fwk-mcafee-fn20_003">The Vickrey auction generally produces higher prices than regular sealed-bid auctions if bidders are symmetric (that is, share the same distribution of values), but it is a poor choice of auction format when bidders are not symmetric. Because the incumbent telephone company was expected to have a higher value than others, the Vickrey auction was a poor choice for that reason as well.</span> Some smaller licenses sold for tenths of 1% of the highest bid.</p>
+    <p class="para editable block" id="mcafee-ch20_s04_p07">In a private values setting, the Vickrey auction and the English auction are much easier on bidders than a regular sealed-bid auction because of the dominant strategy. The sealed-bid auction requires bidders to forecast their rivals’ likely bids and produces the risks of either bidding more than necessary or losing the bidding. Thus, the regular sealed-bid auction has undesirable properties. Moreover, bidders in the sealed-bid auction have an incentive to bribe the auctioneer to reveal the best bid by rivals because that is useful information in formulating a bid. Such (illegal) bribery occurs from time to time in government contracting.</p>
+    <p class="para editable block" id="mcafee-ch20_s04_p08">On the other hand, the regular sealed-bid auction has an advantage over the other two because it makes price fixing more difficult. A bidder can cheat on a conspiracy and not be detected until after the current auction is complete.</p>
+    <p class="para editable block" id="mcafee-ch20_s04_p09">Another disadvantage of the sealed-bid auction is that it is easier to make certain kinds of bidding errors. In the U.S. PCS auctions, in which rights to use the radio spectrum for cellular phones was sold for around $20 billion, one bidder, intending to bid $200,000, inadvertently bid $200,000,000. Such an error isn’t possible in an English auction because prices rise at a measured pace. And such an error has little consequence in a Vickrey auction because getting the price wrong by an order of magnitude requires two bidders to make such errors.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch20_s04_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch20_s04_l02">
+            <li>There can be more than one way of implementing a given kind of auction.</li>
+            <li>The Vickrey auction is a sealed-bid auction where the high bidder wins but pays the second-highest bid. The Vickrey auction is also called a second-price auction: the price is not the highest bid but the second-highest bid.</li>
+            <li>The Vickrey auction underlies eBay because when a bidder submits a bid in the eBay auction, the current “going” price is not the highest bid, but the second-highest bid plus a bid increment. Thus, up to the granularity of the bid increment, the basic eBay auction is a Vickrey auction run over time.</li>
+            <li>In the private values setting, bidders in a Vickrey auction have a dominant strategy to bid their value. The Vickrey auction is revenue equivalent to the other three auctions.</li>
+            <li>Because the Vickrey auction induces bidders to bid their value, it is said to be demand revealing.</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s21-03-dutch-auction.html"><img src="shared/images/batch-left.png"></a> <a href="s21-03-dutch-auction.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s21-05-the-winner-s-curse-and-linkage.html">Next Section</a> <a href="s21-05-the-winner-s-curse-and-linkage.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

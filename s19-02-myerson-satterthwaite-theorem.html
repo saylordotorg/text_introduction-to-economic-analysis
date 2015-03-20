@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Myerson-Satterthwaite Theorem</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s19-01-market-for-lemons.html"><img src="shared/images/batch-left.png"></a> <a href="s19-01-market-for-lemons.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s19-03-signaling.html">Next Section</a> <a href="s19-03-signaling.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch18_s02" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">18.2</span> Myerson-Satterthwaite Theorem</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch18_s02_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch18_s02_l01">
+            <li>Can information about values and costs that is not relevant to the other party be an impediment to trade?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch18_s02_p01">The lemons problem is a situation where the buyers are relatively uninformed and care about the information held by sellers. Lemons problems are limited to situations where the buyer isn’t well-informed, and these problems can be mitigated by making information public. In many transactions, the buyer knows the quality of the product, so lemons concerns aren’t a significant issue. There can still be a market failure, however, if there are a limited number of buyers and sellers.</p>
+    <p class="para editable block" id="mcafee-ch18_s02_p02">Consider the case of one buyer and one seller bargaining over the sale of a good. The buyer knows his own value <em class="emphasis">v</em> for the good, but not the seller’s cost. The seller knows her own cost <em class="emphasis">c</em> for the good, but not the buyer’s value. The buyer views the seller’s cost as uniformly distributed on the interval [0,1], and, similarly, the seller views the buyer’s value as uniformly distributed on [0,1].<span class="footnote" id="fwk-mcafee-fn18_001">The remarkable fact proved by Roger Myerson and Mark Satterthwaite (“Efficient Mechanisms for Bilateral Trade,” <em class="emphasis">Journal of Economic Theory</em> 28 [1983]: 265–281) is that the distributions don’t matter; the failure of efficient trade is a fully general property. Philip Reny and Preston McAfee (“Correlated Information and Mechanism Design,” <em class="emphasis">Econometrica</em> 60, no. 2 [March 1992]: 395–421) show the nature of the distribution of information matters, and Preston McAfee (“Efficient Allocation with Continuous Quantities,” <em class="emphasis">Journal of Economic Theory</em> 53, no. 1 [February 1991]: 51–74.) showed that continuous quantities can overturn the Myerson-Satterthwaite theorem.</span> Can efficient trade take place? Efficient trade requires that trade occurs whenever <em class="emphasis">v</em> &gt; <em class="emphasis">c</em>, and the remarkable answer is that it is impossible to arrange efficient trade if the buyer and seller are to trade voluntarily. This is true even if a third party is used to help arrange trade, provided the third party isn’t able to subsidize the transaction.</p>
+    <p class="para block" id="mcafee-ch18_s02_p03">The total gains from trade under efficiency are
+	<span class="inlineequation"><math xml:id="mcafee_ch18_s02_m001" display="inline">
+	<mrow>
+	<mstyle displaystyle="true">
+	<mrow><munderover>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mn>1</mn>
+	</munderover>
+	<mrow>
+	<mstyle displaystyle="true">
+	<mrow><munderover>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mi>v</mi>
+	</munderover>
+	<mrow>
+	<mi>v</mi><mo>−</mo><mi>c</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mtext> </mtext><mi>d</mi><mi>c</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mtext> </mtext><mi>d</mi><mi>v</mi><mo>=</mo><mstyle displaystyle="true">
+	<mrow><munderover>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mn>1</mn>
+	</munderover>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<msup>
+	<mi>v</mi>
+	<mn>2</mn>
+	</msup>
+	</mrow>
+	<mn>2</mn>
+	</mfrac>
+	</mrow>
+	</mrow>
+	</mstyle><mi>d</mi><mi>v</mi><mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mn>6</mn>
+	</mfrac><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch18_s02_p04">A means of arranging trade, known as a <span class="margin_term"><a class="glossterm">mechanism</a><span class="glossdef">A means of arranging a trade.</span></span>,<span class="footnote" id="fwk-mcafee-fn18_002">A mechanism is a game for achieving an objective, in this case to arrange trades.</span> asks the buyer and seller for their value and cost, respectively, and then orders trade if the value exceeds the cost and dictates a payment <em class="emphasis">p</em> by the buyer to the seller. Buyers need not make honest reports to the mechanism, however, and the mechanisms must be designed to induce the buyer and seller to report honestly to the mechanism so that efficient trades can be arranged.<span class="footnote" id="fwk-mcafee-fn18_003">Inducing honesty is without loss of generality. Suppose that the buyer of type <em class="emphasis">v</em> reported the type <em class="emphasis">z</em>(<em class="emphasis">v</em>). Then we can add a stage to the mechanism in which the buyer reports a type, which is converted via the function <em class="emphasis">z</em> to a report, and then that report is given to the original mechanism. In the new mechanism, reporting <em class="emphasis">v</em> is tantamount to reporting <em class="emphasis">z</em>(<em class="emphasis">v</em>) to the original mechanism.</span></p>
+    <p class="para editable block" id="mcafee-ch18_s02_p05">Consider a buyer who actually has value <em class="emphasis">v</em> but reports a value <em class="emphasis">r</em>. The buyer trades with the seller if the seller has a cost less than <em class="emphasis">r</em>, which occurs with probability <em class="emphasis">r</em>.</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch18_s02_m002" display="block">
+	<mrow>
+	<mi>u</mi><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>v</mi><mo stretchy="false">)</mo><mo>=</mo><mi>v</mi><mi>r</mi><mo>−</mo><msub>
+	<mi>E</mi>
+	<mi>c</mi>
+	</msub>
+	<mi>p</mi><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para block" id="mcafee-ch18_s02_p06">The buyer gets the actual value <em class="emphasis">v</em> with probability <em class="emphasis">r</em>, and makes a payment that depends on the buyer’s report and the seller’s report. But we can take expectations over the seller’s report to eliminate it (from the buyer’s perspective), and this is denoted E<sub class="subscript">c</sub><em class="emphasis">p</em>(<em class="emphasis">r</em>, <em class="emphasis">c</em>), which is just the expected payment given the report <em class="emphasis">r</em>. For the buyer to choose to be honest, <em class="emphasis">u</em> must be maximized at <em class="emphasis">r</em> = <em class="emphasis">v</em> for every <em class="emphasis">v</em>; otherwise, some buyers would lie and some trades would not be efficiently arranged. Thus, we can conclude<span class="footnote" id="fwk-mcafee-fn18_004">We maintain an earlier notation that the subscript refers to a partial derivative, so that if we have a function <em class="emphasis">f</em>, <em class="emphasis">f</em><sub class="subscript">1</sub> is the partial derivative of <em class="emphasis">f</em> with respect to the first argument of <em class="emphasis">f</em>.</span>
+	<span class="inlineequation"><math xml:id="mcafee_ch18_s02_m003" display="inline">
+	<mrow>
+	<msub>
+	<mrow>
+	<mrow><mrow>
+	<mfrac>
+	<mi>d</mi>
+	<mrow>
+	<mi>d</mi><mi>v</mi>
+	</mrow>
+	</mfrac>
+	<mi>u</mi><mo stretchy="false">(</mo><mi>v</mi><mo>,</mo><mi>v</mi><mo stretchy="false">)</mo><mo>=</mo><msub>
+	<mi>u</mi>
+	<mn>1</mn>
+	</msub>
+	<mo stretchy="false">(</mo><mi>v</mi><mo>,</mo><mi>v</mi><mo stretchy="false">)</mo><mo>+</mo><msub>
+	<mi>u</mi>
+	<mn>2</mn>
+	</msub>
+	<mo stretchy="false">(</mo><mi>v</mi><mo>,</mo><mi>v</mi><mo stretchy="false">)</mo><mo>=</mo><msub>
+	<mi>u</mi>
+	<mn>2</mn>
+	</msub>
+	<mo stretchy="false">(</mo><mi>v</mi><mo>,</mo><mi>v</mi><mo stretchy="false">)</mo><mo>=</mo><mi>r</mi>
+	</mrow><mo>|</mo></mrow>
+	</mrow>
+	<mrow>
+	<mi>r</mi><mo>=</mo><mi>v</mi>
+	</mrow>
+	</msub>
+	<mo>=</mo><mi>v</mi><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch18_s02_p07">The first equality is just the total derivative of <em class="emphasis">u</em>(<em class="emphasis">v</em>,<em class="emphasis">v</em>) because there are two terms: the second equality because <em class="emphasis">u</em> is maximized over the first argument <em class="emphasis">r</em> at <em class="emphasis">r = v</em>, and the first-order condition ensures <em class="emphasis">u</em><sub class="subscript">1</sub> = 0. Finally, <em class="emphasis">u</em><sub class="subscript">2</sub> is just <em class="emphasis">r</em>, and we are evaluating the derivative at the point <em class="emphasis">r</em> = <em class="emphasis">v</em>. A buyer who has a value <em class="emphasis">v</em> + Δ, but who reports <em class="emphasis">v</em>, trades with probability <em class="emphasis">v</em> and makes the payment E<sub class="subscript">c</sub><em class="emphasis">p</em>(<em class="emphasis">v</em>, <em class="emphasis">c</em>). Such a buyer gets Δ<em class="emphasis">v</em> more in utility than the buyer with value <em class="emphasis">v</em>. Thus, a Δ increase in value produces an increase in utility of at least Δ<em class="emphasis">v</em>, showing that <span class="inlineequation"><math xml:id="mcafee_ch18_s02_m004" display="inline">
+	<mrow>
+	<mi>u</mi><mo stretchy="false">(</mo><mi>v</mi><mo>+</mo><mi>Δ</mi><mo>,</mo><mi>v</mi><mo>+</mo><mi>Δ</mi><mo stretchy="false">)</mo><mo>≥</mo><mi>u</mi><mo stretchy="false">(</mo><mi>v</mi><mo>,</mo><mi>v</mi><mo stretchy="false">)</mo><mo>+</mo><mi>Δ</mi><mi>v</mi>
+	</mrow>
+	</math>
+</span> and hence that <span class="inlineequation"><math xml:id="mcafee_ch18_s02_m005" display="inline">
+	<mrow>
+	<mfrac>
+	<mi>d</mi>
+	<mrow>
+	<mi>d</mi><mi>v</mi>
+	</mrow>
+	</mfrac>
+	<mi>u</mi><mo stretchy="false">(</mo><mi>v</mi><mo>,</mo><mi>v</mi><mo stretchy="false">)</mo><mo>≥</mo><mi>v</mi><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> A similar argument considering a buyer with value <em class="emphasis">v</em> who reports <em class="emphasis">v</em> + Δ shows that equality occurs.</p>
+    <p class="para block" id="mcafee-ch18_s02_p08">The value <em class="emphasis">u</em>(<em class="emphasis">v,v</em>) is the gain accruing to a buyer with value <em class="emphasis">v</em> who reports having value <em class="emphasis">v</em>. Because the buyer with value 0 gets zero, the total gain accruing to the average buyer can be computed by integrating by parts
+	<span class="inlineequation"><math xml:id="mcafee_ch18_s02_m006" display="inline">
+	<mrow>
+	<msubsup>
+	<mrow>
+	<mrow><mrow>
+	<mstyle displaystyle="true">
+	<mrow><munderover>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mn>1</mn>
+	</munderover>
+	<mrow>
+	<mi>u</mi><mo stretchy="false">(</mo><mi>v</mi><mo>,</mo><mi>v</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mrow>
+	</mstyle><mi>d</mi><mi>v</mi><mo>=</mo><mo>−</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>v</mi><mo stretchy="false">)</mo><mi>u</mi><mo stretchy="false">(</mo><mi>v</mi><mo>,</mo><mi>v</mi><mo stretchy="false">)</mo>
+	</mrow><mo>|</mo></mrow>
+	</mrow>
+	<mrow>
+	<mi>v</mi><mo>=</mo><mn>0</mn>
+	</mrow>
+	<mn>1</mn>
+	</msubsup>
+	<mo>+</mo><mstyle displaystyle="true">
+	<mrow><munderover>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mn>1</mn>
+	</munderover>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>v</mi><mo stretchy="false">)</mo><mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>d</mi><mi>u</mi>
+	</mrow>
+	<mrow>
+	<mi>d</mi><mi>v</mi>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	</mrow>
+	</mstyle><mi>d</mi><mi>v</mi><mo>=</mo><mstyle displaystyle="true">
+	<mrow><munderover>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mn>1</mn>
+	</munderover>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>v</mi><mo stretchy="false">)</mo><mi>v</mi><mi>d</mi><mi>v</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mn>6</mn>
+	</mfrac><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch18_s02_p09">In the integration by parts, <em class="emphasis">dv</em> = <em class="emphasis">d</em> – (1 – <em class="emphasis">v</em>) is used. The remarkable conclusion is that if the buyer is induced to truthfully reveal the buyer’s value, the buyer must obtain the entire gains from trade. This is actually a quite general proposition. If you offer the entire gains from trade to a party, that party is induced to maximize the gains from trade. Otherwise, he or she will want to distort away from maximizing the entire gains from trade, which will result in a failure of efficiency.</p>
+    <p class="para editable block" id="mcafee-ch18_s02_p10">The logic with respect to the seller is analogous: the only way to get the seller to report her cost honestly is to offer her the entire gains from trade.</p>
+    <p class="para editable block" id="mcafee-ch18_s02_p11">The <span class="margin_term"><a class="glossterm">Myerson-Satterthwaite theorem</a><span class="glossdef">A theorem that shows private information about value may prevent efficient trade.</span></span> shows that private information about value may prevent efficient trade. Thus, the gains from trade are insufficient to induce honesty by both parties. (Indeed, they are half the necessary amount.) Thus, any mechanism for arranging trades between the buyer and the seller must suffer some inefficiency. Generally this occurs because buyers act like they value the good less than they do, and sellers act like their costs are higher than they truly are.</p>
+    <p class="para editable block" id="mcafee-ch18_s02_p12">It turns out that the worst-case scenario is a single buyer and a single seller. As markets get “thick,” the per capita losses converge to zero, and markets become efficient. Thus, informational problems of this kind are a small-numbers issue. However, many markets do in fact have small numbers of buyers or sellers. In such markets, it seems likely that informational problems will be an impediment to efficient trade.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch18_s02_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch18_s02_l02">
+            <li>The Myerson-Satterthwaite theorem shows that the gains from trade are insufficient to induce honesty about values and costs by a buyer and seller. Any mechanism for arranging trades between the buyer and the seller must suffer some inefficiency.</li>
+            <li>Generally this inefficiency occurs because buyers act like they value the good less than they do, and sellers act like their costs are higher than they truly are, resulting in an inefficiently low level of trade.</li>
+            <li>As markets get “thick,” the per capita losses converge to zero, and markets become efficient. Informational problems of this kind are a small-numbers issue.</li>
+        </ul>
+    </div>
+    <div class="exercises editable block" id="mcafee-ch18_s02_n03">
+        <h3 class="title">Exercise</h3>
+        <ol class="orderedlist" id="mcafee-ch18_s02_l03">
+            <li>
+                <p class="para">Let <em class="emphasis">h</em>(<em class="emphasis">r, c</em>) be the gains of a seller who has cost <em class="emphasis">c</em> and reports <em class="emphasis">r</em>, <em class="emphasis">h</em>(<em class="emphasis">r, c</em>) = <em class="emphasis">p</em>(<em class="emphasis">v, r</em>) – (1 – <em class="emphasis">r</em>)<em class="emphasis">c</em>.</p>
+                <p class="para" id="mcafee-ch18_s02_p13">Noting that the highest cost seller (<em class="emphasis">c</em> = 1) never sells and thus obtains zero profits, show that honesty by the seller implies the expected value of <em class="emphasis">h</em> is 1/16.</p>
+            </li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s19-01-market-for-lemons.html"><img src="shared/images/batch-left.png"></a> <a href="s19-01-market-for-lemons.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s19-03-signaling.html">Next Section</a> <a href="s19-03-signaling.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

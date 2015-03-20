@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Auctions</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s20-agency-theory.html"><img src="shared/images/batch-left.png"></a> <a href="s20-agency-theory.html">Previous Chapter</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s22-antitrust.html">Next Chapter</a> <a href="s22-antitrust.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="chapter" id="mcafee-ch20" version="5.0" lang="en">
+    <h1 class="title editable block">
+<span class="title-prefix">Chapter 20</span> Auctions</h1>
+    <p class="para editable block" id="mcafee-ch20_p01">When we think of auctions, we tend to think of movies where people scratch their ear and accidentally purchase a Fabergé egg. However, stock exchanges, bond markets, and commodities markets are organized as auctions, too, and because of such exchanges, auctions are the most common means of establishing prices. Auctions are one of the oldest transactions means recorded in human history; they were used by the Babylonians. The word <em class="emphasis">auction</em> comes from the Latin <em class="emphasis">auctio</em>, meaning “to increase.”</p>
+    <p class="para editable block" id="mcafee-ch20_p02">Auctions have been used to sell a large variety of things. Internet auction house eBay is most famous for weird items that have been auctioned (for example, one person’s attempt to sell her soul), but in addition, many of the purchases of the U.S. government are made by auction. The United States purchases everything from fighter aircraft to french fries by auction, and the U.S. government is the world’s largest purchaser of french fries. In addition, corporations are occasionally sold by auction. Items that are usually sold by auction include prize bulls, tobacco, used cars, race horses, coins, stamps, antiques, and fine art.</p>
+</div>
+<div class="section" id="mcafee-ch20_s01" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">20.1</span> English Auction</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch20_s01_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="mcafee-ch20_s01_l01">
+            <li>What is the most common auction form?</li>
+            <li>How should I bid in an auction if I know my own value?</li>
+            <li>When we share a value that none of us know, should I bid my estimate of value?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch20_s01_p01">An <span class="margin_term"><a class="glossterm">English auction</a><span class="glossdef">Auction where bids increase until no one is willing to top the current bid.</span></span> is the common auction form used for selling antiques, art, used cars, and cattle. The auctioneer starts low and calls out prices until no bidder is willing to bid higher than the current high price. The most common procedure is for a low price to be called out and a bidder to accept it. A higher price is called out, and a different bidder accepts it. When several accept simultaneously, the auctioneer accepts the first one spotted. This process continues until a price is called out that no one accepts. At that point, the auction ends, and the highest bidder wins.</p>
+    <p class="para editable block" id="mcafee-ch20_s01_p02">Information plays a significant role in bidding in auctions. The two major extremes in information, which lead to distinct theories, are <span class="margin_term"><a class="glossterm">private values</a><span class="glossdef">Situation in which bidders in an auction know their own value.</span></span>, which means bidders know their own value, and <span class="margin_term"><a class="glossterm">common values</a><span class="glossdef">Situation in which bidders in an auction have the same value, which is generally not known with certainty.</span></span>, in which bidders don’t know their own value but have some indication or signal about the value. In the private values situation, a bidder may be outbid by another bidder but doesn’t learn anything from another bidder’s willingness to pay. The case of private values arises when the good being sold has a quality apparent to all bidders, no hidden attributes, and no possibility of resale. In contrast, the case of common values arises when bidders don’t know the value of the item for sale, but that value is common to all. The quintessential example is an offshore oil lease. No one knows for sure how much oil can be extracted from an offshore lease, and companies have estimates of the amount of oil. The estimates are closely guarded because rivals could learn from them. Similarly, when antiques dealers bid on an antique, the value they place on it is primarily the resale value. Knowing rivals’ estimates of the resale value could influence the value each bidder placed on the item.</p>
+    <p class="para editable block" id="mcafee-ch20_s01_p03">The private values environment is unrealistic in most settings because items for sale usually have some element of common value. However, some situations approximate the private values environment and these are the most easy to understand.</p>
+    <p class="para editable block" id="mcafee-ch20_s01_p04">In a private values setting, a very simple bidding strategy is optimal for bidders: a bidder should keep bidding until the price exceeds the value a bidder places on it, at which point the bidder should stop. That is, bidders should drop out of the bidding when the price exceeds their value because at that point, winning the auction requires the bidder to take a loss. Every bidder should be willing to continue to bid to prevent someone else from winning the auction provided the price is less than the bidder’s value. If you have a value <em class="emphasis">v</em> and another bidder is about to win at a price <em class="emphasis">p</em><sub class="subscript">a</sub> &lt; <em class="emphasis">v</em>, you might as well accept a price <em class="emphasis">p</em><sub class="subscript">b</sub> between the two, <em class="emphasis">p</em><sub class="subscript">a</sub> &lt; <em class="emphasis">p</em><sub class="subscript">b</sub> &lt; <em class="emphasis">v</em> because a purchase at this price would provide you with a profit. This strategy is a dominant strategy for each private values bidder because no matter what strategy the other bidders adopt, bidding up to value is the strategy that maximizes the profit for each bidder.</p>
+    <p class="para editable block" id="mcafee-ch20_s01_p05">The presence of a dominant strategy makes it easy to bid in the private values environment. In addition, it simplifies the analysis of the English auction relatively simple.</p>
+    <p class="para block" id="mcafee-ch20_s01_p06">Most auctioneers use a flexible system of <span class="margin_term"><a class="glossterm">bid increments</a><span class="glossdef">The difference between successive price requests.</span></span>. A bid increment is the difference between successive price requests. The theory is simplest when the bid increment, denoted by δ, is very small. In this case, the bidder with the highest value wins, and the price is no more than the second-highest value, but it is at least the second-highest value minus δ, because a lower price would induce the bidder with the second-highest value to submit a slightly higher bid. If we denote the second-highest value with the somewhat obscure (but standard) notation <em class="emphasis">v</em><sub class="subscript">(2)</sub>, the final price <em class="emphasis">p</em> satisfies
+	<span class="inlineequation"><math xml:id="mcafee_ch20_s01_m001" display="inline">
+	<mrow>
+	<msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub>
+	<mo>−</mo><mi>Δ</mi><mo>≤</mo><mi>p</mi><mo>≤</mo><msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch20_s01_p07">As the bid increment gets small, the price is nailed down. The conclusion is that, when bid increments are small and bidders have private values, the bidder with the highest value wins the bidding at a price equal to the second-highest value. The notation for the highest value is <em class="emphasis">v</em><sub class="subscript">(1)</sub>, and thus the seller obtains <em class="emphasis">v</em><sub class="subscript">(2)</sub>, and the winning bidder obtains profits of <em class="emphasis">v</em><sub class="subscript">(1)</sub> – <em class="emphasis">v</em><sub class="subscript">(2)</sub>.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch20_s01_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch20_s01_l02">
+            <li>An auction is a trading mechanism where the highest bidder wins an object. Auctions are typically used when values are uncertain, and thus information is an important aspect of analyzing auctions.</li>
+            <li>Private values mean bidders know their own value.</li>
+            <li>Common values mean bidders share a common but unknown value, and they have some indication or signal about the value. With common values, willingness to pay by one bidder is informative for other bidders.</li>
+            <li>In an English auction, the auctioneer starts low and calls out prices until no bidder is willing to bid higher than the current high price. At that point the auction ends, and the highest bidder wins.</li>
+            <li>In a private values setting, the English auction has a dominant strategy: remain bidding until one’s value is reached.</li>
+            <li>When bid increments are small and bidders have private values, the bidder with the highest value wins the bidding at a price equal to the second-highest value.</li>
+        </ul>
+    </div>
+</div>
+<div class="section" id="mcafee-ch20_s02" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">20.2</span> Sealed-bid Auction</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch20_s02_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch20_s02_l01">
+            <li>How should I bid if I don’t get to see the bids of others?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch20_s02_p01">In a <span class="margin_term"><a class="glossterm">sealed-bid auction</a><span class="glossdef">Auction where bidders simultaneously submit sealed bids, and the highest bidder wins and pays the highest bid.</span></span>, each bidder submits a bid in an envelope. These are opened simultaneously, and the highest bidder wins the item and pays his or her bid. Sealed-bid auctions are used to sell offshore oil leases, and they are used by governments to purchase a wide variety of items. In a purchase situation, known often as a tender, the lowest bidder wins the amount he bids.</p>
+    <p class="para editable block" id="mcafee-ch20_s02_p02">The analysis of the sealed-bid auction is more challenging because the bidders don’t have a dominant strategy. Indeed, the best bid depends on what the other bidders are bidding. The bidder with the highest value would like to bid a penny more than the next highest bidder’s bid, whatever that might be.</p>
+    <p class="para editable block" id="mcafee-ch20_s02_p03">To pursue an analysis of the sealed-bid auction, we are going to make a variety of simplifying assumptions. These assumptions aren’t necessary to the analysis, but we make them to simplify the mathematical presentation.</p>
+    <p class="para block" id="mcafee-ch20_s02_p04">We suppose there are <em class="emphasis">n</em> bidders, and we label the bidders 1, …, <em class="emphasis">n</em>. Bidder <em class="emphasis">i</em> has a private value <em class="emphasis">v</em><sub class="subscript">i</sub>, which is a draw from the uniform distribution on the interval [0,1]. That is, if <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m001" display="inline">
+	<mrow>
+	<mn>0</mn><mo>≤</mo><mi>a</mi><mo>≤</mo><mi>b</mi><mo>≤</mo><mn>1</mn><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> the probability that bidder <em class="emphasis">i</em>’s value is in the interval [<em class="emphasis">a, b</em>] is <em class="emphasis">b</em> – <em class="emphasis">a</em>. An important attribute of this assumption is symmetry—the bidders all have the same distribution. In addition, the formulation has assumed independence—the value one bidder places on the object for sale is statistically independent from the value placed by others. Each bidder knows his own value but he doesn’t know the other bidders’ values. Each bidder is assumed to bid in such a way as to maximize his expected profit (we will look for a Nash equilibrium of the bidding game). Bidders are permitted to submit any bid equal to or greater than zero.</p>
+    <p class="para editable block" id="mcafee-ch20_s02_p05">To find an equilibrium, it is helpful to restrict attention to linear strategies, in which a bidder bids a proportion of her value. Thus, we suppose that each bidder bids λ<em class="emphasis">v</em> when her value is <em class="emphasis">v</em> and λ is a positive constant, usually between zero and one. With this set up we shall examine under what conditions these strategies comprise a Nash equilibrium. An equilibrium exists when all other bidders bid λ<em class="emphasis">v</em> when their value is <em class="emphasis">v</em>, and the remaining bidders bid the same.</p>
+    <p class="para block" id="mcafee-ch20_s02_p06">So fix a bidder and suppose that bidder’s value is <em class="emphasis">v</em><sub class="subscript">i</sub>. What bid should the bidder choose? A bid of <em class="emphasis">b</em> wins the bidding if all other bidders bid less than <em class="emphasis">b</em>. Because the other bidders, by hypothesis, bid λ<em class="emphasis">v</em> when their value is <em class="emphasis">v</em>, our bidder wins when <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m002" display="inline">
+	<mrow>
+	<mi>b</mi><mo>≥</mo><mi>λ</mi><msub>
+	<mi>v</mi>
+	<mi>j</mi>
+	</msub>
+	</mrow>
+	</math>
+</span> for each other bidder <em class="emphasis">j</em>. This occurs when <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m003" display="inline">
+	<mrow>
+	<mfrac bevelled="true">
+	<mi>b</mi>
+	<mi>λ</mi>
+	</mfrac>
+	<mo>≥</mo><msub>
+	<mi>v</mi>
+	<mi>j</mi>
+	</msub>
+	</mrow>
+	</math>
+</span> for each other bidder <em class="emphasis">j</em>, and this in turn occurs with probability <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m004" display="inline">
+	<mrow>
+	<mfrac bevelled="true">
+	<mi>b</mi>
+	<mi>λ</mi>
+	</mfrac><mtext>.</mtext>
+	</mrow>
+	</math>
+</span><span class="footnote" id="fwk-mcafee-fn20_001">If <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m005" display="inline">
+	<mrow>
+	<mi>b</mi><mo>&gt;</mo><mi>λ</mi><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> then in fact the probability is 1. You can show that no bidder would ever bid more than λ.</span> Thus, our bidder with value <em class="emphasis">v</em><sub class="subscript">i</sub> who bids <em class="emphasis">b</em> wins with probability <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m006" display="inline">
+	<mrow>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac bevelled="true">
+	<mi>b</mi>
+	<mi>λ</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	</math>
+</span> because the bidder must beat all <em class="emphasis">n</em> −1 other bidders. That creates expected profits for the bidder of
+	<span class="inlineequation"><math xml:id="mcafee_ch20_s02_m007" display="inline">
+	<mrow>
+	<mi>π</mi><mo>=</mo><mo stretchy="false">(</mo><msub>
+	<mi>v</mi>
+	<mi>i</mi>
+	</msub>
+	<mo>−</mo><mi>b</mi><mo stretchy="false">)</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac bevelled="true">
+	<mi>b</mi>
+	<mi>λ</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch20_s02_p07">The bidder chooses <em class="emphasis">b</em> to maximize expected profits. The first-order condition requires
+	<span class="inlineequation"><math xml:id="mcafee_ch20_s02_m008" display="inline">
+	<mrow>
+	<mn>0</mn><mo>=</mo><mo>−</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mi>b</mi>
+	<mi>λ</mi>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	<mo>+</mo><mo stretchy="false">(</mo><msub>
+	<mi>v</mi>
+	<mi>i</mi>
+	</msub>
+	<mo>−</mo><mi>b</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mfrac>
+	<mrow>
+	<msup>
+	<mi>b</mi>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>2</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	<mrow>
+	<msup>
+	<mi>λ</mi>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch20_s02_p08">The first-order condition solves for
+	<span class="inlineequation"><math xml:id="mcafee_ch20_s02_m009" display="inline">
+	<mrow>
+	<mi>b</mi><mo>=</mo><mfrac>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</mfrac>
+	<mi>v</mi><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch20_s02_p09">But this is a linear rule. Thus, if <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m010" display="inline">
+	<mrow>
+	<mi>λ</mi><mo>=</mo><mfrac>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</mfrac><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> we have a Nash equilibrium.</p>
+    <p class="para block" id="mcafee-ch20_s02_p10">The nature of this equilibrium is that each bidder bids a fraction <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m011" display="inline">
+	<mrow>
+	<mi>λ</mi><mo>=</mo><mfrac>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</mfrac>
+	</mrow>
+	</math>
+</span> of his value, and the highest-value bidder wins at a price equal to that fraction of her value.</p>
+    <p class="para block" id="mcafee-ch20_s02_p11">In some cases, the sealed-bid auction produces regret. Regret means that a bidder wishes she had bid differently. Recall our notation for values: <em class="emphasis">v</em><sub class="subscript">(1)</sub> is the highest value and <em class="emphasis">v</em><sub class="subscript">(2)</sub> is the second-highest value. Because the price in a sealed-bid auction is <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m012" display="inline">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</mfrac>
+	<msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> the second-highest bidder will regret her bid when <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m013" display="inline">
+	<mrow>
+	<msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub>
+	<mo>&gt;</mo><mfrac>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</mfrac>
+	<msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> In this case, the bidder with the second-highest value could have bid higher and won, if the bidder had known the winning bidder’s bid. In contrast, the English auction is regret-free: the price rises to the point that the bidder with the second-highest value won’t pay.</p>
+    <p class="para block" id="mcafee-ch20_s02_p12">How do the two auctions compare in prices? It turns out that statistical independence of private values implies <span class="margin_term"><a class="glossterm">revenue equivalence</a><span class="glossdef">Situation in which two auctions produce the same price on average.</span></span>, which means the two auctions produce the same prices on average. Given the highest value <em class="emphasis">v</em><sub class="subscript">(1)</sub>, the second-highest value has distribution <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m014" display="inline">
+	<mrow>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<msub>
+	 <mi>v</mi>
+	 <mrow>
+	  <mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+	 </mrow>
+	</msub>
+	</mrow>
+	<mrow>
+	<msub>
+	 <mi>v</mi>
+	 <mrow>
+	  <mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo>
+	 </mrow>
+	</msub>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	</math>
+</span> because this is the probability that all <em class="emphasis">n</em> − 1 other bidders have values less than <em class="emphasis">v</em><sub class="subscript">(2)</sub>. But this gives an expected value of <em class="emphasis">v</em><sub class="subscript">(2)</sub> of
+	<span class="inlineequation"><math xml:id="mcafee_ch20_s02_m015" display="inline">
+	<mrow>
+	<mi>E</mi><msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub>
+	<mo>=</mo><mstyle displaystyle="true">
+	<mrow><munderover>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mrow>
+	<msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub>
+	</mrow>
+	</munderover>
+	<mrow>
+	<msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub>
+	<mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mfrac>
+	<mrow>
+	<msubsup>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>2</mn>
+	</mrow>
+	</msubsup>
+	</mrow>
+	<mrow>
+	<msubsup>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	</msubsup>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</mrow>
+	</mstyle><mi>d</mi><msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mi>n</mi><mo>−</mo><mn>1</mn>
+	</mrow>
+	<mi>n</mi>
+	</mfrac>
+	<msub>
+	<mi>v</mi>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo>
+	</mrow>
+	</msub><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch20_s02_p13">Thus, the average price paid in the sealed-bid auction is the same as the average price in the English auction.</p>
+    <div class="key_takeaways block" id="mcafee-ch20_s02_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch20_s02_l02">
+            <li>In a sealed-bid auction, bids are opened simultaneously, and the highest bidder wins the item and pays his bid.</li>
+            <li>The analysis of the sealed-bid auction is more challenging because the bidders don’t have a dominant strategy.</li>
+            <li>When bidders have uniformly and independently distributed values, there is an equilibrium where they bid a constant fraction of value, <span class="inlineequation"><math xml:id="mcafee_ch20_s02_m016" display="inline">
+			<mrow>
+			<mfrac>
+			<mrow>
+			<mi>n</mi><mo>−</mo><mn>1</mn>
+			</mrow>
+			<mi>n</mi>
+			</mfrac>
+			</mrow>
+			</math>
+</span> where <em class="emphasis">n</em> is the number of bidders.</li>
+            <li>Statistical independence of private values implies revenue equivalence, which means English and sealed-bid auctions produce the same prices on average.</li>
+        </ul>
+    </div>
+</div>
+<div class="section" id="mcafee-ch20_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">20.3</span> Dutch Auction</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch20_s03_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="mcafee-ch20_s03_l01">
+            <li>Don’t the Dutch use a different kind of auction to sell tulips?</li>
+            <li>How does the Dutch auction work?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch20_s03_p01">The <span class="margin_term"><a class="glossterm">Dutch auction</a><span class="glossdef">Auction where prices start high and decrease until a bidder signals willingness to pay, at which point the auction stops.</span></span> is like an English auction, except that prices start high and are successively dropped until a bidder accepts the going price, and the auction ends. The Dutch auction is so-named because it is used to sell cut flowers in Holland, in the enormous flower auctions.</p>
+    <p class="para editable block" id="mcafee-ch20_s03_p02">A strategy in a Dutch auction is a price at which the bidder bids. Each bidder watches the price decline, until it reaches such a point that either the bidder bids or a rival bids, and the auction ends. Note that a bidder could revise his bid in the course of the auction, but there isn’t any reason to do so. For example, suppose the price starts at $1,000, and a bidder decides to bid when the price reaches $400. Once the price gets to $450, the bidder could decide to revise and wait until $350. However, no new information has become available and there is no reason to revise. In order for the price to reach the original planned bid of $400, it had to reach $450, meaning that no one bid prior to a price of $450. In order for a bid of $400 to win, the price had to reach $450; if the price reaching $450 means that a bid of $350 is optimal, then the original bid of $400 could not have been optimal.<span class="footnote" id="fwk-mcafee-fn20_002">Of course, a bidder who thinks losing is likely may wait for a lower price to formulate the bid, a consideration ignored here. In addition, because the Dutch auction unfolds over time, bidders who discount the future will bid slightly higher in a Dutch auction as a way of speeding it along, another small effect that is ignored for simplicity.</span></p>
+    <p class="para editable block" id="mcafee-ch20_s03_p03">What is interesting about the Dutch auction is that it has exactly the same possible strategies and outcomes as the sealed-bid auction. In both cases, a strategy for a bidder is a bid, no bidder sees the others’ bids until after her own bid is formulated, and the winning bidder is the one with the highest bid. This is called <span class="margin_term"><a class="glossterm">strategic equivalence</a><span class="glossdef">Situation in which two games are strategically equivalent if they have the same strategies (after a renaming) and the strategies lead to the same outcomes.</span></span>. Both games—the Dutch auction and the sealed-bid auction—offer identical strategies to the bidders and, given the strategies chosen by all bidders, produce the same payoff. Such games should produce the same outcomes.</p>
+    <p class="para editable block" id="mcafee-ch20_s03_p04">The strategic equivalence of the Dutch auction and the sealed-bid auction is a very general result that doesn’t depend on the nature of the values of the bidders (private vs. common) or the distribution of information (independent vs. correlated). Indeed, the prediction that the two games should produce the same outcome doesn’t even depend on risk aversion, although that is more challenging to demonstrate.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch20_s03_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch20_s03_l02">
+            <li>The Dutch auction is like an English auction, except that prices start high and are successively dropped until a bidder accepts the going price, at which point the auction ends.</li>
+            <li>The Dutch auction is so-named because it is used to sell cut flowers in Holland.</li>
+            <li>The Dutch auction has exactly the same possible strategies and outcomes as the sealed-bid auction. This is called strategic equivalence. As a result, the Dutch and sealed-bid auctions have the same equilibria.</li>
+        </ul>
+    </div>
+</div>
+<div class="section" id="mcafee-ch20_s04" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">20.4</span> Vickrey Auction</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch20_s04_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch20_s04_l01">
+            <li>How should I bid in the auction used by eBay, assuming I don’t want to “buy it now.”</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch20_s04_p01">The strategic equivalence of the Dutch and sealed-bid auction suggests another fact: there may be more than one way of implementing a given kind of auction. Such logic led Nobel laureate William Vickrey (1914–1996) to design what has become known as the <span class="margin_term"><a class="glossterm">Vickrey auction</a><span class="glossdef">Auction where bidders bid simultaneously, and the highest bidder wins and pays the second-highest bid.</span></span>, which is a second-price, sealed-bid auction. This auction is most familiar because it is the foundation of eBay’s auction design. The Vickrey auction is a sealed-bid auction, but with a twist: the high bidder wins but pays the second-highest bid. This is why the Vickrey auction is called a second-price auction: the price is not the highest bid, but the second-highest bid.</p>
+    <p class="para editable block" id="mcafee-ch20_s04_p02">The Vickrey auction underlies the eBay outcome because when a bidder submits a bid in the eBay auction, the current “going” price is not the highest bid, but the second-highest bid plus a bid increment. Thus, up to the granularity of the bid increment, the basic eBay auction is a Vickrey auction run over time.</p>
+    <p class="para block" id="mcafee-ch20_s04_p03">As in the English auction, bidders with private values in a Vickrey auction have a dominant strategy. Fix a bidder, with value <em class="emphasis">v</em>, and let <em class="emphasis">p</em> be the highest bid of the other bidders. If the bidder bids <em class="emphasis">b</em>, the bidder earns profits of
+	<span class="inlineequation"><math xml:id="mcafee_ch20_s04_m001" display="inline">
+	<mrow>
+	<mrow>
+	<mo>{</mo>
+	<mrow>
+		<mtable>
+			<mtr>
+				<mtd>
+					<mrow>
+					<mn>0</mn>
+					</mrow>
+				</mtd>
+				<mtd>
+					<mrow>
+					<mtext>if</mtext>
+					</mrow>
+				</mtd>
+				<mtd>
+					<mrow>
+					<mi>b</mi><mo>&lt;</mo><mi>p</mi>
+					</mrow>
+				</mtd>
+			</mtr>
+			<mtr>
+				<mtd>
+					<mrow>
+					<mi>v</mi><mo>−</mo><mi>p</mi>
+					</mrow>
+				</mtd>
+				<mtd>
+					<mrow>
+					<mtext>if</mtext>
+					</mrow>
+				</mtd>
+				<mtd>
+					<mrow>
+					<mi>b</mi><mo>&gt;</mo><mi>p</mi>
+					</mrow>
+				</mtd>
+			</mtr>
+		</mtable>
+	</mrow>
+	<mspace width="thickmathspace"></mspace>
+	<mo>}</mo>
+	</mrow>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch20_s04_p04">It is profitable for the bidder to win if <em class="emphasis">v</em> &gt; <em class="emphasis">p</em> and to lose if <em class="emphasis">v</em> &lt; <em class="emphasis">p</em>. To win when <em class="emphasis">v</em> &gt; <em class="emphasis">p</em> and to lose if <em class="emphasis">v</em> &lt; <em class="emphasis">p</em> can be assured by bidding <em class="emphasis">v</em>. Essentially, there is no gain to bidding less than your value because your bid doesn’t affect the price, only the likelihood of winning. Bidding less than value causes the bidder to lose when the highest rival bid falls between the bid and the value, which is a circumstance that the bidder would like to win. Similarly, bidding more than value creates a chance of winning only when the price is higher than the bidder’s value, in which case the bidder would prefer to lose.</p>
+    <p class="para editable block" id="mcafee-ch20_s04_p05">Thus, bidders in a Vickrey auction have a dominant strategy to bid their value. This produces the same outcome as in the English auction, however, because the payment made is the second-highest value, which was the price in the English auction. Thus, the Vickrey auction is a sealed-bid implementation of the English auction when bidders have private values, producing the same outcome, which is that the highest-value bidder wins but pays the second-highest value.</p>
+    <p class="para editable block" id="mcafee-ch20_s04_p06">Because the Vickrey auction induces bidders to bid their value, it is said to be demand revealing. Unlike the English auction, in which the bidding stops when the price reaches the second-highest value and thus doesn’t reveal the highest value, the Vickrey auction reveals the highest value. In a controlled, laboratory setting, demand revelation is useful, especially when the goal is to identify buyer values. Despite its theoretical niceties, the Vickrey auction can be politically disastrous. Indeed, New Zealand sold radio spectrum with the Vickrey auction on the basis of advice by a naïve economist, and the Vickrey auction created a political nightmare when a nationwide cellular license received a high bid of $110 million and a second-highest bid of $11 million. The political problem was that the demand revelation showed that the government received only about 10% of the value of the license, making the public quite irate. The situation dominated news coverage at the time.<span class="footnote" id="fwk-mcafee-fn20_003">The Vickrey auction generally produces higher prices than regular sealed-bid auctions if bidders are symmetric (that is, share the same distribution of values), but it is a poor choice of auction format when bidders are not symmetric. Because the incumbent telephone company was expected to have a higher value than others, the Vickrey auction was a poor choice for that reason as well.</span> Some smaller licenses sold for tenths of 1% of the highest bid.</p>
+    <p class="para editable block" id="mcafee-ch20_s04_p07">In a private values setting, the Vickrey auction and the English auction are much easier on bidders than a regular sealed-bid auction because of the dominant strategy. The sealed-bid auction requires bidders to forecast their rivals’ likely bids and produces the risks of either bidding more than necessary or losing the bidding. Thus, the regular sealed-bid auction has undesirable properties. Moreover, bidders in the sealed-bid auction have an incentive to bribe the auctioneer to reveal the best bid by rivals because that is useful information in formulating a bid. Such (illegal) bribery occurs from time to time in government contracting.</p>
+    <p class="para editable block" id="mcafee-ch20_s04_p08">On the other hand, the regular sealed-bid auction has an advantage over the other two because it makes price fixing more difficult. A bidder can cheat on a conspiracy and not be detected until after the current auction is complete.</p>
+    <p class="para editable block" id="mcafee-ch20_s04_p09">Another disadvantage of the sealed-bid auction is that it is easier to make certain kinds of bidding errors. In the U.S. PCS auctions, in which rights to use the radio spectrum for cellular phones was sold for around $20 billion, one bidder, intending to bid $200,000, inadvertently bid $200,000,000. Such an error isn’t possible in an English auction because prices rise at a measured pace. And such an error has little consequence in a Vickrey auction because getting the price wrong by an order of magnitude requires two bidders to make such errors.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch20_s04_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch20_s04_l02">
+            <li>There can be more than one way of implementing a given kind of auction.</li>
+            <li>The Vickrey auction is a sealed-bid auction where the high bidder wins but pays the second-highest bid. The Vickrey auction is also called a second-price auction: the price is not the highest bid but the second-highest bid.</li>
+            <li>The Vickrey auction underlies eBay because when a bidder submits a bid in the eBay auction, the current “going” price is not the highest bid, but the second-highest bid plus a bid increment. Thus, up to the granularity of the bid increment, the basic eBay auction is a Vickrey auction run over time.</li>
+            <li>In the private values setting, bidders in a Vickrey auction have a dominant strategy to bid their value. The Vickrey auction is revenue equivalent to the other three auctions.</li>
+            <li>Because the Vickrey auction induces bidders to bid their value, it is said to be demand revealing.</li>
+        </ul>
+    </div>
+</div>
+<div class="section" id="mcafee-ch20_s05" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">20.5</span> The Winner’s Curse and Linkage</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch20_s05_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch20_s05_l01">
+            <li>How do I interpret the bids of others when other bidders may have relevant information about the value of the good?</li>
+        </ol>
+    </div>
+    <div class="epigraph block" id="mcafee-ch20_s05_ep01">
+        <p class="para" id="mcafee-ch20_s05_p01">I paid too much for it, but it's worth it.</p>
+        <p class="attribution">Sam Goldwyn</p>
+    </div>
+    <p class="para editable block" id="mcafee-ch20_s05_p02">The analysis so far has been conducted under the restrictive assumption of private values. In most contexts, bidders are not sure of the actual value of the item being sold, and information held by others is relevant to the valuation of the item. If I estimate an antique to be worth $5,000, but no one else is willing to bid more than $1,000, I might revise my estimate of the value down. This revision leads bidders to learn from the auction itself what the item is worth.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p03">The early bidders in the sale of oil lease rights in the Gulf of Mexico (the outer continental shelf) were often observed to pay more than the rights were worth. This phenomenon came to be known as the <span class="margin_term"><a class="glossterm">winner’s curse</a><span class="glossdef">The bidder who most overestimates the value of the object wins the bidding.</span></span>. The winner’s curse is the fact that <em class="emphasis">the bidder who most overestimates the value of the object wins the bidding</em>.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p04">Naïve bidders who don’t adjust for the winner’s curse tend to lose money because they win the bidding only when they’ve bid too high.</p>
+    <div class="figure medium editable block" id="mcafee-ch20_s05_f01">
+        <p class="title"><span class="title-prefix">Figure 20.1</span> Normally Distributed Estimates</p>
+        <img src="section_21/81b8ca641a3d9573c83e464c1e350009.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch20_s05_p05">Auctions, by their nature, select optimistic bidders. Consider the case of an oil lease (right to drill for and pump oil) that has an unknown value <em class="emphasis">v</em>. Different bidders will obtain different estimates of the value, and we may view these estimates as draws from a normal distribution, like the one illustrated in <a class="xref" href="#mcafee-ch20_s05_f01">Figure 20.1 "Normally Distributed Estimates"</a>. The estimates are correct on average, which is represented by the fact that the distribution is centered on the true value <em class="emphasis">v</em>. Thus, a randomly chosen bidder will have an estimate that is too high as often as it is too low, and the average estimate of a randomly selected bidder will be correct. However, the winner of an auction will tend to be the bidder with the highest estimate, not a randomly chosen bidder. The highest of five bidders will have an estimate that is too large 97% of the time. The only way the highest estimate is not too large is if all the estimates are below the true value. With 10 bidders, the highest estimate is larger than the true value with probability 99.9% because the odds that all the estimates are less than the true value is (½)<sup class="superscript">10</sup> = 0.1%. This phenomenon—that auctions tend to select the bidder with the highest estimate, and the highest estimate is larger than the true value most of the time—is characteristic of the winner’s curse.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p06">A savvy bidder corrects for the winner’s curse. Such a correction is actually quite straightforward when a few facts are available, and here a simplified presentation is given. Suppose there are <em class="emphasis">n</em> bidders for a common value good, and the bidders receive normally distributed estimates that are correct on average. Let σ be the standard deviation of the estimates.<span class="footnote" id="fwk-mcafee-fn20_004">The standard deviation is a measure of the dispersion of the distribution and is the square root of the average of the square of the difference of the random value and its mean. The estimates are also assumed to be independently distributed around the true value. Note that estimating the mean adds an additional layer of complexity.</span> Finally, suppose that no prior information is given about the likely value of the good.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p07">In this case, it is a straightforward matter to compute a correction for the winner’s curse. Because the winning bidder will generally be the bidder with the highest estimate of value, the winner’s curse correction should be the expected amount by which the highest value exceeds the average value. This can be looked up in a table for the normal distribution. The values are given for selected numbers <em class="emphasis">n</em> in <a class="xref" href="#mcafee-ch20_s05_t01">Table 20.1 "Winner’s Curse Correction"</a>. This table shows, as a function of the number of bidders, how much each bidder should reduce his estimate of value to correct for the fact that auctions select optimistic bidders. The units are standard deviations.</p>
+    <div class="table block" id="mcafee-ch20_s05_t01" frame="all">
+        <p class="title"><span class="title-prefix">Table 20.1</span> Winner’s Curse Correction</p>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th><em class="emphasis">n</em></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>10</th>
+                    <th>15</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>WCC (σ)</td>
+                    <td>0</td>
+                    <td>.56</td>
+                    <td>.85</td>
+                    <td>1.03</td>
+                    <td>1.16</td>
+                    <td>1.54</td>
+                    <td>1.74</td>
+                </tr>
+                <tr>
+                    <td><em class="emphasis">n</em></td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>500</td>
+                    <td>1000</td>
+                    <td>10,000</td>
+                </tr>
+                <tr>
+                    <td>WCC (σ)</td>
+                    <td>1.87</td>
+                    <td>1.97</td>
+                    <td>2.25</td>
+                    <td>2.51</td>
+                    <td>3.04</td>
+                    <td>3.24</td>
+                    <td>3.85</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="mcafee-ch20_s05_p08">For example, with one bidder, there is no correction because it was supposed that the estimates are right on average. With two bidders, the winner’s curse correction is the amount that the higher of two will be above the mean, which turns out to be 0.56σ, a little more than half a standard deviation. This is the amount that should be subtracted from the estimate to ensure that, when the bidder wins, the estimated value is correct, on average. With four bidders, the highest is a bit over a whole standard deviation. As is apparent from the table, the winner’s curse correction increases relatively slowly after 10 or 15 bidders. With a million bidders, it is 4.86σ.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p09">The standard deviation σ measures how much randomness or noise there is in the estimates. It is a measure of the average difference between the true value and the estimated value, and thus the average level of error. Oil companies know from their history of estimation how much error arises in the company estimates. Thus, they can correct their estimates to account for the winner’s curse using their historical inaccuracies.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p10">Bidders who are imperfectly informed about the value of an item for sale are subject to losses arising from the way auctions select the winning bidder. The winning bidder is usually the bidder with the highest estimate, and that estimate is too high on average. The difference between the highest estimate and the average estimate is known as the winner’s curse correction. The size of the winner’s curse correction is larger the more bidders there are, but it tends to grow slowly beyond a dozen or so bidders.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p11">If the bidders have the same information on a common value item, they will generally not earn profits on it. Indeed, there is a general principle that it is the privacy of information, rather than the accuracy of information, that leads to profits. Bidders earn profits on the information that they hold that is not available to others. Information held by others will be built into the bid price and therefore not lead to profits.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p12">The U.S. Department of the Interior, when selling offshore oil leases, not only takes an up-front payment (the winning bid) but also takes one-sixth of the oil that is eventually pumped. Such a royalty scheme links the payment made to the outcome and, in a way, shares risk because the payment is higher when there is more oil. Similarly, a book contract provides an author with an upfront payment and a royalty. Many U.S. Department of Defense (DOD) purchases of major weapons systems involve cost-sharing, where the payments made pick up a portion of the cost. Purchases of ships, for example, generally involve 50%–70% cost sharing, which means the DOD pays a portion of cost overruns. The contract for U.S. television broadcast rights for the Summer Olympics in Seoul, South Korea, involved payments that depended on the size of the U.S. audience.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p13">Royalties, cost-sharing, and contingent payments generally link the actual payment to the actual value, which is unknown at the time of the auction. Linkage shares risk, but linkage does something else, too. Linkage reduces the importance of estimates in the auction, replacing the estimates with actual values. That is, the price a bidder pays for an object, when fully linked to the true value, is just the true value. Thus, linkage reduces the importance of estimation in the auction by taking the price out of the bidder’s hands, at least partially.</p>
+    <p class="para editable block" id="mcafee-ch20_s05_p14">The <span class="margin_term"><a class="glossterm">linkage principle</a><span class="glossdef">The expected price in an auction to sell rises the more the price is linked to the actual value.</span></span><span class="footnote" id="fwk-mcafee-fn20_005">The linkage principle, and much of modern auction theory, was developed by Paul Milgrom (1948–).</span> states that in auctions where bidders are buyers, the expected price rises the more the price is linked to the actual value. (In a parallel fashion, the expected price in an auction where bidders are selling falls.) Thus, linking price to value generally improves the performance of auctions. While this is a mathematically deep result, an extreme case is straightforward to understand. Suppose the government is purchasing by auction a contract for delivery of 10,000 gallons of gasoline each week for the next year. Suppliers face risk in the form of gasoline prices; if the government buys at a fixed price, the suppliers’ bids will build in a cushion to compensate for the risk and for the winner’s curse. In addition, because their estimates of future oil prices will generally vary, they will earn profits based on their private information about the value. In contrast, if the government buys only delivery and then pays for the cost of the gasoline, whatever it might be, any profits that the bidders earned based on their ability to estimate gasoline prices evaporate. The overall profit level of bidders falls, and the overall cost of the gasoline supply can fall. Of course, paying the cost of the gasoline reduces the incentive of the supplier to shop around for the best price, and that agency incentive effect must be balanced against the reduction in bidder profits from the auction to select a supplier.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch20_s05_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch20_s05_l02">
+            <li>Auctions, by their nature, select optimistic bidders. This phenomenon—that auctions tend to select the bidder with the highest estimate, and the highest estimate is larger than the true value most of the time—is known as the winner’s curse.</li>
+            <li>A savvy bidder corrects for the winner’s curse.</li>
+            <li>The size of the winner’s curse correction is larger the more bidders there are, but it tends to grow slowly beyond a dozen or so bidders.</li>
+            <li>There is a general principle that it is the privacy of information, rather than the accuracy of information, that leads to profits. Information held by others will be built into the bid price and therefore not lead to profits.</li>
+            <li>The linkage principle states that in auctions where bidders are buyers, the expected price rises the more the price is linked to the actual value. Examples of linkage include English and Vickrey auctions, which link the price to the second bidder’s information, and the use of royalties or cost shares.</li>
+        </ul>
+    </div>
+</div>
+<div class="section" id="mcafee-ch20_s06" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">20.6</span> Auction Design</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch20_s06_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="mcafee-ch20_s06_l01">
+            <li>What kind of auction should I hold to sell something?</li>
+            <li>Should I impose a minimum bid?</li>
+            <li>Should I use an open- or sealed-bid auction?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch20_s06_p01">We saw in <a class="xref" href="mcafee-ch20_s05#mcafee-ch20_s05">Section 20.5 "The Winner’s Curse and Linkage"</a> that the English auction tends to reduce regret relative to sealed-bid auctions and that the linkage principle suggests tying payments to value where possible. These are examples of auction design, in which auctions are designed to satisfy objectives of the auction designer. Proper auction design should match the rules of the auction to the circumstances of the bidders and the goal of the seller. Some of the principles of auction design include:</p>
+    <ul class="itemizedlist editable block" id="mcafee-ch20_s06_l02">
+        <li>Impose an appropriate reserve price or minimum bid</li>
+        <li>Use ascending price (English) auctions rather than sealed-bid auctions</li>
+        <li>Reveal information about the value of the item</li>
+        <li>Conceal information about the extent of competition</li>
+        <li>Handicap bidders with a known advantage</li>
+    </ul>
+    <p class="para editable block" id="mcafee-ch20_s06_p02">However, many of these principles change if the seller is facing a cartel. For example, it is easier for bidders to collude in a sealed-bid auction than in an English auction, and reserve prices should be made relatively high.</p>
+    <p class="para editable block" id="mcafee-ch20_s06_p03"><span class="margin_term"><a class="glossterm">Reserve prices</a><span class="glossdef">Minimum bids in an auction.</span></span> (minimum bids) have several effects. They tend to force marginal bidders to bid a bit higher, which increases the bids of all bidders and thus reduces bidder profits. However, reserve prices also lead to a failure to sell on occasion, and the optimal reserve trades off this failure to sell against the higher prices. In addition, reserve prices may reduce the incentive of bidders to investigate the sale, thus reducing participation, which is an additional negative consideration for a high reserve price.</p>
+    <p class="para editable block" id="mcafee-ch20_s06_p04">Ascending price auctions like the English auction have several advantages. Such auctions reduce the complexity of the bidder’s problem because bidders can stretch their calculations out over time and because bidders can react to the behavior of others and not plan for every contingency in advance. In addition, because bidders in an English auction can see the behavior of others, there is a linkage created—the price paid by the winning bidder is influenced not just by that bidder’s information but also by the information held by others, tending to drive up the price, which is an advantage for the seller.</p>
+    <p class="para editable block" id="mcafee-ch20_s06_p05">One caveat to the selection of the English auction is that risk aversion doesn’t affect the outcome in the private values case. In contrast, in a sealed-bid auction, risk aversion works to the advantage of the seller because bidders bid a little bit higher than they would have otherwise to reduce the risk of losing. Thus, in the private values case, risk-averse bidders will bid higher in the sealed-bid auction than in the English auction.</p>
+    <p class="para editable block" id="mcafee-ch20_s06_p06">When considering the revelation of information, there is always an issue of lying and misleading. In the long run, lying and misleading are found out, and thus the standard approach is to ignore the possibility of lying. Making misleading statements is, in the long run, the same thing as silence because those who repeatedly lie or mislead are eventually discovered and then not believed. Thus, in the long run, a repeat seller has a choice of being truthful or silent. Because of the linkage principle, the policy of revealing truthful information about the value of the good for sale dominates the policy of concealing information because the revelation of information links the payment to the actual outcome.</p>
+    <p class="para editable block" id="mcafee-ch20_s06_p07">In contrast, revealing information about the extent of competition may not increase the prices. Consider the case where occasionally there are three bidders, or the case where this is only one. If the extent of competition is concealed, bidders will bid without knowing the extent of competition. If the bidders are risk neutral, it turns out that the revelation doesn’t matter and the outcomes are the same on average. If, in contrast, bidders are risk averse, the concealment of information tends to increase the bid prices because the risk created by the uncertainty about the extent of competition works to the advantage of the seller. Of course, it may be difficult to conceal the extent of competition in the English auction, suggesting that a sealed-bid auction should be used instead.</p>
+    <p class="para editable block" id="mcafee-ch20_s06_p08">Bidders with a large, known advantage have several deleterious effects. For example, incumbent telephone companies generally are willing to pay more for spectrum in their areas than outsiders are. Bidders bidding at an advantage discourage the participation of others because the others are likely to lose. This can result in a bidder with an advantage facing no competition and picking up the good cheaply. Second, rivals don’t present much competition to the advantaged bidder, even if the rivals do participate. Consequently, when a bidder has a large advantage over rivals, it is advantageous to handicap the advantaged bidder, thus favoring the rivals. This handicapping encourages participation and levels the playing field, forcing the advantaged bidder to bid more competitively to win.</p>
+    <p class="para editable block" id="mcafee-ch20_s06_p09">A common means of favoring disadvantaged bidders is by the use of <span class="margin_term"><a class="glossterm">bidder credits</a><span class="glossdef">Favoritism in an auction for certain bidders in the form of discounts on payment.</span></span>. For example, with a 20% bidder credit for disadvantaged bidders, a disadvantaged bidder has to pay only 80% of the face amount of the bid. This lets such a bidder bid 25% more (because a $100 payment corresponds to a $125 bid) than she would have otherwise, which makes the bidder a more formidable competitor. Generally, the ideal bidder credit is less than the actual advantage of the advantaged bidder.</p>
+    <p class="para editable block" id="mcafee-ch20_s06_p10">Auction design is an exciting development in applied industrial organization, in which economic theory and experience is used to improve the performance of markets. The U.S. Federal Communications auctions of spectrum were the first major instance of auction design in an important practical setting, and the auction design was credited with increasing substantially the revenue raised by the government.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch20_s06_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch20_s06_l03">
+            <li>
+                <p class="para">Some of the principles of auction design include:</p>
+                <ul class="itemizedlist" id="mcafee-ch20_s06_l04">
+                    <li>Impose an appropriate reserve price or minimum bid</li>
+                    <li>Use ascending price (English) auctions rather than sealed-bid auctions</li>
+                    <li>Reveal information about the value of the item</li>
+                    <li>Conceal information about the extent of competition</li>
+                    <li>Handicap bidders with a known advantage</li>
+                </ul>
+            </li>
+            <li>The optimal reserve trades off this failure to sell against the higher prices when sales arise.</li>
+            <li>Ascending price auctions create linkage and reduce the complexity of the bidder’s problem.</li>
+            <li>Consistent revelation of accurate information about the value of a good increases average prices through linkage, relative to the policy of concealing information.</li>
+            <li>Revealing information about the extent of competition may not increase the prices.</li>
+            <li>When a bidder has a large advantage over rivals, it is advantageous to handicap the advantaged bidder, favoring the rivals. This handicapping encourages participation and levels the playing field, forcing the advantaged bidder to bid more competitively to win.</li>
+            <li>A common means of favoring disadvantaged bidders is by the use of bidder credits.</li>
+            <li>Auction design is used to improve the performance of markets and is becoming a field in its own right.</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s20-agency-theory.html"><img src="shared/images/batch-left.png"></a> <a href="s20-agency-theory.html">Previous Chapter</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s22-antitrust.html">Next Chapter</a> <a href="s22-antitrust.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

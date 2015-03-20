@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Search</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s14-04-risk-aversion.html"><img src="shared/images/batch-left.png"></a> <a href="s14-04-risk-aversion.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s15-01-edgeworth-box.html">Next Section</a> <a href="s15-01-edgeworth-box.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch13_s05" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">13.5</span> Search</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch13_s05_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch13_s05_l01">
+            <li>How should a consumer go about finding the lowest price when available prices are random?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch13_s05_p01">In most communities, grocery stores advertise sale prices every Wednesday in a newspaper insert, and these prices can vary from week to week and from store to store. The price of gasoline can vary as much as 15 cents per gallon in a one-mile radius. Should you decide that you want to buy a specific Sony television, you may see distinct prices at Best Buy and other electronics retailers. For many goods and services, there is substantial variation in prices, which implies that there are gains for buyers to search for the best price.</p>
+    <p class="para editable block" id="mcafee-ch13_s05_p02">The theory of consumer search behavior is just a little bit arcane, but the basic insight will be intuitive enough. The general idea is that, from the perspective of a buyer, the price that is offered is random and has a probability density function <em class="emphasis">f</em>(<em class="emphasis">p</em>). If a consumer faces a cost of search (e.g., if you have to visit a store—in person, telephonically, or virtually—the cost includes your time and any other costs necessary to obtain a price quote), the consumer will set a <span class="margin_term"><a class="glossterm">reservation price</a><span class="glossdef">The maximum acceptable price a consumer will pay without visiting another supplier.</span></span>, which is a maximum price that he or she will pay without visiting another store. That is, if a store offers a price below <em class="emphasis">p</em>*, the consumer will buy; otherwise, he or she will visit another store, hoping for a better price.</p>
+    <p class="para block" id="mcafee-ch13_s05_p03">Call the reservation price <em class="emphasis">p*</em>, and suppose that the cost of search is <em class="emphasis">c</em>. Let <em class="emphasis">J</em>(<em class="emphasis">p*</em>) represent the expected total cost of purchase (including search costs). Then <em class="emphasis">J</em> must equal
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s05_m001" display="inline">
+	<mrow>
+	<mi>J</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo><mo>=</mo><mi>c</mi><mo>+</mo><mstyle displaystyle="true">
+	<mrow>
+	<msubsup>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mrow>
+	<mi>p</mi><mo>*</mo>
+	</mrow>
+	</msubsup>
+	<mrow>
+	<mi>p</mi><mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mi>d</mi><mi>p</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mo>+</mo><mstyle displaystyle="true">
+	<mrow>
+	<msubsup>
+	<mo>∫</mo>
+	<mrow>
+	<mi>p</mi><mo>*</mo>
+	</mrow>
+	<mi>∞</mi>
+	</msubsup>
+	<mrow>
+	<mi>J</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo><mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mi>d</mi><mi>p</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch13_s05_p04">This equation arises because the current draw (which costs <em class="emphasis">c</em>) could either result in a price less than <em class="emphasis">p*</em>, in which case observed price, with density <em class="emphasis">f</em>, will determine the price paid <em class="emphasis">p</em>; or the price will be too high, in which case the consumer is going to take another draw, at cost <em class="emphasis">c</em>, and on average get the average price <em class="emphasis">J</em>(<em class="emphasis">p</em>*). It is useful to introduce the cumulative distribution function <em class="emphasis">F</em>, with <span class="inlineequation"><math xml:id="mcafee_ch13_s05_m002" display="inline">
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mstyle displaystyle="true">
+	<mrow>
+	<msubsup>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mi>x</mi>
+	</msubsup>
+	<mrow>
+	<mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mi>d</mi><mi>p</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> Note that something has to happen, so <em class="emphasis">F</em>(∞) = 1.</p>
+    <p class="para block" id="mcafee-ch13_s05_p05">We can solve the equality for <em class="emphasis">J</em>(<em class="emphasis">p*</em>),
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s05_m003" display="inline">
+	<mrow>
+	<mi>J</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+	<mrow>
+	<mstyle displaystyle="true">
+	<mrow>
+	<msubsup>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mrow>
+	<mi>p</mi><mo>*</mo>
+	</mrow>
+	</msubsup>
+	<mrow>
+	<mi>p</mi><mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mi>d</mi><mi>p</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mo>+</mo><mi>c</mi>
+	</mrow>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch13_s05_p06">This expression has a simple interpretation. The expected price <em class="emphasis">J</em>(<em class="emphasis">p*</em>) is composed of two terms. The first is the expected price, which is <span class="inlineequation"><math xml:id="mcafee_ch13_s05_m004" display="inline">
+	<mrow>
+	<mstyle displaystyle="true">
+	<mrow>
+	<msubsup>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mrow>
+	<mi>p</mi><mo>*</mo>
+	</mrow>
+	</msubsup>
+	<mrow>
+	<mi>p</mi><mfrac>
+	<mrow>
+	<mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mi>d</mi><mi>p</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> This has the interpretation of the average price conditional on that price being less than <em class="emphasis">p</em>*. This is because <span class="inlineequation"><math xml:id="mcafee_ch13_s05_m005" display="inline">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</math>
+</span> is, in fact, the density of the random variable which is the price given that the price is less than <em class="emphasis">p*</em>. The second term is <span class="inlineequation"><math xml:id="mcafee_ch13_s05_m006" display="inline">
+	<mrow>
+	<mfrac>
+	<mi>c</mi>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> This is the expected search cost, and it arises because <span class="inlineequation"><math xml:id="mcafee_ch13_s05_m007" display="inline">
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</math>
+</span> is the expected number of searches. This arises because the odds of getting a price low enough to be acceptable is <em class="emphasis">F</em>(<em class="emphasis">p</em>*). There is a general statistical property underlying the number of searches. Consider a basketball player who successfully shoots a free throw with probability <em class="emphasis">y</em>. How many balls, on average, must he throw to sink one basket? The answer is 1/<em class="emphasis">y</em>. To see this, note that the probability that exactly <em class="emphasis">n</em> throws are required is (1 – <em class="emphasis">y</em>)<sup class="superscript"><em class="emphasis">n</em>–1</sup> <em class="emphasis">y</em>. This is because <em class="emphasis">n</em> are required means that <em class="emphasis">n</em> – 1 must fail (probability (1 – <em class="emphasis">y</em>)<sup class="superscript"><em class="emphasis">n</em>–1</sup>) and then the remaining one goes in, with probability <em class="emphasis">y</em>. Thus, the expected number of throws is</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s05_m008" display="block">
+	<mrow>
+	<mi>y</mi><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>2</mn><mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mi>y</mi><mo stretchy="false">)</mo><mi>y</mi><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>3</mn><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mi>y</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	<mi>y</mi><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>4</mn><mtext> </mtext><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mi>y</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>3</mn>
+	</msup>
+	<mi>y</mi><mo>+</mo><mo>…</mo>
+	</mrow>
+	</math>
+</span>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s05_m009" display="block">
+	<mrow>
+	<mo>=</mo><mtext>y(1 </mtext><mo>+</mo><mtext> 2(1-y) </mtext><mo>+</mo><msup>
+	<mrow>
+	<mtext> 3(1-y)</mtext>
+	</mrow>
+	<mtext>2</mtext>
+	</msup>
+	<mtext> </mtext><mo>+</mo><msup>
+	<mrow>
+	<mtext> 4 (1-y)</mtext>
+	</mrow>
+	<mtext>3</mtext>
+	</msup>
+	<mo>+</mo><mo>…</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</math>
+</span>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s05_m010" display="block">
+	<mrow>
+	<mo>=</mo><mi>y</mi><mrow><mo>(</mo> <mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mi>y</mi><mo stretchy="false">)</mo><mtext> </mtext><mo>+</mo><mtext> </mtext><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mi>y</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	<mtext> </mtext><mo>+</mo><mtext>  </mtext><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mi>y</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>3</mn>
+	</msup>
+	<mo>+</mo><mo>…</mo><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>y</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mi>y</mi><mo stretchy="false">)</mo><mtext> </mtext><mo>+</mo><mtext> </mtext><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mi>y</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	<mtext> </mtext><mo>+</mo><mtext>  </mtext><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mi>y</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>3</mn>
+	</msup>
+	<mo>+</mo><mo>…</mo><mo stretchy="false">)</mo>
+	</mrow></mrow>
+	</mrow>
+	</math>
+</span>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s05_m011" display="block">
+	<mrow>
+	<mo>=</mo><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>y</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	<mo stretchy="false">(</mo><mn>1</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mi>y</mi><mo stretchy="false">)</mo><mtext> </mtext><mo>+</mo><mtext> </mtext><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mi>y</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	<mtext> </mtext><mo>+</mo><mtext>  </mtext><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mi>y</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>3</mn>
+	</msup>
+	<mo>+</mo><mo>…</mo><mo stretchy="false">)</mo><mo>+</mo><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>y</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>3</mn>
+	</msup>
+	<mo stretchy="false">(</mo><mn>1</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mi>y</mi><mo stretchy="false">)</mo><mtext> </mtext><mo>+</mo><mtext> </mtext><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>-</mo><mi>y</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	<mtext> </mtext><mo>+</mo><mo>…</mo><mo stretchy="false">)</mo><mo>+</mo><mn>…</mn>
+	</mrow>
+	</math>
+</span>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s05_m012" display="block">
+	<mrow>
+	<mo>=</mo><mi>y</mi><mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mi>y</mi>
+	</mfrac>
+	<mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>y</mi><mo stretchy="false">)</mo><mfrac>
+	<mn>1</mn>
+	<mi>y</mi>
+	</mfrac>
+	<mo>+</mo><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>y</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	<mfrac>
+	<mn>1</mn>
+	<mi>y</mi>
+	</mfrac>
+	<mo>+</mo><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>y</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>3</mn>
+	</msup>
+	<mfrac>
+	<mn>1</mn>
+	<mi>y</mi>
+	</mfrac>
+	<mo>+</mo><mn>…</mn>
+	</mrow>
+	<mo>)</mo></mrow><mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mi>y</mi>
+	</mfrac>
+	<mo>.</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch13_s05_p07">Our problem has the same logic—where a successful basketball throw corresponds to finding a price less than <em class="emphasis">p*</em>.</p>
+    <p class="para block" id="mcafee-ch13_s05_p08">The expected total cost of purchase, given a reservation price <em class="emphasis">p*</em>, is given by
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s05_m013" display="inline">
+	<mrow>
+	<mi>J</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+	<mrow>
+	<mstyle displaystyle="true">
+	<mrow>
+	<msubsup>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mrow>
+	<mi>p</mi><mo>*</mo>
+	</mrow>
+	</msubsup>
+	<mrow>
+	<mi>p</mi><mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mi>d</mi><mi>p</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mo>+</mo><mi>c</mi>
+	</mrow>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch13_s05_p09">But what value of <em class="emphasis">p*</em> minimizes cost? Let’s start by differentiating</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s05_m014" display="block">
+	<mrow>
+	<msup>
+	<mi>J</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo><mo>=</mo><mi>p</mi><mo>*</mo><mfrac>
+	<mrow>
+	<mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mo>−</mo><mfrac>
+	<mrow>
+	<mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo><mstyle displaystyle="true">
+	<mrow>
+	<msubsup>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mrow>
+	<mi>p</mi><mo>*</mo>
+	</mrow>
+	</msubsup>
+	<mrow>
+	<mi>p</mi><mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mi>d</mi><mi>p</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mo>+</mo><mi>c</mi>
+	</mrow>
+	<mrow>
+	<mi>F</mi><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</math>
+</span>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s05_m015" display="block">
+	<mrow>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mi>p</mi><mo>*</mo><mo>−</mo><mfrac>
+	<mrow>
+	<mstyle displaystyle="true">
+	<mrow>
+	<msubsup>
+	 <mo>∫</mo>
+	 <mn>0</mn>
+	 <mrow>
+	  <mi>p</mi><mo>*</mo>
+	 </mrow>
+	</msubsup>
+	<mrow>
+	 <mi>p</mi><mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mi>d</mi><mi>p</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mo>+</mo><mi>c</mi>
+	</mrow>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><mo>=</mo><mfrac>
+	<mrow>
+	<mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mi>p</mi><mo>*</mo><mo>−</mo><mi>J</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	<mo>)</mo></mrow><mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch13_s05_p10">Thus, if <em class="emphasis">p*</em> &lt; <em class="emphasis">J</em>(<em class="emphasis">p*</em>), <em class="emphasis">J</em> is decreasing, and it lowers cost to increase <em class="emphasis">p*</em>. Similarly, if <em class="emphasis">p*</em> &gt; <em class="emphasis">J</em>(<em class="emphasis">p*</em>), <em class="emphasis">J</em> is increasing in <em class="emphasis">p*</em>, and it reduces cost to decrease <em class="emphasis">p*</em>. Thus, minimization occurs at a point where <em class="emphasis">p*</em> = <em class="emphasis">J</em>(<em class="emphasis">p*</em>).</p>
+    <p class="para block" id="mcafee-ch13_s05_p11">Moreover, there is only one such solution to the equation <em class="emphasis">p*</em> = <em class="emphasis">J</em>(<em class="emphasis">p*</em>) in the range where <em class="emphasis">f</em> is positive. To see this, note that at any solution to the equation <em class="emphasis">p*</em> = <em class="emphasis">J</em>(<em class="emphasis">p*</em>), <span class="inlineequation"><math xml:id="mcafee_ch13_s05_m016" display="inline">
+	<mrow>
+	<msup>
+	<mi>J</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn>
+	</mrow>
+	</math>
+</span> and</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s05_m017" display="block">
+	<mrow>
+	<msup>
+	<mi>J</mi>
+	<mo>″</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+	<mi>d</mi>
+	<mrow>
+	<mi>d</mi><mi>p</mi><mo>*</mo>
+	</mrow>
+	</mfrac>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mi>p</mi><mo>*</mo><mo>−</mo><mi>J</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	</math>
+</span>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s05_m018" display="block">
+	<mrow>
+	<mo>=</mo><mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mi>d</mi>
+	<mrow>
+	<mi>d</mi><mi>p</mi><mo>*</mo>
+	</mrow>
+	</mfrac>
+	<mfrac>
+	<mrow>
+	<mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo>−</mo><mi>J</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>+</mo><mfrac>
+	<mrow>
+	<mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><msup>
+	<mi>J</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+	<mrow>
+	<mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mo>&gt; 0</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para block" id="mcafee-ch13_s05_p12">This means that <em class="emphasis">J</em> takes a minimum at this value, since its first derivative is zero and its second derivative is positive, and that is true about any solution to <em class="emphasis">p*</em> = <em class="emphasis">J</em>(<em class="emphasis">p*</em>). Were there to be two such solutions, <span class="inlineequation"><math xml:id="mcafee_ch13_s05_m019" display="inline">
+	<msup>
+	<mi>J</mi>
+	<mo>′</mo>
+	</msup>
+	</math>
+</span> would have to be both positive and negative on the interval between them, since <em class="emphasis">J</em> is increasing to the right of the first (lower) one, and decreasing to the left of the second (higher) one. Consequently, the equation <em class="emphasis">p*</em> = <em class="emphasis">J</em>(<em class="emphasis">p*</em>) has a unique solution that minimizes the cost of purchase.</p>
+    <p class="para editable block" id="mcafee-ch13_s05_p13">Consumer search to minimize cost dictates setting a reservation price equal to the expected total cost of purchasing the good, and purchasing whenever the price offered is lower than that level. That is, it is not sensible to “hold out” for a price lower than what you expect to pay on average, although this might be well useful in a bargaining context rather than in a store searching context.</p>
+    <p class="para editable block" id="mcafee-ch13_s05_p14">Example (Uniform): Suppose that prices are uniformly distributed on the interval [<em class="emphasis">a</em>, <em class="emphasis">b</em>]. For <em class="emphasis">p*</em> in this interval,</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s05_m020" display="block">
+	<mrow>
+	<mi>J</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+	<mrow>
+	<mstyle displaystyle="true">
+	<mrow>
+	<msubsup>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mrow>
+	<mi>p</mi><mo>*</mo>
+	</mrow>
+	</msubsup>
+	<mrow>
+	<mi>p</mi><mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mi>d</mi><mi>p</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mo>+</mo><mi>c</mi>
+	</mrow>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mstyle displaystyle="true">
+	<mrow>
+	<msubsup>
+	<mo>∫</mo>
+	<mi>a</mi>
+	<mrow>
+	<mi>p</mi><mo>*</mo>
+	</mrow>
+	</msubsup>
+	<mrow>
+	<mi>p</mi><mfrac>
+	<mrow>
+	 <mi>d</mi><mi>p</mi>
+	</mrow>
+	<mrow>
+	 <mi>b</mi><mo>−</mo><mi>a</mi>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</mrow>
+	</mstyle><mo>+</mo><mi>c</mi>
+	</mrow>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>p</mi><mo>*</mo><mo>−</mo><mi>a</mi>
+	</mrow>
+	<mrow>
+	<mi>b</mi><mo>−</mo><mi>a</mi>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</math>
+</span>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s05_m021" display="block">
+	<mrow>
+	<mo>=</mo><mfrac>
+	<mrow>
+	<mtext>½</mtext><mo stretchy="false">(</mo><mi>p</mi><msup>
+	<mo>*</mo>
+	<mn>2</mn>
+	</msup>
+	<mo>−</mo><msup>
+	<mi>a</mi>
+	<mn>2</mn>
+	</msup>
+	<mo stretchy="false">)</mo><mo>+</mo><mi>c</mi><mo stretchy="false">(</mo><mi>b</mi><mo>−</mo><mi>a</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>p</mi><mo>*</mo><mo>−</mo><mi>a</mi>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mtext>½</mtext><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo>+</mo><mi>a</mi><mo stretchy="false">)</mo><mo>+</mo><mfrac>
+	<mrow>
+	<mi>c</mi><mo stretchy="false">(</mo><mi>b</mi><mo>−</mo><mi>a</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>p</mi><mo>*</mo><mo>−</mo><mi>a</mi>
+	</mrow>
+	</mfrac>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para block" id="mcafee-ch13_s05_p15">Thus, the first-order condition for minimizing cost is
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s05_m022" display="inline">
+	<mrow>
+	<mn>0</mn><mo>=</mo><msup>
+	<mi>J</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo><mo>=</mo><mtext>½</mtext><mo>−</mo><mfrac>
+	<mrow>
+	<mi>c</mi><mo stretchy="false">(</mo><mi>b</mi><mo>−</mo><mi>a</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo>−</mo><mi>a</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	</mrow>
+	</mfrac><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> implying <span class="inlineequation"><math xml:id="mcafee_ch13_s05_m023" display="inline">
+	<mrow>
+	<mi>p</mi><mo>*</mo><mo>=</mo><mi>a</mi><mo>+</mo><msqrt>
+	<mrow>
+	<mn>2</mn><mi>c</mi><mo stretchy="false">(</mo><mi>b</mi><mo>−</mo><mi>a</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</msqrt>
+	<mo>.</mo>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch13_s05_p16">There are a couple of interesting observations about this solution. First, not surprisingly, as <em class="emphasis">c</em> → 0, <em class="emphasis">p</em>* → α; that is, as the search costs go to zero, one holds out for the lowest possible price. This is sensible in the context of the model, but in real search situations delay may also have a cost that isn’t modeled here. Second, <em class="emphasis">p</em>* &lt; <em class="emphasis">b</em>, the maximum price, if 2<em class="emphasis">c</em> &lt; (<em class="emphasis">b</em> – <em class="emphasis">a</em>). In other words, if the <em class="emphasis">most</em> you can save by a search is twice the search cost, then don’t search, because the expected gains from the search will be half the maximum gains (thanks to the uniform distribution) and the search will be unprofitable.</p>
+    <p class="para block" id="mcafee-ch13_s05_p17">The third observation, which is much more general than the specific uniform example, is that the expected price is a concave function of the cost of search (second derivative negative). That is, in fact, true for any distribution. To see this, define a function
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s05_m024" display="inline">
+	<mrow>
+	<mi>H</mi><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo><mo>=</mo><munder>
+	<mrow>
+	<mi>min</mi>
+	</mrow>
+	<mrow>
+	<mi>p</mi><mo>*</mo>
+	</mrow>
+	</munder>
+	<mi>J</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo><mo>=</mo><munder>
+	<mrow>
+	<mi>min</mi>
+	</mrow>
+	<mrow>
+	<mi>p</mi><mo>*</mo>
+	</mrow>
+	</munder>
+	<mfrac>
+	<mrow>
+	<mstyle displaystyle="true">
+	<mrow>
+	<msubsup>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mrow>
+	<mi>p</mi><mo>*</mo>
+	</mrow>
+	</msubsup>
+	<mrow>
+	<mi>p</mi><mi>f</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mi>d</mi><mi>p</mi>
+	</mrow>
+	</mrow>
+	</mstyle><mo>+</mo><mi>c</mi>
+	</mrow>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mtext>.</mtext>
+	</mrow>
+	</math>
+</span> Since <span class="inlineequation"><math xml:id="mcafee_ch13_s05_m025" display="inline">
+	<mrow>
+	<msup>
+	<mi>J</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn><mtext>,</mtext>
+	</mrow>
+	</math>
+</span>
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s05_m026" display="inline">
+	<mrow>
+	<msup>
+	<mi>H</mi>
+	<mo>′</mo>
+	</msup>
+	<mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+	<mo>∂</mo>
+	<mrow>
+	<mo>∂</mo><mi>c</mi>
+	</mrow>
+	</mfrac>
+	<mi>J</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo><mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mi>F</mi><mo stretchy="false">(</mo><mi>p</mi><mo>*</mo><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch13_s05_p18">From here it requires only a modest effort to show that <em class="emphasis">p*</em> is increasing in <em class="emphasis">c</em>, from which it follows that <em class="emphasis">H</em> is concave. This means that there are increasing returns to decreasing search costs in that the expected total price of search is decreasing at an increasing rate as the cost of search decreases.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch13_s05_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch13_s05_l02">
+            <li>For many goods, prices vary across location and across time. In response to price variation, consumers will often search for low prices.</li>
+            <li>In many circumstances the best strategy is a reservation price strategy, where the consumer buys whenever offered a price below the reservation price.</li>
+            <li>Consumer search to minimize cost dictates setting a reservation price equal to the expected total cost of purchasing the good, and purchasing whenever the price offered is lower than that level.</li>
+        </ul>
+    </div>
+    <div class="exercises editable block" id="mcafee-ch13_s05_n03">
+        <h3 class="title">Exercise</h3>
+        <ol class="orderedlist" id="mcafee-ch13_s05_l03">
+            <li>Suppose that there are two possible prices, one and two, and that the probability of the lower price one is <em class="emphasis">x</em>. Compute the consumer’s reservation price, which is the expected cost of searching, as a function of <em class="emphasis">x</em> and the cost of search <em class="emphasis">c</em>. For what values of <em class="emphasis">x</em> and <em class="emphasis">c</em> should the consumer accept two on the first search or continue searching until the lower price one is found?</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s14-04-risk-aversion.html"><img src="shared/images/batch-left.png"></a> <a href="s14-04-risk-aversion.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s15-01-edgeworth-box.html">Next Section</a> <a href="s15-01-edgeworth-box.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

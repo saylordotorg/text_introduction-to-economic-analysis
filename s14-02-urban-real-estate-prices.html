@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Urban Real Estate Prices</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s14-01-labor-supply.html"><img src="shared/images/batch-left.png"></a> <a href="s14-01-labor-supply.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s14-03-dynamic-choice.html">Next Section</a> <a href="s14-03-dynamic-choice.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch13_s02" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">13.2</span> Urban Real Estate Prices</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch13_s02_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch13_s02_l01">
+            <li>How are the prices of suburban ranch houses, downtown apartments, and rural ranches determined?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch13_s02_p01">An important point to understand is that the good, in limited supply in cities, is not a physical structure like a house, but the land on which the house sits. The cost of building a house in Los Angeles is quite similar to the cost of building a house in Rochester, New York. The big difference is the price of land. A $1 million house in Los Angeles might be a $400,000 house sitting on a $600,000 parcel of land. The same house in Rochester might be $500,000—a $400,000 house on a $100,000 parcel of land.</p>
+    <p class="para editable block" id="mcafee-ch13_s02_p02">Usually, land is what fluctuates in value rather than the price of the house that sits on the land. When a newspaper reports that house prices rose, in fact what rose were land prices, for the price of housing has changed only at a slow pace, reflecting increased wages of house builders and changes in the price of lumber and other inputs. These do change, but historically the changes have been small compared to the price of land.</p>
+    <p class="para editable block" id="mcafee-ch13_s02_p03">We can construct a simple model of a city to illustrate the determination of land prices. Suppose the city is constructed on a flat plane. People work at the origin (0, 0). This simplifying assumption is intended to capture the fact that a relatively small, central portion of most cities involves business, with a large area given over to housing. The assumption is extreme, but not unreasonable as a description of some cities.</p>
+    <p class="para editable block" id="mcafee-ch13_s02_p04">Suppose commuting times are proportional to distance from the origin. Let <em class="emphasis">c</em>(<em class="emphasis">t</em>) be the cost to the person of a commute of time <em class="emphasis">t</em>, and let the time taken be <em class="emphasis">t</em> = <em class="emphasis">λr</em>, where <em class="emphasis">r</em> is the distance. The function <em class="emphasis">c</em> should reflect both the transportation costs and the value of time lost. The parameter <em class="emphasis">λ</em> accounts for the inverse of the speed in commuting, with a higher <em class="emphasis">λ</em> indicating slower commuting. In addition, we assume that people occupy a constant amount of land. This assumption is clearly wrong empirically, and we will consider making house size a choice variable later.</p>
+    <p class="para editable block" id="mcafee-ch13_s02_p05">A person choosing a house priced at <em class="emphasis">p</em>(<em class="emphasis">r</em>), at distance <em class="emphasis">r</em>, thus pays <em class="emphasis">c</em>(<em class="emphasis">λr</em>) + <em class="emphasis">p</em>(<em class="emphasis">r</em>) for the combination of housing and transportation. People will choose the lowest cost alternative. If people have identical preferences about housing and commuting, then house prices <em class="emphasis">p</em> will depend on distance and will be determined by <em class="emphasis">c</em>(<em class="emphasis">λr</em>) + <em class="emphasis">p</em>(<em class="emphasis">r</em>) equal to a constant, so that people are indifferent to the distance from the city’s center—decreased commute time is exactly compensated by increased house prices.</p>
+    <p class="para block" id="mcafee-ch13_s02_p06">The remaining piece of the model is to figure out the constant. To do this, we need to figure out the area of the city. If the total population is <em class="emphasis">N</em>, and people occupy an area of one per person, then the city size <em class="emphasis">r</em><sub class="subscript">max</sub> satisfies <span class="inlineequation"><math xml:id="mcafee_ch13_s02_m001" display="inline">
+	<mrow>
+	<mi>N</mi><mo>=</mo><mi>π</mi><mtext> </mtext><msubsup>
+	<mi>r</mi>
+	<mrow>
+	<mi>max</mi>
+	</mrow>
+	<mn>2</mn>
+	</msubsup><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> and thus <span class="inlineequation">
+	<math xml:id="mcafee_ch13_s02_m002" display="inline">
+	<mrow>
+	<msub>
+	<mi>r</mi>
+	<mrow>
+	<mi>max</mi>
+	</mrow>
+	</msub>
+	<mo>=</mo><msqrt>
+	<mrow>
+	<mfrac>
+	<mi>N</mi>
+	<mi>π</mi>
+	</mfrac>
+	</mrow>
+	</msqrt><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch13_s02_p07">At the edge of the city, the value of land is given by some other use, like agriculture. From the perspective of the determinant of the city’s prices, this value is approximately constant. As the city takes more land, the change in agricultural land is a very small portion of the total land used for agriculture. Let the value of agricultural land be <em class="emphasis">v</em> per housing unit size. Then the price of housing is <em class="emphasis">p</em>(<em class="emphasis">r</em><sub class="subscript">max</sub>) = <em class="emphasis">v</em>, because this is the value of land at the edge of the city. This lets us compute the price of all housing in the city:</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s02_m003" display="block">
+	<mrow>
+	<mi>c</mi><mo stretchy="false">(</mo><mi>λ</mi><mi>r</mi><mo stretchy="false">)</mo><mtext> </mtext><mo>+</mo><mtext> </mtext><mi>p</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mi>c</mi><mo stretchy="false">(</mo><mi>λ</mi><msub>
+	<mi>r</mi>
+	<mrow>
+	<mi>max</mi>
+	</mrow>
+	</msub>
+	<mo stretchy="false">)</mo><mtext> </mtext><mo>+</mo><mtext> </mtext><mi>p</mi><mo stretchy="false">(</mo><msub>
+	<mi>r</mi>
+	<mrow>
+	<mi>max</mi>
+	</mrow>
+	</msub>
+	<mo stretchy="false">)</mo><mtext> </mtext><mo>=</mo><mi>c</mi><mo stretchy="false">(</mo><mi>λ</mi><msub>
+	<mi>r</mi>
+	<mrow>
+	<mi>max</mi>
+	</mrow>
+	</msub>
+	<mo stretchy="false">)</mo><mtext> </mtext><mo>+</mo><mtext> </mtext><mi>v</mi><mtext> </mtext><mo>=</mo><mi>c</mi><mrow><mo>(</mo>
+	<mrow>
+	<mi>λ</mi><msqrt>
+	<mrow>
+	<mfrac>
+	<mi>N</mi>
+	<mi>π</mi>
+	</mfrac>
+	</mrow>
+	</msqrt>
+	</mrow>
+	<mo>)</mo></mrow><mo>+</mo><mtext> </mtext><mi>v</mi><mtext> </mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch13_s02_p08">or</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s02_m004" display="block">
+	<mrow>
+	<mtext> </mtext><mi>p</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mi>c</mi><mrow><mo>(</mo>
+	<mrow>
+	<mi>λ</mi><msqrt>
+	<mrow>
+	<mfrac>
+	<mi>N</mi>
+	<mi>π</mi>
+	</mfrac>
+	</mrow>
+	</msqrt>
+	</mrow>
+	<mo>)</mo></mrow><mo>+</mo><mtext> </mtext><mi>v</mi><mtext> </mtext><mo>-</mo><mi>c</mi><mo stretchy="false">(</mo><mi>λ</mi><mi>r</mi><mo stretchy="false">)</mo><mtext> </mtext><mtext>.</mtext>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch13_s02_p09">This equation produces housing prices like those illustrated in <a class="xref" href="#mcafee-ch13_s02_f01">Figure 13.2 "House price gradient"</a>, where the peak is the city’s center. The height of the figure indicates the price of housing.</p>
+    <div class="figure medium editable block" id="mcafee-ch13_s02_f01">
+        <p class="title"><span class="title-prefix">Figure 13.2</span> House price gradient</p>
+        <img src="section_14/f8bd75b0c7910392e4a0a416d2f1e547.jpg">
+    </div>
+    <p class="para editable block" id="mcafee-ch13_s02_p10">It is straightforward to verify that house prices increase in the population <em class="emphasis">N</em> and the commuting time parameter <em class="emphasis">λ</em>, as one would expect. To quantify the predictions, we consider a city with a population of 1,000,000; a population density of 10,000 per square mile; and an agricultural use value of $6 million per square mile. To translate these assumptions into the model’s structure, first note that a population density of 10,000 per square mile creates a fictitious “unit of measure” of about 52.8 feet, which we’ll call a <em class="emphasis">purlong</em>, so that there is one person per square purlong (2,788 square feet). Then the agricultural value of a property is <em class="emphasis">v</em> = $600 per square purlong. Note that this density requires a city of radius <em class="emphasis">r</em><sub class="subscript">max</sub> equal to 564 purlongs, which is 5.64 miles.</p>
+    <p class="para editable block" id="mcafee-ch13_s02_p11">The only remaining structure left to identify in the model is the commuting cost <em class="emphasis">c</em>. To simplify the calculations, let <em class="emphasis">c</em> be linear. Suppose that the daily cost of commuting is $2 per mile (roundtrip), so that the present value of daily commuting costs in perpetuity is about $10,000 per mile.<span class="footnote" id="fwk-mcafee-fn13_002">This amount is based upon 250 working days per year, for an annual cost of about $500 per mile, yielding a present value at 5% interest of $10,000. See <a class="xref" href="mcafee-ch11_s01#mcafee-ch11_s01">Section 11.1 "Present Value"</a>. With a time value of $25 per hour and an average speed of 40 mph (1.5 minutes per mile), the time cost is 62.5 cents per minute. Automobile costs (such as gasoline, car depreciation, and insurance) are about 35–40 cents per mile. Thus the total is around $1 per mile, which doubles with roundtrips.</span> This translates into a cost of commuting of $100 per purlong. Thus, we obtain</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s02_m005" display="block">
+	<mrow>
+	<mtext> p(r)</mtext><mo>=</mo><mtext>c</mtext><mrow><mo>(</mo>
+	<mrow>
+	<mi>λ</mi><msqrt>
+	<mrow>
+	<mfrac>
+	<mi>N</mi>
+	<mi>π</mi>
+	</mfrac>
+	</mrow>
+	</msqrt>
+	</mrow>
+	<mo>)</mo></mrow><mo>+</mo><mtext> </mtext><mi>v</mi><mtext> -c(</mtext><mi>λ</mi><mi>r</mi><mo stretchy="false">)</mo><mtext> </mtext><mo>=</mo><mi>$</mi><mn>100</mn><mrow><mo>(</mo>
+	<mrow>
+	<msqrt>
+	<mrow>
+	<mfrac>
+	<mi>N</mi>
+	<mi>π</mi>
+	</mfrac>
+	</mrow>
+	</msqrt>
+	<mo>−</mo><mi>r</mi>
+	</mrow>
+	<mo>)</mo></mrow><mo>+</mo><mi>$</mi><mn>600</mn><mo>=</mo><mi>$</mi><mn>57,000</mn><mo>−</mo><mi>$</mi><mn>100</mn><mi>r.</mi>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch13_s02_p12">Thus, the same 2,788-square-foot property at the city’s edge sells for $600 versus $57,000, less than six miles away at the city’s center. With reasonable parameters, this model readily creates dramatic differences in land prices, based purely on commuting time.</p>
+    <p class="para editable block" id="mcafee-ch13_s02_p13">As constructed, a quadrupling of population approximately doubles the price of land in the central city. This probably understates the change, since a doubling of the population would likely increase road congestion, increasing <em class="emphasis">λ</em> and further increasing the price of central city real estate.</p>
+    <p class="para editable block" id="mcafee-ch13_s02_p14">As presented, the model contains three major unrealistic assumptions. First, everyone lives on an identically sized piece of land. In fact, however, the amount of land used tends to fall as prices rise. At $53 per square foot, most of us buy a lot less land than at 20 cents per square foot. As a practical matter, the reduction of land per capita is accomplished both through smaller housing units and through taller buildings, which produce more housing floor space per acre of land. Second, people have distinct preferences and the disutility of commuting, as well as the value of increased space, varies with the individual. Third, congestion levels are generally endogenous—the more people who live between two points, the greater the traffic density and, consequently, the higher the level of <em class="emphasis">λ</em>. Problems arise with the first two assumptions because of the simplistic nature of consumer preferences embedded in the model, while the third assumption presents an equilibrium issue requiring consideration of transportation choices.</p>
+    <p class="para block" id="mcafee-ch13_s02_p15">This model can readily be extended to incorporate different types of people, different housing sizes, and endogenous congestion. To illustrate such generalizations, consider making the housing size endogenous. Suppose preferences are represented by the utility function
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s02_m006" display="inline">
+	<mrow>
+	<mi>u</mi><mo>=</mo>
+	<msup>
+		<mi>H</mi>
+		<mi>α</mi>
+	</msup>
+	<mo>−</mo>
+	<mi>λ</mi><mi>r</mi>
+	<mo>−</mo><mi>p</mi>
+	<mo stretchy="false">(</mo>
+		<mi>r</mi>
+	<mo stretchy="false">)</mo>
+	<mi>H</mi>
+	<mtext>,</mtext>
+	</mrow>
+	</math>
+</span> where <em class="emphasis">H</em> is the house size that the person chooses, and <em class="emphasis">r</em> is the distance that he or she chooses. This adaptation of the model reflects two issues. First, the transport cost has been set to be linear in distance for simplicity. Second, the marginal value of housing decreases in the house size, but the value of housing doesn’t depend on distance from the center. For these preferences to make sense, <em class="emphasis">α</em> &lt; 1 (otherwise either zero or an infinite house size emerges). A person with these preferences would optimally choose a house size of
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s02_m007" display="inline">
+	<mrow>
+	<mi>H</mi><mo>=</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mi>α</mi>
+	<mrow>
+	<mi>p</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>α</mi>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</msup>
+	<mtext>,</mtext>
+	</mrow>
+	</math>
+</span> resulting in utility <span class="inlineequation"><math xml:id="mcafee_ch13_s02_m008" display="inline">
+	<mrow>
+	<mi>u</mi><mo>*</mo><mo>=</mo><mrow><mo>(</mo>
+	<mrow>
+	<msup>
+	<mi>α</mi>
+	<mrow>
+	<mfrac>
+	<mi>α</mi>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>α</mi>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</msup>
+	<mo>−</mo><msup>
+	<mi>α</mi>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>α</mi>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</msup>
+	</mrow>
+	<mo>)</mo></mrow><mi>p</mi><msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mo>−</mo><mi>α</mi>
+	</mrow>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>α</mi>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</msup>
+	<mo>−</mo><mi>λ</mi><mi>r</mi><mtext>.</mtext>
+	</mrow>
+	</math>
+</span> Utility at every location is constant, so <span class="inlineequation"><math xml:id="mcafee_ch13_s02_m009" display="inline">
+	<mrow>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<msup>
+	 <mi>α</mi>
+	 <mrow>
+	  <mfrac>
+	   <mi>α</mi>
+	   <mrow>
+	    <mn>1</mn><mo>−</mo><mi>α</mi>
+	   </mrow>
+	  </mfrac>          
+	 </mrow>
+	</msup>
+	<mo>−</mo><msup>
+	 <mi>α</mi>
+	 <mrow>
+	  <mfrac>
+	   <mn>1</mn>
+	   <mrow>
+	    <mn>1</mn><mo>−</mo><mi>α</mi>
+	   </mrow>
+	  </mfrac>
+	 </mrow>
+	</msup>
+	</mrow>
+	<mrow>
+	<mi>u</mi><mo>*</mo><mo>+</mo><mi>λ</mi><mi>r</mi>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>α</mi>
+	</mrow>
+	<mi>α</mi>
+	</mfrac>
+	</mrow>
+	</msup>
+	<mo>=</mo><mi>p</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para editable block" id="mcafee-ch13_s02_p16">A valuable attribute of the form of the equation for <em class="emphasis">p</em> is that the general form depends on the equilibrium values only through the single number <em class="emphasis">u</em>*. This functional form produces the same qualitative shapes as shown in <a class="xref" href="#mcafee-ch13_s02_f01">Figure 13.2 "House price gradient"</a>. Using the form, we can solve for the housing size <em class="emphasis">H</em>:</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch13_s02_m010" display="block">
+	<mrow>
+	<mi>H</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mi>α</mi>
+	<mrow>
+	<mi>p</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>α</mi>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</msup>
+	<mo>=</mo><msup>
+	<mi>α</mi>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>α</mi>
+	</mrow>
+	</mfrac>
+	</mrow>
+	</msup>
+	<msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>u</mi><mo>*</mo><mo>+</mo><mi>λ</mi><mi>r</mi>
+	</mrow>
+	<mrow>
+	<msup>
+	 <mi>α</mi>
+	 <mrow>
+	  <mfrac>
+	   <mi>α</mi>
+	   <mrow>
+	    <mn>1</mn><mo>−</mo><mi>α</mi>
+	   </mrow>
+	  </mfrac>
+	 </mrow>
+	</msup>
+	<mo>−</mo><msup>
+	 <mi>α</mi>
+	 <mrow>
+	  <mfrac>
+	   <mn>1</mn>
+	   <mrow>
+	    <mn>1</mn><mo>−</mo><mi>α</mi>
+	   </mrow>
+	  </mfrac>
+	 </mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mi>α</mi>
+	</mfrac>
+	</mrow>
+	</msup>
+	<mo>=</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>u</mi><mo>*</mo><mo>+</mo><mi>λ</mi><mi>r</mi>
+	</mrow>
+	<mrow>
+	<msup>
+	 <mi>α</mi>
+	 <mrow>
+	  <mo>−</mo><mn>1</mn>
+	 </mrow>
+	</msup>
+	<mo>−</mo><mn>1</mn>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mi>α</mi>
+	</mfrac>
+	</mrow>
+	</msup>
+	<mo>=</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mi>α</mi>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>α</mi>
+	</mrow>
+	</mfrac>
+	<mo stretchy="false">(</mo><mi>u</mi><mo>*</mo><mo>+</mo><mi>λ</mi><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mi>α</mi>
+	</mfrac>
+	</mrow>
+	</msup>
+	<mo>.</mo>
+	</mrow>
+	</math>
+</span>
+    <p class="para block" id="mcafee-ch13_s02_p17">The space in the interval [<em class="emphasis">r</em>, <em class="emphasis">r</em> + Δ] is <em class="emphasis">π</em>(2<em class="emphasis">r</em>Δ + Δ<sup class="superscript">2</sup>). In this interval, there are approximately <span class="inlineequation"><math xml:id="mcafee_ch13_s02_m011" display="inline">
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mi>π</mi><mo stretchy="false">(</mo><mn>2</mn><mi>r</mi><mi>Δ</mi><mo>+</mo><msup>
+	<mi>Δ</mi>
+	<mn>2</mn>
+	</msup>
+	<mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mi>H</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mi>π</mi><mo stretchy="false">(</mo><mn>2</mn><mi>r</mi><mi>Δ</mi><mo>+</mo><msup>
+	<mi>Δ</mi>
+	<mn>2</mn>
+	</msup>
+	<mo stretchy="false">)</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>α</mi>
+	</mrow>
+	<mrow>
+	<mi>α</mi><mo stretchy="false">(</mo><mi>u</mi><mo>*</mo><mo>+</mo><mi>λ</mi><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mi>α</mi>
+	</mfrac>
+	</mrow>
+	</msup>
+	</mrow>
+	</math>
+</span> people. Thus, the number of people within <em class="emphasis">r</em><sub class="subscript">max</sub> of the city’s center is
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s02_m012" display="inline">
+	<mrow>
+	<mstyle displaystyle="true">
+	<mrow><munderover>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mrow>
+	<msub>
+	<mi>r</mi>
+	<mrow>
+	<mi>max</mi>
+	</mrow>
+	</msub>
+	</mrow>
+	</munderover>
+	<mrow>
+	<mn>2</mn><mi>π</mi><mtext> </mtext><mi>r</mi><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	 <mrow>
+	  <mn>1</mn><mo>−</mo><mi>α</mi>
+	 </mrow>
+	 <mrow>
+	  <mi>α</mi><mo stretchy="false">(</mo><mi>u</mi><mo>*</mo><mo>+</mo><mi>λ</mi><mi>r</mi><mo stretchy="false">)</mo>
+	 </mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mi>α</mi>
+	</mfrac>
+	</mrow>
+	</msup>
+	</mrow>
+	</mrow>
+	</mstyle><mi>d</mi><mi>r</mi><mo>=</mo><mi>N</mi><mtext>.</mtext>
+	</mrow>
+	</math>
+</span></p>
+    <p class="para block" id="mcafee-ch13_s02_p18">This equation, when combined with the value of land on the periphery
+	<span class="inlineequation"><math xml:id="mcafee_ch13_s02_m013" display="inline">
+	<mrow>
+	<mi>v</mi><mo>=</mo><mi>p</mi><mo stretchy="false">(</mo><msub>
+	<mi>r</mi>
+	<mrow>
+	<mi>max</mi>
+	</mrow>
+	</msub>
+	<mo stretchy="false">)</mo><mo>=</mo><msup>
+	<mrow>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<msup>
+	 <mi>α</mi>
+	 <mrow>
+	  <mfrac>
+	   <mi>α</mi>
+	   <mrow>
+	    <mn>1</mn><mo>−</mo><mi>α</mi>
+	   </mrow>
+	  </mfrac>
+	 </mrow>
+	</msup>
+	<mo>−</mo><msup>
+	 <mi>α</mi>
+	 <mrow>
+	  <mfrac>
+	   <mn>1</mn>
+	   <mrow>
+	    <mn>1</mn><mo>−</mo><mi>α</mi>
+	   </mrow>
+	  </mfrac>
+	 </mrow>
+	</msup>
+	</mrow>
+	<mrow>
+	<mi>u</mi><mo>*</mo><mo>+</mo><mi>λ</mi><msub>
+	 <mi>r</mi>
+	 <mrow>
+	  <mi>max</mi>
+	 </mrow>
+	</msub>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow>
+	</mrow>
+	<mrow>
+	<mfrac>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mi>α</mi>
+	</mrow>
+	<mi>α</mi>
+	</mfrac>
+	</mrow>
+	</msup><mtext>,</mtext>
+	</mrow>
+	</math>
+</span> jointly determines <em class="emphasis">r</em><sub class="subscript">max</sub> and <em class="emphasis">u</em>*.</p>
+    <p class="para editable block" id="mcafee-ch13_s02_p19">When different people have different preferences, the people with the highest disutility of commuting will tend to live closer to the city’s center. These tend to be people with the highest wages, since one of the costs of commuting is time that could have been spent working.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch13_s02_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch13_s02_l02">
+            <li>An important point to understand is that, in cities, houses are not in limited supply; but it is the land on which the houses sit that is.</li>
+            <li>The circular city model involves people who work at a single point but live dispersed around that point. It is both the size of the city and the housing prices that are determined by consumers who are indifferent to commuting costs—lower housing prices at a greater distance balance the increased commuting costs.</li>
+            <li>Substituting plausible parameters into the circular city model produces dramatic house price differentials, explaining much of the price differences within cities.</li>
+            <li>A quadrupling of population approximately doubles the price of land in the central city. This likely understates the actual change since an increase in population slows traffic.</li>
+        </ul>
+    </div>
+    <div class="exercises editable block" id="mcafee-ch13_s02_n03">
+        <h3 class="title">Exercise</h3>
+        <ol class="orderedlist" id="mcafee-ch13_s02_l03">
+            <li>For the case of <em class="emphasis">α</em> = ½, solve for the equilibrium values of <em class="emphasis">u</em>* and <em class="emphasis">r</em><sub class="subscript">max</sub>.</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s14-01-labor-supply.html"><img src="shared/images/batch-left.png"></a> <a href="s14-01-labor-supply.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s14-03-dynamic-choice.html">Next Section</a> <a href="s14-03-dynamic-choice.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

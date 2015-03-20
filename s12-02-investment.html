@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Investment</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s12-01-present-value.html"><img src="shared/images/batch-left.png"></a> <a href="s12-01-present-value.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s12-03-investment-under-uncertainty.html">Next Section</a> <a href="s12-03-investment-under-uncertainty.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch11_s02" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">11.2</span> Investment</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch11_s02_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="mcafee-ch11_s02_l01">
+            <li>How do I evaluate an investment opportunity?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch11_s02_p01">A simple investment project requires an investment, <em class="emphasis">I</em>, followed by a return over time. If you dig a mine, drill an oil well, build an apartment building or a factory, or buy a share of stock, you spend money now, hoping to earn a return in the future. We will set aside the very important issue of risk until the next subsection, and ask how one makes the decision to invest.</p>
+    <p class="para editable block" id="mcafee-ch11_s02_p02">The NPV approach involves assigning a rate of return <em class="emphasis">r</em> that is reasonable for the specific project and then computing the corresponding present value of the expected stream of payments. Since the investment is initially expended, it is counted as negative revenue. This yields an expression that looks like</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s02_m001" display="block">
+	<mrow>
+	<mi>N</mi><mi>P</mi><mi>V</mi><mo>=</mo><mo>−</mo><mi>I</mi><mo>+</mo><mfrac>
+	<mrow>
+	<msub>
+	<mi>R</mi>
+	<mn>1</mn>
+	</msub>
+	</mrow>
+	<mrow>
+	<mn>1</mn><mo>+</mo><mi>r</mi>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mrow>
+	<msub>
+	<mi>R</mi>
+	<mn>2</mn>
+	</msub>
+	</mrow>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mrow>
+	<msub>
+	<mi>R</mi>
+	<mn>3</mn>
+	</msub>
+	</mrow>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>3</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mn>….</mn>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch11_s02_p03">where <em class="emphasis">R</em><sub class="subscript">1</sub> represents first-year revenues, <em class="emphasis">R</em><sub class="subscript">2</sub> represents second-year revenues, and so on.<span class="footnote" id="fwk-mcafee-fn11_004">The most common approach treats revenues within a year as if they are received at the midpoint, and then discounts appropriately for that mid-year point. The present discussion abstracts from this practice.</span> The investment is then made when NPV is positive—because this would add to the net value of the firm.</p>
+    <p class="para editable block" id="mcafee-ch11_s02_p04">Carrying out an NPV analysis requires two things. First, investment and revenues must be estimated. This is challenging, especially for new products where there is no direct way of estimating demand, or with uncertain outcomes like oil wells or technological research.<span class="footnote" id="fwk-mcafee-fn11_005">The building of the famed Sydney Opera House, which looks like billowing sails over Sydney Harbor in Australia, was estimated to cost $7 million and actually cost $105 million. A portion of the cost overrun was due to the fact that the original design neglected to install air conditioning. When this oversight was discovered, it was too late to install a standard unit, which would interfere with the excellent acoustics, so instead an ice hockey floor was installed as a means of cooling the building.</span> Second, an appropriate rate of return must be identified. The rate of return is difficult to estimate, mostly because of the risk associated with the investment payoffs. Another difficulty is recognizing that project managers have an incentive to inflate the payoffs and minimize the costs to make the project appear more attractive to upper management. In addition, most corporate investment is financed through retained earnings, so that a company that undertakes one investment is unable to make other investments, so the interest rate used to evaluate the investment should account for opportunity cost of corporate funds. As a result of these factors, interest rates of 15%–20% are common for evaluating the NPV of projects of major corporations.</p>
+    <p class="para editable block" id="mcafee-ch11_s02_p05">Example (Silver mine): A company is considering developing a silver mine in Mexico. The company estimates that developing the mine requires building roads and opening a large hole in the ground, which would cost $4 million per year for 4 years, during which time the mines generates zero revenue. Starting in year 5, the expenses would fall to $2 million per year, and $6 million in net revenue would accrue from the silver that is mined for the next 40 years. If the company cost of funds is 18%, should it develop the mine?</p>
+    <p class="para editable block" id="mcafee-ch11_s02_p06">The earnings from the mine are calculated in the table below. First, the NPV of the investment phase during years 0, 1, 2, and 3 is</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s02_m002" display="block">
+	<mrow>
+	<mi>N</mi><mi>P</mi><mi>V</mi><mo>=</mo><mo>−</mo><mn>4</mn><mo>+</mo><mfrac>
+	<mrow>
+	<mo>−</mo><mn>4</mn>
+	</mrow>
+	<mrow>
+	<mn>1.18</mn>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mrow>
+	<mo>−</mo><mn>4</mn>
+	</mrow>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1.18</mn><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>2</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mrow>
+	<mo>−</mo><mn>4</mn>
+	</mrow>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1.18</mn><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>3</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mo>−</mo><mn>12.697.</mn>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch11_s02_p07">A dollar earned in each of years 4 through 43 has a present value of</p>
+    <span class="informalequation block"><math xml:id="mcafee_ch11_s02_m003" display="block">
+	<mrow>
+	<mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>4</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>5</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>6</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>+</mo><mn>…</mn><mo>+</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mn>43</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>=</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mn>3</mn>
+	</msup>
+	</mrow>
+	</mfrac>
+	<mo>×</mo><mfrac>
+	<mn>1</mn>
+	<mi>r</mi>
+	</mfrac>
+	<mrow><mo>(</mo>
+	<mrow>
+	<mn>1</mn><mo>−</mo><mfrac>
+	<mn>1</mn>
+	<mrow>
+	<msup>
+	<mrow>
+	<mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo stretchy="false">)</mo>
+	</mrow>
+	<mrow>
+	<mn>40</mn>
+	</mrow>
+	</msup>
+	</mrow>
+	</mfrac>
+	</mrow>
+	<mo>)</mo></mrow><mo>=</mo><mn>13.377.</mn>
+	</mrow>
+	</math>
+</span>
+    <p class="para editable block" id="mcafee-ch11_s02_p08">The mine is just profitable at 18%, in spite of the fact that its $4 million payments are made in 4 years, after which point $4 million in revenue is earned for 40 years. The problem in the economics of mining is that 18% makes the future revenue have quite modest present values.</p>
+    <div class="informaltable block" frame="all">
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Earnings ($M)/yr</th>
+                    <th>
+<em class="emphasis">PV</em> ($M)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0–3</td>
+                    <td>–4</td>
+                    <td>–12.697</td>
+                </tr>
+                <tr>
+                    <td>4–43</td>
+                    <td>4</td>
+                    <td>13.377</td>
+                </tr>
+                <tr>
+                    <td>Net</td>
+                    <td></td>
+                    <td>0.810</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="mcafee-ch11_s02_p09">There are other approaches for deciding to take an investment. In particular, the <span class="margin_term"><a class="glossterm">internal rate of return (IRR)</a><span class="glossdef">Method of analyzing an investment that solves the equation <em class="emphasis">NPV</em> = 0 for the interest rate.</span></span> approach solves the equation <em class="emphasis">NPV</em> = 0 for the interest rate. Then the project is undertaken if the rate of return is sufficiently high. This approach is flawed because the equation may have more than one solution—or no solutions—and the right thing to do in these events is not transparent. Indeed, the IRR approach gets the profit-maximizing answer only if it agrees with NPV. A second approach is the payback period, which asks calculates the number of years a project must be run before profitability is reached. The problem with the payback period is deciding between projects—if I can only choose one of two projects, the one with the higher NPV makes the most money for the company. The one with the faster payback may make a quite small amount of money very quickly, but it isn’t apparent that this is a good choice. When a company is in risk of bankruptcy, a short payback period might be valuable, although this would ordinarily be handled by employing a higher interest rate in an NPV analysis. NPV does a good job when the question is whether or not to undertake a project, and it does better than other approaches to investment decisions. For this reason, NPV has become the most common approach to investment decisions. Indeed, NPV analysis is more common than all other approaches combined. NPV does a poor job, however, when the question is whether to undertake a project or to delay the project. That is, NPV answers “yes or no” to investment, but when the choice is “yes or wait,” NPV requires an amendment.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch11_s02_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch11_s02_l02">
+            <li>The NPV approach involves assigning a rate of return <em class="emphasis">r</em> that is reasonable for, and specific to, the project and then computing the present value of the expected stream of payments. The investment is then made when NPV is positive—since this would add to the net value of the firm.</li>
+            <li>Carrying out an NPV analysis requires estimating investment and revenues and identifying an appropriate rate of return.</li>
+            <li>Interest rates of 15%–20% are common for evaluating the NPV of projects of major corporations.</li>
+        </ul>
+    </div>
+    <div class="exercises editable block" id="mcafee-ch11_s02_n03">
+        <h3 class="title">Exercises</h3>
+        <ol class="orderedlist" id="mcafee-ch11_s02_l03">
+            <li>Suppose that, without a university education, you’ll earn $25,000 per year. A university education costs $20,000 per year, and you forgo the $25,000/year that you would have earned for 4 years. However, you earn $50,000 per year for the following 40 years. At 7%, what is the NPV of the university education?</li>
+            <li>Now that you’ve decided to go to the university based on the previous answer, suppose that you can attend East State U, paying $3,000 per year for 4 years and earning $40,000 per year when you graduate, or you can attend North Private U, paying $22,000 per year for the 4 years and earning $50,000 per year when you graduate. Which is the better deal at 7%?</li>
+            <li>A bond is a financial instrument that pays a fixed amount, called the face value, at a maturity date. Bonds can also pay out fixed payments, called coupons, in regular intervals up until the maturity date. Suppose a bond with face value $1,000 sells for $900 on the market and has annual coupon payments starting a year from today up until its maturity date 10 years from now. What is the coupon rate? Assume <em class="emphasis">r</em> = 10%.</li>
+            <li>The real return on stocks averages about 4% annually. Over 40 years, how much will $1,000 invested today grow?</li>
+            <li>You have made an invention. You can sell the invention now for $1 million and work at something else, producing $75,000 per year for 10 years. (Treat this income as received at the start of the year.) Alternatively, you can develop your invention, which requires working for 10 years, and it will net you $5 million in 10 years hence. For what interest rates are you better off selling now? (Please approximate the solution.)</li>
+            <li>A company is evaluating a project with a start-up fee of $50,000 but pays $2,000 every second year thereafter, starting 2 years from now. Suppose that the company is indifferent about taking on the project—or not. What discount rate is the company using?</li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s12-01-present-value.html"><img src="shared/images/batch-left.png"></a> <a href="s12-01-present-value.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s12-03-investment-under-uncertainty.html">Next Section</a> <a href="s12-03-investment-under-uncertainty.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

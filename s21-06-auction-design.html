@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Auction Design</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s21-05-the-winner-s-curse-and-linkage.html"><img src="shared/images/batch-left.png"></a> <a href="s21-05-the-winner-s-curse-and-linkage.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s22-00-antitrust.html">Next Section</a> <a href="s22-00-antitrust.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="mcafee-ch20_s06" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">20.6</span> Auction Design</h2>
+    <div class="learning_objectives editable block" id="mcafee-ch20_s06_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="mcafee-ch20_s06_l01">
+            <li>What kind of auction should I hold to sell something?</li>
+            <li>Should I impose a minimum bid?</li>
+            <li>Should I use an open- or sealed-bid auction?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="mcafee-ch20_s06_p01">We saw in <a class="xref" href="mcafee-ch20_s05#mcafee-ch20_s05">Section 20.5 "The Winner’s Curse and Linkage"</a> that the English auction tends to reduce regret relative to sealed-bid auctions and that the linkage principle suggests tying payments to value where possible. These are examples of auction design, in which auctions are designed to satisfy objectives of the auction designer. Proper auction design should match the rules of the auction to the circumstances of the bidders and the goal of the seller. Some of the principles of auction design include:</p>
+    <ul class="itemizedlist editable block" id="mcafee-ch20_s06_l02">
+        <li>Impose an appropriate reserve price or minimum bid</li>
+        <li>Use ascending price (English) auctions rather than sealed-bid auctions</li>
+        <li>Reveal information about the value of the item</li>
+        <li>Conceal information about the extent of competition</li>
+        <li>Handicap bidders with a known advantage</li>
+    </ul>
+    <p class="para editable block" id="mcafee-ch20_s06_p02">However, many of these principles change if the seller is facing a cartel. For example, it is easier for bidders to collude in a sealed-bid auction than in an English auction, and reserve prices should be made relatively high.</p>
+    <p class="para editable block" id="mcafee-ch20_s06_p03"><span class="margin_term"><a class="glossterm">Reserve prices</a><span class="glossdef">Minimum bids in an auction.</span></span> (minimum bids) have several effects. They tend to force marginal bidders to bid a bit higher, which increases the bids of all bidders and thus reduces bidder profits. However, reserve prices also lead to a failure to sell on occasion, and the optimal reserve trades off this failure to sell against the higher prices. In addition, reserve prices may reduce the incentive of bidders to investigate the sale, thus reducing participation, which is an additional negative consideration for a high reserve price.</p>
+    <p class="para editable block" id="mcafee-ch20_s06_p04">Ascending price auctions like the English auction have several advantages. Such auctions reduce the complexity of the bidder’s problem because bidders can stretch their calculations out over time and because bidders can react to the behavior of others and not plan for every contingency in advance. In addition, because bidders in an English auction can see the behavior of others, there is a linkage created—the price paid by the winning bidder is influenced not just by that bidder’s information but also by the information held by others, tending to drive up the price, which is an advantage for the seller.</p>
+    <p class="para editable block" id="mcafee-ch20_s06_p05">One caveat to the selection of the English auction is that risk aversion doesn’t affect the outcome in the private values case. In contrast, in a sealed-bid auction, risk aversion works to the advantage of the seller because bidders bid a little bit higher than they would have otherwise to reduce the risk of losing. Thus, in the private values case, risk-averse bidders will bid higher in the sealed-bid auction than in the English auction.</p>
+    <p class="para editable block" id="mcafee-ch20_s06_p06">When considering the revelation of information, there is always an issue of lying and misleading. In the long run, lying and misleading are found out, and thus the standard approach is to ignore the possibility of lying. Making misleading statements is, in the long run, the same thing as silence because those who repeatedly lie or mislead are eventually discovered and then not believed. Thus, in the long run, a repeat seller has a choice of being truthful or silent. Because of the linkage principle, the policy of revealing truthful information about the value of the good for sale dominates the policy of concealing information because the revelation of information links the payment to the actual outcome.</p>
+    <p class="para editable block" id="mcafee-ch20_s06_p07">In contrast, revealing information about the extent of competition may not increase the prices. Consider the case where occasionally there are three bidders, or the case where this is only one. If the extent of competition is concealed, bidders will bid without knowing the extent of competition. If the bidders are risk neutral, it turns out that the revelation doesn’t matter and the outcomes are the same on average. If, in contrast, bidders are risk averse, the concealment of information tends to increase the bid prices because the risk created by the uncertainty about the extent of competition works to the advantage of the seller. Of course, it may be difficult to conceal the extent of competition in the English auction, suggesting that a sealed-bid auction should be used instead.</p>
+    <p class="para editable block" id="mcafee-ch20_s06_p08">Bidders with a large, known advantage have several deleterious effects. For example, incumbent telephone companies generally are willing to pay more for spectrum in their areas than outsiders are. Bidders bidding at an advantage discourage the participation of others because the others are likely to lose. This can result in a bidder with an advantage facing no competition and picking up the good cheaply. Second, rivals don’t present much competition to the advantaged bidder, even if the rivals do participate. Consequently, when a bidder has a large advantage over rivals, it is advantageous to handicap the advantaged bidder, thus favoring the rivals. This handicapping encourages participation and levels the playing field, forcing the advantaged bidder to bid more competitively to win.</p>
+    <p class="para editable block" id="mcafee-ch20_s06_p09">A common means of favoring disadvantaged bidders is by the use of <span class="margin_term"><a class="glossterm">bidder credits</a><span class="glossdef">Favoritism in an auction for certain bidders in the form of discounts on payment.</span></span>. For example, with a 20% bidder credit for disadvantaged bidders, a disadvantaged bidder has to pay only 80% of the face amount of the bid. This lets such a bidder bid 25% more (because a $100 payment corresponds to a $125 bid) than she would have otherwise, which makes the bidder a more formidable competitor. Generally, the ideal bidder credit is less than the actual advantage of the advantaged bidder.</p>
+    <p class="para editable block" id="mcafee-ch20_s06_p10">Auction design is an exciting development in applied industrial organization, in which economic theory and experience is used to improve the performance of markets. The U.S. Federal Communications auctions of spectrum were the first major instance of auction design in an important practical setting, and the auction design was credited with increasing substantially the revenue raised by the government.</p>
+    <div class="key_takeaways editable block" id="mcafee-ch20_s06_n02">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="mcafee-ch20_s06_l03">
+            <li>
+                <p class="para">Some of the principles of auction design include:</p>
+                <ul class="itemizedlist" id="mcafee-ch20_s06_l04">
+                    <li>Impose an appropriate reserve price or minimum bid</li>
+                    <li>Use ascending price (English) auctions rather than sealed-bid auctions</li>
+                    <li>Reveal information about the value of the item</li>
+                    <li>Conceal information about the extent of competition</li>
+                    <li>Handicap bidders with a known advantage</li>
+                </ul>
+            </li>
+            <li>The optimal reserve trades off this failure to sell against the higher prices when sales arise.</li>
+            <li>Ascending price auctions create linkage and reduce the complexity of the bidder’s problem.</li>
+            <li>Consistent revelation of accurate information about the value of a good increases average prices through linkage, relative to the policy of concealing information.</li>
+            <li>Revealing information about the extent of competition may not increase the prices.</li>
+            <li>When a bidder has a large advantage over rivals, it is advantageous to handicap the advantaged bidder, favoring the rivals. This handicapping encourages participation and levels the playing field, forcing the advantaged bidder to bid more competitively to win.</li>
+            <li>A common means of favoring disadvantaged bidders is by the use of bidder credits.</li>
+            <li>Auction design is used to improve the performance of markets and is becoming a field in its own right.</li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s21-05-the-winner-s-curse-and-linkage.html"><img src="shared/images/batch-left.png"></a> <a href="s21-05-the-winner-s-curse-and-linkage.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s22-00-antitrust.html">Next Section</a> <a href="s22-00-antitrust.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>
